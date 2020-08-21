@@ -1,10 +1,10 @@
-##更新日志：
+## 更新日志：
 
-####v0.1-20200822-1
+#### v0.1-20200822-1
 
 修改README.md格式，调整mod
 
-####v0.1-20200821-1
+#### v0.1-20200821-1
 
 寻找下载mod，整合。
 mod名([中文名]下载来的文件名)  及其下载地址
@@ -136,9 +136,9 @@ mod名([中文名]下载来的文件名)  及其下载地址
 
 - [[前置][阿卡什宝典]AutoRegLib-1.3-32.jar](https://www.curseforge.com/minecraft/mc-mods/autoreglib)
 
-- [[前置][格雷科技]- [[无尽贪婪]CodeChickenLib-1.12.2-3.2.3.358-universal.jar](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8)
+- [[前置][格雷科技][无尽贪婪]CodeChickenLib-1.12.2-3.2.3.358-universal.jar](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8)
 
-- [[前置][合成扩展]- [[神秘农业]Cucumber-1.12.2-1.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+- [[前置][合成扩展][神秘农业]Cucumber-1.12.2-1.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/cucumber)
 
 - [[热动力学]ThermalDynamics-1.12.2-2.5.6.1-universal.jar](https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics)
 
