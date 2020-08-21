@@ -1,0 +1,6 @@
+potion.cfg
+garden.cfg 植物的最大高度
+enchantments.cfg 附魔
+enchantment_module 铁砧
+enchantability.cfg 附魔能力
+apotheosis.cfg 
