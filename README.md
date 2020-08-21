@@ -1,8 +1,11 @@
 ##更新日志：
+
 ####v0.1-20200822-1
+
 修改README.md格式，调整mod
 
 ####v0.1-20200821-1
+
 寻找下载mod，整合。
 mod名([中文名]下载来的文件名)  及其下载地址
 - [[AE2]appliedenergistics2-rv6-stable-7.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
@@ -233,4 +236,5 @@ mod名([中文名]下载来的文件名)  及其下载地址
 - ~~[[更好的载入界面]CustomLoadingScreen-1.12.2-1.4.1（汉化）.jar](https://www.mcbbs.net/thread-970911-1-1.html)~~
 
 - [[盖亚魔典3]GrimoireOfGaia3-1.12.2-1.7.2.jar](https://www.curseforge.com/minecraft/mc-mods/grimoire-of-gaia)
+
 
