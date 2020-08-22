@@ -1,13 +1,59 @@
 ## 更新日志：
 
+#### v0.1-20200823-1
+
+调整config文件
+
+增加mod:
+
+- [[防止踩踏]tramplestopper-1.12.2-1.2.0.5-universal.jar](https://www.curseforge.com/minecraft/mc-mods/trample-stopper)
+
+- [[科技复兴]TechReborn-1.12.2-2.27.3.1084-universal.jar](https://www.curseforge.com/minecraft/mc-mods/techreborn)
+
+- [[重生核心]RebornCore-1.12.2-3.19.4.529-universal.jar](https://www.curseforge.com/minecraft/mc-mods/reborncore)
+
+- [[取消合成书]noRecipeBook_v1.2.2formc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/no-recipe-book)
+
+- [[JEI附属：AE合成]JustEnoughEnergistics-1.12.2-1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-energistics-jee)
+
+- [[自然灵气]NaturesAura-18.1.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura)
+
+- [[半砖优化]DoubleSlabs-1.12-0.10.0.jar](https://www.curseforge.com/minecraft/mc-mods/double-slabs)
+
+- [[仁慈的虚空]ForgivingVoid_1.12.2-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
+
+- [[属性修复]AttributeFix-1.12.2-1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/attributefix)
+
+- [[沉浸线缆]ImmersiveCables-1.12.2-1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-cables)
+
+- [[沉浸科技]MCTImmersiveTechnology-1.12.2-1.7.72.jar](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology)
+
+- [[进化的boss]ProgressiveBosses-1.5.4-mc1.12.x.jar](https://www.curseforge.com/minecraft/mc-mods/progressive-bosses)
+
+- [[气动工艺]pneumaticcraft-repressurized-1.12.2-0.11.15-398.jar](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
+
+更新mod：
+
+沉浸工程 从89更新到92
+
+- [[沉浸工程]ImmersiveEngineering-0.12-92.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+
+删除mod：
+
+下面带有下划线的两个优化模组
+
+
 #### v0.1-20200822-1
 
 修改README.md格式，调整mod
 
+
 #### v0.1-20200821-1
 
 寻找下载mod，整合。
+
 mod名([中文名]下载来的文件名)  及其下载地址
+
 - [[AE2]appliedenergistics2-rv6-stable-7.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
 
 - [[AE2附属：额外的存储单元]ExtraCells-1.12.2-2.6.5.jar](https://www.curseforge.com/minecraft/mc-mods/extracells2)
@@ -34,7 +80,7 @@ mod名([中文名]下载来的文件名)  及其下载地址
 
 - [[按键冲突显示]Controlling-3.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/controlling)
 
-- [[沉浸工程]ImmersiveEngineering-0.12-89.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- ~~[[沉浸工程]ImmersiveEngineering-0.12-89.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)~~
 
 - [[沉浸工程附属：原油]immersivepetroleum-1.12.2-1.1.9.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-petroleum)
 
