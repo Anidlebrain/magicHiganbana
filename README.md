@@ -1,10 +1,26 @@
 ## 更新日志：
 
+#### v0.1-20200823-2
+
+1.增加mod
+
+- [[阿卡什宝典]AkashicTome-1.2-12.jar](https://minecraft.curseforge.com/projects/akashic-tome)
+
+- [[更好的标题页]BetterTitleScreen-1.12.2-1.4b.jar](https://minecraft.curseforge.com/projects/better-title-screen)
+
+- [[提示]Tips-1.12.2-1.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/tips/download/2906537)
+
+2.增加第一章任务，调整部分mod的config
+
+3.增加帕秋莉手册文件初始化提交
+
+
+
 #### v0.1-20200823-1
 
-调整config文件
+1.调整config文件
 
-增加mod:
+2.增加mod:
 
 - [[防止踩踏]tramplestopper-1.12.2-1.2.0.5-universal.jar](https://www.curseforge.com/minecraft/mc-mods/trample-stopper)
 
@@ -32,13 +48,13 @@
 
 - [[气动工艺]pneumaticcraft-repressurized-1.12.2-0.11.15-398.jar](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
 
-更新mod：
+3.更新mod：
 
 沉浸工程 从89更新到92
 
 - [[沉浸工程]ImmersiveEngineering-0.12-92.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 
-删除mod：
+4.删除mod：
 
 下面带有下划线的两个优化模组
 
@@ -270,10 +286,9 @@ mod名([中文名]下载来的文件名)  及其下载地址
 
 - [[自动汉化]i18nupdatemod-1.12.2-1.0.7.jar](https://minecraft.curseforge.com/projects/i18nupdatemod)
 
-
 - [[僵尸AI优化]CalmDownZombieGuy-1.12.2-1.6.4.jar](https://www.curseforge.com/minecraft/mc-mods/calm-down-zombie-guy)
 
-- [[僵尸AI优化前置](https://www.curseforge.com/minecraft/mc-mods/bnbgaminglib)
+- [[僵尸AI优化前置]BNBGamingLib-1.12.2-2.17.6.jar](https://www.curseforge.com/minecraft/mc-mods/bnbgaminglib)
 
 - [[经验机制改革]Clumps-3.1.2.jar](https://minecraft.curseforge.com/projects/clumps)
 
