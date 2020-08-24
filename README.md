@@ -1,62 +1,68 @@
 ## 更新日志：
 
+#### v0.1-20200824-1
+
+1. 增加材质文件
+
+2. 增加ct脚本部分文件
+
 #### v0.1-20200823-2
 
-1.增加mod
+1. 增加mod
 
-- [[阿卡什宝典]AkashicTome-1.2-12.jar](https://minecraft.curseforge.com/projects/akashic-tome)
+	- [[阿卡什宝典]AkashicTome-1.2-12.jar](https://minecraft.curseforge.com/projects/akashic-tome)
 
-- [[更好的标题页]BetterTitleScreen-1.12.2-1.4b.jar](https://minecraft.curseforge.com/projects/better-title-screen)
+	- [[更好的标题页]BetterTitleScreen-1.12.2-1.4b.jar](https://minecraft.curseforge.com/projects/better-title-screen)
 
-- [[提示]Tips-1.12.2-1.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/tips/download/2906537)
+	- [[提示]Tips-1.12.2-1.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/tips/download/2906537)
 
-2.增加第一章任务，调整部分mod的config
+2. 增加第一章任务，调整部分mod的config
 
-3.增加帕秋莉手册文件初始化提交
+3. 增加帕秋莉手册文件初始化提交
 
 
 
 #### v0.1-20200823-1
 
-1.调整config文件
+1. 调整config文件
 
-2.增加mod:
+2. 增加mod:
 
-- [[防止踩踏]tramplestopper-1.12.2-1.2.0.5-universal.jar](https://www.curseforge.com/minecraft/mc-mods/trample-stopper)
+	- [[防止踩踏]tramplestopper-1.12.2-1.2.0.5-universal.jar](https://www.curseforge.com/minecraft/mc-mods/trample-stopper)
 
-- [[科技复兴]TechReborn-1.12.2-2.27.3.1084-universal.jar](https://www.curseforge.com/minecraft/mc-mods/techreborn)
+	- [[科技复兴]TechReborn-1.12.2-2.27.3.1084-universal.jar](https://www.curseforge.com/minecraft/mc-mods/techreborn)
 
-- [[重生核心]RebornCore-1.12.2-3.19.4.529-universal.jar](https://www.curseforge.com/minecraft/mc-mods/reborncore)
+	- [[重生核心]RebornCore-1.12.2-3.19.4.529-universal.jar](https://www.curseforge.com/minecraft/mc-mods/reborncore)
 
-- [[取消合成书]noRecipeBook_v1.2.2formc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/no-recipe-book)
+	- [[取消合成书]noRecipeBook_v1.2.2formc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/no-recipe-book)
 
-- [[JEI附属：AE合成]JustEnoughEnergistics-1.12.2-1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-energistics-jee)
+	- [[JEI附属：AE合成]JustEnoughEnergistics-1.12.2-1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-energistics-jee)
 
-- [[自然灵气]NaturesAura-18.1.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura)
+	- [[自然灵气]NaturesAura-18.1.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura)
 
-- [[半砖优化]DoubleSlabs-1.12-0.10.0.jar](https://www.curseforge.com/minecraft/mc-mods/double-slabs)
+	- [[半砖优化]DoubleSlabs-1.12-0.10.0.jar](https://www.curseforge.com/minecraft/mc-mods/double-slabs)
 
-- [[仁慈的虚空]ForgivingVoid_1.12.2-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
+	- [[仁慈的虚空]ForgivingVoid_1.12.2-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
 
-- [[属性修复]AttributeFix-1.12.2-1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/attributefix)
+	- [[属性修复]AttributeFix-1.12.2-1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/attributefix)
 
-- [[沉浸线缆]ImmersiveCables-1.12.2-1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-cables)
+	- [[沉浸线缆]ImmersiveCables-1.12.2-1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-cables)
 
-- [[沉浸科技]MCTImmersiveTechnology-1.12.2-1.7.72.jar](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology)
+	- [[沉浸科技]MCTImmersiveTechnology-1.12.2-1.7.72.jar](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology)
 
-- [[进化的boss]ProgressiveBosses-1.5.4-mc1.12.x.jar](https://www.curseforge.com/minecraft/mc-mods/progressive-bosses)
+	- [[进化的boss]ProgressiveBosses-1.5.4-mc1.12.x.jar](https://www.curseforge.com/minecraft/mc-mods/progressive-bosses)
 
-- [[气动工艺]pneumaticcraft-repressurized-1.12.2-0.11.15-398.jar](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
+	- [[气动工艺]pneumaticcraft-repressurized-1.12.2-0.11.15-398.jar](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
 
-3.更新mod：
+3. 更新mod：
 
-沉浸工程 从89更新到92
+	沉浸工程 从89更新到92
 
-- [[沉浸工程]ImmersiveEngineering-0.12-92.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+	- [[沉浸工程]ImmersiveEngineering-0.12-92.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 
-4.删除mod：
+4. 删除mod：
 
-下面带有下划线的两个优化模组
+	下面带有下划线的两个优化模组
 
 
 #### v0.1-20200822-1

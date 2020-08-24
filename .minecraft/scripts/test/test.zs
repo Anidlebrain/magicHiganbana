@@ -27,7 +27,7 @@
 
 //材料列表和类型列表
 	var metal_list = [nd,cr,nicr,w,wfe,voidmetal,mo,mofe] as Material[];
-	var part_names = ["dust", "gear", "plate", "nugget", "ingot", "rod", "dust_tiny"] as string[];
+	var part_names = ["dust", "gear", "plate", "nugget", "ingot", "rod"] as string[];
 
 //注册类型，矿石及金属块
 	for i, metal in metal_list {
