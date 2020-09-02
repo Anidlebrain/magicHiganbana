@@ -6,11 +6,28 @@ import crafttweaker.recipes.IRecipeAction;
 
 //合成 基础函数 by Anidlebrain
 
-function textToIngredients(ingredients as IIngredient[][],
-						   output as IItemStack,
+function textToIngredients1(ingredients as IIngredient[][],
+						   recipe as string[],
+						   replacements as IIngredient[string]) as IIngredient[] {
+	// 转成一维数组
+	var len = 0;
+	for i, str in recipe {
+		for j in 0 .. str.length {
+			var item = str[j];
+			if " " != item {
+				ingredients[len + j] = replacements[item];
+			}
+			len = len + str.length;
+		}
+	}
+
+	return ingredients;
+}
+
+function textToIngredients2(ingredients as IIngredient[][],
 						   recipe as string[],
 						   replacements as IIngredient[string]) as IIngredient[][] {
-
+	// 转成二维数组
 	for i, str in recipe {
 		for j in 0 .. str.length {
 			var item = str[j];
@@ -29,24 +46,24 @@ function addRecopes(output as IItemStack,
 				   replacements as IIngredient[string]){
 				   
 	var ingredients =
-		[[null,null,null],
-		 [null,null,null],
-		 [null,null,null]] as IIngredient[][];
+		[[null, null, null],
+		 [null, null, null],
+		 [null, null, null]] as IIngredient[][];
 		 
 	recipes.remove(output);
-	recipes.addShaped(name, output, textToIngredients(ingredients, output, recipe, replacements));
+	recipes.addShaped(name, output, textToIngredients2(ingredients, recipe, replacements));
 }
 
 function altarTransformation(replacements as IIngredient[],
 							 level as int) as IIngredient[] {
 	
 	var ingredients =
-		[null,null,null,null,null,
-		 null,null,null,null,null,
-		 null,null,null,null,null,
-		 null,null,null,null,null,
-		 null,null,null,null,null,
-		 null,null,null,null,null] as IIngredient[];
+		[null, null, null, null, null,
+		 null, null, null, null, null,
+		 null, null, null, null, null,
+		 null, null, null, null, null,
+		 null, null, null, null, null,
+		 null, null, null, null, null] as IIngredient[];
 	
 	ingredients[0] = replacements[6];
 	ingredients[1] = replacements[7];
@@ -91,7 +108,7 @@ function altarTransformation(replacements as IIngredient[],
 	return ingredients;
 }
 
-function makeAltarRecopes0(output as IItemStack,
+function makeAltarRecopes1(output as IItemStack,
 						   name as string,
 						   starLight as int,
 						   craftTickTime as int,
@@ -99,7 +116,7 @@ function makeAltarRecopes0(output as IItemStack,
 	mods.astralsorcery.Altar.addDiscoveryAltarRecipe(name, output, starLight, craftTickTime, input);
 }
 
-function makeAltarRecopes1(output as IItemStack,
+function makeAltarRecopes2(output as IItemStack,
 						   name as string,
 						   starLight as int,
 						   craftTickTime as int,
@@ -107,7 +124,7 @@ function makeAltarRecopes1(output as IItemStack,
 	mods.astralsorcery.Altar.addAttunmentAltarRecipe(name, output, starLight, craftTickTime, input);
 }
 
-function makeAltarRecopes2(output as IItemStack,
+function makeAltarRecopes3(output as IItemStack,
 						   name as string,
 						   starLight as int,
 						   craftTickTime as int,
@@ -115,7 +132,7 @@ function makeAltarRecopes2(output as IItemStack,
 	mods.astralsorcery.Altar.addConstellationAltarRecipe(name, output, starLight, craftTickTime, altarTransformation(input, 2));
 }
 
-function makeAltarRecopes3(output as IItemStack,
+function makeAltarRecopes4(output as IItemStack,
 						   name as string,
 						   starLight as int,
 						   craftTickTime as int,
@@ -124,68 +141,154 @@ function makeAltarRecopes3(output as IItemStack,
 	mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, altarTransformation(input, 3), iRequiredConstellationFocusName);
 }
 
+function makeAltar0(output as IItemStack,
+					name as string,
+					starLight as int,
+					craftTickTime as int,
+					recipe as string[],
+					replacements as IIngredient[string]) {
+	var ingredients = [null, null, null, null, null, null, null, null, null] as IIngredient[];
+	makeAltarRecopes0(output, name, starLight, craftTickTime,
+		textToIngredients1(ingredients, recipe, replacements));
+}
+
+function makeAltar1(output as IItemStack,
+					name as string,
+					starLight as int,
+					craftTickTime as int,
+					recipe as string[],
+					replacements as IIngredient[string]) {
+	var ingredients = [null, null, null, null, null, null, null, null, null,
+					   null, null, null, null] as IIngredient[];
+	
+	makeAltarRecopes1(output, name, starLight, craftTickTime,
+		textToIngredients1(ingredients, recipe, replacements));
+}
+
+function makeAltar2(output as IItemStack,
+					name as string,
+					starLight as int,
+					craftTickTime as int,
+					recipe as string[],
+					replacements as IIngredient[string]) {
+	var ingredients = [null, null, null, null, null, null, null, null, null,
+					   null, null, null, null] as IIngredient[];
+	
+	makeAltarRecopes2(output, name, starLight, craftTickTime,
+		textToIngredients1(ingredients, recipe, replacements));
+}
+
+function makeAltar3(output as IItemStack,
+					name as string,
+					starLight as int,
+					craftTickTime as int,
+					recipe as string[],
+					replacements as IIngredient[string]) {
+	var ingredients = [null, null, null, null, null, null, null, null, null,
+					   null, null, null, null,
+					   null, null, null, null, null, null, null, null, null] as IIngredient[];
+	
+	makeAltarRecopes3(output, name, starLight, craftTickTime,
+		textToIngredients1(ingredients, recipe, replacements));
+}
+
+function makeAltar4(output as IItemStack,
+					name as string,
+					starLight as int,
+					craftTickTime as int,
+					recipe as string[],
+					replacements as IIngredient[string],
+					iRequiredConstellationFocusName as string) {
+	var ingredients = [null, null, null, null, null, null, null, null, null,
+					   null, null, null, null,
+					   null, null, null, null, null, null, null, null, null,
+					   null, null, null, null, null, null, null, null, null] as IIngredient[];
+	
+	makeAltarRecopes4(output, name, starLight, craftTickTime,
+		textToIngredients1(ingredients, recipe, replacements), iRequiredConstellationFocusName);
+}
+
 function makeExtendedTable3(output as IItemStack,
 				   recipe as string[],
-				   replacements as IIngredient[string]){
+				   replacements as IIngredient[string]) {
 	
 	var ingredients =
-		[[null,null,null],
-		 [null,null,null],
-		 [null,null,null]] as IIngredient[][];
+		[[null, null, null],
+		 [null, null, null],
+		 [null, null, null]] as IIngredient[][];
 	
 	mods.extendedcrafting.TableCrafting.addShaped(output,
-		textToIngredients(ingredients, output, recipe, replacements));
+		textToIngredients2(ingredients, recipe, replacements));
 }
 
 function makeExtendedTable5(output as IItemStack,
 				   recipe as string[],
-				   replacements as IIngredient[string]){
+				   replacements as IIngredient[string]) {
 	
 	var ingredients =
-		[[null,null,null,null,null],
-		 [null,null,null,null,null],
-		 [null,null,null,null,null],
-		 [null,null,null,null,null],
-		 [null,null,null,null,null]] as IIngredient[][];
+		[[null, null, null, null, null],
+		 [null, null, null, null, null],
+		 [null, null, null, null, null],
+		 [null, null, null, null, null],
+		 [null, null, null, null, null]] as IIngredient[][];
 	
 	mods.extendedcrafting.TableCrafting.addShaped(output,
-		textToIngredients(ingredients, output, recipe, replacements));
+		textToIngredients2(ingredients, recipe, replacements));
 }
 
 function makeExtendedTable7(output as IItemStack,
 				   recipe as string[],
-				   replacements as IIngredient[string]){
+				   replacements as IIngredient[string]) {
 	
 	var ingredients =
-		[[null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null]] as IIngredient[][];
+		[[null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null]] as IIngredient[][];
 	
 	mods.extendedcrafting.TableCrafting.addShaped(output,
-		textToIngredients(ingredients, output, recipe, replacements));
+		textToIngredients2(ingredients, recipe, replacements));
 }
 
 function makeExtendedTable9(output as IItemStack,
 				   recipe as string[],
-				   replacements as IIngredient[string]){
+				   replacements as IIngredient[string]) {
 	
 	var ingredients =
-		[[null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null],
-		 [null,null,null,null,null,null,null,null,null]] as IIngredient[][];
+		[[null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null]] as IIngredient[][];
 	
 	mods.extendedcrafting.TableCrafting.addShaped(output,
-		textToIngredients(ingredients, output, recipe, replacements));
+		textToIngredients2(ingredients, recipe, replacements));
+}
+
+function makeAvaritiaCrafting(output as IItemStack,
+							  name as string,
+							  recipe as string[],
+							  replacements as IIngredient[string]) {
+	var ingredients =
+		[[null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null],
+		 [null, null, null, null, null, null, null, null, null]] as IIngredient[][];
+	
+	mods.avaritia.ExtremeCrafting.addShaped(name, output
+		textToIngredients2(ingredients, recipe, replacements));
 }
 
 //end file by Anidlebrain

@@ -1,8 +1,19 @@
 ## 更新日志：
 
+#### v0.1-20200902-3
+
+1. 增加mod
+	- [[另一个通用bug修复]AnotherCommonBugFix-1.2.0-1.12.2.jar](https://www.mcbbs.net/thread-857865-1-1.html)
+
+2. 按照上一个mod的文件，更换AE2，林业，星系mod
+
+3. 增加文件 fixResource
+
+4. 增加公告文件 Notice.txt
+
 #### v0.1-20200902-1
 
-提交config备份文件 以确定被修改了的文件
+提交config备份文件 config_backup 以确定被修改了的文件
 
 #### v0.1-20200901-2
 
