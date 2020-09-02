@@ -1,0 +1,6 @@
+elemental_soil.cfg
+general.cfg
+moss.cfg 小刀转换 魔改
+rituals.cfg 柴堆仪式禁用
+crops.cfg 农作物
+spells.cfg 法术
