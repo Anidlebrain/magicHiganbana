@@ -1,0 +1,15 @@
+{
+	x: -4.5d,
+	y: -9.0d,
+	tasks: [{
+		uid: "6c2e41aa",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "woot:cell"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,410 @@
+{
+    "registryname": "dieselgenerator_zpm",
+    "localizedname": "ZPM Diesel Generator",
+	"requires-blueprint": false,
+    "color": "14235b",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyoutputhatch@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "enderio:block_transceiver"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "gregtech:boiler_firebox_casing@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "libvulpes:coil0@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "gregtech:wire_coil@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "gregtech:metal_casing@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+
+            "elements": [
+                "gregtech:frame_tungsten_steel@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "gregtech:wire_coil@8"
+            ]
+        }
+    ]}

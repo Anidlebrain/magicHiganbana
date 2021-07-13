@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: 3.0d,
+	dependencies: [
+		"56eb3278",
+		"d45da546"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "37cf9e3a",
+		type: "item",
+		items: [{
+			item: "prodigytech:ash_bricks"
+		}]
+	}]
+}

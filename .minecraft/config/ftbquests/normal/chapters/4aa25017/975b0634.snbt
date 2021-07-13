@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: 1.5d,
+	tasks: [{
+		uid: "1ebb6e4e",
+		type: "item",
+		items: [{
+			item: "naturesaura:infused_stone"
+		}]
+	}]
+}

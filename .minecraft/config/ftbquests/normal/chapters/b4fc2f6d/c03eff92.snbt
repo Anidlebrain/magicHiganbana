@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: 11.0d,
+	dependencies: [
+		"7762098e"
+	],
+	tasks: [{
+		uid: "54e451f4",
+		type: "item",
+		items: [{
+			id: "minecraft:potion",
+			tag: {
+				Potion: "apotheosis:knowledge"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

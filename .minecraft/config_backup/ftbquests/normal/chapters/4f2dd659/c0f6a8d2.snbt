@@ -1,0 +1,29 @@
+{
+	title: "生机灌注",
+	x: -8.0d,
+	y: 5.0d,
+	description: "生机灌注 万物复苏",
+	dependencies: [
+		"04130363",
+		"6990ed49"
+	],
+	tasks: [{
+		uid: "9997f450",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "roots:spell_dust",
+			tag: {
+				spell_holder: {
+					spell_0: "spell_growth_infusion",
+					selectedSlot: 0,
+					lastCooldown: 0,
+					cooldown: 0
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

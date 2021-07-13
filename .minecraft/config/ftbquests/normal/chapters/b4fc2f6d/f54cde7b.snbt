@@ -1,0 +1,14 @@
+{
+	x: -5.5d,
+	y: 3.0d,
+	dependencies: [
+		"317f4dd4"
+	],
+	tasks: [{
+		uid: "dc0f8257",
+		type: "item",
+		items: [{
+			item: "skyresources:condenser 1 6"
+		}]
+	}]
+}

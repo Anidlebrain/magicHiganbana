@@ -1,0 +1,7 @@
+{
+	title: "工业革命",
+	icon: "skyresources:rockcrusher",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

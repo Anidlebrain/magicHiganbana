@@ -1,0 +1,14 @@
+{
+	x: 22.5d,
+	y: 0.5d,
+	dependencies: [
+		"70638aa8"
+	],
+	tasks: [{
+		uid: "a9f49775",
+		type: "item",
+		items: [{
+			item: "skyresources:ironfreezer"
+		}]
+	}]
+}

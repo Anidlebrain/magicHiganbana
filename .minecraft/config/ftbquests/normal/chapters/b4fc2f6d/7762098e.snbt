@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 9.0d,
+	dependencies: [
+		"8cf48ac9"
+	],
+	tasks: [{
+		uid: "488a46c8",
+		type: "item",
+		items: [{
+			item: "minecraft:experience_bottle"
+		}]
+	}]
+}

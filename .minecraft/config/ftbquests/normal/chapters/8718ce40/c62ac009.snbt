@@ -1,0 +1,11 @@
+{
+	x: -8.5d,
+	y: -11.0d,
+	tasks: [{
+		uid: "bfbb25b8",
+		type: "item",
+		items: [{
+			item: "woot:factorycore 1 6"
+		}]
+	}]
+}

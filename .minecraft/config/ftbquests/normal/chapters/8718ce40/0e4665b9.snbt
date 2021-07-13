@@ -1,0 +1,11 @@
+{
+	x: -2.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "0d6c65f4",
+		type: "item",
+		items: [{
+			item: "woot:controller"
+		}]
+	}]
+}

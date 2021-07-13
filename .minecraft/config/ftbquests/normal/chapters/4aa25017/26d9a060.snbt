@@ -1,0 +1,11 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "0826cc3c",
+		type: "item",
+		items: [{
+			item: "naturesaura:nature_altar"
+		}]
+	}]
+}

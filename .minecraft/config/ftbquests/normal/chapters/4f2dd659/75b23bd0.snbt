@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: 1.0d,
+	dependencies: [
+		"93e0f748"
+	],
+	tasks: [{
+		uid: "94c8b82a",
+		type: "item",
+		items: [{
+			item: "forestry:bog_earth"
+		}]
+	}]
+}

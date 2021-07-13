@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -3.0d,
+	dependencies: [
+		"f3e30143"
+	],
+	tasks: [{
+		uid: "9d91be22",
+		type: "item",
+		items: [{
+			item: "roots:terra_moss"
+		}]
+	}]
+}

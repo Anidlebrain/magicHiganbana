@@ -1,0 +1,26 @@
+{
+	"name": "蝙蝠",
+	"icon": "minecraft:spawn_egg{EntityTag:{id:'minecraft:bat'}}",
+	"category": "animals",
+	"flag": "universalbestiary:entity:minecraft:bat",
+	"advancement": "universalbestiary:minecraft_bat",
+	"pages": [
+		{
+			"type": "text",
+			"text": "$(mob)蝙蝠$()是一种飞行类的动物，会生成在$(thing)主世界$()洞穴之中。它们倒挂在方块在，直到有玩家靠近它，这时它会远离接近它的玩家。"
+		},
+		{
+			"type": "entity",
+			"entity": "minecraft:bat",
+			"scale": 1.5,
+			"offset": 0.1,
+			"text": "$(li)生命值：6$()"
+		},
+		{
+			"type": "spotlight",
+			"item": "xreliquary:mob_ingredient:5",
+			"link_recipe": true,
+			"text": "$(mob)蝙蝠$()只有在被玩家杀死时才有几率掉落$(item)蝙蝠翅膀$()。这是一种炼金材料。"
+		}
+	]
+}

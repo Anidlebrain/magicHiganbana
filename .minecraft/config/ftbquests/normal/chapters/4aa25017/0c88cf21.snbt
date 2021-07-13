@@ -1,0 +1,11 @@
+{
+	x: -5.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "3e0f9dbe",
+		type: "item",
+		items: [{
+			item: "naturesaura:wood_stand"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: -4.0d,
+	y: -1.5d,
+	tasks: [{
+		uid: "3fd71386",
+		type: "item",
+		items: [{
+			item: "techreborn:wire_mill"
+		}]
+	}]
+}

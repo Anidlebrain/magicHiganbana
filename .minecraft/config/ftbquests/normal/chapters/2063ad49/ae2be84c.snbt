@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "701b1418",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "roots:roots_guide"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

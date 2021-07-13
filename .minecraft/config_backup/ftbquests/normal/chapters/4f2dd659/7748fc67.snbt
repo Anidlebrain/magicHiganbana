@@ -1,0 +1,18 @@
+{
+	x: -2.0d,
+	y: 11.0d,
+	dependencies: [
+		"40c15695"
+	],
+	hide: true,
+	tasks: [{
+		uid: "63df4d5d",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "hydroangeas"
+			}
+		}]
+	}]
+}

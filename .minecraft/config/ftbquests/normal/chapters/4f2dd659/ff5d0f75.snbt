@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: 7.0d,
+	dependencies: [
+		"57ba87b3"
+	],
+	tasks: [{
+		uid: "7fb2f69b",
+		type: "item",
+		items: [{
+			item: "randomthings:superlubricentice"
+		}]
+	}]
+}

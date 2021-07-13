@@ -1,0 +1,11 @@
+{
+	x: -8.5d,
+	y: -4.5d,
+	tasks: [{
+		uid: "0a9bf7b0",
+		type: "item",
+		items: [{
+			item: "woot:factorybase"
+		}]
+	}]
+}

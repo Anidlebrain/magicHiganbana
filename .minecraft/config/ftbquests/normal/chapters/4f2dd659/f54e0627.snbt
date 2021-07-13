@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: 5.0d,
+	dependencies: [
+		"264a67ab",
+		"e11f2792"
+	],
+	tasks: [{
+		uid: "d1f3811e",
+		type: "item",
+		items: [{
+			item: "skyresources:alchemyitemcomponent 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: -4.5d,
+	y: -11.0d,
+	tasks: [{
+		uid: "bee22e72",
+		type: "item",
+		items: [{
+			item: "woot:structure 1 6"
+		}]
+	}]
+}

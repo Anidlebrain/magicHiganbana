@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	description: "用锄头锄一下就可以得到",
+	dependencies: [
+		"2f91bbc8"
+	],
+	tasks: [{
+		uid: "3ed0ee4b",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}]
+	}]
+}

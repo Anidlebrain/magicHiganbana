@@ -1,0 +1,11 @@
+{
+	x: -2.0d,
+	y: -7.0d,
+	tasks: [{
+		uid: "c65e7e2e",
+		type: "item",
+		items: [{
+			item: "roots:wildroot"
+		}]
+	}]
+}

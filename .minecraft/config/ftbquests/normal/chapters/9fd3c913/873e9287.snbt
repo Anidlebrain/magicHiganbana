@@ -1,0 +1,9 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "6564346b",
+		type: "checkmark",
+		title: "搭建魔力激光刻蚀机"
+	}]
+}

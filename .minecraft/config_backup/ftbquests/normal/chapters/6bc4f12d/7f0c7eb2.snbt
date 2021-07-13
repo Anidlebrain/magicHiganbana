@@ -1,0 +1,18 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"还好留有南瓜，在不科学的合成中合成了第一个树苗"
+	],
+	dependencies: [
+		"6dfa454b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "04575ec6",
+		type: "item",
+		items: [{
+			item: "minecraft:sapling 1 1"
+		}]
+	}]
+}

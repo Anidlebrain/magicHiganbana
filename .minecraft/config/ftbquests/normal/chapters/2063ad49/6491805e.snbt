@@ -1,0 +1,77 @@
+{
+	x: 1.0d,
+	y: 5.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "cad7a3be",
+		type: "item",
+		items: [{
+			item: {
+				item: {
+					item: {
+						item: {
+							item: {
+								item: {
+									item: {
+										item: {
+											item: {
+												item: {
+													item: {
+														item: {
+															item: {
+																item: {
+																	item: {
+																		item: {
+																			item: {
+																				item: {
+																					item: {
+																						item: {
+																							item: {
+																								item: "buildcraftlib:guide"
+																							},
+																							Count: 1b
+																						},
+																						Count: 1b
+																					},
+																					Count: 1b
+																				},
+																				Count: 1b
+																			},
+																			Count: 1b
+																		},
+																		Count: 1b
+																	},
+																	Count: 1b
+																},
+																Count: 1b
+															},
+															Count: 1b
+														},
+														Count: 1b
+													},
+													Count: 1b
+												},
+												Count: 1b
+											},
+											Count: 1b
+										},
+										Count: 1b
+									},
+									Count: 1b
+								},
+								Count: 1b
+							},
+							Count: 1b
+						},
+						Count: 1b
+					},
+					Count: 1b
+				},
+				Count: 1b
+			}
+		}]
+	}]
+}

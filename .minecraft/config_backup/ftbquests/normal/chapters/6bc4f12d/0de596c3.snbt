@@ -1,0 +1,11 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	hide: true,
+	tasks: [{
+		uid: "6c15314e",
+		type: "stat",
+		stat: "stat.mobKills",
+		value: 10
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 23.0d,
+	y: 6.0d,
+	dependencies: [
+		"fbac8b4a"
+	],
+	tasks: [{
+		uid: "6fc617cb",
+		type: "item",
+		items: [{
+			item: "prodigytech:zorrasteel_ingot"
+		}]
+	}]
+}

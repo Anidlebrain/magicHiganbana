@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	dependencies: [
+		"05eb618e",
+		"09b95c5a"
+	],
+	tasks: [{
+		uid: "f967eae0",
+		type: "item",
+		items: [{
+			item: "roots:terra_spores"
+		}]
+	}]
+}

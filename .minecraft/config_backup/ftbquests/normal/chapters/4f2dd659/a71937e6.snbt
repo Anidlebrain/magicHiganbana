@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: 9.0d,
+	description: "在这个寂静的世界里，火红莲也是会枯萎的",
+	dependencies: [
+		"40c15695",
+		"c11ce2ed"
+	],
+	tasks: [{
+		uid: "0a9ce4f6",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}]
+	}]
+}

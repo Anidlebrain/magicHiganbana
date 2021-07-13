@@ -1,0 +1,36 @@
+{
+	"name": "鸡",
+	"icon": "minecraft:spawn_egg{EntityTag:{id:'minecraft:chicken'}}",
+	"category": "animals",
+	"flag": "universalbestiary:entity:minecraft:chicken",
+	"advancement": "universalbestiary:minecraft_chicken",
+	"pages": [
+		{
+			"type": "text",
+			"text": "$(mob)鸡$()是一种在$(thing)主世界$()随处可见的动物。它被攻击时会逃跑，可以使用$(item)小麦种子$()进行繁殖。$(p)它是食物和其他材料的重要来源，详情见下一页。"
+		},
+		{
+			"type": "entity",
+			"entity": "minecraft:chicken"
+			"text": "$(li)生命值：4$()"
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:feather",
+			"link_recipe": true,
+			"text": "$(mob)鸡$()死亡时会掉落$(item)羽毛$()。 它们主要被用于制作$(item)箭$()和一些飞行道具。"
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:chicken",
+			"link_recipe": true,
+			"text": "$(mob)鸡$()死亡时会掉落$(item)生鸡肉$()。 它们主要被用于制作食物。"
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:egg",
+			"link_recipe": true,
+			"text": "$(mob)鸡$()会每隔一段时间下$(item)鸡蛋$().它们可以被用于制作食物例如$(item)南瓜派$()等等，也可以投掷出去，投掷$(item)鸡蛋$()有一定的几率可以产出小$(mob)鸡$()，最多一次可以生成4只小鸡。"
+		}
+	]
+}

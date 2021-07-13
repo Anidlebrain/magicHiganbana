@@ -1,0 +1,16 @@
+{
+	x: 19.0d,
+	y: 8.0d,
+	dependencies: [
+		"e7eb4317",
+		"c471527d",
+		"5f52ac6f",
+		"119a073c",
+		"b02b4bf4"
+	],
+	tasks: [{
+		uid: "c7f0a1be",
+		type: "checkmark",
+		title: "搭建知识传承仪式"
+	}]
+}

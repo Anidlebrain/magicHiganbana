@@ -1,0 +1,31 @@
+{
+	"name": "牛",
+	"icon": "minecraft:spawn_egg{EntityTag:{id:'minecraft:cow'}}",
+	"category": "animals",
+	"flag": "universalbestiary:entity:minecraft:cow",
+	"advancement": "universalbestiary:minecraft_cow",
+	"pages": [
+		{
+			"type": "text",
+			"text": "$(mob)牛$()是一种在$(thing)主世界$()随处可见的动物。它被攻击时会逃跑，可以使用$(item)小麦$()进行繁殖。$(p)它是食物和其他材料的重要来源，详情见下一页。"
+		},
+		{
+			"type": "entity",
+			"entity": "minecraft:cow",
+			"scale": 0.8,
+			"text": "$(li)生命值：10$()"
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:leather",
+			"link_recipe": true,
+			"text": "$(mob)牛$()在死亡时会掉落$(item)生牛肉$()， They also drop $(item)Leather$(), which can be made into armor or various other items such as $(item)Books$()."
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:milk_bucket",
+			"link_recipe": true,
+			"text": "Using an empty $(item)Bucket$() on a $(mob)Cow$() fills it with $(item)Milk$(). It can then be drinked to clear all potion effects on the user."
+		}
+	]
+}

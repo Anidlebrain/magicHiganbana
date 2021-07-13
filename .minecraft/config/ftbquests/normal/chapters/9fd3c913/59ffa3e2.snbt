@@ -1,0 +1,14 @@
+{
+	x: 21.0d,
+	y: -2.0d,
+	dependencies: [
+		"fb10f702"
+	],
+	tasks: [{
+		uid: "dbbc55d0",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 19"
+		}]
+	}]
+}

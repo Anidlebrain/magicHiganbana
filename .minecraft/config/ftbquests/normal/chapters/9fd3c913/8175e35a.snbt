@@ -1,0 +1,14 @@
+{
+	x: 13.0d,
+	y: -5.0d,
+	dependencies: [
+		"9566d4c2"
+	],
+	tasks: [{
+		uid: "25f7e9e4",
+		type: "item",
+		items: [{
+			item: "prodigytech:inferno_crystal"
+		}]
+	}]
+}

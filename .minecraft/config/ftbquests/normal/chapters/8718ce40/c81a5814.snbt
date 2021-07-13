@@ -1,0 +1,11 @@
+{
+	x: -4.5d,
+	y: -5.0d,
+	tasks: [{
+		uid: "c3b0dd0b",
+		type: "item",
+		items: [{
+			item: "woot:exporter"
+		}]
+	}]
+}

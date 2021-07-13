@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"50988a31"
+	],
+	tasks: [{
+		uid: "a1577c09",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:manabottle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

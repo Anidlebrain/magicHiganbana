@@ -1,0 +1,17 @@
+{
+	x: 13.5d,
+	y: 2.5d,
+	dependencies: [
+		"6254ae96",
+		"eba6bffc",
+		"bdc30f18",
+		"304f7a11"
+	],
+	tasks: [{
+		uid: "5ea4f0ed",
+		type: "item",
+		items: [{
+			item: "skyresources:fusiontable"
+		}]
+	}]
+}

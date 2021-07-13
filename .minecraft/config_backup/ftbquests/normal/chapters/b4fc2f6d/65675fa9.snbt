@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: -2.0d,
+	dependencies: [
+		"23477f2c"
+	],
+	tasks: [{
+		uid: "a5ac3ebd",
+		type: "item",
+		items: [{
+			item: "randomthings:glowingmushroom"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: -1.5d,
+	tasks: [{
+		uid: "cd46fb49",
+		type: "item",
+		items: [{
+			item: "naturesaura:infused_iron"
+		}]
+	}]
+}

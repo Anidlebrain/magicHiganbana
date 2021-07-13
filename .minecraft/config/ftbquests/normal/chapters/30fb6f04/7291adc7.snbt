@@ -1,0 +1,33 @@
+{
+	x: -5.0d,
+	y: 9.5d,
+	description: "任意一种灌注石均可完成任务",
+	dependencies: [
+		"63678865"
+	],
+	tasks: [{
+		uid: "633f2f15",
+		type: "item",
+		title: "灌注石",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "skyresources:sandstoneinfusionstone"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "skyresources:redsandstoneinfusionstone"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "skyresources:alchemicalinfusionstone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

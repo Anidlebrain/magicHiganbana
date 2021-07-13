@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "1fedbabe",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thermalfoundation:tome_lexicon"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

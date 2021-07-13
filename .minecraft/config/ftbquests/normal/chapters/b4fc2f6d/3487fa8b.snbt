@@ -1,0 +1,28 @@
+{
+	x: 0.0d,
+	y: -9.0d,
+	dependencies: [
+		"cc7a61b5"
+	],
+	tasks: [{
+		uid: "3e69ac5b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "roots:staff",
+			tag: {
+				spell_holder: {
+					spell_0: "spell_growth_infusion",
+					selectedSlot: 1,
+					lastCooldown: 0,
+					spell_1: "spell_supplication",
+					cooldown: 0
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

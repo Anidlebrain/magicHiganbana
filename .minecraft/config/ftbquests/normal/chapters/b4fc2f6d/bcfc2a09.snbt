@@ -1,0 +1,14 @@
+{
+	x: 10.5d,
+	y: -9.0d,
+	dependencies: [
+		"a8bcc7d9"
+	],
+	tasks: [{
+		uid: "211b552d",
+		type: "item",
+		items: [{
+			item: "roots:offertory_plate"
+		}]
+	}]
+}

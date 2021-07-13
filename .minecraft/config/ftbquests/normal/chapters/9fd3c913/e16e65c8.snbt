@@ -1,0 +1,11 @@
+{
+	x: 12.5d,
+	y: 5.0d,
+	tasks: [{
+		uid: "d239ef6d",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom 1 3"
+		}]
+	}]
+}

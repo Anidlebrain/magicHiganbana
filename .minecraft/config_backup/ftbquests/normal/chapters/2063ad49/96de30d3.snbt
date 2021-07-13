@@ -1,0 +1,32 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "9b0a270e",
+		type: "item",
+		items: [{
+			item: {
+				item: {
+					item: {
+						item: {
+							item: {
+								item: {
+									item: "magneticraft:guide_book"
+								},
+								Count: 1b
+							},
+							Count: 1b
+						},
+						Count: 1b
+					},
+					Count: 1b
+				},
+				Count: 1b
+			}
+		}]
+	}]
+}

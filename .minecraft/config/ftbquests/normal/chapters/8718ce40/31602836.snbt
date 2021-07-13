@@ -1,0 +1,11 @@
+{
+	x: -12.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "1dc266c7",
+		type: "item",
+		items: [{
+			item: "woot:stygianironingot"
+		}]
+	}]
+}

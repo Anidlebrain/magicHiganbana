@@ -1,0 +1,23 @@
+{
+	title: "工程模块",
+	x: 6.5d,
+	y: 10.5d,
+	dependencies: [
+		"c03eff92",
+		"a1c2355e"
+	],
+	tasks: [{
+		uid: "5f661121",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "工程模块"
+			}
+		}],
+		ignore_damage: true
+	}]
+}

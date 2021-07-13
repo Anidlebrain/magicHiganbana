@@ -1,0 +1,11 @@
+{
+	x: -12.0d,
+	y: -6.5d,
+	tasks: [{
+		uid: "ba8cb24e",
+		type: "item",
+		items: [{
+			item: "woot:anvil"
+		}]
+	}]
+}

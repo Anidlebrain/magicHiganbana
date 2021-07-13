@@ -1,0 +1,18 @@
+{
+	x: -8.0d,
+	y: 2.0d,
+	text: [
+		"机智的你发现一个雪块可以采集8个雪球。那还要不要做雪傀儡呢？",
+		"雪应该不会融化吧?"
+	],
+	dependencies: [
+		"40edfb07"
+	],
+	tasks: [{
+		uid: "5544e5b2",
+		type: "item",
+		items: [{
+			item: "minecraft:snow"
+		}]
+	}]
+}
