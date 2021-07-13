@@ -1,36 +1,40 @@
+##################################################
+##          [Author]:   Anidlebrain             ##
+##          [License]:  CC BY-NC-SA 4.0         ##
+##          [Info]:     根源魔法 研钵            ##
+##################################################
+
 #priority 2000
 import mods.roots.Mortar;
-
-//空岛资源 抽水器 注入 by Anidlebrain
+import crafttweaker.item.IIngredient;
 
 //强化骨粉
 recipes.remove(<skyresources:baseitemcomponent:4>);
-Mortar.addRecipe(<skyresources:baseitemcomponent:4> * 2, [<minecraft:rotten_flesh>, <minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>, null]);
+Mortar.addRecipe(<skyresources:baseitemcomponent:4> * 2, [<minecraft:rotten_flesh>, <minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>, <minecraft:rotten_flesh>]);
 
 //花肥
 recipes.remove(<botania:fertilizer>);
-Mortar.addRecipe(<botania:fertilizer>, [<skyresources:baseitemcomponent:4>, <forestry:ash>, <minecraft:pumpkin>, <minecraft:rotten_flesh>, <minecraft:snowball>]);
-Mortar.addRecipe(<botania:fertilizer>, [<skyresources:baseitemcomponent:4>, <forestry:ash>, <roots:petals>, null, null]);
+Mortar.addRecipe(<botania:fertilizer>, [<skyresources:baseitemcomponent:4>, <forestry:ash>, <ore:rootsBark>, <minecraft:rotten_flesh>, <ore:rootsBark>]);
+Mortar.addRecipe(<botania:fertilizer> * 2, [<skyresources:baseitemcomponent:4>, <skyresources:baseitemcomponent:4>, <ore:mysticaldyes>, <ore:mysticaldyes>, <ore:mysticaldyes>]);
 
 //花瓣
 Mortar.removeRecipe(<roots:petals>);
 Mortar.addRecipe(<roots:petals>, [<ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>]);
 
 //咒术尘 生机灌溉
-Mortar.removeRecipe(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion", selectedSlot: 0, lastCooldown: 0, cooldown: 0}}));
+Mortar.removeRecipe(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion"}}));
 Mortar.addRecipe(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion", selectedSlot: 0, lastCooldown: 0, cooldown: 0}}),
 [<ore:treeSapling>, <skyresources:baseitemcomponent>, <ore:rootsBark>, <skyresources:baseitemcomponent:4>, <roots:petals>]);
 
 //自然物质
+var plant as IIngredient = <ore:treeSapling> | <ore:listAllgrain> | <ore:listAllveggie> | <ore:sugarcane> | <skyresources:cactusfruit> | <ore:listAllfruit> | <ore:listAllberry> | <ore:listAllgreenveggie>;
 recipes.remove(<skyresources:baseitemcomponent>);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:treeSapling>, <ore:treeSapling>, <ore:treeSapling>, <ore:treeSapling>, <ore:treeSapling>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<skyresources:cactusfruit>, <skyresources:cactusfruit>, <skyresources:cactusfruit>, <skyresources:cactusfruit>, <skyresources:cactusfruit>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:listAllfruit>, <ore:listAllfruit>, <ore:listAllfruit>, <ore:listAllfruit>, <ore:listAllfruit>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:listAllberry>, <ore:listAllberry>, <ore:listAllberry>, <ore:listAllberry>, <ore:listAllberry>]);
-Mortar.addRecipe(<skyresources:baseitemcomponent>, [<ore:listAllgreenveggie>, <ore:listAllgreenveggie>, <ore:listAllgreenveggie>, <ore:listAllgreenveggie>, <ore:listAllgreenveggie>]);
+Mortar.addRecipe(<skyresources:baseitemcomponent>, [plant, plant, plant, plant, plant]);
+
+//怪物精华
+var monster as IIngredient = <thaumcraft:brain> | <xreliquary:mob_ingredient:6> | <xreliquary:mob_ingredient:2> | <xreliquary:mob_ingredient> | <xreliquary:mob_ingredient:3>;
+Mortar.addRecipe(<item:contenttweaker:monster_essence> * 3, [monster, monster, monster, monster, monster]);
+
 
 //烈焰粉
 Mortar.removeRecipe(<minecraft:blaze_powder>);
@@ -44,4 +48,14 @@ Mortar.removeRecipe(<mysticalworld:iron_dust>);
 //亮灰荧石粉
 Mortar.removeRecipe(<mysticalworld:silver_dust>);
 
-//end file by Anidlebrain
+//水晶碎片
+mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:1>);
+Mortar.addRecipe(<skyresources:alchemyitemcomponent:1> * 2, [<ore:fivePhasesCrystal>]);
+
+//流明精华
+recipes.remove(<extendedcrafting:material:7>);
+Mortar.addRecipe(<extendedcrafting:material:7> * 2, [<minecraft:gunpowder>, <botania:manaresource:8>, <botania:manaresource:8>, <botania:manaresource:23>, <botania:manaresource:23>]);
+
+//含碳福鲁伊克斯复合物
+recipes.remove(<threng:material:1>);
+Mortar.addRecipe(<threng:material:1>, [<ore:dustFluix>, <ore:dustFluix>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:itemSilicon>]);

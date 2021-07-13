@@ -1,7 +1,12 @@
+##################################################
+##          [Author]:   Anidlebrain             ##
+##          [License]:  CC BY-NC-SA 4.0         ##
+##          [Info]:     沉浸工程 焦炉            ##
+##################################################
+
 #priority 2000
 import mods.immersiveengineering.CokeOven;
 
-//沉浸工程 焦炉 by Anidlebrain
 
 //删除所有配方
 CokeOven.removeAll();
@@ -14,5 +19,3 @@ CokeOven.addRecipe(<immersiveengineering:material:6>, 100, <minecraft:coal>, 120
 
 //焦煤块
 CokeOven.addRecipe(<immersiveengineering:stone_decoration:3>, 1000, <minecraft:coal_block>, 13000);
-
-//end file by Anidlebrain

@@ -1,3 +1,51 @@
+##################################################
+##          [Author]:   Anidlebrain             ##
+##          [License]:  CC BY-NC-SA 4.0         ##
+##          [Info]:     植物魔法 凝矿兰          ##
+##################################################
+
+#priority 2000
+import mods.botania.Orechid;
+import mods.botania.OrechidIgnem;
+
+
+//蕴魔秘银矿
+Orechid.removeOre(<ore:oreMithril>);
+OrechidIgnem.removeOre(<ore:oreMithril>);
+//硫磺
+Orechid.removeOre(<ore:dustSulfur>);
+OrechidIgnem.removeOre(<ore:dustSulfur>);
+//钨矿石
+Orechid.removeOre(<ore:oreTungsten>);
+OrechidIgnem.removeOre(<ore:oreTungsten>);
+//锇矿石
+Orechid.removeOre(<ore:oreOsmium>);
+OrechidIgnem.removeOre(<ore:oreOsmium>);
+//焦黑石英
+Orechid.removeOre(<ore:oreQuartzBlack>);
+OrechidIgnem.removeOre(<ore:oreQuartzBlack>);
+
+//零素矿石
+Orechid.addOre(<ore:oreEezo>, 549);
+
+//熔晶矿石
+Orechid.addOre(<ore:oreOsram>, 951);
+
+//杜兰特矿石
+Orechid.addOre(<ore:oreDuranite>, 843);
+
+//绯红铁矿石
+Orechid.addOre(<ore:oreKarmesine>, 765);
+
+//欧维姆矿石
+Orechid.addOre(<ore:oreOvium>, 957);
+
+
+//钷矿石
+OrechidIgnem.addOre(<ore:orePrometheum>, 483);
+
+//若氏铁矿石
+OrechidIgnem.addOre(<ore:oreJauxum>, 775);
 
 
 /*

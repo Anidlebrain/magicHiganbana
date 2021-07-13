@@ -1,8 +1,11 @@
+##################################################
+##          [Author]:   Anidlebrain             ##
+##          [License]:  CC BY-NC-SA 4.0         ##
+##          [Info]:     世界合成 爆炸合成        ##
+##################################################
+
 #priority 2000
 import mods.inworldcrafting.ExplosionCrafting;
 
-//世界合成 爆炸合成 by Anidlebrain
-
-//ExplosionCrafting.
-
-//end file by Anidlebrain
+recipes.remove(<prodigytech:explosion_furnace>);
+ExplosionCrafting.explodeBlockRecipe(<prodigytech:explosion_furnace>, <bloodmagic:soul_forge>, 30);

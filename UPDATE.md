@@ -1,5 +1,25 @@
 ## 更新日志：
 
+1. 增加 mod
+
+	- [[封包合成]PackagedAuto-1.12.2-1.0.2.6.jar](https://www.curseforge.com/minecraft/mc-mods/packagedauto)
+	
+	- [[封包合成附属：合成拓展]PackagedExCrafting-1.12.2-1.0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting)
+	
+	- [[封包合成附属：无尽贪婪]PackagedAvaritia-1.12.2-1.0.1.4.jar](https://www.curseforge.com/minecraft/mc-mods/packagedavaritia) 
+	
+	- [[霏雪寄语之地]WinterWonderLand-1.2.2.jar](https://www.curseforge.com/minecraft/mc-mods/winter-wonder-land)
+	
+	- [[禁用原版工具]tooltweaks-1.0.7.jar](https://www.curseforge.com/minecraft/mc-mods/tooltweaks)
+	
+	- [[雪-真实的魔法]SnowRealMagic-0.3.3.jar](https://www.curseforge.com/minecraft/mc-mods/snow-real-magic)
+	
+	~~~- [[神秘时代6]Thaumcraft-1.12.2-6.1.BETA26.jar](https://www.curseforge.com/minecraft/mc-mods/thaumcraft)~~~
+	
+	- [[通用机械]Mekanism-1.12.2-9.8.3.390.jar](https://www.curseforge.com/minecraft/mc-mods/mekanism)
+	
+	- [[潮涌]Surge-1.12.2-2.0.77.jar](https://www.curseforge.com/minecraft/mc-mods/surge)
+
 #### v0.1-20200902-3
 
 1. 增加mod

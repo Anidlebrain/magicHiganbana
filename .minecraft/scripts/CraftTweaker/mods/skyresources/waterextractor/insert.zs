@@ -1,7 +1,14 @@
+##################################################
+##          [Author]:   Anidlebrain             ##
+##          [License]:  CC BY-NC-SA 4.0         ##
+##          [Info]:     空岛资源 抽水器 注入     ##
+##################################################
+
+
 #priority 2000
 import mods.skyresources.waterextractor.insert;
 
-//空岛资源 抽水器 注入 by Anidlebrain
+// by Anidlebrain
 
 //沼泽泥
 recipes.remove(<forestry:bog_earth>);

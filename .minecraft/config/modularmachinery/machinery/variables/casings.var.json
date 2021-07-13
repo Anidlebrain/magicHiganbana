@@ -22,5 +22,13 @@
     "casings_item": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus"
+    ],
+    "bookshelf_oak_0": [
+        "chisel:bookshelf_oak@0",
+        "chisel:bookshelf_spruce@0",
+        "chisel:bookshelf_birch@0",
+        "chisel:bookshelf_jungle@0",
+        "chisel:bookshelf_acacia@0",
+        "chisel:bookshelf_darkoak@0"
     ]
 }
