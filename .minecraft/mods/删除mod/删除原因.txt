@@ -1,0 +1,11 @@
+[魔改：生物生成]spawntabletweaker-1.0.jar.disabled   改用其他同类mod
+
+[科技][模块机械化附属：模块多样性]Modular+Diversity-1.10.jar.disabled 和 [科技][模块机械化附属：模块魔法]modularmagic-1.4.0.jar.disabled 使用
+[模块化机械附属：咕咕工具]gugu-utils-0.6.1.2.jar 替换
+
+[科技][模块机械化]modularmachinery-1.12.2-1.10.0.jar
+因使用咕咕工具 更新为最新版
+
+[魔改：可视化合成表编辑器]MineTweakerRecipeMaker-1.12.2-1.2.2.30.jar 不必要mod
+
+其他删除均为平衡性调整

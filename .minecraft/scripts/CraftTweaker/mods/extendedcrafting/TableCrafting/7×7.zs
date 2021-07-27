@@ -43,4 +43,39 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <woot:structure:9>, [
 ]);
 
 
+//压缩空间制作器
+recipes.remove(<compactmachines3:fieldprojector>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <compactmachines3:fieldprojector> * 2, [
+	[null, null, null, null, null, <extrautils2:screen>, <extrautils2:screen>], 
+	[null, null, null, null, null, <extrautils2:screen>, <extrautils2:screen>], 
+	[null, null, null, <pneumaticcraft:redstone_module>, null, <extrautils2:screen>, <extrautils2:screen>], 
+	[null, null, <pneumaticcraft:redstone_module>, <compactmachines3:psd>, <pneumaticcraft:redstone_module>, <extrautils2:screen>, <extrautils2:screen>], 
+	[null, null, null, <pneumaticcraft:redstone_module>, <pneumaticcraft:assembly_controller>, <extrautils2:screen>, <extrautils2:screen>], 
+	[<ore:plasticLightGray>, <ore:plasticLightGray>, <ore:plasticLightGray>, <pneumaticcraft:heat_sink>, <ore:plasticLightGray>, <ore:plasticLightGray>, <ore:plasticLightGray>], 
+	[<ore:blockIronCompressed>, <ore:blockIronCompressed>, <ore:blockIronCompressed>, <ore:blockIronCompressed>, <ore:blockIronCompressed>, <ore:blockIronCompressed>, <ore:blockIronCompressed>]
+]);
 
+//精英合成组件
+recipes.remove(<extendedcrafting:material:16>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:material:16>, [
+	[null, null, null, null, <ore:plateDiamond>, null, null], 
+	[null, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <ore:plateDiamond>, <extendedcrafting:material:2>, null], 
+	[<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>, <ore:plateCrystaltine>, <ore:plateDiamond>, <ore:plateDiamond>], 
+	[null, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <ore:plateDiamond>, <extendedcrafting:material:2>, null], 
+	[null, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <ore:plateDiamond>, <extendedcrafting:material:2>, null], 
+	[null, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <ore:plateDiamond>, <extendedcrafting:material:2>, null], 
+	[null, null, null, null, <ore:plateDiamond>, null, null]
+]);
+
+
+//精英催化剂
+recipes.remove(<extendedcrafting:material:10>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:material:10>, [
+	[null, null, null, <extendedcrafting:material:16>, null, null, null], 
+	[null, null, <extendedcrafting:material:16>, <extendedcrafting:material:9>, <extendedcrafting:material:16>, null, null], 
+	[null, <extendedcrafting:material:16>, <extendedcrafting:material:9>, <extendedcrafting:material:8>, <extendedcrafting:material:9>, <extendedcrafting:material:16>, null], 
+	[<extendedcrafting:material:16>, <extendedcrafting:material:9>, <extendedcrafting:material:8>, <extendedcrafting:material:15>, <extendedcrafting:material:8>, <extendedcrafting:material:9>, <extendedcrafting:material:16>], 
+	[null, <extendedcrafting:material:16>, <extendedcrafting:material:9>, <extendedcrafting:material:8>, <extendedcrafting:material:9>, <extendedcrafting:material:16>, null], 
+	[null, null, <extendedcrafting:material:16>, <extendedcrafting:material:9>, <extendedcrafting:material:16>, null, null], 
+	[null, null, null, <extendedcrafting:material:16>, null, null, null]
+]);

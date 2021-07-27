@@ -76,7 +76,7 @@ ThermionicFabricator.addCast(<forestry:thermionic_tubes:7>, [
 
 //橡胶电子管
 ThermionicFabricator.removeCast(<forestry:thermionic_tubes:8>);
-ThermionicFabricator.addCast(<forestry:thermionic_tubes:6>, [
+ThermionicFabricator.addCast(<forestry:thermionic_tubes:8>, [
     [<ore:plateObsidian>, <ore:fusedQuartz>, <ore:plateObsidian>], 
     [<appliedenergistics2:material:13>, <item:minecraft:obsidian>, <appliedenergistics2:material:15>], 
     [<ore:plateObsidian>, <ore:fusedQuartz>, <ore:plateObsidian>]
@@ -84,7 +84,7 @@ ThermionicFabricator.addCast(<forestry:thermionic_tubes:6>, [
 
 //绿宝石电子管
 ThermionicFabricator.removeCast(<forestry:thermionic_tubes:9>);
-ThermionicFabricator.addCast(<forestry:thermionic_tubes:6>, [
+ThermionicFabricator.addCast(<forestry:thermionic_tubes:9>, [
     [<ore:plateEmerald>, <ore:fusedQuartz>, <ore:plateEmerald>], 
     [<appliedenergistics2:material:13>, <item:minecraft:emerald>, <appliedenergistics2:material:15>], 
     [<ore:plateEmerald>, <ore:fusedQuartz>, <ore:plateEmerald>]
@@ -115,11 +115,3 @@ ThermionicFabricator.addCast(<forestry:thermionic_tubes:11>, [
     [<appliedenergistics2:material:13>, <ore:ingotEnderium>, <appliedenergistics2:material:15>], 
     [<ore:plateEnderium>, <ore:fusedQuartz>, <ore:plateEnderium>]
     ], <liquid:glass> * 800);
-
-//共振仪
-recipes.remove(<extrautils2:resonator>);
-ThermionicFabricator.addCast(<extrautils2:resonator>, [
-    [<ore:plateEnderium>, <ore:fusedQuartz>, <ore:plateEnderium>], 
-    [<appliedenergistics2:material:13>, <ore:ingotEnderium>, <appliedenergistics2:material:15>], 
-    [<ore:plateEnderium>, <ore:fusedQuartz>, <ore:plateEnderium>]
-    ], <liquid:tree_oil> * 600);

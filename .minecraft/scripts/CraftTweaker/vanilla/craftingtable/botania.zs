@@ -112,6 +112,18 @@ zenClass BotaniaRecipes{
 			{ A : <botania:manaresource>,
 			  B : <botania:managlasspane>}
 		);
+
+		//随想之茧
+		recipes.remove(<botania:lens>);
+		recipesUtils.addRecipe(<botania:lens>,
+			["AAA",
+			 "CBC",
+			 "ADA"],
+			{ A : <randomthings:ingredient:12>,
+			  B : <botania:manaresource:22>,
+			  C : <bloodmagic:blood_orb>,
+			  D : <botania:manaresource:8>}
+		);
 	}
 }
 

@@ -13,7 +13,7 @@
 	tasks: [{
 		uid: "62ea6aa9",
 		type: "checkmark",
-		title: "搭建挤压机"
+		title: "搭建工业挤压机"
 	}],
 	rewards: [{
 		uid: "31cd2a4e",

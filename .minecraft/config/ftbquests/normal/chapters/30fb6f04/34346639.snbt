@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: -6.0d,
+	dependencies: [
+		"5cb11d01"
+	],
+	tasks: [{
+		uid: "6f3c3609",
+		type: "item",
+		items: [{
+			item: "xreliquary:mob_ingredient 1 15"
+		}]
+	}]
+}

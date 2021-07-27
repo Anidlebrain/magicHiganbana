@@ -34,7 +34,13 @@
 																									item: {
 																										item: {
 																											item: {
-																												item: "magneticraft:guide_book"
+																												item: {
+																													item: {
+																														item: "magneticraft:guide_book"
+																													},
+																													Count: 1b
+																												},
+																												Count: 1b
 																											},
 																											Count: 1b
 																										},

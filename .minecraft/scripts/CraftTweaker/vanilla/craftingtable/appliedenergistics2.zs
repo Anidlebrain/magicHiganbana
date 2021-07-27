@@ -241,7 +241,7 @@ zenClass Appliedenergistics2Recipes{
 			 "ABA",
 			 " A "],
 			{ A : <ore:plateTitanium>,
-			  B : <actuallyadditions:item_misc:19>,
+			  B : <minecraft:nether_star>,
               C : <botania:turntable>}
 		);
 
@@ -254,21 +254,21 @@ zenClass Appliedenergistics2Recipes{
 
         //ME接口
         recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
-        recipes.addShaped(<appliedenergistics2:interface>, [
+        recipesUtils.addRecipe(<appliedenergistics2:interface>, [
             [<ore:ingotFluixSteel>, <immersiveengineering:wooden_device0:3>, <ore:ingotFluixSteel>], 
             [<appliedenergistics2:material:44>, <randomthings:advancedredstoneinterface:0>, <appliedenergistics2:material:43>], 
             [<ore:ingotFluixSteel>, <ore:ingotFluixSteel>, <ore:ingotFluixSteel>]]);
             
         //ME流体接口
         recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");
-        recipes.addShaped(<appliedenergistics2:fluid_interface>, [
+        recipesUtils.addRecipe(<appliedenergistics2:fluid_interface>, [
             [<ore:plateLapis>, <immersiveengineering:wooden_device0:7>, <ore:plateLapis>], 
             [<appliedenergistics2:material:44>, <randomthings:advancedredstoneinterface:0>, <appliedenergistics2:material:43>], 
             [<ore:plateLapis>, <ore:plateLapis>, <ore:plateLapis>]]);
             
         //能源接收器
         recipes.remove(<appliedenergistics2:energy_acceptor>);
-        recipes.addShaped(<appliedenergistics2:energy_acceptor>, [
+        recipesUtils.addRecipe(<appliedenergistics2:energy_acceptor>, [
             [<ore:ingotFluixSteel>, <appliedenergistics2:quartz_glass>, <ore:ingotFluixSteel>], 
             [<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:0>, <appliedenergistics2:quartz_glass>], 
             [<ore:ingotFluixSteel>, <appliedenergistics2:quartz_glass>, <ore:ingotFluixSteel>]]);
@@ -283,10 +283,21 @@ zenClass Appliedenergistics2Recipes{
 			  B : <appliedenergistics2:quartz_glass>,
               C : <ore:plateRedstone>}
 		);
+
+        //充能器
+        recipes.remove(<appliedenergistics2:charger>);
+        recipesUtils.addRecipe(<appliedenergistics2:charger>,
+            ["ABA",
+			 "A  ",
+			 "ABA"],
+			{ A : <ore:plateIron>,
+			  B : <appliedenergistics2:material>}
+		);
+        
  /*           
         //照明面板
         recipes.removeByRecipeName("appliedenergistics2:network/parts/panels_semi_dark_monitor");
-        recipes.addShaped(<appliedenergistics2:part:180>, []);
+        recipesUtils.addRecipe(<appliedenergistics2:part:180>, []);
 
         //充能器 
         recipes.remove(<appliedenergistics2:charger>);
@@ -304,7 +315,7 @@ zenClass Appliedenergistics2Recipes{
 
         //ME量子环 
         recipes.remove(<appliedenergistics2:quantum_ring>);
-        recipes.addShaped(<appliedenergistics2:quantum_ring>, [
+        recipesUtils.addRecipe(<appliedenergistics2:quantum_ring>, [
         [<ore:plateinvar>, <appliedenergistics2:material:23>, <ore:plateinvar>], 
         [<appliedenergistics2:material:24>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>], 
         [<ore:plateinvar>, <appliedenergistics2:material:23>,<ore:plateinvar>]]);
@@ -321,28 +332,28 @@ zenClass Appliedenergistics2Recipes{
 /*          
         // 1k 存储
         recipes.remove(<appliedenergistics2:material:35>);	
-        recipes.addShaped(<appliedenergistics2:material:35>, [
+        recipesUtils.addRecipe(<appliedenergistics2:material:35>, [
             [<minecraft:glass>, <gregtech:meta_item_1:12237>, <minecraft:glass>], 
             [<gregtech:meta_item_1:12237>, <ore:circuitBasic>, <gregtech:meta_item_1:12237>], 
             [<minecraft:glass>, <gregtech:meta_item_1:12237>, <minecraft:glass>]]);
             
         // 4k 存储
         recipes.remove(<appliedenergistics2:material:36>);	
-        recipes.addShaped(<appliedenergistics2:material:36>, [
+        recipesUtils.addRecipe(<appliedenergistics2:material:36>, [
             [<minecraft:glass>, <appliedenergistics2:material:22>, <minecraft:glass>],
             [<appliedenergistics2:material:35>, <ore:circuitGood>, <appliedenergistics2:material:35>],
             [<minecraft:glass>, <appliedenergistics2:material:35>, <minecraft:glass>]]);
             
         // 16k 存储
         recipes.remove(<appliedenergistics2:material:37>);
-        recipes.addShaped(<appliedenergistics2:material:37>, [
+        recipesUtils.addRecipe(<appliedenergistics2:material:37>, [
             [<minecraft:glass>, <appliedenergistics2:material:24>, <minecraft:glass>],
             [<appliedenergistics2:material:36>, <ore:circuitAdvanced>, <appliedenergistics2:material:36>],
             [<minecraft:glass>, <appliedenergistics2:material:36>, <minecraft:glass>]]);
             
         // 64k 存储
         recipes.remove(<appliedenergistics2:material:38>);
-        recipes.addShaped(<appliedenergistics2:material:38>, [
+        recipesUtils.addRecipe(<appliedenergistics2:material:38>, [
             [<appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <appliedenergistics2:material:22>],
             [<appliedenergistics2:material:37>, <ore:circuitExtreme>, <appliedenergistics2:material:37>],
             [<appliedenergistics2:material:22>, <appliedenergistics2:material:37>, <appliedenergistics2:material:22>]]);

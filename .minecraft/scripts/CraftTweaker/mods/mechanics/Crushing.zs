@@ -5,6 +5,8 @@
 ##          [explain]:  后面的double数组之和必须为1.00       ##
 #############################################################
 
+#modloaded mechanics
+
 #priority 2000
 import mods.mechanics.addCrushingBlockRecipe;
 import mods.mechanics.removeCrushingBlockRecipe;

@@ -1,0 +1,17 @@
+{
+	x: 10.0d,
+	y: -4.5d,
+	dependencies: [
+		"fd0b3be8"
+	],
+	tasks: [{
+		uid: "5b907155",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 0
+			}
+		}]
+	}]
+}

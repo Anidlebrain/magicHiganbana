@@ -9,3 +9,6 @@ import mods.tconstruct.Alloy;
 
 //陨铁
 Alloy.addRecipe(<fluid:meteorite_fluid>, [<fluid:sky_stone>, <fluid:iron>]);
+
+//红石琥珀金
+Alloy.addRecipe(<fluid:fluxed_electrum>, [<fluid:redstone> * 3, <fluid:electrum>]);

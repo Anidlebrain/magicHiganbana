@@ -1,7 +1,7 @@
 ######################################################
 ##          [Author]:   Anidlebrain                 ##
 ##          [License]:  CC BY-NC-SA 4.0             ##
-##          [Info]:     模块化机械 知识传承          ##
+##          [Info]:     模块化机械 激光蚀刻机         ##
 ######################################################
 
 #priority 2000
@@ -16,7 +16,7 @@ zenClass PrecisionLaserEngraverRecipes {
         m_recipesNum = 0;
         m_machineName = "precision_laser_engraver";
         m_recipeTime = 2000;
-        m_block = <item:enderio:block_alloy>;
+        m_block = <appliedenergistics2:quartz_block>;
         m_lens = <item:botania:lens>;
     }
 

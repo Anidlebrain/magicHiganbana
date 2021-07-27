@@ -3,7 +3,7 @@
 ##          [License]:  CC BY-NC-SA 4.0         ##
 ##          [Info]:     沉浸工程 蓝图            ##
 ##################################################
-
+#priority 2000
 import mods.immersiveengineering.Blueprint;
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -28,8 +28,6 @@ Blueprint.addRecipe("发电机", <item:immersiveengineering:metal_device1:2>, [<
 //热传导发电机
 recipes.remove(<item:immersiveengineering:metal_device1:3>);
 Blueprint.addRecipe("发电机", <item:immersiveengineering:metal_device1:3> * 2, [<ore:ingotSteel> * 3, <ore:plateConstantan> * 6, <item:immersiveengineering:metal_decoration0:0>]);
-
-// 预留更多实用设备的发电机
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 //工程模块

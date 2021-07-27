@@ -30,7 +30,13 @@
 																					item: {
 																						item: {
 																							item: {
-																								item: "buildcraftlib:guide"
+																								item: {
+																									item: {
+																										item: "buildcraftlib:guide"
+																									},
+																									Count: 1b
+																								},
+																								Count: 1b
 																							},
 																							Count: 1b
 																						},

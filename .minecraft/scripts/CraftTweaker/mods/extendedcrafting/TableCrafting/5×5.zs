@@ -43,17 +43,6 @@ recipesUtils.makeExtendedTable5(
     }
 );
 
-
-//供桌
-recipes.remove(<naturesaura:offering_table>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <naturesaura:offering_table>, [
-	[<ore:leather>, <naturesaura:token_anger>, <naturesaura:token_sorrow>, <naturesaura:token_terror>, <ore:leather>], 
-	[null, <naturesaura:infused_stone>, <naturesaura:token_fear>, <naturesaura:infused_stone>, null], 
-	[<ore:elvenPixieDust>, null, <ore:runeManaB>, null, <ore:elvenPixieDust>], 
-	[null, <naturesaura:infused_stone>, <naturesaura:infused_iron>, <naturesaura:infused_stone>, null], 
-	[<naturesaura:infused_stone>, <naturesaura:infused_iron>, <ore:logWood>, <naturesaura:infused_iron>, <naturesaura:infused_stone>]
-]);
-
 //福鲁伊克斯逻辑单元
 recipes.remove(<threng:material:4>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <threng:material:4>, [

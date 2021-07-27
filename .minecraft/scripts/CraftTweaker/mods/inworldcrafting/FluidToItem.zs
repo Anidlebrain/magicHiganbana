@@ -31,3 +31,6 @@ FluidToItem.transform(<prodigytech:zorrasteel_raw>, <liquid:plantoil>, [<pneumat
 //太阳晶体 空
 recipes.remove(<extrautils2:suncrystal:250>);
 FluidToItem.transform(<extrautils2:suncrystal:250>, <liquid:liquid_sunshine>, [<immersiveengineering:bullet:2>.withTag({bullet: "crystalwill"}), <prodigytech:aeternus_crystal>], true);
+
+//基片
+FluidToItem.transform(<mekanism:substrate>, <liquid:grignard_reagent>, [<item:contenttweaker:aluminium_chloride>], true);

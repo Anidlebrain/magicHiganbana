@@ -59,6 +59,16 @@ zenClass RecipesUtils
 
 	//工作台配方添加
 	function addRecipe(output as IItemStack,
+					input as IIngredient[][]){
+		
+		val type as string[] = output.definition.id.split(":");
+		m_recipesNum = m_recipesNum + 1;
+		var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
+		//print(name);
+		recipes.addShaped(name, output, input);
+	}
+
+	function addRecipe(output as IItemStack,
 					recipe as string[],
 					replacements as IIngredient[string]){
 					

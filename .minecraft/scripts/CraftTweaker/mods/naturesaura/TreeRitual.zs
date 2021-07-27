@@ -30,7 +30,7 @@ treeRitualRecipe(<naturesaura:nature_altar>,
      <botania:pylon:1>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>]);
 
 //恐怖徽章
-treeRitualRecipe(<naturesaura:token_terror>, 
+treeRitualRecipe(<naturesaura:token_fear>, 
     [<minecraft:soul_sand>, <naturesaura:gold_leaf>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient:6>,
      <xreliquary:mob_ingredient:5>, <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"})]);
 

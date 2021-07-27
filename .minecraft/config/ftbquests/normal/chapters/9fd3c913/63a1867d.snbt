@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: -9.5d,
+	dependencies: [
+		"adea55d3"
+	],
+	tasks: [{
+		uid: "3260b001",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}]
+}

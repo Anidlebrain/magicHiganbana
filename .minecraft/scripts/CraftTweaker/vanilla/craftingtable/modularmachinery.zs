@@ -19,6 +19,7 @@ zenClass ModularMachineryRecipes{
 	function recipesInit() {
 
 		//魔力输入
+		recipes.remove(<gugu-utils:sparkmanahatch>);
 		recipesUtils.addRecipe(<gugu-utils:sparkmanahatch>,
 			["ABA",
 			 "BCB",
@@ -28,6 +29,7 @@ zenClass ModularMachineryRecipes{
 			  C : <botania : spreader : 1>});
 
 		//魔力输出
+		recipes.remove(<gugu-utils:sparkmanahatch:1>);
 		recipesUtils.addRecipe(<gugu-utils:sparkmanahatch:1>,
 			["ABA",
 			 "BCB",
@@ -38,7 +40,8 @@ zenClass ModularMachineryRecipes{
 
 		recipesUtils.addShapelessCycle(<gugu-utils:sparkmanahatch>, <gugu-utils:sparkmanahatch:1>);
 
-		//小型物品输入
+		//微型物品输入
+		recipes.remove(<modularmachinery:blockinputbus>);
 		recipesUtils.addRecipe(<modularmachinery:blockinputbus>,
 			[" A ",
 			 " B ",
@@ -47,7 +50,8 @@ zenClass ModularMachineryRecipes{
 			  B : <modularmachinery : blockcasing>,
 			  C : <minecraft : chest>});
 
-		//小型物品输出
+		//微型物品输出
+		recipes.remove(<modularmachinery:blockoutputbus>);
 		recipesUtils.addRecipe(<modularmachinery:blockoutputbus>,
 			[" A ",
 			 " B ",

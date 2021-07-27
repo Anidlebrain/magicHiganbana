@@ -1,0 +1,14 @@
+{
+	x: -7.0d,
+	y: -13.5d,
+	dependencies: [
+		"c62ac009"
+	],
+	tasks: [{
+		uid: "9120b582",
+		type: "item",
+		items: [{
+			item: "woot:structure 1 8"
+		}]
+	}]
+}

@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 
 zenClass MechanicsRecipes {
 	zenConstructor() {
@@ -14,19 +15,15 @@ zenClass MechanicsRecipes {
 
 	function init() {
         recipesInit();
+		itemRemove();
     }
 	
 	function recipesInit() {
-		//晾干台
-		recipes.remove(<mechanics:drying_table>);
-		recipesUtils.addRecipe(<mechanics:drying_table>,
-			["CBC",
-			 "CBC",
-			 "A A"],
-			{ A : <botania:manaresource:3>,
-			  C : <botania:livingwood>,
-			  B : <tconstruct:rack:1>}
-		);
+		
+	}
+
+	function itemRemove() {
+		itemHelper.removeItem(<mechanics:drying_table>);
 	}
 }
 

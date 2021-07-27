@@ -36,8 +36,9 @@ fusion.addRecipe(<skyresources:orealchdust:6>, [<minecraft:iron_ingot>, <minecra
 fusion.removeRecipe(<skyresources:orealchdust:7>);
 fusion.addRecipe(<skyresources:orealchdust:7>, [<minecraft:gold_ingot>, <minecraft:dye:4> * 2, <roots:runic_dust>], 1.11);
 
+//铝
 fusion.removeRecipe(<skyresources:orealchdust:8>);
-fusion.addRecipe(<skyresources:orealchdust:8>, [<skyresources:baseitemcomponent:4>, <minecraft:blaze_rod>, <roots:runic_dust>], 0.65);
+//fusion.addRecipe(<skyresources:orealchdust:8>, [<skyresources:baseitemcomponent:4>, <minecraft:blaze_rod>, <roots:runic_dust>], 0.65);
 
 fusion.removeRecipe(<skyresources:orealchdust:9>);
 fusion.addRecipe(<skyresources:orealchdust:9>, [<minecraft:clay>, <minecraft:blaze_rod>, <roots:runic_dust>], 0.66);
@@ -60,6 +61,7 @@ fusion.addRecipe(<skyresources:orealchdust:15>, [<mekanism:basicblock:2>, <minec
 fusion.removeRecipe(<skyresources:orealchdust:16>);
 fusion.addRecipe(<skyresources:orealchdust:16>, [<minecraft:sugar>, <minecraft:dye:4> * 2, <botania:manaresource:8> * 2], 2.56);
 
+
 fusion.removeRecipe(<skyresources:orealchdust:17>);
 fusion.addRecipe(<skyresources:orealchdust:17>, [<skyresources:techitemcomponent:2>, <skyresources:baseitemcomponent:3> * 2, <botania:manaresource:8> * 2], 3.52);
 
@@ -73,12 +75,12 @@ fusion.removeRecipe(<skyresources:orealchdust:20>);
 fusion.addRecipe(<skyresources:orealchdust:20>, [<skyresources:baseitemcomponent:4>, <minecraft:glowstone_dust> * 2, <botania:manaresource:8> * 2], 1.87);
 
 fusion.removeRecipe(<skyresources:orealchdust:21>);
-fusion.addRecipe(<skyresources:orealchdust:21>, [<minecraft:diamond>, <skyresources:baseitemcomponent:3> * 2, <botania:manaresource:8> * 2], 2.88);
+//fusion.addRecipe(<skyresources:orealchdust:21>, [<minecraft:diamond>, <skyresources:baseitemcomponent:3> * 2, <botania:manaresource:8> * 2], 2.88);
 
 fusion.removeRecipe(<skyresources:orealchdust:23>);
 fusion.addRecipe(<skyresources:orealchdust:23>, [<minecraft:rotten_flesh> * 2, <skyresources:techitemcomponent:1> * 2, <botania:manaresource:8> * 2], 0.91);
 
-//赫耳墨斯之铁锭c
+//赫耳墨斯之铁锭
 fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [<skyresources:techitemcomponent:2> * 2, <minecraft:redstone> * 3], 0.62);
 

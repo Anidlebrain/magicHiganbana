@@ -8,7 +8,7 @@
 	emergency_items: [{
 		item: "minecraft:pumpkin"
 	}],
-	emergency_items_cooldown: "3m",
+	emergency_items_cooldown: "2m",
 	drop_loot_crates: false,
 	loot_crate_no_drop: {
 		passive: 4000,

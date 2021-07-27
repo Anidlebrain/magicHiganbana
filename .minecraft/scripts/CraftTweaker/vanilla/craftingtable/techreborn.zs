@@ -91,6 +91,9 @@ zenClass TechrebornRecipes {
 			{ A : <techreborn:ingot:17>,
               C : <techreborn:storage2:2>}
 		);
+
+        //木板
+        //recipesUtils.addShapeless(<techreborn:plates:3>, [<ore:plankWood>, <ore:plankWood>, <immersiveengineering:tool>]);
         
     }
 

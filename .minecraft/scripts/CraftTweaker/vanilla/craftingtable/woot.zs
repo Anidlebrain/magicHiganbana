@@ -66,8 +66,8 @@ zenClass WootRecipes {
 		);
 
         //下界之心工厂方块
-        recipes.remove(<xreliquary:mob_ingredient:11>);
-        recipesUtils.addRecipe(<xreliquary:mob_ingredient:11>,
+        recipes.remove(<woot:structure:4>);
+        recipesUtils.addRecipe(<woot:structure:4>,
 			["ABA",
 			 "BCB",
 			 "ABA"],

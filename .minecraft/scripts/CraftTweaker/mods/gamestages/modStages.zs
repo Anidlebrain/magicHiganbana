@@ -31,7 +31,6 @@ StageZero.addModId("ftbquests");
 StageZero.addModId("itemfilters");
 StageZero.addModId("progressivebosses");
 StageZero.addModId("researchtable");
-StageZero.addModId("universalbestiary");
 
 StageOne.addModId("base");
 StageOne.addModId("baubles");
@@ -65,7 +64,6 @@ StageThree.addModId("bloodmagic");
 StageFour.addModId("techreborn");
 StageFour.addModId("modularmachinery");
 StageFour.addModId("prodigytech");
-StageFour.addModId("morphtool");
 StageFour.addModId("tconevo");
 
 //20210615删除mod

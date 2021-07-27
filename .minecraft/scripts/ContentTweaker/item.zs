@@ -18,52 +18,42 @@ import mods.contenttweaker.IItemUpdate;
 import mods.contenttweaker.IItemRightClick;
 import mods.ctutils.utils.Math;
 
+import scripts.AnildebrainUtils.CotUtils;
 
-//定义函数
-function itemCreator(name as string,
-					 maxn as int,
-					 glow as bool) {
-	var itemt = VanillaFactory.createItem(name);
-	itemt.maxStackSize = maxn;
-	itemt.glowing = glow;
-	itemt.register();
-}
+CotUtils.itemCreator("thunder_rune", 64, false);
+CotUtils.itemCreator("dark_rune", 64, false);
+CotUtils.itemCreator("earth_rune", 64, false);
+CotUtils.itemCreator("gold_rune", 64, false);
+CotUtils.itemCreator("light_rune", 64, false);
+CotUtils.itemCreator("wood_rune", 64, false);
+CotUtils.itemCreator("explosive_dust", 64, false);
 
+CotUtils.itemCreator("crystal_water", 16, false);
+CotUtils.itemCreator("crystal_fire", 16, false);
+CotUtils.itemCreator("crystal_wood", 16, false);
+CotUtils.itemCreator("crystal_earth", 16, false);
+CotUtils.itemCreator("crystal_metal", 16, false);
+CotUtils.itemCreator("alchemical_frame", 1, false);
+CotUtils.itemCreator("alchemical_plate", 64, false);
+CotUtils.itemCreator("alchemical_corecomponents", 1, false);
 
-itemCreator("thunder_rune", 64, false);
-itemCreator("dark_rune", 64, false);
-itemCreator("earth_rune", 64, false);
-itemCreator("gold_rune", 64, false);
-itemCreator("light_rune", 64, false);
-itemCreator("wood_rune", 64, false);
-itemCreator("explosive_dust", 64, false);
+CotUtils.itemCreator("page_of_higanbana", 1, false);
 
-itemCreator("crystal_water", 16, false);
-itemCreator("crystal_fire", 16, false);
-itemCreator("crystal_wood", 16, false);
-itemCreator("crystal_earth", 16, false);
-itemCreator("crystal_metal", 16, false);
-itemCreator("alchemical_frame", 1, false);
-itemCreator("alchemical_plate", 64, false);
-itemCreator("alchemical_corecomponents", 1, false);
+CotUtils.itemCreator("monster_essence", 1, false);
 
-itemCreator("page_of_higanbana", 1, false);
-
-itemCreator("monster_essence", 1, false);
-
-itemCreator("twilightforest_key", 1, true);
+CotUtils.itemCreator("twilightforest_key", 1, true);
 
 //任务图标
-itemCreator("hope", 1, false);
-itemCreator("recovery", 1, false);
+CotUtils.itemCreator("hope", 1, false);
+CotUtils.itemCreator("recovery", 1, false);
 
 //锡线
-itemCreator("tin_wire", 64, false);
+CotUtils.itemCreator("tin_wire", 64, false);
 
 //七原罪
-itemCreator("seven_deadly_sins", 1, true);
+CotUtils.itemCreator("seven_deadly_sins", 1, true);
 
-itemCreator("", 64, true);
+CotUtils.itemCreator("", 64, true);
 
 var matchStick = VanillaFactory.createItem("match_stick");
 
@@ -103,3 +93,8 @@ inheritanceStone.itemRightClick = function(stack, world, player, hand) {
 };
 inheritanceStone.register();
 
+//氯化铝
+CotUtils.itemCreator("aluminium_chloride", 1, true);
+
+//碘晶体
+CotUtils.itemCreator("iodine_crystal", 1, true);

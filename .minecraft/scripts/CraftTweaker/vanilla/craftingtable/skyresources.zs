@@ -388,18 +388,17 @@ zenClass SkyresourcesRecipes {
 			 "BAB"],
 			{ A : <skyresources:alchemyitemcomponent>,
 			  B : <skyresources:alchemyitemcomponent:7>});
-		
-
-		recipes.remove(<skyresources:blazepowderblock>);
-		
 	}
 function itemRemove() {
         //烈焰粉块
         itemHelper.removeItem(<skyresources:blazepowderblock>);
+		//秘银
+		itemHelper.removeItem(<skyresources:orealchdust:21>);
 		//碎石杵
 		//itemHelper.removeItem(<skyresources:stonegrinder>);
 		//itemHelper.removeItem(<skyresources:irongrinder>);
 		//itemHelper.removeItem(<skyresources:diamondgrinder>);
+		
     }
 
 }

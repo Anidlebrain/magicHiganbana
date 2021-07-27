@@ -3,7 +3,7 @@
 ##          [License]:  CC BY-NC-SA 4.0          ##
 ##          [Info]:     随意作品 工作台合成        ##
 ###################################################
-#norun
+
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
@@ -18,7 +18,7 @@ zenClass RandomthingsRecipes{
 	}
 
 	function recipesInit(){
-        //柴堆
+        //隔音器
 		recipes.remove(<randomthings:sounddampener>);
 		recipesUtils.addRecipe(<randomthings:sounddampener>,
 			["ABA",

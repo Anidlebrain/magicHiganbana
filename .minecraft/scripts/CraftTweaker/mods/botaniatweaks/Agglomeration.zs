@@ -31,13 +31,19 @@ Agglomeration.addRecipe(<item:randomthings:ingredient:7>,
     <minecraft:bookshelf>, <minecraft:soul_sand>, <minecraft:nether_brick>,
     <apotheosis:hellshelf>, <minecraft:sand>, <minecraft:stone>);
 
+//地狱铁快
+Agglomeration.addRecipe(<woot:stygianiron>,
+    [<pneumaticcraft:compressed_iron_block>, <prodigytech:inferno_crystal>],
+    50000, 0x993300, 0xFFCC00,
+    <minecraft:nether_brick>, <minecraft:soul_sand>, <minecraft:nether_brick>,
+    null, null, null);
+
 //地狱铁锭
 Agglomeration.addRecipe(<woot:stygianironingot>,
     [<pneumaticcraft:ingot_iron_compressed>, <prodigytech:inferno_crystal>],
     5000, 0x993300, 0xFFCC00,
     <minecraft:nether_brick>, <minecraft:soul_sand>, <minecraft:nether_brick>,
     null, null, null);
-
 
 //高级工作台
 Agglomeration.addRecipe(<minecraft:sand>,

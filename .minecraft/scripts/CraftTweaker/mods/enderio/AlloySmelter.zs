@@ -148,3 +148,16 @@ AlloySmelter.addRecipe(<techreborn:ingot:21>, [<ore:ingotBrass> * 3, <ore:ingotI
 //铱合金锭
 AlloySmelter.addRecipe(<techreborn:ingot:21>, [<ore:ingotIridium> * 3, <techreborn:plates:36> * 3, <ore:dustDiamond> * 3]);
 
+/*
+末影接口 管道拓展 合金
+*/
+//充能银锭
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<enderio:block_holy_fog>, <extrautils2:ingredients>, <ore:ingotMithril>]);
+
+//生动合金锭
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>, [<extendedcrafting:material:36>, <enderio:item_alloy_endergy_ingot:5>, <ore:ingotOsmium>]);
+
+//旋律合金锭
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<tconevo:metal:25>, <minecraft:chorus_fruit_popped>, <enderio:item_alloy_ingot:8>,]);
+
+

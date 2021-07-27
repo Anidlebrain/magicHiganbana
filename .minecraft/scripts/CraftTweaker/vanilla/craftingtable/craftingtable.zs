@@ -41,20 +41,30 @@ zenClass CraftingTable {
 
     // 遍历配方
     function TraversalRecipe() {
+
         for recipe in recipes.all {
             var name as string = recipe.name;
             var ResourceName = recipe.fullResourceDomain;
             if (!isNull(recipe.output)) {
-                // 为什么会有没有输出的配方？
-                // 末影接口配方无法遍历
-                /*
-                print("recipe for name: " ~ name ~ " and mods is " ~ recipe.output.definition.owner ~ " and outputname is " ~ recipe.output.definition.name);
-                if(recipe.output.definition.id.contains("enderio")) {
-                    print("enderio recipe for name: " ~ name);
-                    recipes.removeByRecipeName(name);
-                    mods.extendedcrafting.EnderCrafting.addShaped(recipe.output, recipe.ingredients2D);
+                if(recipe.output.definition.id.contains("mekanism")) {
+                    print("recipe for name: " ~ name ~ " and mods is " ~ recipe.output.definition.owner ~ " and outputname is " ~ recipe.output.definition.name);
+                    //print("mekanism recipe for name: " ~ name);
+                    var len as int = recipe.ingredients2D.length;
+                    //print("Anidlebrain recipe.ingredients2D.length " ~ len);
+                    if (len == 3) {
+                        if (recipe.output.definition.name.contains("Machine")) {
+                            recipes.removeByRecipeName(ResourceName);
+                            mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:fluxed_electrum> * 1200, <techreborn:part:25>);
+                        }
+                        else if(!recipe.output.definition.name.contains("Block") &&
+                                !recipe.output.definition.name.contains("Ingot") &&
+                                !recipe.output.definition.name.contains("Plastic")) {
+                            recipes.removeByRecipeName(ResourceName);
+                            mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:lubricant> * 1200);
+                        }
+                    }
+                   
                 }
-                */
             }
             else {
                 /*
@@ -63,7 +73,8 @@ zenClass CraftingTable {
                     ~ toString(recipe.hasRecipeFunction()) ~ "]");*/
                 recipes.removeByRecipeName(ResourceName);
             }
-            /*
+            // 为什么会有没有输出的配方？
+            // 末影接口配方无法遍历
             if (!isNull(recipe.output) && name.contains("enderio") 
             && recipe.output.definition.owner.contains("enderio")) {
                 // 末影接口配方修改
@@ -72,7 +83,6 @@ zenClass CraftingTable {
                 //recipes.remove(recipe.output);
                 mods.extendedcrafting.EnderCrafting.addShaped(recipe.output, recipe.ingredients2D);
             }
-            */
         }
     }
     
@@ -80,25 +90,31 @@ zenClass CraftingTable {
         if (!isInvalid)
         {
             vanillaRecipes();
-            craftingtable.contenttweaker.ContentTweakerRecipes().init();
-            craftingtable.chisel.ChiselRecipes().init();
+            craftingtable.appliedenergistics2.Appliedenergistics2Recipes().init();
+            craftingtable.bloodmagic.BloodmagicRecipes().init();
             craftingtable.botania.BotaniaRecipes().init();
+            craftingtable.chisel.ChiselRecipes().init();
+            craftingtable.contenttweaker.ContentTweakerRecipes().init();
+            craftingtable.enderio.EnderioRecipes().init();
+            craftingtable.extendedcrafting.ExtendedcraftingRecipes().init();
+            craftingtable.extrautils2.Extrautils2Recipes().init();
+            craftingtable.forestry.ForestryRecipes().init();
             craftingtable.harvestcraft.HarvestcraftRecipes().init();
+            craftingtable.immersiveengineering.ImmersiveengineeringRecipes().init();
             craftingtable.mechanics.MechanicsRecipes().init();
+            craftingtable.mekanism.MekanismRecipes().init();
+            craftingtable.modularmachinery.ModularMachineryRecipes().init();
+            craftingtable.naturesaura.NaturesauraRecipes().init();
+            craftingtable.pneumaticcraft.PneumaticcraftRecipes().init();
+            craftingtable.prodigytech.ProdigytechRecipes().init();
+            craftingtable.randomthings.RandomthingsRecipes().init();
             craftingtable.roots.RootsRecipes().init();
             craftingtable.skyresources.SkyresourcesRecipes().init();
-            craftingtable.xreliquary.XreliquaryRecipes().init();
-            craftingtable.bloodmagic.BloodmagicRecipes().init();
-            craftingtable.modularmachinery.ModularMachineryRecipes().init();
-            craftingtable.immersiveengineering.ImmersiveengineeringRecipes().init();
-            craftingtable.prodigytech.ProdigytechRecipes().init();
             craftingtable.techreborn.TechrebornRecipes().init();
-            craftingtable.appliedenergistics2.Appliedenergistics2Recipes().init();
-            craftingtable.woot.WootRecipes().init();
             craftingtable.thermalexpansion.ThermalexpansionRecipes().init();
-            craftingtable.mekanism.MekanismRecipes().init();
-            craftingtable.extrautils2.Extrautils2Recipes().init();
-            TraversalRecipe();
+            craftingtable.xreliquary.XreliquaryRecipes().init();
+            craftingtable.woot.WootRecipes().init();
+            //TraversalRecipe();
         }
 
     }

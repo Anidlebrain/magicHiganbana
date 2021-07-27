@@ -86,4 +86,9 @@ zenClass ChiselRecipes {
 
         recipes.removeByRecipeName("minecraft:polished_granite");
     }
+
+    function itemRemove()
+    {
+        //itemHelper.removeItem(<skyresources:blazepowderblock>);
+    }
 }

@@ -59,3 +59,10 @@ Mortar.addRecipe(<extendedcrafting:material:7> * 2, [<minecraft:gunpowder>, <bot
 //含碳福鲁伊克斯复合物
 recipes.remove(<threng:material:1>);
 Mortar.addRecipe(<threng:material:1>, [<ore:dustFluix>, <ore:dustFluix>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:itemSilicon>]);
+
+//花粉
+for kinds in 0 to 15
+{
+	Mortar.addRecipe(<botania:dye>.definition.makeStack(kinds), [<botania:petal>.definition.makeStack(kinds)]);
+}
+

@@ -7,7 +7,7 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
-zenClass MechanicsRecipes {
+zenClass EnderioRecipes {
 	zenConstructor() {
 
 	}

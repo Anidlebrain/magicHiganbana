@@ -5,7 +5,7 @@
 ##          [explain]:  由于未知原因 该配方游戏中无法实现     ##
 #############################################################
 
-
+#modloaded mechanics
 #priority 2000
 import mods.mechanics.addNetherPortalRecipe;
 import mods.mechanics.removeNetherPortalRecipe;
