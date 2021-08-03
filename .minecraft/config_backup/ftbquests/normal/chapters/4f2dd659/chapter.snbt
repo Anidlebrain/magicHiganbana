@@ -1,7 +1,0 @@
-{
-	title: "炼金伊始",
-	icon: "botania:lightrelay",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "octagon"
-}
