@@ -1,11 +1,11 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     游戏阶段 阶段初始化      ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     游戏阶段 初始化
+##================================================
 #priority 99998
 import mods.zenstages.ZenStager;
-
+#norun
 var stageTheNether = ZenStager.initStage(stageTheNetherName);
 var stageTheEnd = ZenStager.initStage(stageTheEndName);
 var stageTwilightForest = ZenStager.initStage(stageTwilightForestName);

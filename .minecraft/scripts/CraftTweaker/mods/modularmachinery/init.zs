@@ -1,21 +1,21 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     模块化机械配方初始化      ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     模块化机械 初始化
+##================================================
 
 #priority 1999
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 
 if(!isInvalid)
 {
-	scripts.CraftTweaker.mods.modularmachinery.mini_mana_machine.MiniManaMachineRecipes().recipesInit();
-	scripts.CraftTweaker.mods.modularmachinery.knowledge_inheritance.KnowledgeInheritanceRecipes().recipesInit();
-	scripts.CraftTweaker.mods.modularmachinery.precision_laser_engraver.PrecisionLaserEngraverRecipes().recipesInit();
-	scripts.CraftTweaker.mods.modularmachinery.parts_manufacturing_machine.PartsManufacturingMachineRecipes().recipesInit();
-	scripts.CraftTweaker.mods.modularmachinery.mana_magic.ManaMagicRecipes().recipesInit();
-	scripts.CraftTweaker.mods.modularmachinery.ender_machine.EnderMachineRecipes().recipesInit();
-	
+    scripts.CraftTweaker.mods.modularmachinery.mini_mana_machine.MiniManaMachineRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.knowledge_inheritance.KnowledgeInheritanceRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.precision_laser_engraver.PrecisionLaserEngraverRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.parts_manufacturing_machine.PartsManufacturingMachineRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.mana_magic.ManaMagicRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.ender_machine.EnderMachineRecipes().recipesInit();
+    
 }
 
 /*

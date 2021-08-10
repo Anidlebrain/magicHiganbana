@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     植物魔法 魔力池          ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     植物魔法 魔力池
+##================================================
 
 #priority 2000
 import mods.botania.ManaInfusion;
@@ -23,8 +23,8 @@ ManaInfusion.addAlchemy(<contenttweaker:alchemical_corecomponents>, <skyresource
 
 val numAlchemyArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 15] as int[];
 for i in numAlchemyArray {
-	val itemDef = <skyresources:alchemy>.definition;
-	ManaInfusion.addAlchemy(<contenttweaker:alchemical_corecomponents>, itemDef.makeStack(i), 4000);
+    val itemDef = <skyresources:alchemy>.definition;
+    ManaInfusion.addAlchemy(<contenttweaker:alchemical_corecomponents>, itemDef.makeStack(i), 4000);
 }
 
 ManaInfusion.addAlchemy(<contenttweaker:alchemical_corecomponents>, <skyresources:alchemy:12>, 2000);

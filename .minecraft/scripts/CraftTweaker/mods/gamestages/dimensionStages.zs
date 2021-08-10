@@ -1,10 +1,10 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     游戏阶段 维度阶段        ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     游戏阶段 维度
+##================================================
 #priority 2010
-
+#norun
 import mods.zenstages.ZenStager;
 
 var StageTheNether = ZenStager.getStage(stageTheNetherName);

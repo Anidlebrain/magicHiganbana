@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     植物魔法 符文祭坛        ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     植物魔法 符文祭坛
+##================================================
 
 #priority 2000
 import mods.botania.RuneAltar;
@@ -31,7 +31,7 @@ RuneAltar.addRecipe(<botania:rune:4>, [<naturesaura:birth_spirit>, <naturesaura:
 RuneAltar.removeRecipe(<botania:rune:5>);
 RuneAltar.addRecipe(<botania:rune:5>, [<twilightforest:cicada>, <naturesaura:token_fear>, <minecraft:melon>, <botania:rune:2>, <botania:rune:3>], 15600);
 
-//秋之符文	
+//秋之符文
 RuneAltar.removeRecipe(<botania:rune:6>);
 RuneAltar.addRecipe(<botania:rune:6>, [<roots:wildewheet>, <naturesaura:token_anger>, <naturesaura:gold_leaf>, <botania:rune:3>, <botania:rune:1>], 15600);
 
@@ -71,3 +71,5 @@ RuneAltar.addRecipe(<botania:rune:14>, [<tconevo:metal:25>, <tconevo:metal:30>, 
 RuneAltar.removeRecipe(<botania:rune:15>);
 RuneAltar.addRecipe(<botania:rune:15>, [<tconevo:metal:25>, <tconevo:metal:30>, <botania:rune:1>, <botania:rune:5>, <naturesaura:token_rage>], 23400);
 
+//魔力立方
+//RuneAltar.removeRecipe(<botanicadds:mana_tesseract>);

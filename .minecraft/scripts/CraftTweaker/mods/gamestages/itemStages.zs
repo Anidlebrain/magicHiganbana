@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     游戏阶段 物品阶段        ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     游戏阶段 物品
+##================================================
 #priority 2010
 import mods.zenstages.ZenStager;
 import crafttweaker.item.IIngredient;

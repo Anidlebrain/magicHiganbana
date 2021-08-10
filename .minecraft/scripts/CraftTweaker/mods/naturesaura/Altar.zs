@@ -1,9 +1,8 @@
-######################################################
-##          [Author]:   Anidlebrain                 ##
-##          [License]:  CC BY-NC-SA 4.0             ##
-##          [Info]:     自然灵气 自然祭坛            ##
-######################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     自然灵气 自然祭坛
+##================================================
 #priority 2000
 import mods.naturesaura.Altar;
 //mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)

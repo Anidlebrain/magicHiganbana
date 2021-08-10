@@ -10,50 +10,53 @@ import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.Material;
 
 //����ע��
-// ��
+// 铁
 var iron = MaterialSystem.getMaterialBuilder().setName("Iron").setColor(9868950).build();
 
-// ��
+// 金
 var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(15724416).build();
 
-// ���ʯ
+// 青金石
 var lapis = MaterialSystem.getMaterialBuilder().setName("Lapis").setColor(9545175).build();
 
-// ��ʯ
+// 红石
 var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(16744576).build();
 
-// ��ʯ
+// 钻石
 var diamond = MaterialSystem.getMaterialBuilder().setName("Diamond").setColor(9889496).build();
 
-// �̱�ʯ
+// 绿宝石
 var emerald = MaterialSystem.getMaterialBuilder().setName("Emerald").setColor(12712918).build();
 
-// ħ����
+// 魔力钢
 var manasteel = MaterialSystem.getMaterialBuilder().setName("Manasteel").setColor(10077439).build();
 
-// ̩����
+// 泰拉钢
 var terrasteel = MaterialSystem.getMaterialBuilder().setName("Terrasteel").setColor(10014848).build();
 
-// Դ�ʸ�
+// 源质钢
 var elvenElementium = MaterialSystem.getMaterialBuilder().setName("ElvenElementium").setColor(10567285).build();
 
-// ����
+// 晶素
 var crystaltine = MaterialSystem.getMaterialBuilder().setName("Crystaltine").setColor(13100788).build();
 
-// ��ħ����
+// 恶魔金属
 var demonicMetal = MaterialSystem.getMaterialBuilder().setName("DemonicMetal").setColor(15500160).build();
 
-// ��ħ����
+// 附魔金属
 var enchantedMetal = MaterialSystem.getMaterialBuilder().setName("EnchantedMetal").setColor(7841093).build();
 
-// ������
+// 玛玉灵
 var manyullyn = MaterialSystem.getMaterialBuilder().setName("Manyullyn").setColor(16711935).build();
 
-// ǿ������ʯ
-var RefinedObsidian = MaterialSystem.getMaterialBuilder().setName("RefinedObsidian").setColor(5587064).build();
+// 强化黑曜石
+var refinedObsidian = MaterialSystem.getMaterialBuilder().setName("RefinedObsidian").setColor(5587064).build();
 
-// �
-var curium = MaterialSystem.getMaterialBuilder().setName("Curium").setColor(13805494).build();
+// 精炼铁
+var refinedIron = MaterialSystem.getMaterialBuilder().setName("RefinedIron").setColor(16777215).build();
+
+// 天空
+var sky_ingot = MaterialSystem.getMaterialBuilder().setName("Sky").setColor(12446206).build();
 
 //�����б�
 var metal_list = [
@@ -70,9 +73,9 @@ var metal_list = [
 	demonicMetal,
 	enchantedMetal,
 	manyullyn,
-	RefinedObsidian,
-	curium] as Material[];
-
+	refinedObsidian,
+	refinedIron,
+	sky_ingot] as Material[];
 //�����б�
 var part_names = [
 	#��
@@ -102,7 +105,10 @@ var part_names = [
 	#��
 	"ring",
 	#����
-	"long_rod" ] as string[];
+	"long_rod",
+	#块
+	"block"
+	] as string[];
 
 
 for i, metal in metal_list {
@@ -112,6 +118,4 @@ for i, metal in metal_list {
 	poorOreData.addDataValue("resistance", "30");
 	poorOreData.addDataValue("harvestTool", "pickaxe");
 	poorOreData.addDataValue("harvestLevel", "3");
-	
 }
-

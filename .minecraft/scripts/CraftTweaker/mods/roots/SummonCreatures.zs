@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     根源魔法 仪式: 召唤生物   ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     根源魔法 仪式: 召唤生物
+##================================================
 #priority 2000
 import mods.roots.SummonCreatures;
 import crafttweaker.entity.IEntityDefinition;

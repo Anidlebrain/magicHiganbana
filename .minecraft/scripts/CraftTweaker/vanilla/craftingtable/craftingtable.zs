@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     初始化 工作台合成        ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     工作台合成
+##================================================
 
 #priority 1999
 import scripts.CraftTweaker.vanilla.craftingtable;
@@ -18,25 +18,25 @@ zenClass CraftingTable {
 
         //活塞
         recipes.remove(<minecraft:piston>);
-		recipesUtils.addRecipe(<minecraft:piston>,
-			["BBB",
-			 "ADA",
-			 "ACA"],
-			{ A : <ore:stone>,
-			  B : <ore:plankWood>,
-			  C : <ore:dustRedstone>,
+        recipesUtils.addRecipe(<minecraft:piston>,
+            ["BBB",
+             "ADA",
+             "ACA"],
+            { A : <ore:stone>,
+              B : <ore:plankWood>,
+              C : <ore:dustRedstone>,
               D : <ore:ingotCopper>}
-		);
+        );
 
         //熔炉
         recipes.remove(<minecraft:furnace>);
-		recipesUtils.addRecipe(<minecraft:furnace>,
-			["AAA",
-			 "ABA",
-			 "AAA"],
-			{ A : <ore:cobblestone>,
-			  B : <ore:coal>}
-		);
+        recipesUtils.addRecipe(<minecraft:furnace>,
+            ["AAA",
+             "ABA",
+             "AAA"],
+            { A : <ore:cobblestone>,
+              B : <ore:coal>}
+        );
     }
 
     // 遍历配方
@@ -101,7 +101,7 @@ zenClass CraftingTable {
             craftingtable.forestry.ForestryRecipes().init();
             craftingtable.harvestcraft.HarvestcraftRecipes().init();
             craftingtable.immersiveengineering.ImmersiveengineeringRecipes().init();
-            craftingtable.mechanics.MechanicsRecipes().init();
+            //craftingtable.mechanics.MechanicsRecipes().init();
             craftingtable.mekanism.MekanismRecipes().init();
             craftingtable.modularmachinery.ModularMachineryRecipes().init();
             craftingtable.naturesaura.NaturesauraRecipes().init();

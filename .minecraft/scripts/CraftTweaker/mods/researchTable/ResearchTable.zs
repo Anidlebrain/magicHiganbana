@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     研究台                  ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     研究台
+##================================================
 import mods.ResearchTable;
 import ResearchTable.Category;
 import ResearchTable.Builder;

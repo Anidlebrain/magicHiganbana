@@ -1,8 +1,8 @@
-######################################################
-##          [Author]:   Anidlebrain                 ##
-##          [License]:  CC BY-NC-SA 4.0             ##
-##          [Info]:     模块化机械 末影制造机        ##
-######################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     模块化机械 末影制造机
+##================================================
 #priority 2000
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;

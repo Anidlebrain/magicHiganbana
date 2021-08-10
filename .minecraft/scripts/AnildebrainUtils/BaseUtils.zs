@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     基础处理函数             ##
-##################################################
+##=================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     基础处理函数
+##=================================================
 
 #priority 999999999
 import mods.ctutils.utils.Math;
@@ -20,7 +20,7 @@ function removeBraces(str as string) as string {
     return res;
 }
 
-function removeColon(str as string) as string {
+function removeColon(str as string ) as string {
     var len as int = str.length;
     var res as string = "";
     if (str.startsWith("liquid")) {

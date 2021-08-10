@@ -11,5 +11,6 @@ crystaltine 晶素 199 230 244
 demonicMetal 恶魔金属 236 131 128
 enchantedMetal 附魔金属 119 165 69
 manyullyn 玛玉灵 255 0 255
-RefinedObsidian 强化黑曜石 85 64 120
-RefinedIron 精炼铁 255 255 255
+refinedObsidian 强化黑曜石 85 64 120
+refinedIron 精炼铁 255 255 255
+sky_ingot 天空 189 233 254

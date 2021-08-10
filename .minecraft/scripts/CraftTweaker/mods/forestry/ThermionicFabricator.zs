@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     林业 热电子加工          ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     林业 热电子加工
+##================================================
 #priority 2000
 import mods.forestry.ThermionicFabricator;
 //mods.forestry.ThermionicFabricator.removeCast(IIngredient product);

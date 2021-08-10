@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     奇才妙械  原子重塑机      ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     奇才妙械 原子重塑机
+##================================================
 #priority 2000
 import mods.prodigytech.atomicreshaper;
 
@@ -15,6 +14,8 @@ atomicreshaper.removeRecipe(<minecraft:paper>);
 atomicreshaper.removeRecipe(<ore:oreMithril>);
 atomicreshaper.removeRecipe(<thermalfoundation:ore:8>);
 atomicreshaper.removeRecipe(<ore:bricksStone>);
+
+atomicreshaper.removeRecipe(<ore:oreQuartzBlack>);
 
 
 //粘性树脂

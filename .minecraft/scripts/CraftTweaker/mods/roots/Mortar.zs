@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     根源魔法 研钵            ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     根源魔法 研钵
+##================================================
 #priority 2000
 import mods.roots.Mortar;
 import crafttweaker.item.IIngredient;

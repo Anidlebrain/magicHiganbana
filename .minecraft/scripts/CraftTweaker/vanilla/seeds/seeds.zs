@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     打草 掉落物              ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     打草 掉落物
+##================================================
 #profile 2000
 vanilla.seeds.removeSeed(<roots:terra_spores:0>);
 vanilla.seeds.removeSeed(<minecraft:wheat_seeds:0>);

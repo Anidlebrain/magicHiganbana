@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     气动工艺 热动力加工       ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     气动工艺 热动力加工
+##================================================
 #priority 2000
 import mods.pneumaticcraft.thermopneumaticprocessingplant;
 /*

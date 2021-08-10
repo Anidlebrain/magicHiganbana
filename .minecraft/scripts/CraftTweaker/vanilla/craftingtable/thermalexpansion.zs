@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     热力膨胀 工作台合成       ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     热力膨胀 工作台合成
+##================================================
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
@@ -13,22 +13,22 @@ zenClass ThermalexpansionRecipes {
 
     }
 
-	function init() {
+    function init() {
         TraversalRecipe();
         recipesInit();
         itemRemove();
     }
-	
+    
     function recipesInit() {
          //机器框架
         recipes.remove(<thermalexpansion:frame>);
-		recipesUtils.addRecipe(<thermalexpansion:frame>,
-			["ACA",
-			 "CBC",
-			 "ACA"],
-			{ A : <ore:ingotElectricalSteel>,
-			  B : <thermalfoundation:material:264>,
-			  C : <ore:fusedGlass>});
+        recipesUtils.addRecipe(<thermalexpansion:frame>,
+            ["ACA",
+             "CBC",
+             "ACA"],
+            { A : <ore:ingotElectricalSteel>,
+              B : <thermalfoundation:material:264>,
+              C : <ore:fusedGlass>});
 
        
         recipes.remove(<thermalexpansion:frame:64>);
@@ -36,12 +36,12 @@ zenClass ThermalexpansionRecipes {
          //设备框架
         recipes.remove(<thermalexpansion:frame:128>);
         recipesUtils.addRecipe(<thermalexpansion:frame:128>,
-			["ACA",
-			 "CBC",
-			 "ACA"],
-			{ A : <thermalfoundation:material:136>,
-			  B : <ore:gearEnderium>,
-			  C : <ore:fusedQuartz>});
+            ["ACA",
+             "CBC",
+             "ACA"],
+            { A : <thermalfoundation:material:136>,
+              B : <ore:gearEnderium>,
+              C : <ore:fusedQuartz>});
         
 
         //便携储罐 (基础)
@@ -54,21 +54,21 @@ zenClass ThermalexpansionRecipes {
         //蒸汽能源炉 (基础)
         recipes.remove(<thermalexpansion:dynamo>);
         recipesUtils.addRecipe(<thermalexpansion:dynamo>, [
-            [null, <actuallyadditions:item_misc:8>, null],
+            [null, <immersiveengineering:metal_device1:8>, null],
             [<ore:plateCopper>, <woot:factorycore:5>, <ore:plateCopper>],
             [<ore:gearRefinedIron>, <thermalfoundation:material:514>, <ore:gearRefinedIron>]]);
 
         //热力能源炉 (基础)
         recipes.remove(<thermalexpansion:dynamo:1>);
         recipesUtils.addRecipe(<thermalexpansion:dynamo:1>, [
-            [null, <actuallyadditions:item_misc:8>, null],
+            [null, <immersiveengineering:metal_device1:8>, null],
             [<ore:plateZinc>, <woot:factorycore:5>, <ore:plateZinc>],
             [<actuallyadditions:block_lava_factory_controller>, <thermalfoundation:material:514>, <actuallyadditions:block_lava_factory_controller>]]);
 
         //反应能源炉 (基础)
         recipes.remove(<thermalexpansion:dynamo:3>);
         recipesUtils.addRecipe(<thermalexpansion:dynamo:3>, [
-            [null, <actuallyadditions:item_misc:8>, null],
+            [null, <immersiveengineering:metal_device1:8>, null],
             [<ore:plateDiamond>, <woot:factorycore:5>, <ore:plateDiamond>],
             [<actuallyadditions:block_lava_factory_controller>, <thermalfoundation:material:514>, <actuallyadditions:block_lava_factory_controller>]]);
         
@@ -231,7 +231,7 @@ zenClass ThermalexpansionRecipes {
         recipes.remove(<thermalexpansion:augment:515>);
         recipesUtils.addRecipe(<thermalexpansion:augment:515>, [
             [<minecraft:iron_ingot>, <ore:plateRefinedIron>, <minecraft:iron_ingot>],
-            [<ore:plateRefinedIron>, <actuallyadditions:item_misc:8>, <ore:plateRefinedIron>],
+            [<ore:plateRefinedIron>, <immersiveengineering:metal_device1:8>, <ore:plateRefinedIron>],
             [<minecraft:iron_ingot>, <ore:plateRefinedIron>, <minecraft:iron_ingot>]]);
 
         //升级: 宝石印刻校准
@@ -247,13 +247,6 @@ zenClass ThermalexpansionRecipes {
             [<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>],
             [<thermalfoundation:material:328>, <minecraft:cobblestone>, <thermalfoundation:material:328>],
             [<thermalfoundation:material:136>, <thermalfoundation:material:328>, <thermalfoundation:material:136>]]);
-
-        //高级线圈
-        recipes.remove(<actuallyadditions:item_misc:8>);
-        recipesUtils.addRecipe(<actuallyadditions:item_misc:8>, [
-            [null, <ore:plateBronze>, null],
-            [<ore:plateBronze>, <thermalfoundation:material:515>, <ore:plateBronze>],
-            [<ore:plateBronze>, <thermalfoundation:material:515>, <ore:plateBronze>]]);
 
         //红石传导线圈
         recipes.remove(<thermalfoundation:material:515>);

@@ -1,11 +1,11 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     游戏阶段 模组阶段        ##
-##################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     游戏阶段 模组
+##================================================
 #priority 2010
 import mods.zenstages.ZenStager;
-
+#norun
 var StageZero = ZenStager.getStage(stageZeroName);
 var StageOne = ZenStager.getStage(stageOneName);
 var StageTwo = ZenStager.getStage(stageTwoName);

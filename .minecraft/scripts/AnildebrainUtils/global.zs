@@ -1,8 +1,8 @@
-#########################################################################
-##          [Author]:   Anidlebrain                                    ##
-##          [License]:  CC BY-NC-SA 4.0                                ##
-##          [Info]:     全局变量                                        ##
-#########################################################################
+##=================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     全局变量
+##=================================================
 #priority 99999999
 
 import crafttweaker.item.IItemStack;
@@ -116,17 +116,17 @@ global END_STEEL_BLOCK as IOreDictEntry = <ore:blockEndSteel>;
 global CAP_BANK_1 as IIngredient = <item:enderio:block_cap_bank:1>;
 global CAP_BANK_2 as IIngredient = <item:enderio:block_cap_bank:2>;
 global CAP_BANK_3 as IIngredient = <item:enderio:block_cap_bank:3>;
-global SOLAR_1 as IIngredient = <item:enderio:block_solar_panel:0>;
+global SOLAR_1 as IIngredient = <item:enderio:block_solar_panel>;
 global SOLAR_2 as IIngredient = <item:enderio:block_solar_panel:1>;
 global SOLAR_3 as IIngredient = <item:enderio:block_solar_panel:2>;
 global SOLAR_4 as IIngredient = <item:enderio:block_solar_panel:3>;
-global CONDUIT_PROBE as IIngredient = <item:enderio:item_conduit_probe:0>;
-global HEAD_ENDERMAN as IIngredient = <item:enderio:block_enderman_skull:0>;
+global CONDUIT_PROBE as IIngredient = <item:enderio:item_conduit_probe>;
+global HEAD_ENDERMAN as IIngredient = <item:enderio:block_enderman_skull>;
 global HEAD_SKELETON as IIngredient = <item:minecraft:skull:0>;
 global HEAD_CREEPER as IIngredient = <item:minecraft:skull:2>;
 global HEAD_ZOMBIE as IIngredient = <item:minecraft:skull:4>;
 global HEAD_ENDERMAN_TORMENTED as IIngredient = <item:enderio:block_enderman_skull:2>;
-global LIGHT_ELECTRIC as IIngredient = <item:enderio:block_electric_light:0>;
+global LIGHT_ELECTRIC as IIngredient = <item:enderio:block_electric_light>;
 global LIGHT_ELECTRIC_INV as IIngredient = <item:enderio:block_electric_light:1>;
 global LIGHT_BASIC as IIngredient = <item:enderio:block_electric_light:2>;
 global LIGHT_BASIC_INV as IIngredient = <item:enderio:block_electric_light:3>;

@@ -1,8 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     cot 处理函数             ##
-##################################################
+##=================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     cot 处理函数
+##=================================================
 
 #loader contenttweaker
 #priority 30000
@@ -18,12 +18,12 @@ import mods.contenttweaker.SoundEvent;
 
 
 function itemCreator(name as string,
-					 maxn as int,
-					 glow as bool) {
-	var itemt = VanillaFactory.createItem(name);
-	itemt.maxStackSize = maxn;
-	itemt.glowing = glow;
-	itemt.register();
+                     maxn as int,
+                     glow as bool) {
+    var itemt = VanillaFactory.createItem(name);
+    itemt.maxStackSize = maxn;
+    itemt.glowing = glow;
+    itemt.register();
 }
 
 function addFluid(name as string, color as int, isLava as bool){
@@ -33,16 +33,16 @@ function addFluid(name as string, color as int, isLava as bool){
     fluidt.density = 1000;
     fluidt.luminosity = 0;
     if (isLava)
-	{
+    {
         fluidt.material = <blockmaterial:lava>;
         fluidt.stillLocation = "base:fluids/molten";
         fluidt.flowingLocation = "base:fluids/molten_flowing";
     } else
-	{
+    {
         fluidt.material = <blockmaterial:water>;
         fluidt.stillLocation = "base:fluids/liquid";
         fluidt.flowingLocation = "base:fluids/liquid_flow";
     }
     fluidt.register();
-	print("Add fluid " ~ name);
+    print("Add fluid " ~ name);
 }

@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     圣遗物 工作台合成        ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     圣遗物 工作台合成
+##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
@@ -12,11 +11,11 @@ zenClass XreliquaryRecipes {
 
     }
 
-	function init() {
+    function init() {
         recipesInit();
         recipesRemove();
     }
-	
+    
     function recipesInit() {
         
     }

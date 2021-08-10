@@ -1,3 +1,8 @@
+##=================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     物品增加
+##=================================================
 #loader contenttweaker
 #priority 5000
 import mods.contenttweaker.VanillaFactory;

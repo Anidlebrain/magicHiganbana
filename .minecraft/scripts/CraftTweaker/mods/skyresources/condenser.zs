@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     空岛资源 冷凝器          ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     空岛资源 冷凝器
+##================================================
 #priority 2000
 import mods.skyresources.condenser;
 import mods.skyresources.fusion;

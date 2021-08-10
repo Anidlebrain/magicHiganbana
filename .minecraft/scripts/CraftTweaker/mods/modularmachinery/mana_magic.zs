@@ -1,8 +1,8 @@
-######################################################
-##          [Author]:   Anidlebrain                 ##
-##          [License]:  CC BY-NC-SA 4.0             ##
-##          [Info]:     模块化机械 魔力蕴魔          ##
-######################################################
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     模块化机械 魔力蕴魔
+##================================================
 #priority 2000
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;

@@ -1,9 +1,8 @@
-##################################################
-##          [Author]:   Anidlebrain             ##
-##          [License]:  CC BY-NC-SA 4.0         ##
-##          [Info]:     JEI 添加物品描述         ##
-##################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     JEI 添加物品描述
+##================================================
 #priority 2000
 import mods.jei.JEI.addDescription;
 import crafttweaker.item.IItemStack;

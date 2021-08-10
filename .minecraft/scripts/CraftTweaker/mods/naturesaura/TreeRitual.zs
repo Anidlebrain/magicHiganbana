@@ -1,9 +1,8 @@
-######################################################
-##          [Author]:   Anidlebrain                 ##
-##          [License]:  CC BY-NC-SA 4.0             ##
-##          [Info]:     自然灵气 森林仪式            ##
-######################################################
-
+##================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     自然灵气 森林仪式
+##================================================
 #priority 2000
 import mods.naturesaura.TreeRitual;
 import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.treeRitualRecipe;

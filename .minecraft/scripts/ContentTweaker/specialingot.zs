@@ -1,3 +1,8 @@
+##=================================================
+##          [Author]:   Anidlebrain
+##          [License]:  CC BY-NC-SA 4.0
+##          [Info]:     金属部件增加
+##=================================================
 #priority 4000
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
