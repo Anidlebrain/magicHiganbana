@@ -14,7 +14,7 @@ FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", A
 FluidToItem.transform(<minecraft:wheat_seeds>, <liquid:water>, [<roots:petals>, <minecraft:deadbush>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion", selectedSlot: 0, lastCooldown: 0, cooldown: 0}})], true);
 
 //水晶体
-FluidToItem.transform(<contenttweaker:crystal_water>, <liquid:water>, [<skyresources:heavysnowball>, <mechanics:bursting_powder>], true);
+FluidToItem.transform(<contenttweaker:crystal_water>, <liquid:water>, [<skyresources:heavysnowball>, <contenttweaker:explosive_dust>], true);
 
 //烈焰网
 recipes.removeByRecipeName("botania:blazeblock");

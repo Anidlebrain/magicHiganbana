@@ -167,6 +167,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing:3
     [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]
 ]);
 
+/*
 //聚焦管
 mods.extendedcrafting.TableCrafting.addShaped(0, <mechanics:amplifying_tube> * 2, [
     [null, <botania:managlasspane>, <pneumaticcraft:aphorism_tile>, <botania:managlasspane>, null], 
@@ -175,6 +176,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mechanics:amplifying_tube> * 2
     [null, <pneumaticcraft:aphorism_tile>, <botania:lens:5>, <pneumaticcraft:aphorism_tile>, null], 
     [null, <botania:managlasspane>, <gugu-utils:lenstransform>, <botania:managlasspane>, null]
 ]);
+*/
 
 //铁质外壳
 mods.extendedcrafting.TableCrafting.addShaped(0, <actuallyadditions:block_misc:9>, [

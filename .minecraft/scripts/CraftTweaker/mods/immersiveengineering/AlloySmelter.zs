@@ -12,12 +12,12 @@ import mods.immersiveengineering.AlloySmelter;
 AlloySmelter.removeAll();
 
 //爆裂粉
-AlloySmelter.addRecipe(<mechanics:bursting_powder> * 2, <minecraft:gunpowder> * 3, <minecraft:blaze_powder> * 2, 200);
+AlloySmelter.addRecipe(<contenttweaker:explosive_dust> * 2, <minecraft:gunpowder> * 3, <minecraft:blaze_powder> * 2, 200);
 
 
 //低级炼金粉尘
 mods.skyresources.combustion.removeRecipe(<skyresources:alchemyitemcomponent:2>);
-AlloySmelter.addRecipe(<skyresources:alchemyitemcomponent:2> * 4, <mechanics:bursting_powder> * 5, <minecraft:coal:1> * 3, 200);
+AlloySmelter.addRecipe(<skyresources:alchemyitemcomponent:2> * 4, <contenttweaker:explosive_dust> * 5, <minecraft:coal:1> * 3, 200);
 
 //岩浆膏
 recipes.removeByRecipeName("minecraft:magma_cream");

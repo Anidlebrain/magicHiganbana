@@ -38,7 +38,7 @@ StageOne.addModId("botania");
 StageOne.addModId("forestry");
 StageOne.addModId("immersiveengineering");
 StageOne.addModId("roots");
-StageOne.addModId("mechanics");
+//StageOne.addModId("mechanics");
 StageOne.addModId("mysticalworld");
 StageOne.addModId("patchouli");
 StageOne.addModId("tcomplement");

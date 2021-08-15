@@ -127,10 +127,10 @@ AlloySmelter.addRecipe(<taiga:nucleum_ingot>, [<taiga:niob_ingot> * 3, <taiga:ee
 由 合金窑 配方转移而来
 */
 //爆裂粉
-AlloySmelter.addRecipe(<mechanics:bursting_powder> * 2, [<minecraft:gunpowder> * 3, <minecraft:blaze_powder> * 2]);
+AlloySmelter.addRecipe(<contenttweaker:explosive_dust> * 2, [<minecraft:gunpowder> * 3, <minecraft:blaze_powder> * 2]);
 
 //低级炼金粉尘
-AlloySmelter.addRecipe(<skyresources:alchemyitemcomponent:2> * 4, [<mechanics:bursting_powder> * 5, <minecraft:coal:1> * 3]);
+AlloySmelter.addRecipe(<skyresources:alchemyitemcomponent:2> * 4, [<contenttweaker:explosive_dust> * 5, <minecraft:coal:1> * 3]);
 
 //岩浆膏
 AlloySmelter.addRecipe(<minecraft:magma_cream>, [<minecraft:blaze_powder>, <minecraft:slime_ball>]);

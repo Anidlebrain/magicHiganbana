@@ -12,7 +12,8 @@ vanilla.seeds.removeSeed(<extrautils2:enderlilly:0>);
 
 //混合种子
 vanilla.seeds.addSeed(<mysticalworld:assorted_seeds> % 50);
-vanilla.seeds.addSeed(<roots:terra_spores> % 1);
+//vanilla.seeds.addSeed(<roots:terra_spores> % 1);
 vanilla.seeds.addSeed(<roots:wildroot> % 1);
-vanilla.seeds.addSeed(<roots:wildewheet_seed> % 10);
-
+//vanilla.seeds.addSeed(<roots:wildewheet_seed> % 10);
+vanilla.seeds.addSeed(<minecraft:wheat_seeds> % 5);
+vanilla.seeds.addSeed(<minecraft:pumpkin_seeds> % 10);

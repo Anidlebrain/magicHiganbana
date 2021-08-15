@@ -40,7 +40,7 @@ StageOne.addOreReplacement(<botania:*>);
 StageOne.addOreReplacement(<forestry:*>);
 StageOne.addOreReplacement(<immersiveengineering:*>);
 StageOne.addOreReplacement(<root:*>);
-StageOne.addOreReplacement(<mechanics:*>);
+//StageOne.addOreReplacement(<mechanics:*>);
 StageOne.addOreReplacement(<mysticalworld:*>);
 StageOne.addOreReplacement(<patchouli:*>);
 StageOne.addOreReplacement(<tcomplement:*>);

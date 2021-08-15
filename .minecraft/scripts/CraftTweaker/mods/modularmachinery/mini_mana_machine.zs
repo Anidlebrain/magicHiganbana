@@ -164,7 +164,7 @@ zenClass MiniManaMachineRecipes {
             
             //冷凝器
             addRecipes([<skyresources:condenser>.definition.makeStack(kinds)],
-                       [<randomthings:superlubricentice>, <skyresources:alchemy>.definition.makeStack(kinds), <skyresources:baseitemcomponent:2>],
+                       [<minecraft:ice>, <skyresources:alchemy>.definition.makeStack(kinds), <skyresources:baseitemcomponent:2>],
                        [plate[i]],
                        [6]);
             
@@ -206,7 +206,7 @@ zenClass MiniManaMachineRecipes {
             
             //冷凝器
             addRecipes([<skyresources:condenser>.definition.makeStack(kinds)],
-                       [<randomthings:superlubricentice>, <skyresources:alchemy>.definition.makeStack(kinds), <skyresources:baseitemcomponent:2>, <skyresources:baseitemcomponent:6>, material[i] * 4],
+                       [<minecraft:ice>, <skyresources:alchemy>.definition.makeStack(kinds), <skyresources:baseitemcomponent:2>, <skyresources:baseitemcomponent:6>, material[i] * 4],
                        null,
                        null);
             

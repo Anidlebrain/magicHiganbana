@@ -177,7 +177,7 @@ zenClass SkyresourcesRecipes {
              "ABA",
              "ACA"],
             { A : <ore:logWood>,
-              B : <randomthings:superlubricentice>,
+              B : <minecraft:ice>,
               C : <skyresources:alchemy>});
 
         //地狱砖冷凝器
