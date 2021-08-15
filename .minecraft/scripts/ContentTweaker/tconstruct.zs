@@ -32,7 +32,7 @@ val lifeDrain = mods.contenttweaker.tconstruct.TraitBuilder.create("lifeDrain");
 lifeDrain.color = 0xE1FFFF;
 lifeDrain.maxLevel = 3;
 lifeDrain.countPerLevel = 29;
-lifeDrain.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_life_drain"}}));
+lifeDrain.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_life_drain"}}));
 lifeDrain.localizedName = ("生命汲取");
 lifeDrain.localizedDescription = ("§o多兰剑§r\n§f降低伤害，吸取造成伤害一定比例的血量");
 lifeDrain.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical)
@@ -76,12 +76,12 @@ val wildFire = mods.contenttweaker.tconstruct.TraitBuilder.create("wildFire");
 wildFire.color = 0xE1FFFF;
 wildFire.maxLevel = 1;
 wildFire.countPerLevel = 3;
-wildFire.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_wild_fire"}}));
+wildFire.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_wild_fire"}}));
 wildFire.localizedName = ("野火");
 wildFire.localizedDescription = ("§o野火烧不尽，春风吹又生§r\n§f燃烧物品，有几率把物品烧成灰烬\n原木堆=>木炭 树苗=>枯死的灌木");
 wildFire.onBlockHarvestDrops = function(trait, tool, event)
 {
-    var dropping as IItemStack = <minecraft:dirt>;
+    var dropping as IItemStack = <item:minecraft:dirt>;
     if (event.drops.length == 1)
     {
         dropping = event.drops[0].stack;
@@ -89,16 +89,16 @@ wildFire.onBlockHarvestDrops = function(trait, tool, event)
     var id as string = event.block.definition.id;
     if (id == "forestry:wood_pile")
     {
-        event.drops = [<minecraft:coal> * 5 % 100];
+        event.drops = [<item:minecraft:coal> * 5 % 100];
     }
     else
     {
         var flag as bool = false;
-        for item in <ore:treeSapling>.items
+        for item in <item:ore:treeSapling>.items
         {
             if (id == item.definition.id)
             {
-                event.drops = [<minecraft:deadbush> % 100];
+                event.drops = [<item:minecraft:deadbush> % 100];
                 flag = true;
                 break;
             }
@@ -107,11 +107,11 @@ wildFire.onBlockHarvestDrops = function(trait, tool, event)
         {
             if (Math.random() < 0.01)
             {
-                event.drops = [<forestry:ash> % 100];
+                event.drops = [<item:forestry:ash> % 100];
             }
             else if (Math.random() > 0.99)
             {
-                event.drops = [<prodigytech:ash> % 100];
+                event.drops = [<item:prodigytech:ash> % 100];
             }
         }
     }
@@ -123,7 +123,7 @@ val magnetism = mods.contenttweaker.tconstruct.TraitBuilder.create("magnetism");
 magnetism.color = 0xE1FFFF;
 magnetism.maxLevel = 10;
 magnetism.countPerLevel = 64;
-magnetism.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_magnetism"}}));
+magnetism.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_magnetism"}}));
 magnetism.localizedName = ("磁化之力");
 magnetism.localizedDescription = ("§o传说只要磁力足够强，就可以吸附起物品§r\n§f");
 //暂时没有效果 
@@ -134,7 +134,7 @@ val shatter = mods.contenttweaker.tconstruct.TraitBuilder.create("shatter");
 shatter.color = 0xE1FFFF;
 shatter.maxLevel = 1;
 shatter.countPerLevel = 5;
-shatter.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_shatter"}}));
+shatter.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_shatter"}}));
 shatter.localizedName = ("粉碎");
 shatter.localizedDescription = ("§o你是不是想到了无中生有的锤子？§r\n§f圆石=>沙砾 沙砾=>沙子 冰=>碎冰");
 shatter.onBlockHarvestDrops = function(trait, tool, event)
@@ -142,15 +142,15 @@ shatter.onBlockHarvestDrops = function(trait, tool, event)
     var id as string = event.block.definition.id;
     if (id == "minecraft:cobblestone")
     {
-        event.drops = [<minecraft:gravel> % 100];
+        event.drops = [<item:minecraft:gravel> % 100];
     }
     else if(id == "minecraft:gravel")
     {
-        event.drops = [<minecraft:sand> % 100];
+        event.drops = [<item:minecraft:sand> % 100];
     }
     else if(id == "minecraft:ice")
     {
-        event.drops = [<forestry:crafting_material:5> * 4 % 100];
+        event.drops = [<item:forestry:crafting_material:5> * 4 % 100];
     }
 };
 shatter.register();
@@ -160,7 +160,7 @@ val rampantGrowth = mods.contenttweaker.tconstruct.TraitBuilder.create("rampantG
 rampantGrowth.color = 0xE1FFFF;
 rampantGrowth.maxLevel = 3;
 rampantGrowth.countPerLevel = 9;
-rampantGrowth.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_rampant_growth"}}));
+rampantGrowth.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_rampant_growth"}}));
 rampantGrowth.localizedName = ("狂野生长");
 rampantGrowth.localizedDescription = ("§o让骨粉的效果更好§r\n§f杀死怪物后，副手若有骨粉，将骨粉转换为强化骨粉");
 rampantGrowth.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit)
@@ -175,9 +175,9 @@ rampantGrowth.afterHit = function(trait, tool, attacker, target, damageDealt, wa
             var seed as double = Math.random();
             if (!target.world.remote)
             {
-                if (target.world.spawnEntity((<skyresources:baseitemcomponent:4>).createEntityItem(target.world, Math.floor(target.x) as int, Math.floor(target.y) as int, Math.floor(target.z) as int)))
+                if (target.world.spawnEntity((<item:skyresources:baseitemcomponent:4>).createEntityItem(target.world, Math.floor(target.x) as int, Math.floor(target.y) as int, Math.floor(target.z) as int)))
                 {
-                    attacker.setItemToSlot(off, <minecraft:dye:15> * (offIng.amount - 1));
+                    attacker.setItemToSlot(off, <item:minecraft:dye:15> * (offIng.amount - 1));
                 }
             }
         }
@@ -190,7 +190,7 @@ val sanctuary = mods.contenttweaker.tconstruct.TraitBuilder.create("sanctuary");
 sanctuary.color = 0x00FF7F;
 sanctuary.maxLevel = 3;
 sanctuary.countPerLevel = 5;
-sanctuary.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sanctuary"}}));
+sanctuary.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sanctuary"}}));
 sanctuary.localizedName = ("神圣领域");
 sanctuary.localizedDescription = ("§o领域内不容许外人的存在§r\n§f攻击附加额外的击退效果");
 sanctuary.calcDamage = function(trait, tool, attacker, target, originalDamage, newKnockback, isCritical)
@@ -218,7 +218,7 @@ val secondWind = mods.contenttweaker.tconstruct.TraitBuilder.create("secondWind"
 secondWind.color = 0x00FF7F;
 secondWind.maxLevel = 3;
 secondWind.countPerLevel = 32;
-secondWind.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_second_wind"}}));
+secondWind.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_second_wind"}}));
 secondWind.localizedName = ("吐故纳新");
 secondWind.localizedDescription = ("§o辟谷之法，只需要服食天地元气§r\n§f");
 secondWind.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -263,7 +263,7 @@ val skySoarer = mods.contenttweaker.tconstruct.TraitBuilder.create("skySoarer");
 skySoarer.color = 0x00FF7F;
 skySoarer.maxLevel = 3;
 skySoarer.countPerLevel = 32;
-skySoarer.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sky_soarer"}}));
+skySoarer.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sky_soarer"}}));
 skySoarer.localizedName = ("澄空漫游");
 skySoarer.localizedDescription = ("§o御六气之辩，以游无穷§r\n§f");
 skySoarer.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -302,7 +302,7 @@ val senseAnimals = mods.contenttweaker.tconstruct.TraitBuilder.create("senseAnim
 senseAnimals.color = 0x00FF7F;
 senseAnimals.maxLevel = 1;
 senseAnimals.countPerLevel = 8;
-senseAnimals.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sense_animals"}}));
+senseAnimals.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sense_animals"}}));
 senseAnimals.localizedName = ("动物感知");
 senseAnimals.localizedDescription = ("§o可以听到动物的声音§r\n§f");
 senseAnimals.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -346,7 +346,7 @@ val dandelionWinds = mods.contenttweaker.tconstruct.TraitBuilder.create("dandeli
 dandelionWinds.color = 0x00FF7F;
 dandelionWinds.maxLevel = 1;
 dandelionWinds.countPerLevel = 3;
-dandelionWinds.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_dandelion_winds"}}));
+dandelionWinds.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_dandelion_winds"}}));
 dandelionWinds.localizedName = ("蒲公英之风");
 dandelionWinds.localizedDescription = ("§o生命的延续§r\n§f");
 //保留 蒲公英之风
@@ -357,7 +357,7 @@ val growthInfusion = mods.contenttweaker.tconstruct.TraitBuilder.create("growthI
 growthInfusion.color = 0x00FF7F;
 growthInfusion.maxLevel = 3;
 growthInfusion.countPerLevel = 5;
-growthInfusion.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion"}}));
+growthInfusion.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion"}}));
 growthInfusion.localizedName = ("生机灌注");
 growthInfusion.localizedDescription = ("§o生机现，万物复苏§r\n§f等级越高，转化几率越高\n重型雪块=>泥土 泥土=>草方块 枯死的灌木=>树苗等");
 growthInfusion.onBlockHarvestDrops = function(trait, tool, event)
@@ -369,7 +369,7 @@ growthInfusion.onBlockHarvestDrops = function(trait, tool, event)
         var probability as double = 0.8 * level;
         if(Math.random() < probability)
         {
-            event.drops = [<minecraft:dirt> % 100];
+            event.drops = [<item:minecraft:dirt> % 100];
         }
     }
     else if(id == "minecraft:snow")
@@ -377,7 +377,7 @@ growthInfusion.onBlockHarvestDrops = function(trait, tool, event)
         var probability as double = 0.05 * level;
         if(Math.random() < probability)
         {
-            event.drops = [<minecraft:dirt> % 100];
+            event.drops = [<item:minecraft:dirt> % 100];
         }
     }
     else if(id == "minecraft:dirt")
@@ -385,7 +385,7 @@ growthInfusion.onBlockHarvestDrops = function(trait, tool, event)
         var probability as double = 0.1 * level;
         if(Math.random() < probability)
         {
-            event.drops = [<minecraft:grass> % 100];
+            event.drops = [<item:minecraft:grass> % 100];
         }
     }
     else if(id == "minecraft:deadbush")
@@ -395,31 +395,31 @@ growthInfusion.onBlockHarvestDrops = function(trait, tool, event)
         {
             if(Math.random() < 0.15)
             {
-                event.drops = [<minecraft:sapling> % 100];
+                event.drops = [<item:minecraft:sapling> % 100];
             }
             else if(Math.random() < 0.30)
             {
-                event.drops = [<minecraft:sapling:1> % 100];
+                event.drops = [<item:minecraft:sapling:1> % 100];
             }
             else if(Math.random() < 0.45)
             {
-                event.drops = [<minecraft:sapling:2> % 100];
+                event.drops = [<item:minecraft:sapling:2> % 100];
             }
             else if(Math.random() < 0.60)
             {
-                event.drops = [<minecraft:sapling:3> % 100];
+                event.drops = [<item:minecraft:sapling:3> % 100];
             }
             else if(Math.random() < 0.75)
             {
-                event.drops = [<minecraft:sapling:4> % 100];
+                event.drops = [<item:minecraft:sapling:4> % 100];
             }
             else if(Math.random() < 0.90)
             {
-                event.drops = [<minecraft:sapling:5> % 100];
+                event.drops = [<item:minecraft:sapling:5> % 100];
             }
             else 
             {
-                event.drops = [<minecraft:stick> % 100];
+                event.drops = [<item:minecraft:stick> % 100];
             }
         }
     }
@@ -431,7 +431,7 @@ val harvest = mods.contenttweaker.tconstruct.TraitBuilder.create("harvest");
 harvest.color = 0x00FF7F;
 harvest.maxLevel = 1;
 harvest.countPerLevel = 3;
-harvest.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_harvest"}}));
+harvest.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_harvest"}}));
 harvest.localizedName = ("收获");
 harvest.localizedDescription = ("§o收获§r\n§f");
 //保留 自动收获
@@ -442,7 +442,7 @@ val petalShell = mods.contenttweaker.tconstruct.TraitBuilder.create("petalShell"
 petalShell.color = 0x00FF7F;
 petalShell.maxLevel = 5;
 petalShell.countPerLevel = 18;
-petalShell.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_petal_shell"}}));
+petalShell.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_petal_shell"}}));
 petalShell.localizedName = ("花仙盾");
 petalShell.localizedDescription = ("§o我有盾我无敌§r\n§f降低受到的伤害");
 petalShell.onBlock = function(trait, tool, attacker, event)
@@ -460,7 +460,7 @@ val radiance = mods.contenttweaker.tconstruct.TraitBuilder.create("radiance");
 radiance.color = 0x00FF7F;
 radiance.maxLevel = 3;
 radiance.countPerLevel = 4;
-radiance.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_radiance"}}));
+radiance.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_radiance"}}));
 radiance.localizedName = ("阳炎射线");
 radiance.localizedDescription = ("§o光合作用§r\n§f光照时使用工具有几率不消耗耐久");
 radiance.onToolDamage = function(trait, tool, damage, newDamage, entity)
@@ -498,7 +498,7 @@ val timeStop = mods.contenttweaker.tconstruct.TraitBuilder.create("timeStop");
 timeStop.color = 0x00FF7F;
 timeStop.maxLevel = 1;
 timeStop.countPerLevel = 48;
-timeStop.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}));
+timeStop.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}));
 timeStop.localizedName = ("时间停止");
 timeStop.localizedDescription = ("§o时间停止§r\n§f感觉周围的时间禁止下来了");
 timeStop.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -521,7 +521,7 @@ val senseDanger = mods.contenttweaker.tconstruct.TraitBuilder.create("senseDange
 senseDanger.color = 0x00FF7F;
 senseDanger.maxLevel = 1;
 senseDanger.countPerLevel = 2;
-senseDanger.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sense_danger"}}));
+senseDanger.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_sense_danger"}}));
 senseDanger.localizedName = ("危险感知");
 senseDanger.localizedDescription = ("§o这世界好危险§r\n§f");
 senseDanger.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -545,7 +545,7 @@ val geas = mods.contenttweaker.tconstruct.TraitBuilder.create("geas");
 geas.color = 0x00FF7F;
 geas.maxLevel = 1;
 geas.countPerLevel = 37;
-geas.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_geasgeas"}}));
+geas.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_geasgeas"}}));
 geas.localizedName = ("誓约");
 geas.localizedDescription = ("§o我发誓xxxx§r\n§f");
 geas.onUpdate = function(trait, tool, world, entity, itemSlot, isSelected)
@@ -559,7 +559,7 @@ val icedTouch = mods.contenttweaker.tconstruct.TraitBuilder.create("icedTouch");
 icedTouch.color = 0x00FF7F;
 icedTouch.maxLevel = 1;
 icedTouch.countPerLevel = 16;
-icedTouch.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_iced_touch"}}));
+icedTouch.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_iced_touch"}}));
 icedTouch.localizedName = ("冰霜之触");
 icedTouch.localizedDescription = ("§o冰天雪地§r\n§f");
 /*
@@ -593,7 +593,7 @@ val roseThorns = mods.contenttweaker.tconstruct.TraitBuilder.create("roseThorns"
 roseThorns.color = 0x00FF7F;
 roseThorns.maxLevel = 1;
 roseThorns.countPerLevel = 7;
-roseThorns.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_rose_thorns"}}));
+roseThorns.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_rose_thorns"}}));
 roseThorns.localizedName = ("玫瑰荆棘");
 roseThorns.localizedDescription = ("§o苦难中绽放光彩§r\n§f");
 //保留 玫瑰荆棘
@@ -604,7 +604,7 @@ val acidCloud = mods.contenttweaker.tconstruct.TraitBuilder.create("acidCloud");
 acidCloud.color = 0x00FF7F;
 acidCloud.maxLevel = 5;
 acidCloud.countPerLevel = 6;
-acidCloud.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_acid_cloud"}}));
+acidCloud.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_acid_cloud"}}));
 acidCloud.localizedName = ("酸雨");
 acidCloud.localizedDescription = ("§o保护环境，人人有责§r\n§f");
 radiance.onToolDamage = function(trait, tool, damage, newDamage, entity)
@@ -619,7 +619,7 @@ val lightDrifter = mods.contenttweaker.tconstruct.TraitBuilder.create("lightDrif
 lightDrifter.color = 0x00FF7F;
 lightDrifter.maxLevel = 1;
 lightDrifter.countPerLevel = 7;
-lightDrifter.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_light_drifter"}}));
+lightDrifter.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_light_drifter"}}));
 lightDrifter.localizedName = ("超然游魂");
 lightDrifter.localizedDescription = ("§o三山五岳，五湖四海，六合八荒，九天十地§r\n§f");
 //保留 超然游魂
@@ -630,7 +630,7 @@ val supplication = mods.contenttweaker.tconstruct.TraitBuilder.create("supplicat
 supplication.color = 0x00FF7F;
 supplication.maxLevel = 1;
 supplication.countPerLevel = 7;
-supplication.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_supplication"}}));
+supplication.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_supplication"}}));
 supplication.localizedName = ("森流祈愿");
 supplication.localizedDescription = ("§o大自然的祈福§r\n§f");
 //保留 森流祈愿
@@ -641,7 +641,7 @@ val feyLight = mods.contenttweaker.tconstruct.TraitBuilder.create("feyLight");
 feyLight.color = 0x00FF7F;
 feyLight.maxLevel = 1;
 feyLight.countPerLevel = 7;
-feyLight.addItem(<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_fey_light"}}));
+feyLight.addItem(<item:roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_fey_light"}}));
 feyLight.localizedName = ("精灵微光");
 feyLight.localizedDescription = ("§o星星之火可以燎原§r\n§f");
 //保留 精灵微光
