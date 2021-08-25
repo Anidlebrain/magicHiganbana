@@ -1,7 +1,0 @@
-{
-	title: "生机现",
-	icon: "minecraft:iron_ingot",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

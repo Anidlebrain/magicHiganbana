@@ -1,6 +1,0 @@
-{
-	"name": "怪物",
-	"description": "怪物通常是敌对生物, 会攻击它看到玩家. 它们十分的危险，但杀死它们会得到有用的材料",
-	"icon": "minecraft:bone",
-	"sortnum": 2
-}

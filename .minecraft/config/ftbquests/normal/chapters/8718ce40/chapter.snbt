@@ -1,7 +1,0 @@
-{
-	title: "机械化时代",
-	icon: "appliedenergistics2:molecular_assembler",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}
