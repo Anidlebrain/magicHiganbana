@@ -1,0 +1,30 @@
+{
+	"name": "烈焰人",
+	"icon": "minecraft:spawn_egg{EntityTag:{id:'minecraft:blaze'}}",
+	"category": "monsters",
+	"flag": "universalbestiary:entity:minecraft:blaze",
+	"advancement": "universalbestiary:minecraft_blaze",
+	"pages": [
+		{
+			"type": "text",
+			"text": "$(mob)烈焰人$()是一种常见于$(thing)下界要塞$()中的怪物。它会漂浮在空中并且远程攻击玩家。$(p)他的攻击方式是发射三个火球。火球会点燃它们击中的任何东西，无论是玩家还是方块。$(mob)烈焰人$()免疫火焰伤害、水造成的伤害、雪球造成的伤害。"
+		},
+		{
+			"type": "entity",
+			"entity": "minecraft:blaze",
+			"text": "$(li)生命值：20$()$(li)伤害：4-9$()"
+		},
+		{
+			"type": "spotlight",
+			"item": "minecraft:blaze_rod",
+			"link_recipe": true,
+			"text": "$(mob)烈焰人$()在死亡时会掉落$(item)烈焰棒$()。它可以用于$(item)熔炉$()的燃料，或者分解成$(item)烈焰粉$(), 用于酿造$(item)药水$()和炼金。"
+		},
+		{
+			"type": "spotlight",
+			"item": "xreliquary:mob_ingredient:7",
+			"link_recipe": true,
+			"text": "$(mob)烈焰人$()只有在被玩家杀死时才会有几率掉落$(item)熔火之心$()。这是一种炼金材料。它也可以用于制作$(item)烈焰棒$()或者$(item)熔岩球$()。"
+		}
+	]
+}

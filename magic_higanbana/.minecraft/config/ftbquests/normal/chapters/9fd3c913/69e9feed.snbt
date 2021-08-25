@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: -6.5d,
+	dependencies: [
+		"178be934"
+	],
+	tasks: [{
+		uid: "e2807362",
+		type: "item",
+		items: [{
+			item: "prodigytech:ferramic_gear"
+		}]
+	}]
+}

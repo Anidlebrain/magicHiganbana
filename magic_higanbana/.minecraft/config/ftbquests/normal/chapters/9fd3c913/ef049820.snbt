@@ -1,0 +1,14 @@
+{
+	x: 6.5d,
+	y: 2.0d,
+	dependencies: [
+		"7c535b6f"
+	],
+	tasks: [{
+		uid: "09ad2be8",
+		type: "item",
+		items: [{
+			item: "techreborn:plates 1 2"
+		}]
+	}]
+}

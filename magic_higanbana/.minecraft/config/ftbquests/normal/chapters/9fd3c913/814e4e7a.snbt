@@ -1,0 +1,14 @@
+{
+	x: 16.0d,
+	y: -5.0d,
+	dependencies: [
+		"882eb00f"
+	],
+	tasks: [{
+		uid: "2afa5249",
+		type: "item",
+		items: [{
+			item: "prodigytech:automatic_crystal_cutter"
+		}]
+	}]
+}

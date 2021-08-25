@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: 0.0d,
+	description: "这个可以拿来砸怪物",
+	dependencies: [
+		"0575e704"
+	],
+	tasks: [{
+		uid: "837858f5",
+		type: "item",
+		items: [{
+			item: "skyresources:heavysnowball"
+		}]
+	}]
+}

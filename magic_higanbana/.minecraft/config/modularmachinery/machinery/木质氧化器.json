@@ -1,0 +1,62 @@
+{
+    "registryname": "Wood_Combustionheater_Machine_20200913",
+    "localizedname": "木质氧化器",
+    "parts": [
+        {
+            "x": 0,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "minecraft:wooden_button@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "minecraft:planks@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "minecraft:planks@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "minecraft:planks@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "minecraft:planks@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "minecraft:planks@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "skyresources:casing@0"
+            ]
+        }
+    ]
+}

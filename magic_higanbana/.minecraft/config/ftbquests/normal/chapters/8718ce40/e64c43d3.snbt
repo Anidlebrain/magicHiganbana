@@ -1,0 +1,15 @@
+{
+	x: -8.5d,
+	y: -3.5d,
+	dependencies: [
+		"b3579713",
+		"0a1aae2f"
+	],
+	tasks: [{
+		uid: "0a9bf7b0",
+		type: "item",
+		items: [{
+			item: "woot:factorybase"
+		}]
+	}]
+}

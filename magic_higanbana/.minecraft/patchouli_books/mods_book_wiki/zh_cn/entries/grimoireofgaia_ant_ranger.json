@@ -1,0 +1,36 @@
+{
+	"name": "救援蚁",
+	"icon": "minecraft:spawn_egg{EntityTag:{id:'grimoireofgaia:ant_ranger'}}",
+	"category": "monsters",
+	"flag": "universalbestiary:entity:grimoireofgaia:ant_ranger",
+	"advancement": "universalbestiary:grimoireofgaia_ant_ranger",
+	"pages": [
+		{
+			"type": "text",
+			"text": "$(mob)救援蚁$()会在沙漠地形生成。它对火焰有抵抗性，并且免疫毒系伤害和击退效果。$(mob)救援蚁$()完全不能移动，它会发射一个毒球对在它射程范围内的玩家造成伤害，并且对玩家施加$(thing)剧毒$()buff。当玩家离它太近时，它隐形以隐藏自己，但打破它下面的方块就可以消除它。"
+		},
+		{
+			"type": "entity",
+			"entity": "grimoireofgaia:ant_ranger",
+			"scale": 0.5,
+			"offset": -0.5,
+			"text": "$(li)生命值：40$()$(li)护甲：4$()$(li)伤害：8$()"
+		},
+		{
+			"type": "spotlight",
+			"item": "grimoireofgaia:food_meat",
+			"link_recipe": true,
+			"text": "$(mob)Ant Salvagers$() drop $(item)Meat$() on death. These are a moderate source of food and have no other use."
+		},
+		{
+			"type": "spotlight",
+			"item": "grimoireofgaia:box_iron",
+			"link_recipe": true,
+			"text": "$(mob)Ant Salvagers$() drop $(item)Iron Box$() on death, which can be right-clicked while in hand to open and receive a random tool, weapon, or armor piece made of iron. Alternatively, it can be smelted in a furnace to create $(item)Crystalized Experience (Small)$()."
+		},
+		{
+			"type": "text",
+			"text": "由于彼岸之法整合包的修改，该怪物不会在空岛世界自然生成。"
+		}
+	]
+}

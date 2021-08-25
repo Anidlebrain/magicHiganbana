@@ -1,0 +1,19 @@
+{
+	title: "更多的树苗",
+	x: 2.0d,
+	y: -2.0d,
+	description: "希望你的树会掉树苗",
+	dependencies: [
+		"7f0c7eb2"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8dd7a496",
+		type: "item",
+		items: [{
+			item: "minecraft:sapling 1 1"
+		}],
+		count: 10L,
+		consume_items: true
+	}]
+}

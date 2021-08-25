@@ -1,0 +1,17 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"d29ac348",
+		"28999d8a",
+		"fee167da",
+		"288813bc"
+	],
+	tasks: [{
+		uid: "c7a9ab3b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:alchemical_plate"
+		}]
+	}]
+}

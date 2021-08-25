@@ -1,0 +1,7 @@
+{
+	title: "世间奥秘",
+	icon: "thaumcraft:arcane_workbench",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

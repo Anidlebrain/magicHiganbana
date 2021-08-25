@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: -3.0d,
+	dependencies: [
+		"d9fd1abc"
+	],
+	tasks: [{
+		uid: "af4ddf8a",
+		type: "item",
+		items: [{
+			item: "naturesaura:token_fear"
+		}]
+	}]
+}

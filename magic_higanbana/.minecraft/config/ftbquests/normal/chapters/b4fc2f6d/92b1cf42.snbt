@@ -1,0 +1,18 @@
+{
+	x: -2.0d,
+	y: 2.5d,
+	text: [
+		"将烈焰网放在白雏菊旁(跟活木一个摆法)"
+	],
+	dependencies: [
+		"716047bb",
+		"5b5da48a"
+	],
+	tasks: [{
+		uid: "b26a1210",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}]
+	}]
+}

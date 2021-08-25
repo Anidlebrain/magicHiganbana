@@ -1,0 +1,15 @@
+{
+	title: "更好的冰箱",
+	x: 22.5d,
+	y: -1.0d,
+	dependencies: [
+		"3cddde73"
+	],
+	tasks: [{
+		uid: "23d0c159",
+		type: "item",
+		items: [{
+			item: "skyresources:lightfreezer"
+		}]
+	}]
+}

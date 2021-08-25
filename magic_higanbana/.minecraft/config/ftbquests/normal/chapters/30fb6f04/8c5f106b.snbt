@@ -1,0 +1,13 @@
+{
+	x: 16.5d,
+	y: 11.0d,
+	dependencies: [
+		"7e88b2b9"
+	],
+	tasks: [{
+		uid: "fe3b929a",
+		type: "checkmark",
+		title: "生命宝石通过自然嬗变可以变成自然核心",
+		icon: "roots:ritual_transmutation"
+	}]
+}

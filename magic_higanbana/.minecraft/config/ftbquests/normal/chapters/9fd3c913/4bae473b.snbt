@@ -1,0 +1,15 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	dependencies: [
+		"6b21bec1",
+		"d5f58b77"
+	],
+	tasks: [{
+		uid: "b03291e0",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_perfected"
+		}]
+	}]
+}

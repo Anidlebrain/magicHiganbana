@@ -1,0 +1,11 @@
+{
+	x: 21.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "b73cb23a",
+		type: "item",
+		items: [{
+			item: "pneumaticcraft:ingot_iron_compressed"
+		}]
+	}]
+}

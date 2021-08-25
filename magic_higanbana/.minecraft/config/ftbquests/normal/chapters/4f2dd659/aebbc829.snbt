@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"7450c770",
+		"a337200a",
+		"e9ccc281"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "dc4ec633",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

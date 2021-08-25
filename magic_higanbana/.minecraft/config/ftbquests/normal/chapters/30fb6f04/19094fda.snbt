@@ -1,0 +1,15 @@
+{
+	x: -1.5d,
+	y: -7.0d,
+	dependencies: [
+		"5cb11d01",
+		"0d23d088"
+	],
+	tasks: [{
+		uid: "b600f75e",
+		type: "item",
+		items: [{
+			item: "xreliquary:altar"
+		}]
+	}]
+}

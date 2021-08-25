@@ -1,0 +1,15 @@
+{
+	title: "通往彼岸的开始",
+	icon: "minecraft:crafting_table",
+	description: [
+		"在一次末日之后",
+		"你发现你生存在一个之后9个格子的岛屿上",
+		"岛屿除了雪就只有南瓜了",
+		"要不要弄一个雪傀儡呢？",
+		"还是留在以后种植呢？",
+		"一份纠结涌上心头，却没有发现周围一块木头都没有"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

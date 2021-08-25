@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	dependencies: [
+		"26496fc3"
+	],
+	tasks: [{
+		uid: "66f156ec",
+		type: "item",
+		items: [{
+			item: "randomthings:runedust 1 5"
+		}]
+	}]
+}

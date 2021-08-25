@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 11.0d,
+	dependencies: [
+		"7748fc67"
+	],
+	tasks: [{
+		uid: "fc19de65",
+		type: "item",
+		items: [{
+			item: "mechanics:burst_seed_ice"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -5.0d,
+	dependencies: [
+		"8dc2938e"
+	],
+	tasks: [{
+		uid: "37707384",
+		type: "item",
+		items: [{
+			item: "minecraft:mossy_cobblestone"
+		}]
+	}]
+}
