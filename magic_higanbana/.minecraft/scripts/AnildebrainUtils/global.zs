@@ -160,6 +160,9 @@ global ORGANIC_GREEN_DYE as IOreDictEntry = <ore:dyeGreen>;
 global ORGANIC_BROWN_DYE as IOreDictEntry = <ore:dyeBrown>;
 global ORGANIC_BLACK_DYE as IOreDictEntry = <ore:dyeBlack>;
 
+global BLOOD_ORB as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | 
+                  <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
+
 //阶段名称
 global stageTheNetherName as string = BaseUtils.cleanName("TheNether");
 global stageTheEndName as string = BaseUtils.cleanName("TheEnd");

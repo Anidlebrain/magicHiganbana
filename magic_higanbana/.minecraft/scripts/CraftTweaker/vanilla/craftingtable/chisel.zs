@@ -5,6 +5,7 @@
 ##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ChiselRecipes {
     zenConstructor() {

@@ -8,6 +8,7 @@
 import scripts.CraftTweaker.vanilla.craftingtable;
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass CraftingTable {
     zenConstructor() {
@@ -18,26 +19,26 @@ zenClass CraftingTable {
 
         //活塞
         recipes.remove(<minecraft:piston>);
-        recipesUtils.addRecipe(<minecraft:piston>,
-            ["BBB",
-             "ADA",
-             "ACA"],
-            { A : <ore:stone>,
-              B : <ore:plankWood>,
-              C : <ore:dustRedstone>,
-              D : <ore:ingotCopper>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+            [<ore:stone>, <ore:ingotCopper>, <ore:stone>],
+            [<ore:stone>, <ore:dustRedstone>, <ore:stone>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<minecraft:furnace>)
+          .create();
 
         //熔炉
         recipes.remove(<minecraft:furnace>);
-        recipesUtils.addRecipe(<minecraft:furnace>,
-            ["AAA",
-             "ABA",
-             "AAA"],
-            { A : <ore:cobblestone>,
-              B : <ore:coal>}
-        );
-        
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+            [<ore:cobblestone>, <ore:coal>, <ore:cobblestone>],
+            [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<minecraft:furnace>)
+          .create();
+
         recipes.remove(<minecraft:crafting_table>);
     }
 
@@ -92,7 +93,9 @@ zenClass CraftingTable {
         if (!isInvalid)
         {
             vanillaRecipes();
+            craftingtable.actuallyadditions.ActuallyadditionsRecipes().init();
             craftingtable.appliedenergistics2.Appliedenergistics2Recipes().init();
+            craftingtable.artisanworktables.Artisanworktables().init();
             craftingtable.bloodmagic.BloodmagicRecipes().init();
             craftingtable.botania.BotaniaRecipes().init();
             craftingtable.chisel.ChiselRecipes().init();

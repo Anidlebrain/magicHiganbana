@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass RandomthingsRecipes{
 
@@ -20,14 +21,11 @@ zenClass RandomthingsRecipes{
     function recipesInit(){
         //隔音器
         recipes.remove(<randomthings:sounddampener>);
-        recipesUtils.addRecipe(<randomthings:sounddampener>,
-            ["ABA",
-             "BCB",
-             "ABA"],
-            { C : <ore:plankWood>,
-              B : <thermalfoundation:rockwool:15>,
-              A : <randomthings:portablesounddampener>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped(recipesUtils.centreCrossitem(<randomthings:portablesounddampener>, <thermalfoundation:rockwool:15>, <ore:plankWood>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<roots:imbuer>)
+          .create();
         
     }
 }

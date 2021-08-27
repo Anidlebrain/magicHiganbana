@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass MekanismRecipes {
     zenConstructor() {
@@ -21,8 +22,11 @@ zenClass MekanismRecipes {
     function recipesInit() {
         //控制电路加工
         recipes.remove(<mekanism:basicblock:8>);
-        recipesUtils.addCentreCrossRecipe(<mekanism:basicblock:8>, <techreborn:plates:33>, <forestry:thermionic_tubes:5>, <techreborn:machine_casing:2>);
-
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.centreCrossitem(<techreborn:plates:33>, <forestry:thermionic_tubes:5>, <techreborn:machine_casing:2>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<mekanism:basicblock:8>)
+          .create();
     }
 
     function itemRemove() {

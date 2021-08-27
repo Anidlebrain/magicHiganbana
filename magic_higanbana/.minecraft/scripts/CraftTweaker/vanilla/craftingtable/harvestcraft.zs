@@ -7,6 +7,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass HarvestcraftRecipes {
     zenConstructor() {
@@ -19,67 +20,90 @@ zenClass HarvestcraftRecipes {
 
     function recipesInit() {
         //烧烤菠萝蜜
-        recipesUtils.addShapeless(<harvestcraft:bbqjackfruititem>, 
-            [<ore:toolSkillet>.reuse(), <ore:cropJackfruit>, <ore:foodBbqsauce>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolSkillet>.reuse(), <ore:cropJackfruit>, <ore:foodBbqsauce>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:bbqjackfruititem>)
+          .create();
 
         //香肠面包，和油炸玉米饼冲突，面包改为香肠面包
-        recipesUtils.addShapeless(<harvestcraft:bratwurstitem>, 
-            [<ore:toolCuttingboard>.reuse(), <ore:foodPorksausage>, <ore:foodPickles>, <ore:cropOnion>, <ore:foodSausageinbread>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolCuttingboard>.reuse(), <ore:foodPorksausage>, <ore:foodPickles>, <ore:cropOnion>, <ore:foodSausageinbread>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:bratwurstitem>)
+          .create();
 
         //瑞典肉丸，原版香料叶矿辞为foodSpiceleaf
-        recipesUtils.addShapeless(<harvestcraft:swedishmeatballsitem>, 
-            [<ore:toolSaucepan>.reuse(), <ore:foodGroundbeef>, <ore:foodFlour>, <ore:cropSpiceleaf>, <ore:foodGroundnutmeg>, <ore:listAllheavycream>, <ore:foodBlackpepper>, <ore:cropOnion>, <ore:listAllegg>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolSaucepan>.reuse(), <ore:foodGroundbeef>, <ore:foodFlour>, <ore:cropSpiceleaf>, <ore:foodGroundnutmeg>, <ore:listAllheavycream>, <ore:foodBlackpepper>, <ore:cropOnion>, <ore:listAllegg>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:swedishmeatballsitem>)
+          .create();
 
         //酱汁碳烤羊肉，原版香料叶矿辞为foodSpiceleaf，酸奶无法使用listallyogurt，改为原味酸奶foodPlainyogurt
-        recipesUtils.addShapeless(<harvestcraft:saucedlambkebabitem>, 
-            [<ore:toolMixingbowl>.reuse(), <ore:foodLambkebab>, <ore:foodPlainyogurt>, <ore:listAllheavycream>, <ore:cropGarlic>, <ore:cropSpiceleaf>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolMixingbowl>.reuse(), <ore:foodLambkebab>, <ore:foodPlainyogurt>, <ore:listAllheavycream>, <ore:cropGarlic>, <ore:cropSpiceleaf>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:saucedlambkebabitem>)
+          .create();
 
         //酥炸小肉排
-        recipesUtils.addShapeless(<harvestcraft:schnitzelitem>, 
-            [<ore:toolSkillet>.reuse(), <ore:listAllporkraw>, <ore:foodFlour>, <ore:cropLemon>, <ore:foodBlackpepper>]
-        );
-        recipesUtils.addShapeless(<harvestcraft:schnitzelitem>, 
-            [<ore:toolSkillet>.reuse(), <ore:listAllmuttonraw>, <ore:foodFlour>, <ore:cropLemon>, <ore:foodBlackpepper>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolSkillet>.reuse(), <ore:listAllporkraw> | <ore:listAllmuttonraw>, <ore:foodFlour>, <ore:cropLemon>, <ore:foodBlackpepper>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //模拟蟹肉棒
-        recipesUtils.addShapeless(<harvestcraft:imitationcrabsticksitem>, 
-            [<ore:toolCuttingboard>.reuse(), <ore:listAllgrain>, <ore:listAllfishcooked>, <ore:listAllegg>, <minecraft:dye:1>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolCuttingboard>.reuse(), <ore:listAllgrain>, <ore:listAllfishcooked>, <ore:listAllegg>, <minecraft:dye:1>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //荔枝茶
-        recipesUtils.addShapeless(<harvestcraft:lycheeteaitem>, 
-            [<ore:toolPot>.reuse(), <ore:cropLychee>, <ore:cropTea>, <ore:listAllwater>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolPot>.reuse(), <ore:cropLychee>, <ore:cropTea>, <ore:listAllwater>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:lycheeteaitem>)
+          .create();
 
         //猪油渣，由于猪皮没了，改成猪肉+砧板返还猪肉馅
-        recipesUtils.addShapeless(<harvestcraft:cracklinsitem>, 
-            [<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <ore:listAllporkraw>, <ore:foodOliveoil>, <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:cropSpiceleaf>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <ore:listAllporkraw>, <ore:foodOliveoil>, <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:cropSpiceleaf>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //猪肉剥，由于猪皮没了，改成猪肉+砧板返还猪肉馅
-        recipesUtils.addShapeless(<harvestcraft:porkrindsitem>, 
-            [<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:foodSalt>, <ore:foodBlackpepper>]
-        );
-        recipesUtils.addShapeless(<harvestcraft:porkrindsitem>, 
-            [<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:itemSalt>, <ore:foodBlackpepper>]
-        );
-        recipesUtils.addShapeless(<harvestcraft:porkrindsitem>, 
-            [<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:dustSalt>, <ore:foodBlackpepper>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:foodSalt>, <ore:foodBlackpepper>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:porkrindsitem>)
+          .create();
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:itemSalt>, <ore:foodBlackpepper>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:porkrindsitem>)
+          .create();
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolPot>.reuse(), <ore:toolCuttingboard>.reuse(), <minecraft:porkchop>.giveBack(<harvestcraft:groundporkitem>), <ore:foodOliveoil>, <ore:dustSalt>, <ore:foodBlackpepper>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:porkrindsitem>)
+          .create();
 
         //蒜蓉牛排，原版香料叶矿辞为foodSpiceleaf
-        recipesUtils.addShapeless(<harvestcraft:garlicsteakitem>, 
-            [<ore:toolSkillet>.reuse(), <ore:listAllbeefraw>, <ore:cropGarlic>, <ore:foodButter>, <ore:cropSpiceleaf>]
-        );
+        RecipeBuilder.get("chef")
+          .setShapeless([<ore:toolSkillet>.reuse(), <ore:listAllbeefraw>, <ore:cropGarlic>, <ore:foodButter>, <ore:cropSpiceleaf>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:garlicsteakitem>)
+          .create();
 
         //小黄瓜种子
-        recipesUtils.addShapeless(<harvestcraft:gigapickleseeditem>, 
-            [<ore:foodGigapickle>]
-        );
+        RecipeBuilder.get("farmer")
+          .setShapeless([<ore:foodGigapickle>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<harvestcraft:gigapickleseeditem>)
+          .create();
     }
 }

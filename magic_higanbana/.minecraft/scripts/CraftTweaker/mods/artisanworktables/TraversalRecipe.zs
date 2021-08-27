@@ -13,13 +13,18 @@ function TraversalRecipe() {
     for recipe in recipes.all {
         var name as string = recipe.name;
         var ResourceName = recipe.fullResourceDomain;
-        if (!isNull(recipe.output)) {
+        if (!isNull(recipe.output) && !isNull(recipe.ingredients1D)) {
+            if (recipe.ingredients1D.length == 0)
+            {
+                continue;
+            }
             if (recipe.output.definition.owner.contains("artisanworktables"))
             {
 
                 RecipeBuilder.get("basic")
                   .setCopy(Copy.byName(ResourceName))
                   .create();
+                recipes.removeByRecipeName(ResourceName);
                 continue;
             }
             if (recipe.output.definition.owner.contains("harvestcraft"))
@@ -73,9 +78,9 @@ function TraversalRecipe() {
             else if(recipe.output.definition.id.contains("slab")
                 || recipe.output.definition.id.contains("stairs")
                 || recipe.output.definition.id.contains("fences"))
-            {//防具
+            {//楼梯
                 recipes.removeByRecipeName(ResourceName);
-                RecipeBuilder.get("blacksmith")
+                RecipeBuilder.get("potter")
                     .setCopy(Copy.byName(ResourceName))
                     .addTool(<ore:artisansShears>, 10)
                     .create();

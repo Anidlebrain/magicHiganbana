@@ -7,6 +7,7 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass TechrebornRecipes {
     zenConstructor() {
@@ -22,75 +23,84 @@ zenClass TechrebornRecipes {
 
         //铜制导线
         recipes.remove(<techreborn:cable>);
-        recipesUtils.addShapeless(<techreborn:cable:0>,[<immersiveengineering:metal_decoration0:0>]);
+        RecipeBuilder.get("engineer")
+          .setShapeless([<immersiveengineering:metal_decoration0:0>])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //锡制导线
         recipes.remove(<techreborn:cable:1>);
-        recipesUtils.addShapeless(<techreborn:cable:1>,[<contenttweaker:tin_wire>]);
+        RecipeBuilder.get("engineer")
+          .setShapeless([<contenttweaker:tin_wire>])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //金制导线
         recipes.remove(<techreborn:cable:2>);
-        recipesUtils.addShapeless(<techreborn:cable:2>,[<immersiveengineering:metal_decoration0:1>]);
+        RecipeBuilder.get("engineer")
+          .setShapeless([<immersiveengineering:metal_decoration0:1>])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:cable:0>)
+          .create();
 
         //高压导线
         recipes.remove(<techreborn:cable:3>);
-        recipesUtils.addShapeless(<techreborn:cable:3>,[<immersiveengineering:metal_decoration0:2>]);
+        RecipeBuilder.get("engineer")
+          .setShapeless([<immersiveengineering:metal_decoration0:2>])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:cable:3>)
+          .create();
 
         //电路板
         recipes.remove(<techreborn:part:29>);
-        recipesUtils.addRecipe(<techreborn:part:29>,
-            ["AAA",
-             "CBC",
-             "AAA"],
-            { A : <techreborn:cable:5>,
-              B : <techreborn:plates:35>,
-              C : <prodigytech:circuit_refined>}
-        );
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<techreborn:cable:5>, <techreborn:cable:5>, <techreborn:cable:5>],
+            [<prodigytech:circuit_refined>, <techreborn:plates:35>, <prodigytech:circuit_refined>],
+            [<techreborn:cable:5>, <techreborn:cable:5>, <techreborn:cable:5>]])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:part:29>)
+          .create();
 
         //高级电路板
         recipes.remove(<techreborn:part:30>);
-        recipesUtils.addRecipe(<techreborn:part:30>,
-            ["ADA",
-             "CBC",
-             "ADA"],
-            { A : <ore:plateRedstone>,
-              B : <techreborn:part:29>,
-              C : <ore:plateelectrum>,
-              D : <techreborn:cable:5>}
-        );
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<ore:plateRedstone>, <techreborn:cable:5>, <ore:plateRedstone>],
+            [<ore:plateelectrum>, <techreborn:part:29>, <ore:plateelectrum>],
+            [<ore:plateRedstone>, <techreborn:cable:5>, <ore:plateRedstone>]])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<techreborn:part:30>)
+          .create();
 
         //控制电路加工
         recipes.remove(<techreborn:assembling_machine>);
-        recipesUtils.addRecipe(<techreborn:assembling_machine>,
-            ["ADA",
-             "CBC",
-             "ACA"],
-            { A : <techreborn:part:30>,
-              B : <techreborn:machine_casing:1>,
-              C : <techreborn:plates:17>,
-              D : <minecraft:piston>}
-        );
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<techreborn:part:30>, <minecraft:piston>, <techreborn:part:30>],
+            [<techreborn:plates:17>, <techreborn:machine_casing:1>, <techreborn:plates:17>],
+            [<techreborn:part:30>, <techreborn:plates:17>, <techreborn:part:30>]])
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<thermalexpansion:dynamo:1>)
+          .create();
 
         //铱强化石
         recipes.remove(<techreborn:storage2:2>);
-        recipesUtils.addRecipe(<techreborn:storage2:2>,
-            ["ACA",
-             "CBC",
-             "ACA"],
-            { A : <techreborn:plates:38>,
-              B : <naturesaura:infused_stone>,
-              C : <techreborn:plates:2>}
-        );
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.centreCrossitem(<techreborn:plates:38>, <techreborn:plates:2>, <naturesaura:infused_stone>))
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<thermalexpansion:dynamo:1>)
+          .create();
 
         //强化铱钨钢混合块
         recipes.remove(<techreborn:storage2:1>);
-        recipesUtils.addRecipe(<techreborn:storage2:1> * 4,
-            ["ACA",
-             "CAC",
-             "ACA"],
-            { A : <techreborn:ingot:17>,
-              C : <techreborn:storage2:2>}
-        );
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.crossItems(<techreborn:ingot:17>, <techreborn:storage2:2>))
+          .addTool(<ore:artisansCutters>, 3)
+          .addOutput(<thermalexpansion:dynamo:1>)
+          .create();
 
         //木板
         //recipesUtils.addShapeless(<techreborn:plates:3>, [<ore:plankWood>, <ore:plankWood>, <immersiveengineering:tool>]);

@@ -6,6 +6,7 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ExtendedcraftingRecipes{
 
@@ -21,15 +22,19 @@ zenClass ExtendedcraftingRecipes{
         
         //黑铁锭
         recipes.remove(<extendedcrafting:material>);
-        recipesUtils.addShapeless(<extendedcrafting:material>, [<ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:ingotIron>]);
-        
-        //基础合成组件
-        recipes.remove(<extendedcrafting:material:14>);
-        recipesUtils.addShapeless(<extendedcrafting:material:14>, [<extendedcrafting:material:2>, <extendedcrafting:material:7>, <ore:plateIron>, <ore:plateIron>]);
+        RecipeBuilder.get("blacksmith")
+          .setShapeless([<ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:ingotIron>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<extendedcrafting:material>)
+          .create();
 
         //基础合成组件
         recipes.remove(<extendedcrafting:material:14>);
-        recipesUtils.addShapeless(<extendedcrafting:material:14>, [<extendedcrafting:material:2>, <extendedcrafting:material:7>, <ore:plateIron>, <ore:plateIron>]);
+        RecipeBuilder.get("blacksmith")
+          .setShapeless([<extendedcrafting:material:2>, <extendedcrafting:material:7>, <ore:plateIron>, <ore:plateIron>])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<extendedcrafting:material:14>)
+          .create();
     }
 
     function itemRemove() {

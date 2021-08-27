@@ -15,6 +15,7 @@ if(!isInvalid)
     scripts.CraftTweaker.mods.modularmachinery.parts_manufacturing_machine.PartsManufacturingMachineRecipes().recipesInit();
     scripts.CraftTweaker.mods.modularmachinery.mana_magic.ManaMagicRecipes().recipesInit();
     scripts.CraftTweaker.mods.modularmachinery.ender_machine.EnderMachineRecipes().recipesInit();
+    scripts.CraftTweaker.mods.modularmachinery.star_condensation.StarCondensation().recipesInit();
     
 }
 

@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ContentTweakerRecipes {
     zenConstructor() {
@@ -17,6 +18,7 @@ zenClass ContentTweakerRecipes {
     }
     
     function recipesInit() {
+        /*
         //火柴
         recipesUtils.addRecipe(<contenttweaker:match_stick>,
             ["  A",
@@ -24,6 +26,7 @@ zenClass ContentTweakerRecipes {
              "   "],
             { B : <minecraft:coal:1>,
               A : <prodigytech:ash_bricks> });
+        */
     }
 }
 

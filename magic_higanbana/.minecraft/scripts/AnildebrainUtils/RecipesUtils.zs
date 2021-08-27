@@ -12,6 +12,8 @@ import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
+import mods.artisanworktables.builder.RecipeBuilder;
+
 import scripts.AnildebrainUtils.BaseUtils as alg;
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 
@@ -184,12 +186,24 @@ zenClass RecipesUtils
     function addShapelessCycle(item1 as IItemStack, item2 as IItemStack) {
 
         m_recipesNum = m_recipesNum + 1;
-        var name = ("/Anidlebrain/autoaddShapeless/cycle_" ~ m_recipesNum) as string;
+        var name = ("magicHiganbana/autoaddShapeless/cycle_" ~ m_recipesNum) as string;
         recipes.addShapeless(name, item1, [item2]);
+
+        RecipeBuilder.get("scribe")
+          .setName(name)
+          .setShapeless([item2])
+          .addOutput(item1)
+          .create();
         
         m_recipesNum = m_recipesNum + 1;
-        name = ("/Anidlebrain/autoaddShapeless/cycle_" ~ m_recipesNum) as string;
+        name = ("magicHiganbana/autoaddShapeless/cycle_" ~ m_recipesNum) as string;
         recipes.addShapeless(name, item2, [item1]);
+
+        RecipeBuilder.get("scribe")
+          .setName(name)
+          .setShapeless([item1])
+          .addOutput(item2)
+          .create();
         
     }
 
@@ -451,6 +465,21 @@ zenClass RecipesUtils
         for item in ore.items {
             furnace.remove(item);
         }
+    }
+
+    function centreCrossitem(a as IIngredient, b as IIngredient, centre as IIngredient) as IIngredient[][]
+    {
+        return [[a, b, a], [b, centre, b], [a, b, a]];
+    }
+
+    function surroundItems(surrounded as IIngredient, centre as IIngredient) as IIngredient[][]
+    {
+        return [[surrounded, surrounded, surrounded], [surrounded, centre, surrounded], [surrounded, surrounded, surrounded]];
+    }
+
+    function crossItems(five as IIngredient, four as IIngredient) as IIngredient[][]
+    {
+        return [[five, four, five], [four, five, four], [five, four, five]];
     }
 }
 

@@ -15,9 +15,6 @@ var chefItem = [
     <minecraft:golden_apple>,
     <minecraft:golden_apple:1>,
     <minecraft:rabbit_stew>,
-
-
-    
 ] as IIngredient[];
 
 

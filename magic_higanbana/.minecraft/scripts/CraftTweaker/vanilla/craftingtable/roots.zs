@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass RootsRecipes {
     zenConstructor() {
@@ -20,46 +21,43 @@ zenClass RootsRecipes {
 
         //研钵
         recipes.remove(<roots:mortar>);
-        recipesUtils.addRecipe(<roots:mortar>,
-            ["A A",
-             "A A",
-             " C "],
-            { C : <forestry:ash_brick>,
-              B : <minecraft:coal:1>,
-              A : <prodigytech:ash_bricks> });
-
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
+            [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
+            [null, <forestry:ash_brick>, null]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<roots:mortar>)
+          .create();
+        
         //研杵
         recipes.remove(<roots:pestle>);
-        recipesUtils.addRecipe(<roots:pestle>,
-            ["  C",
-             "AA ",
-             "AA "],
-            { C : <forestry:ash_brick>,
-              A : <prodigytech:ash_bricks> });
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [null, null, <forestry:ash_brick>],
+            [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null],
+            [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<techreborn:part:29>)
+          .create();
 
         //柴堆
         recipes.remove(<roots:bonfire>);
-        recipesUtils.addRecipe(<roots:bonfire>,
-            [" C ",
-             "CBC",
-             "ADA"],
-            { C : <botania:livingwood>,
-              B : <ore:powderMana>,
-              D : <roots:terra_moss>,
-              A : <minecraft:stonebrick:2> });
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [null, <botania:livingwood>, null],
+            [<botania:livingwood>, <ore:powderMana>, <botania:livingwood>],
+            [<minecraft:stonebrick:2>, <roots:terra_moss>, <minecraft:stonebrick:2>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<techreborn:part:29>)
+          .create();
         
-        //柴堆
+        //注造器
         recipes.remove(<roots:imbuer>);
-        recipesUtils.addRecipe(<roots:imbuer>,
-            ["ABA",
-             "BCB",
-             "ABA"],
-            { C : <ore:bricksStone>,
-              B : <ore:wildroot>,
-              A : <ore:stickWood>});
+        RecipeBuilder.get("farmer")
+          .setShaped(recipesUtils.centreCrossitem(<ore:stickWood>, <ore:wildroot>, <ore:bricksStone>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<roots:imbuer>)
+          .create();
     }
 }
-
-
-
-//end file by Anidlebrain

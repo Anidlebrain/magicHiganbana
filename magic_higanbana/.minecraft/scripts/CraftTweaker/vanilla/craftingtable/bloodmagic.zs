@@ -5,7 +5,7 @@
 ##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
-
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass BloodmagicRecipes{
 
@@ -27,28 +27,26 @@ zenClass BloodmagicRecipes{
     function recipesInit(){
         //狱火熔炉
         recipes.remove(<bloodmagic:soul_forge>);
-        recipesUtils.addRecipe(<bloodmagic:soul_forge>,
-            ["CBC",
-             "ADA",
-             "AEA"],
-            { A : <ore:bricksStone>,
-              B : <skyresources:alchemyitemcomponent:7>,
-              C : <bloodmagic:monster_soul>,
-              D : <minecraft:furnace>,
-              E : <ore:blockIron>}
-        );
+        RecipeBuilder.get("mage")
+          .setShaped([
+            [<bloodmagic:monster_soul>, <skyresources:alchemyitemcomponent:7>, <bloodmagic:monster_soul>],
+            [<ore:bricksStone>, <minecraft:furnace>, <ore:bricksStone>],
+            [<ore:bricksStone>, <ore:blockIron>, <ore:bricksStone>]])
+          .addTool(<ore:artisansHammer>, 1)
+          .addOutput(<bloodmagic:soul_forge>)
+          .create();
 
         //血之祭坛
         recipes.remove(<bloodmagic:altar>);
-        recipesUtils.addRecipe(<bloodmagic:altar>,
-            ["A A",
-             "ADA",
-             "BCB"],
-            { A : <ore:bricksStone>,
-              B : <skyresources:alchemyitemcomponent:7>,
-              C : <bloodmagic:monster_soul>,
-              D : <contenttweaker:alchemical_frame>}
-        );
+        RecipeBuilder.get("mage")
+          .setShaped([
+            [<ore:bricksStone>, null, <ore:bricksStone>],
+            [<ore:bricksStone>, <contenttweaker:alchemical_frame>, <ore:bricksStone>],
+            [<skyresources:alchemyitemcomponent:7>, <bloodmagic:monster_soul>, <skyresources:alchemyitemcomponent:7>]])
+          .addTool(<ore:artisansHammer>, 1)
+          .addOutput(<bloodmagic:altar>)
+          .create();
+
         /*
         //符文石
         recipes.remove(<bloodmagic:blood_rune>);

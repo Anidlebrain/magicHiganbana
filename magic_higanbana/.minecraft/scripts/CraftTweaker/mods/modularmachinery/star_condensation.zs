@@ -33,6 +33,7 @@ zenClass StarCondensation {
                       .setChance(0.01)
                       .setTime(14000, 22000)
                       .setAltitude(200, 256)
-                      .setWeather("sunny");
+                      .setWeather("sunny")
+                      .build();
     }
 }

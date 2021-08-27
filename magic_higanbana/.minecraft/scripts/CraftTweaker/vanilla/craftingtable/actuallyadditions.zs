@@ -5,7 +5,7 @@
 ##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
-
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ActuallyadditionsRecipes{
 
@@ -20,15 +20,13 @@ zenClass ActuallyadditionsRecipes{
     function recipesInit(){
         //煤炭发电机
         recipes.remove(<actuallyadditions:block_coal_generator>);
-        recipesUtils.addRecipe(<actuallyadditions:block_coal_generator>,
-            ["ABA",
-             "ADA",
-             "ABA"],
-            { A : <ore:plateSteel>,
-              B : <skyresources:alchemyitemcomponent:6>,
-              D : <immersiveengineering:metal_device1:2>
-            }
-        );
-        
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<ore:plateSteel>, <skyresources:alchemyitemcomponent:6>, <ore:plateSteel>],
+            [<ore:plateSteel>, <immersiveengineering:metal_device1:2>, <ore:plateSteel>],
+            [<ore:plateSteel>, <skyresources:alchemyitemcomponent:6>, <ore:plateSteel>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<actuallyadditions:block_coal_generator>)
+          .create();
     }
 }

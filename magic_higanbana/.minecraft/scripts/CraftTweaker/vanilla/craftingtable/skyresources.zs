@@ -15,6 +15,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass SkyresourcesRecipes {
     zenConstructor() {
@@ -30,24 +31,22 @@ zenClass SkyresourcesRecipes {
 
         //木制加热组件
         recipes.remove(<skyresources:heat>);
-        recipesUtils.addRecipe(<skyresources:heat>,
-            ["AAA",
-             "ABA",
-             "AAA"],
-            { A : <tconstruct:pattern>,
-              B : <botania:specialflower>.withTag({type: "endoflame"})});
+        RecipeBuilder.get("carpenter")
+          .setShaped(recipesUtils.surroundItems(<tconstruct:pattern>, <botania:specialflower>.withTag({type: "endoflame"})))
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heat>)
+          .create();
 
         //石制 地狱砖 末地石 加热组件
         recipes.remove(<skyresources:heat:1>);
         recipes.remove(<skyresources:heat:6>);
         recipes.remove(<skyresources:heat:10>);
-        recipesUtils.addRecipe(<skyresources:heat:1>,
-            ["AAA",
-             "ABA",
-             "AAA"],
-            { A : <minecraft:stone>,
-              B : <skyresources:heat>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped(recipesUtils.surroundItems(<minecraft:stone>, <skyresources:heat>))
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heat:1>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
                     return <skyresources:heat:1>;
@@ -63,38 +62,42 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:heat:1>;
                 }
-            });
+            })
+          .create();
 
         //木制氧化加热器
         recipes.remove(<skyresources:combustionheater>);
-        recipesUtils.addRecipe(<skyresources:combustionheater>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <ore:logWood>,
-              B : <roots:petals>,
-              C : <skyresources:heat>});
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:logWood>, <skyresources:heat>, <ore:logWood>],
+            [<ore:logWood>, <roots:petals>, <ore:logWood>],
+            [<ore:logWood>, <skyresources:heat>, <ore:logWood>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:combustionheater>)
+          .create();
 
         //石制氧化加热器
         recipes.remove(<skyresources:combustionheater:1>);
-        recipesUtils.addRecipe(<skyresources:combustionheater:1>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:stone>,
-              B : <skyresources:combustionheater>,
-              C : <skyresources:heat:1>});
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:stone>, <skyresources:heat:1>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:combustionheater>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:heat:1>, <minecraft:stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:combustionheater:1>)
+          .create();
         
         //地狱砖 氧化加热器
         recipes.remove(<skyresources:combustionheater:6>);
-        recipesUtils.addRecipe(<skyresources:combustionheater:6>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:nether_brick>,
-              B : <skyresources:combustionheater>,
-              C : <skyresources:heat:6>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:nether_brick>, <skyresources:heat:6>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:combustionheater>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:heat:6>, <minecraft:nether_brick>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:combustionheater:6>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
                     return <skyresources:combustionheater:1>;
@@ -107,21 +110,23 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:combustionheater:1>;
                 }
-            });
+            })
+          .create();
         
         //末地石 氧化加热器
         recipes.remove(<skyresources:combustionheater:10>);
-        recipesUtils.addRecipe(<skyresources:combustionheater:10>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:end_stone>,
-              B : <skyresources:combustionheater>,
-              C : <skyresources:heat:10>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:end_stone>, <skyresources:heat:10>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:combustionheater>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:heat:10>, <minecraft:end_stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:combustionheater:10>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
-                    return <skyresources:heat:1>;
+                    return <skyresources:combustionheater:1>;
                 }
                 val world as IWorld = player.world;
                 var dimension as int = world.getDimension();
@@ -129,29 +134,28 @@ zenClass SkyresourcesRecipes {
                     return <skyresources:combustionheater:10>;
                 }
                 else {
-                    return <skyresources:heat:1>;
+                    return <skyresources:combustionheater:1>;
                 }
-            });
+            })
+          .create();
         
         //木制炼金组件
         recipes.remove(<skyresources:alchemy>);
-        recipesUtils.addRecipe(<skyresources:alchemy>,
-            ["AAA",
-             "ABA",
-             "AAA"],
-            { A : <tconstruct:pattern>,
-              B : <skyresources:alchemyitemcomponent:2>});
+        RecipeBuilder.get("carpenter")
+          .setShaped(recipesUtils.surroundItems(<tconstruct:pattern>, <skyresources:alchemyitemcomponent:2>))
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:alchemy>)
+          .create();
 
         //石制，地狱砖，末地石炼金组件
         recipes.remove(<skyresources:alchemy:1>);
         recipes.remove(<skyresources:alchemy:6>);
         recipes.remove(<skyresources:alchemy:10>);
-        recipesUtils.addRecipe(<skyresources:alchemy:1>,
-            ["AAA",
-             "ABA",
-             "AAA"],
-            { A : <minecraft:stone>,
-              B : <skyresources:alchemy>},
+        RecipeBuilder.get("mason")
+          .setShaped(recipesUtils.surroundItems(<minecraft:stone>, <skyresources:alchemy>))
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:alchemy:1>)
+          .setRecipeFunction(
             function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
@@ -168,28 +172,32 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:alchemy:1>;
                 }
-            });
+            }
+          )
+          .create();
 
         //木制冷凝器
         recipes.remove(<skyresources:condenser>);
-        recipesUtils.addRecipe(<skyresources:condenser>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <ore:logWood>,
-              B : <minecraft:ice>,
-              C : <skyresources:alchemy>});
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:logWood>, <skyresources:alchemy>, <ore:logWood>],
+            [<ore:logWood>, <minecraft:ice>, <ore:logWood>],
+            [<ore:logWood>, <skyresources:alchemy>, <ore:logWood>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:condenser>)
+          .create();
 
         //地狱砖冷凝器
         recipes.remove(<skyresources:condenser:6>);
-        recipesUtils.addRecipe(<skyresources:condenser:6>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:nether_brick>,
-              B : <skyresources:condenser>,
-              C : <skyresources:alchemy:6>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:nether_brick>, <skyresources:alchemy:6>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:condenser>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:alchemy:6>, <minecraft:nether_brick>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:condenser:6>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
                     return <skyresources:condenser:1>;
@@ -202,17 +210,19 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:condenser:1>;
                 }
-            });
+            })
+          .create();
 
         //末地石冷凝器
         recipes.remove(<skyresources:condenser:10>);
-        recipesUtils.addRecipe(<skyresources:condenser:10>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:end_stone>,
-              B : <skyresources:condenser>,
-              C : <skyresources:alchemy:10>},
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:end_stone>, <skyresources:alchemy:10>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:condenser>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:alchemy:10>, <minecraft:end_stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:condenser:10>)
+          .setRecipeFunction(
             function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
@@ -226,27 +236,31 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:condenser:1>;
                 }
-            });
+            })
+          .create();
+
 
         //石制冷凝器
         recipes.remove(<skyresources:condenser:1>);
-        recipesUtils.addRecipe(<skyresources:condenser:1>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:stone>,
-              B : <skyresources:condenser>,
-              C : <skyresources:alchemy:1>});
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:stone>, <skyresources:alchemy:1>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:condenser>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:alchemy:1>, <minecraft:stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:condenser:1>)
+          .create();
         
 
         //木制框架
         recipes.remove(<skyresources:casing>);
-        recipesUtils.addRecipe(<skyresources:casing>,
-            ["ACA",
-             "C C",
-             "ACA"],
-            { A : <ore:logWood>,
-              C : <ore:gearWood>});
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:logWood>, <ore:gearWood>, <ore:logWood>],
+            [<ore:gearWood>, null, <ore:gearWood>],
+            [<ore:logWood>, <ore:gearWood>, <ore:logWood>]])
+          .addOutput(<skyresources:casing>)
+          .create();
 
         //石制框架 地狱岩 末地石
         recipes.remove(<skyresources:casing:1>);
@@ -280,34 +294,37 @@ zenClass SkyresourcesRecipes {
 
         //木制热量供应器
         recipes.remove(<skyresources:heatprovider>);
-        recipesUtils.addRecipe(<skyresources:heatprovider>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <ore:logWood>,
-              B : <skyresources:dirtfurnace>,
-              C : <skyresources:heat>});
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:logWood>, <skyresources:heat>, <ore:logWood>],
+            [<ore:logWood>, <skyresources:dirtfurnace>, <ore:logWood>],
+            [<ore:logWood>, <skyresources:heat>, <ore:logWood>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heatprovider>)
+          .create();
 
         //石制热量供应器
         recipes.remove(<skyresources:heatprovider:1>);
-        recipesUtils.addRecipe(<skyresources:heatprovider:1>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:stone>,
-              B : <skyresources:heatprovider>,
-              C : <skyresources:heat:1>});
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:stone>, <skyresources:heat:1>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:heatprovider>, <minecraft:stone>],
+            [<minecraft:stone>, <skyresources:heat:1>, <minecraft:stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heatprovider:1>)
+          .create();
         
         //地狱砖热量供应器
         recipes.remove(<skyresources:heatprovider:6>);
-        recipesUtils.addRecipe(<skyresources:heatprovider:6>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:nether_brick>,
-              B : <skyresources:heatprovider>,
-              C : <skyresources:heat:6>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:nether_brick>, <skyresources:heat:6>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:heatprovider>, <minecraft:nether_brick>],
+            [<minecraft:nether_brick>, <skyresources:heat:6>, <minecraft:nether_brick>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heatprovider:6>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
                     return <skyresources:heatprovider:1>;
@@ -320,18 +337,21 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:heatprovider:1>;
                 }
-            });
-        
+            }
+          )
+          .create();
+
         //末地石热量供应器
         recipes.remove(<skyresources:heatprovider:10>);
-        recipesUtils.addRecipe(<skyresources:heatprovider:10>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : <minecraft:end_stone>,
-              B : <skyresources:heatprovider>,
-              C : <skyresources:heat:10>},
-            function(out, ins, cInfo) {
+        RecipeBuilder.get("mason")
+          .setShaped([
+            [<minecraft:end_stone>, <skyresources:heat:10>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:heatprovider>, <minecraft:end_stone>],
+            [<minecraft:end_stone>, <skyresources:heat:10>, <minecraft:end_stone>]])
+          .addTool(<ore:artisansDriver>, 1)
+          .addOutput(<skyresources:heatprovider:10>)
+          .setRecipeFunction(
+              function(out, ins, cInfo) {
                 val player as IPlayer = cInfo.player;
                 if (isNull(player)) {
                     return <skyresources:heatprovider:1>;
@@ -344,50 +364,54 @@ zenClass SkyresourcesRecipes {
                 else {
                     return <skyresources:heatprovider:1>;
                 }
-            });
+            }
+          )
+          .create();
 
         //泥炉
         recipes.remove(<skyresources:dirtfurnace>);
-        recipesUtils.addRecipe(<skyresources:dirtfurnace>,
-            ["AAA",
-             "A A",
-             "AAA"],
-            { A : <minecraft:dirt>});
-            
+        RecipeBuilder.get("basic")
+          .setShaped(recipesUtils.surroundItems(<minecraft:dirt>, null))
+          .addOutput(<skyresources:dirtfurnace>)
+          .create();
+
         //漏液器
         recipes.remove(<skyresources:fluiddropper>);
-        recipesUtils.addRecipe(<skyresources:fluiddropper>,
-            ["AAA",
-             "A A",
-             "A A"],
-            { A : <prodigytech:ash_bricks>});
+        RecipeBuilder.get("basic")
+          .setShaped([
+            [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, <prodigytech:ash_bricks>],
+            [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
+            [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>]])
+          .addOutput(<skyresources:fluiddropper>)
+          .create();
 
         //坩埚
         recipes.remove(<skyresources:crucible>);
-        recipesUtils.addRecipe(<skyresources:crucible>,
-            ["A A",
-             "A A",
-             "AAA"],
-            { A : <minecraft:brick_block>});
+        RecipeBuilder.get("basic")
+          .setShaped([
+            [<minecraft:brick_block>, null, <minecraft:brick_block>],
+            [<minecraft:brick_block>, null, <minecraft:brick_block>],
+            [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>]])
+          .addOutput(<skyresources:crucible>)
+          .create();
 
         //生存者钓鱼竿
         recipes.remove(<skyresources:survivalistfishingrod>);
-        recipesUtils.addRecipe(<skyresources:survivalistfishingrod>,
-            ["  A",
-             " AB",
-             "A C"],
-            { A : <botania:manaresource:3>,
-              B : <botania:manaresource:16>,
-              C : <botania:manaresource:1>});
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [null, null, <botania:manaresource:3>],
+            [null, <botania:manaresource:3>, <botania:manaresource:16>],
+            [<botania:manaresource:3>, null, <botania:manaresource:1>]])
+          .addOutput(<skyresources:survivalistfishingrod>)
+          .create();
         
         //赫耳墨斯之金针
         recipes.remove(<skyresources:alchemyitemcomponent:9>);
-        recipesUtils.addRecipe(<skyresources:alchemyitemcomponent:9>,
-            ["BAB",
-             "BAB",
-             "BAB"],
-            { A : <skyresources:alchemyitemcomponent>,
-              B : <skyresources:alchemyitemcomponent:7>});
+        RecipeBuilder.get("blacksmith")
+          .setShaped(recipesUtils.surroundItems(<skyresources:alchemyitemcomponent>, <skyresources:alchemyitemcomponent:7>))
+          .addTool(<ore:artisansHammer>, 8)
+          .addOutput(<skyresources:alchemyitemcomponent:9>)
+          .create();
     }
     
     function itemRemove() {

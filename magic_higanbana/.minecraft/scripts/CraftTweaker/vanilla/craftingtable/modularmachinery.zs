@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ModularMachineryRecipes{
     zenConstructor() {
@@ -19,99 +20,107 @@ zenClass ModularMachineryRecipes{
     function recipesInit() {
 
         //魔力输入
-        recipes.remove(<gugu-utils:sparkmanahatch>);
-        recipesUtils.addRecipe(<gugu-utils:sparkmanahatch>,
-            ["ABA",
-             "BCB",
-             "ABA"],
-            { A : <modularmachinery : itemmodularium>,
-              B : <botania : livingrock>,
-              C : <botania : spreader : 1>});
+        //recipes.remove(<gugu-utils:sparkmanahatch>);
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.centreCrossitem(<modularmachinery:itemmodularium>, <botania:livingrock>, <botania:spreader:1>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<gugu-utils:sparkmanahatch>)
+          .create();
+
 
         //魔力输出
         recipes.remove(<gugu-utils:sparkmanahatch:1>);
-        recipesUtils.addRecipe(<gugu-utils:sparkmanahatch:1>,
-            ["ABA",
-             "BCB",
-             "ABA"],
-            { B : <modularmachinery : itemmodularium>,
-              A : <botania : livingrock>,
-              C : <botania : spreader : 1>});
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.centreCrossitem(<botania:livingrock>, <modularmachinery:itemmodularium>, <botania:spreader:1>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<gugu-utils:sparkmanahatch:1>)
+          .create();
 
         recipesUtils.addShapelessCycle(<gugu-utils:sparkmanahatch>, <gugu-utils:sparkmanahatch:1>);
 
         //微型物品输入
         recipes.remove(<modularmachinery:blockinputbus>);
-        recipesUtils.addRecipe(<modularmachinery:blockinputbus>,
-            [" A ",
-             " B ",
-             " C "],
-            { A : <tconstruct : wooden_hopper>,
-              B : <modularmachinery : blockcasing>,
-              C : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [null, <tconstruct:wooden_hopper>, null],
+            [null, <modularmachinery:blockcasing>, null],
+            [null, <minecraft:chest>, null]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockinputbus>)
+          .create();
 
         //微型物品输出
         recipes.remove(<modularmachinery:blockoutputbus>);
-        recipesUtils.addRecipe(<modularmachinery:blockoutputbus>,
-            [" A ",
-             " B ",
-             " C "],
-            { B : <tconstruct : wooden_hopper>,
-              A : <modularmachinery : blockcasing>,
-              C : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [null, <tconstruct:wooden_hopper>, null],
+            [null, <modularmachinery:blockcasing>, null],
+            [null, <minecraft:chest>, null]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockoutputbus>)
+          .create();
 
         recipesUtils.addShapelessCycle(<modularmachinery:blockoutputbus>, <modularmachinery:blockinputbus>);
 
         //小型物品输入
-        recipesUtils.addRecipe(<modularmachinery:blockinputbus:1>,
-            ["CAC",
-             "CBC",
-             "DCD"],
-            { A : <tconstruct : wooden_hopper>,
-              B : <modularmachinery : blockinputbus>,
-              C : <modularmachinery : itemmodularium>,
-              D : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<modularmachinery:itemmodularium>, <tconstruct:wooden_hopper>, <modularmachinery:itemmodularium>],
+            [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus>, <modularmachinery:itemmodularium>],
+            [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockinputbus:1>)
+          .create();
 
         //小型物品输出
-        recipesUtils.addRecipe(<modularmachinery:blockoutputbus:1>,
-            ["DCD",
-             "CBC",
-             "CAC"],
-            { A : <tconstruct : wooden_hopper>,
-              B : <modularmachinery : blockoutputbus>,
-              C : <modularmachinery : itemmodularium>,
-              D : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>],
+            [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus>, <modularmachinery:itemmodularium>],
+            [<modularmachinery:itemmodularium>, <tconstruct:wooden_hopper>, <modularmachinery:itemmodularium>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockoutputbus:1>)
+          .create();
 
         recipesUtils.addShapelessCycle(<modularmachinery:blockoutputbus:1>, <modularmachinery:blockinputbus:1>);
 
+        //机械外壳
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<techreborn:cable:5>, <techreborn:cable:5>, <techreborn:cable:5>],
+            [<prodigytech:circuit_refined>, <techreborn:plates:35>, <prodigytech:circuit_refined>],
+            [<techreborn:cable:5>, <techreborn:cable:5>, <techreborn:cable:5>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockcasing>)
+          .create();
+        
         //强化机械外壳
         recipes.remove(<modularmachinery:blockcasing:4>);
-        recipesUtils.addRecipe(<modularmachinery:blockcasing:4> * 4,
-            ["ABA",
-             "BAB",
-             "ABA"],
-            { A : <enderio:block_reinforced_obsidian>,
-              B : <modularmachinery:blockcasing>});
+        RecipeBuilder.get("engineer")
+          .setShaped(recipesUtils.crossItems(<enderio:block_reinforced_obsidian>, <modularmachinery:blockcasing>))
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockcasing:4>)
+          .create();
 
         //中型物品输入
-        recipesUtils.addRecipe(<modularmachinery:blockinputbus:2>,
-            ["CAC",
-             "CBC",
-             "DCD"],
-            { A : <tconstruct : wooden_hopper>,
-              B : <modularmachinery : blockinputbus>,
-              C : <modularmachinery : itemmodularium>,
-              D : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<modularmachinery:itemmodularium>, <tconstruct:wooden_hopper>, <modularmachinery:itemmodularium>],
+            [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus>, <modularmachinery:itemmodularium>],
+            [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockoutputbus:2>)
+          .create();
 
         //中型物品输出
-        recipesUtils.addRecipe(<modularmachinery:blockoutputbus:2>,
-            ["DCD",
-             "CBC",
-             "CAC"],
-            { A : <tconstruct : wooden_hopper>,
-              B : <modularmachinery : blockoutputbus>,
-              C : <modularmachinery : itemmodularium>,
-              D : <minecraft : chest>});
+        RecipeBuilder.get("engineer")
+          .setShaped([
+            [<minecraft:chest>, <modularmachinery:itemmodularium>, <minecraft:chest>],
+            [<modularmachinery:itemmodularium>, <modularmachinery:blockinputbus>, <modularmachinery:itemmodularium>],
+            [<modularmachinery:itemmodularium>, <tconstruct:wooden_hopper>, <modularmachinery:itemmodularium>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<modularmachinery:blockinputbus:2>)
+          .create();
 
         recipesUtils.addShapelessCycle(<modularmachinery:blockoutputbus:2>, <modularmachinery:blockinputbus:2>);
         

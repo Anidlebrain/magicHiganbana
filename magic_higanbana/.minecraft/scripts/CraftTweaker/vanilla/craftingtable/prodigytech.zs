@@ -7,6 +7,7 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass ProdigytechRecipes {
     zenConstructor() {
@@ -27,104 +28,105 @@ zenClass ProdigytechRecipes {
         var l2 = <prodigytech:circuit_refined>;
         var l3 = <prodigytech:circuit_perfected>;
 
+        
         //熔岩气热炉
         recipes.remove(<prodigytech:magmatic_aeroheater>);
-        recipesUtils.addRecipe(<prodigytech:magmatic_aeroheater>,
-            ["A A",
-             "BBB",
-             "BBB"],
-            { A : ferramic_ingot,
-              B : <ore:ingotSteel>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, null, ferramic_ingot],
+            [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
+            [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:magmatic_aeroheater>)
+          .create();
         
         //固体燃料气热炉
         recipes.remove(<prodigytech:solid_fuel_aeroheater>);
-        recipesUtils.addRecipe(<prodigytech:solid_fuel_aeroheater>,
-            ["A A",
-             "ABA",
-             "AAA"],
-            { A : ferramic_ingot,
-              B : <skyresources:combustionheater:4>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, null, ferramic_ingot],
+            [ferramic_ingot, <ore:ingotSteel>, ferramic_ingot],
+            [ferramic_ingot, ferramic_ingot, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:solid_fuel_aeroheater>)
+          .create();
         
         //air_funnel
         recipes.remove(<prodigytech:air_funnel>);
-        recipesUtils.addRecipe(<prodigytech:air_funnel>,
-            ["A A",
-             "ABA",
-             "A A"],
-            { A : ferramic_ingot,
-              B : <flopper:flopper>}
-        );
-
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, null, ferramic_ingot],
+            [ferramic_ingot, <flopper:flopper>, ferramic_ingot],
+            [ferramic_ingot, null, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:air_funnel>)
+          .create();
+        
         //能源气热炉
         recipes.remove(<prodigytech:energion_aeroheater>);
-        recipesUtils.addRecipe(<prodigytech:energion_aeroheater>,
-            ["A A",
-             "CBC",
-             "ADA"],
-            { A : ferramic_ingot,
-              B : l1,
-              C : redstone,
-              D : <minecraft:furnace>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, null, ferramic_ingot],
+            [redstone, l1, redstone],
+            [ferramic_ingot, <minecraft:furnace>, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:energion_aeroheater>)
+          .create();
 
         //热容器气热炉
         recipes.remove(<prodigytech:capacitor_aeroheater>);
-        recipesUtils.addRecipe(<prodigytech:capacitor_aeroheater>,
-            ["A A",
-             "CBC",
-             "AAA"],
-            { A : ferramic_ingot,
-              B : l2,
-              C : redstone}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, null, ferramic_ingot],
+            [redstone, l2, redstone],
+            [ferramic_ingot, ferramic_ingot, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:capacitor_aeroheater>)
+          .create();
         
         //焚化炉
         recipes.remove(<prodigytech:incinerator>);
-        recipesUtils.addRecipe(<prodigytech:incinerator>,
-            ["ACA",
-             "ABA",
-             "ACA"],
-            { A : ferramic_ingot,
-              B : <tcomplement:melter:8>,
-              C : l1}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, l1, ferramic_ingot],
+            [ferramic_ingot, <tcomplement:melter:8>, ferramic_ingot],
+            [ferramic_ingot, l1, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:incinerator>)
+          .create();
 
         //烘烤炉
         recipes.remove(<prodigytech:blower_furnace>);
-        recipesUtils.addRecipe(<prodigytech:blower_furnace>,
-            ["ABA",
-             "ACA",
-             "ABA"],
-            { A : ferramic_ingot,
-              B : <minecraft:iron_ingot>,
-              C : <tcomplement:melter:8>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, <minecraft:iron_ingot>, ferramic_ingot],
+            [ferramic_ingot, <tcomplement:melter:8>, ferramic_ingot],
+            [ferramic_ingot, <minecraft:iron_ingot>, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:blower_furnace>)
+          .create();
 
         //磁力重构
         recipes.remove(<prodigytech:magnetic_reassembler>);
-        recipesUtils.addRecipe(<prodigytech:magnetic_reassembler>,
-            ["ABA",
-             "DCD",
-             "ABA"],
-            { A : ferramic_ingot,
-              B : <ore:gearFerramic>,
-              C : l2,
-              D : <minecraft:gold_ingot>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, <ore:gearFerramic>, ferramic_ingot],
+            [<minecraft:gold_ingot>, l2, <minecraft:gold_ingot>],
+            [ferramic_ingot, <ore:gearFerramic>, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:magnetic_reassembler>)
+          .create();
 
         //矿石精炼机
         recipes.remove(<prodigytech:ore_refinery>);
-        recipesUtils.addRecipe(<prodigytech:ore_refinery>,
-            ["ABA",
-             "DCD",
-             "ABA"],
-            { A : ferramic_ingot,
-              B : redstone,
-              C : l2,
-              D : <ore:ingotAluminum>}
-        );
+        RecipeBuilder.get("farmer")
+          .setShaped([
+            [ferramic_ingot, redstone, ferramic_ingot],
+            [<ore:ingotAluminum>, l2, <ore:ingotAluminum>],
+            [ferramic_ingot, redstone, ferramic_ingot]])
+          .addTool(<ore:artisansShears>, 1)
+          .addOutput(<prodigytech:ore_refinery>)
+          .create();
         
     }
 
