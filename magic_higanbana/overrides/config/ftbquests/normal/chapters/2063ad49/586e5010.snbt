@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "f65c1878",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tconstruct:book"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

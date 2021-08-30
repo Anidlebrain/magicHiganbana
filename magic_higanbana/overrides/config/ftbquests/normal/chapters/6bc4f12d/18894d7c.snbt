@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: -1.0d,
+	dependencies: [
+		"681204f3",
+		"eb73b2ae"
+	],
+	hide: true,
+	tasks: [{
+		uid: "bcc5d2d8",
+		type: "item",
+		items: [{
+			id: "tconstruct:tool_rod",
+			tag: {
+				Material: "wood"
+			}
+		}]
+	}]
+}

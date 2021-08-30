@@ -1,0 +1,15 @@
+{
+	x: 9.5d,
+	y: 8.0d,
+	dependencies: [
+		"a25072e0",
+		"b8ffdd8d"
+	],
+	tasks: [{
+		uid: "cd69ce6e",
+		type: "item",
+		items: [{
+			item: "apotheosis:hellshelf"
+		}]
+	}]
+}

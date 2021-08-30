@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 11.0d,
+	description: "最高200HU",
+	dependencies: [
+		"a83bb682"
+	],
+	tasks: [{
+		uid: "937523a5",
+		type: "item",
+		items: [{
+			item: "skyresources:casing"
+		}]
+	}]
+}

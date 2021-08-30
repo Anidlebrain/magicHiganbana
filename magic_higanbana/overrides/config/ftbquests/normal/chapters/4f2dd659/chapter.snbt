@@ -1,0 +1,13 @@
+{
+	title: "炼金伊始",
+	icon: "botania:lightrelay",
+	description: [
+		"你熟悉了这个岛屿的周边环境，开始制造使用一个个工具。",
+		"你发现你需要获取水源来进行各种生产活动。",
+		"除此之外还能做些什么？",
+		"是弄点食物呢还是继续获取材料呢？"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "octagon"
+}

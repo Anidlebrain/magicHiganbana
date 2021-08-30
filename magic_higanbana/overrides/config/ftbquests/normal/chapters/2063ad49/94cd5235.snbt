@@ -1,0 +1,47 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "8a7a4dc4",
+		type: "item",
+		items: [{
+			item: {
+				item: {
+					item: {
+						item: {
+							item: {
+								item: {
+									item: {
+										item: {
+											item: {
+												item: {
+													item: {
+														item: "alchemistry:periodic_diagram"
+													},
+													Count: 1b
+												},
+												Count: 1b
+											},
+											Count: 1b
+										},
+										Count: 1b
+									},
+									Count: 1b
+								},
+								Count: 1b
+							},
+							Count: 1b
+						},
+						Count: 1b
+					},
+					Count: 1b
+				},
+				Count: 1b
+			}
+		}]
+	}]
+}

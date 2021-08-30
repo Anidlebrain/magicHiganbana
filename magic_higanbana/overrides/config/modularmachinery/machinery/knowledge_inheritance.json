@@ -1,0 +1,166 @@
+{
+    "registryname": "knowledge_inheritance",
+    "localizedname": "知识传承",
+    "color":"8B4513",
+    "parts": [
+        {
+            "x": 0,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_item"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "skyresources:fluid.srcrystalfluid@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_item"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "apotheosis:hellshelf@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bookshelf_oak_0"
+            ]
+        }
+    ]}

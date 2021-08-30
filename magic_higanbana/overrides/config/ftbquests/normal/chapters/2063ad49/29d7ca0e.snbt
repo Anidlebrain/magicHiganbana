@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "3a7a525b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "akashictome:tome"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

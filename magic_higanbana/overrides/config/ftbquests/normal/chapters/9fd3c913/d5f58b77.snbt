@@ -1,0 +1,44 @@
+{
+	x: 9.0d,
+	y: -1.0d,
+	dependencies: [
+		"873e9287",
+		"5e6c3b06"
+	],
+	tasks: [{
+		uid: "dda931ff",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "prodigytech:pattern_circuit_crude"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "be7ea7dc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "prodigytech:pattern_circuit_refined"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d8b76306",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "prodigytech:pattern_circuit_perfected"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

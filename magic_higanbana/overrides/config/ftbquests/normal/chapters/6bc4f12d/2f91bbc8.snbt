@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	text: [
+		"魔法中的不科学，雪冻成了泥土，这是发霉了吗？"
+	],
+	dependencies: [
+		"0de596c3",
+		"a0834b88"
+	],
+	tasks: [{
+		uid: "f3ed5e31",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt 1 1"
+		}]
+	}]
+}

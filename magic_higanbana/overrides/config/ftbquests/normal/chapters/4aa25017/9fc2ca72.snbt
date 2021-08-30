@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: -3.0d,
+	dependencies: [
+		"786f2321"
+	],
+	tasks: [{
+		uid: "e5e512b7",
+		type: "item",
+		items: [{
+			item: "naturesaura:token_sorrow"
+		}]
+	}]
+}

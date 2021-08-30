@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 0.5d,
+	dependencies: [
+		"26d9a060"
+	],
+	tasks: [{
+		uid: "cd46fb49",
+		type: "item",
+		items: [{
+			item: "naturesaura:infused_iron"
+		}]
+	}]
+}

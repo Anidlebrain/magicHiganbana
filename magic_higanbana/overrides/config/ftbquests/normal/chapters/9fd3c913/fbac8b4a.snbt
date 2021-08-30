@@ -1,0 +1,15 @@
+{
+	x: 21.0d,
+	y: 6.0d,
+	dependencies: [
+		"6b6ce374",
+		"8b5a3edc"
+	],
+	tasks: [{
+		uid: "7ead9d3e",
+		type: "item",
+		items: [{
+			item: "prodigytech:zorrasteel_raw"
+		}]
+	}]
+}

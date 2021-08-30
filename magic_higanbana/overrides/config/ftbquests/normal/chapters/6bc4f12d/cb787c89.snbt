@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: -2.0d,
+	description: "伤害更高的远程武器，还有额外的爆炸效果",
+	dependencies: [
+		"a0834b88"
+	],
+	tasks: [{
+		uid: "9ab6220c",
+		type: "item",
+		items: [{
+			item: "skyresources:heavyexplosivesnowball"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 8.0d,
+	dependencies: [
+		"b0da87cf"
+	],
+	tasks: [{
+		uid: "8fe2ec08",
+		type: "item",
+		items: [{
+			item: "minecraft:bookshelf"
+		}]
+	}]
+}

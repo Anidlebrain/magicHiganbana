@@ -1,0 +1,14 @@
+{
+	x: -8.5d,
+	y: -2.5d,
+	dependencies: [
+		"92bf5e0a"
+	],
+	tasks: [{
+		uid: "7a0a1a29",
+		type: "item",
+		items: [{
+			item: "woot:soulstone"
+		}]
+	}]
+}

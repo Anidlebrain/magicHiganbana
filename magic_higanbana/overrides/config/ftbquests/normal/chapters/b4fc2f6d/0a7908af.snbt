@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -5.0d,
+	dependencies: [
+		"fd973c0b"
+	],
+	tasks: [{
+		uid: "1812fb39",
+		type: "item",
+		items: [{
+			item: "roots:grove_stone"
+		}]
+	}]
+}

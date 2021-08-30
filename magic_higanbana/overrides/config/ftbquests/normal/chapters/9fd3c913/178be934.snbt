@@ -1,0 +1,9 @@
+{
+	x: 12.5d,
+	y: -6.5d,
+	tasks: [{
+		uid: "6c08d715",
+		type: "checkmark",
+		title: "金属冲压机"
+	}]
+}

@@ -1,0 +1,34 @@
+{
+    "casings_all": [
+        "modularmachinery:blockcasing",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyoutputhatch",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_decorative": [
+        "modularmachinery:blockcasing"
+    ],
+    "casings_fluid": [
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_energy": [
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockenergyoutputhatch"
+    ],
+    "casings_item": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus"
+    ],
+    "bookshelf_oak_0": [
+        "chisel:bookshelf_oak@0",
+        "chisel:bookshelf_spruce@0",
+        "chisel:bookshelf_birch@0",
+        "chisel:bookshelf_jungle@0",
+        "chisel:bookshelf_acacia@0",
+        "chisel:bookshelf_darkoak@0"
+    ]
+}

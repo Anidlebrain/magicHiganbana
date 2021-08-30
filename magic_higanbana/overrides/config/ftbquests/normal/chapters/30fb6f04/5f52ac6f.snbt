@@ -1,0 +1,15 @@
+{
+	x: 19.0d,
+	y: 5.0d,
+	description: "右键使用传承石获得图纸",
+	tasks: [{
+		uid: "92c0bde0",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:knowledge_inheritance"
+			}
+		}]
+	}]
+}

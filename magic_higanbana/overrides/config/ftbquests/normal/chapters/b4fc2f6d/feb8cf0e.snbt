@@ -1,0 +1,14 @@
+{
+	x: 16.0d,
+	y: 4.5d,
+	dependencies: [
+		"f9c69455"
+	],
+	tasks: [{
+		uid: "1e523c35",
+		type: "item",
+		items: [{
+			item: "skyresources:orealchdust 1 1"
+		}]
+	}]
+}

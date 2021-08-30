@@ -1,0 +1,14 @@
+{
+	x: -7.5d,
+	y: 3.5d,
+	dependencies: [
+		"da603728"
+	],
+	tasks: [{
+		uid: "824fb16b",
+		type: "item",
+		items: [{
+			item: "botania:thornchakram 1 1"
+		}]
+	}]
+}

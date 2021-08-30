@@ -1,0 +1,3 @@
+ingotMithril
+  magneticraft:ingots  item.magneticraft.ingots_mithril.name  秘银锭   9
+  thermalfoundation:material  item.thermalfoundation.material.ingotMithril.name  蕴魔秘银锭   136

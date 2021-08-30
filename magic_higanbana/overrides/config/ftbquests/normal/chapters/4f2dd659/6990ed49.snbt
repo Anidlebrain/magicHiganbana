@@ -1,0 +1,15 @@
+{
+	x: -5.0d,
+	y: 5.0d,
+	description: "捣一捣，留下精华",
+	dependencies: [
+		"b776318d"
+	],
+	tasks: [{
+		uid: "d1aef8f3",
+		type: "item",
+		items: [{
+			item: "skyresources:baseitemcomponent"
+		}]
+	}]
+}

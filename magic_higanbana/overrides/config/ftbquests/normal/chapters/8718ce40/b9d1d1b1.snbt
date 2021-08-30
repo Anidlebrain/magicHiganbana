@@ -1,0 +1,14 @@
+{
+	x: -7.0d,
+	y: -3.5d,
+	dependencies: [
+		"e64c43d3"
+	],
+	tasks: [{
+		uid: "4ab90717",
+		type: "item",
+		items: [{
+			item: "woot:importer"
+		}]
+	}]
+}

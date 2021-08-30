@@ -1,7 +1,0 @@
-{
-	title: "读万卷书",
-	icon: "apotheosis:hellshelf",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "heart"
-}

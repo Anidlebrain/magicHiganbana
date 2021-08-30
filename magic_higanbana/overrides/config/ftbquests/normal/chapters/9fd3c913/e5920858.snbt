@@ -1,0 +1,23 @@
+{
+	title: "制作组件",
+	x: 9.0d,
+	y: 4.5d,
+	dependencies: [
+		"c03eff92",
+		"a1c2355e"
+	],
+	tasks: [{
+		uid: "19ffeb5e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "components"
+			}
+		}],
+		ignore_damage: true
+	}]
+}

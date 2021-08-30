@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: -7.0d,
+	dependencies: [
+		"cc7a61b5"
+	],
+	tasks: [{
+		uid: "8c66bc74",
+		type: "item",
+		items: [{
+			item: "roots:imbuer"
+		}]
+	}]
+}

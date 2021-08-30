@@ -1,0 +1,14 @@
+{
+	x: 8.5d,
+	y: 9.0d,
+	dependencies: [
+		"16f2b20e"
+	],
+	tasks: [{
+		uid: "1a2b7ccc",
+		type: "item",
+		items: [{
+			item: "minecraft:beetroot"
+		}]
+	}]
+}

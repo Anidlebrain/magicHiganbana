@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: 3.0d,
+	dependencies: [
+		"aac331a2"
+	],
+	tasks: [{
+		uid: "a9b1ac85",
+		type: "item",
+		items: [{
+			item: "skyresources:combustionheater 1 4"
+		}]
+	}]
+}

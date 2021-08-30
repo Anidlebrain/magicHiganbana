@@ -1,0 +1,23 @@
+{
+	x: -1.0d,
+	y: -3.0d,
+	shape: "heart",
+	dependencies: [
+		"29d7ca0e"
+	],
+	tasks: [{
+		uid: "381aedfb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5046412770895739815L,
+					AS_Amulet_HolderMost: 2232821436533260981L
+				}
+			},
+			id: "astralsorcery:itemjournal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: -3.0d,
+	y: 11.0d,
+	dependencies: [
+		"0f6b951e",
+		"7291adc7"
+	],
+	tasks: [{
+		uid: "62e84cd4",
+		type: "item",
+		items: [{
+			item: "minecraft:chorus_fruit"
+		}]
+	}]
+}

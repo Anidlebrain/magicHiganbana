@@ -1,0 +1,18 @@
+{
+	title: "使用任意材料制作凿子头",
+	x: 10.5d,
+	y: -4.0d,
+	dependencies: [
+		"e2f61d22"
+	],
+	tasks: [{
+		uid: "7bffec10",
+		type: "item",
+		items: [{
+			id: "tcomplement:chisel_head",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

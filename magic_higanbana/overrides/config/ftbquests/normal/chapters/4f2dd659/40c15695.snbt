@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: 9.0d,
+	dependencies: [
+		"95fe0175",
+		"5c213afa"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "e337d662",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}]
+	}]
+}

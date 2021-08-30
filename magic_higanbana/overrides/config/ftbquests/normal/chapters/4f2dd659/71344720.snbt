@@ -1,0 +1,15 @@
+{
+	x: -8.0d,
+	y: -1.0d,
+	description: "无限的水资源",
+	dependencies: [
+		"93e0f748"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7ead3256",
+		type: "fluid",
+		fluid: "water",
+		amount: 10000
+	}]
+}

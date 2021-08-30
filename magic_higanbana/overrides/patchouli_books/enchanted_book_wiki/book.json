@@ -1,0 +1,6 @@
+{
+	"name": "彼岸之法附魔百科",
+	"landing_text": "欢迎来到彼岸之法整合包附魔百科，在这本书中记载着所有彼岸之法会出现的附魔，包括它们的效果、可以附魔的工具以及最高的等级",
+	"version": 1,
+	"model" : "minecraft:enchanted_book"
+}

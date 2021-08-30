@@ -1,0 +1,31 @@
+{
+	x: 6.5d,
+	y: 6.5d,
+	dependencies: [
+		"89eaeb9a",
+		"af024d01",
+		"580574a1",
+		"990b69cd",
+		"1280f808",
+		"ce9880b3",
+		"5fcc1ad2"
+	],
+	tasks: [{
+		uid: "62ea6aa9",
+		type: "checkmark",
+		title: "搭建工业挤压机"
+	}],
+	rewards: [{
+		uid: "31cd2a4e",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersivepetroleum:schematic",
+			tag: {
+				multiblock: "IE:Squeezer"
+			}
+		}
+	}]
+}
