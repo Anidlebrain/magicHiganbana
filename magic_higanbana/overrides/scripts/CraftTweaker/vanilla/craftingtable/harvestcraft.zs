@@ -1,13 +1,16 @@
 ##===========================================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     潘马斯农场 工作台合成
 ##          [explain]:  部分代码参考：https://www.mcmod.cn/post/1408.html
 ##===========================================================================
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 import mods.artisanworktables.builder.RecipeBuilder;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 zenClass HarvestcraftRecipes {
     zenConstructor() {
@@ -105,5 +108,29 @@ zenClass HarvestcraftRecipes {
           .addTool(<ore:artisansShears>, 1)
           .addOutput(<harvestcraft:gigapickleseeditem>)
           .create();
+    }
+
+    function itemRemove()
+    {
+        var removeItems = [
+            <harvestcraft:freshwateritem>,
+            <harvestcraft:freshmilkitem>,
+            <harvestcraft:honeyitem>,
+            <harvestcraft:waxcombitem>,
+            <harvestcraft:fruitbaititem>,
+            <harvestcraft:grainbaititem>,
+            <harvestcraft:veggiebaititem>,
+
+        ] as IIngredient[];
+
+        for item in removeItems
+        {
+            recipes.remove(item);
+        }
+
+        itemHelper.removeItem(<harvestcraft:hardenedleatherhelmitem>);
+        itemHelper.removeItem(<harvestcraft:hardenedleatherchestitem>);
+        itemHelper.removeItem(<harvestcraft:hardenedleatherleggingsitem>);
+        itemHelper.removeItem(<harvestcraft:hardenedleatherbootsitem>);
     }
 }

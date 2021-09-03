@@ -1,9 +1,9 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 农夫工作台
 ##================================================
-
+#priority 2000
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.item.IItemStack;
@@ -12,8 +12,41 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 var farmerItem = [
+
+    <harvestcraft:groundtrap>,
+    <harvestcraft:watertrap>,
+    <harvestcraft:beehive>,
+    <harvestcraft:candledeco1>,
+    <harvestcraft:candledeco2>,
+    <harvestcraft:candledeco3>,
+    <harvestcraft:candledeco4>,
+    <harvestcraft:candledeco5>,
+    <harvestcraft:candledeco6>,
+    <harvestcraft:candledeco7>,
+    <harvestcraft:candledeco8>,
+    <harvestcraft:candledeco9>,
+    <harvestcraft:candledeco10>,
+    <harvestcraft:candledeco11>,
+    <harvestcraft:candledeco12>,
+    <harvestcraft:candledeco13>,
+    <harvestcraft:candledeco14>,
+    <harvestcraft:candledeco15>,
+    <harvestcraft:candledeco16>,
+    <harvestcraft:wovencottonitem>,
+    <harvestcraft:fishtrapbaititem>,
+
     <minecraft:string>,
     <minecraft:dirt>,
+    <minecraft:pumpkin>,
+    <minecraft:melon_block>,
+    <minecraft:lit_pumpkin>,
+    <minecraft:netherrack>,
+    <minecraft:soul_sand>,
+    <minecraft:mycelium>,
+    <minecraft:carrot_on_a_stick>,
+    <minecraft:wheat>,
+    <minecraft:hay_block>,
+    <minecraft:paper>,
 
     <skyresources:wildlifeattractor>,
 ] as IIngredient[];

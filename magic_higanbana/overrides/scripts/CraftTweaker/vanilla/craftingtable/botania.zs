@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 工作台合成
 ##================================================
 #priority 2000
@@ -108,6 +108,17 @@ zenClass BotaniaRecipes{
             [<randomthings:ingredient:12>, <botania:manaresource:8>, <randomthings:ingredient:12>]])
           .addTool(<ore:artisansGrimoire>, 1)
           .addOutput(<botania:cocoon>)
+          .create();
+        
+        //时钟之眼
+        recipes.remove(<botania:cosmetic:17>);
+        RecipeBuilder.get("mage")
+          .setShaped([
+            [null, <botania:manaresource:23>, null],
+            [<botania:manaresource:23>, <botania:manaresource:16>, <botania:manaresource:23>],
+            [null, <botania:manaresource:23>, null]])
+          .addTool(<ore:artisansGrimoire>, 3)
+          .addOutput(<botania:cosmetic:17>)
           .create();
 
         //魔力透镜 转变

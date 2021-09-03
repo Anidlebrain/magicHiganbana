@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     气动工艺 热动力加工
 ##================================================
 #priority 2000
@@ -23,9 +23,10 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<minecraft:netherra
 
 
 //碘酒
-thermopneumaticprocessingplant.addRecipe(<liquid:ethanol> * 1000, <harvestcraft:seaweeditem> * 16, 3.0, 333, <liquid:iodine> * 1000);
+thermopneumaticprocessingplant.addRecipe(<liquid:ethanol> * 80, <harvestcraft:seaweeditem>, 3.0, 333, <liquid:iodine> * 80);
 
 //液态塑料
+thermopneumaticprocessingplant.removeRecipe(<liquid:plastic>);
 thermopneumaticprocessingplant.addRecipe(<liquid:lpg> * 1000, <mekanism:polyethene:2>, 0.0, 373, <liquid:plastic> * 1000);
 
 

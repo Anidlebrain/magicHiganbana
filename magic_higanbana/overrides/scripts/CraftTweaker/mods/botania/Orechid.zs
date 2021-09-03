@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 凝矿兰
 ##================================================
 
@@ -24,6 +24,7 @@ OrechidIgnem.removeOre(<ore:oreOsmium>);
 //焦黑石英
 Orechid.removeOre(<ore:oreQuartzBlack>);
 OrechidIgnem.removeOre(<ore:oreQuartzBlack>);
+
 
 //零素矿石
 Orechid.addOre(<ore:oreEezo>, 549);

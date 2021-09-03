@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工作台合成
 ##================================================
 
@@ -9,13 +9,15 @@ import scripts.CraftTweaker.vanilla.craftingtable;
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import mods.artisanworktables.builder.RecipeBuilder;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 zenClass CraftingTable {
     zenConstructor() {
 
     }
 
-    function vanillaRecipes() {
+    function vanillaAddRecipes() {
 
         //活塞
         recipes.remove(<minecraft:piston>);
@@ -25,7 +27,7 @@ zenClass CraftingTable {
             [<ore:stone>, <ore:ingotCopper>, <ore:stone>],
             [<ore:stone>, <ore:dustRedstone>, <ore:stone>]])
           .addTool(<ore:artisansShears>, 1)
-          .addOutput(<minecraft:furnace>)
+          .addOutput(<minecraft:piston>)
           .create();
 
         //熔炉
@@ -39,7 +41,25 @@ zenClass CraftingTable {
           .addOutput(<minecraft:furnace>)
           .create();
 
-        recipes.remove(<minecraft:crafting_table>);
+    }
+
+    function vanillaRemoveRecipes()
+    {
+        var removeItems = [
+            <minecraft:crafting_table>,
+            <minecraft:redstone>,
+            <minecraft:rail>,
+            <minecraft:detector_rail>,
+            <minecraft:golden_rail>,
+            <minecraft:activator_rail>,
+            <minecraft:iron_door>,
+            <minecraft:minecart>,
+        ] as IIngredient[];
+
+        for item in removeItems
+        {
+            recipes.remove(item);
+        }
     }
 
     // 遍历配方
@@ -92,7 +112,8 @@ zenClass CraftingTable {
     function recipesInit() {
         if (!isInvalid)
         {
-            vanillaRecipes();
+            vanillaAddRecipes();
+            vanillaRemoveRecipes();
             craftingtable.actuallyadditions.ActuallyadditionsRecipes().init();
             craftingtable.appliedenergistics2.Appliedenergistics2Recipes().init();
             craftingtable.artisanworktables.Artisanworktables().init();

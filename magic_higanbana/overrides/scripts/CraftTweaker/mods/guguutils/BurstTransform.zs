@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 透镜 转变
 ##================================================
 import mods.guguutils.BurstTransform;

@@ -1,6 +1,6 @@
 ##===============================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工具提示
 ##===============================================
 import crafttweaker.item.IItemStack;

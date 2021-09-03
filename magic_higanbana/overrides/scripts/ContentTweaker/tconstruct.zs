@@ -1,4 +1,10 @@
 
+##=================================================
+##          [Author]:   Anidlebrain
+##          [since]:    magic_higanbana
+##          [Info]:     匠魂强化
+##=================================================
+
 #loader contenttweaker
 #modloaded tconstruct
 #priority 5000

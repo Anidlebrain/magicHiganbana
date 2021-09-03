@@ -1,9 +1,9 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 工作台 遍历
 ##================================================
-
+#priority 1999
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
@@ -12,19 +12,19 @@ import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 function TraversalRecipe() {
     for recipe in recipes.all {
         var name as string = recipe.name;
-        var ResourceName = recipe.fullResourceDomain;
+        var resourceName = recipe.fullResourceDomain;
         if (!isNull(recipe.output) && !isNull(recipe.ingredients1D)) {
             if (recipe.ingredients1D.length == 0)
             {
                 continue;
             }
+            var outItemId = recipe.output.definition.id;
             if (recipe.output.definition.owner.contains("artisanworktables"))
             {
-
                 RecipeBuilder.get("basic")
-                  .setCopy(Copy.byName(ResourceName))
+                  .setCopy(Copy.byName(resourceName))
                   .create();
-                recipes.removeByRecipeName(ResourceName);
+                recipes.removeByRecipeName(resourceName);
                 continue;
             }
             else if (recipe.output.definition.owner.contains("harvestcraft"))
@@ -34,10 +34,10 @@ function TraversalRecipe() {
                 {
                     if(ore.name.contains("food"))
                     {
-                        recipes.removeByRecipeName(ResourceName);
+                        recipes.removeByRecipeName(resourceName);
                         RecipeBuilder.get("chef")
-                          .setCopy(Copy.byName(ResourceName))
-                          .addTool(<ore:artisansPan>, 1)
+                          .setCopy(Copy.byName(resourceName))
+                          .addTool(<ore:artisansPan>, 2)
                           .setFluid(<liquid:water> * 250)
                           .create();
                         flag = true;
@@ -49,67 +49,127 @@ function TraversalRecipe() {
                     continue;
                 }
             }
-            else if (recipe.output.definition.owner.contains("endercore"))
+
+            if (resourceName.contains("endercore"))
             {
-                recipes.removeByRecipeName(ResourceName);
+                recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("potter")
-                    .setCopy(Copy.byName(ResourceName))
+                    .setCopy(Copy.byName(resourceName))
                     .addTool(<ore:artisansBurner>, 1)
                     .create();
+                continue;
             }
 
-            if(recipe.output.definition.id.contains("_sword")
-                || recipe.output.definition.id.contains("_axe")
-                || recipe.output.definition.id.contains("_arrow")
-                || recipe.output.definition.id.contains("_hoe")
-                || recipe.output.definition.id.contains("_pickaxe")
-                || recipe.output.definition.id.contains("_shovel")
-                || recipe.output.definition.id.contains("_armow"))
+            if(outItemId.contains("_sword")
+                || outItemId.contains("_axe")
+                || outItemId.contains("_arrow")
+                || outItemId.contains("_hoe")
+                || outItemId.contains("_pickaxe")
+                || outItemId.contains("_shovel")
+                || outItemId.contains("_armow"))
             {//工具
-                recipes.removeByRecipeName(ResourceName);
+                recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("blacksmith")
-                    .setCopy(Copy.byName(ResourceName))
-                    .addTool(<ore:artisansHammer>, 15)
+                    .setCopy(Copy.byName(resourceName))
+                    .addTool(<ore:artisansHammer>, 8)
                     .create();
             }
-            else if(recipe.output.definition.id.contains("_helmet")
-                || recipe.output.definition.id.contains("_chestplate")
-                || recipe.output.definition.id.contains("_leggings")
-                || recipe.output.definition.id.contains("_boots"))
+            else if(outItemId.contains("_helmet")
+                || outItemId.contains("_chestplate")
+                || outItemId.contains("_leggings")
+                || outItemId.contains("_boots"))
             {//防具
-                recipes.removeByRecipeName(ResourceName);
+                recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("tailor")
-                    .setCopy(Copy.byName(ResourceName))
-                    .addTool(<ore:artisansShears>, 10)
+                    .setCopy(Copy.byName(resourceName))
+                    .addTool(<ore:artisansShears>, 6)
                     .create();
             }
-            else if(recipe.output.definition.id.contains("slab")
-                || recipe.output.definition.id.contains("stairs")
-                || recipe.output.definition.id.contains("fences"))
+            else if(outItemId.contains("slab")
+                || outItemId.contains("stairs")
+                || outItemId.contains("fence"))
             {//楼梯
-                recipes.removeByRecipeName(ResourceName);
+                recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("potter")
-                    .setCopy(Copy.byName(ResourceName))
-                    .addTool(<ore:artisansTSquare>, 10)
+                    .setCopy(Copy.byName(resourceName))
+                    .addTool(<ore:artisansTSquare>, 5)
                     .create();
             }
-            else if(recipe.output.definition.id.contains("food"))
-            {//食物
-                recipes.removeByRecipeName(ResourceName);
+            else if(outItemId.contains("food"))
+            {//食物 厨师
+                recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("chef")
-                  .setCopy(Copy.byName(ResourceName))
-                  .addTool(<ore:artisansPan>, 1)
+                  .setCopy(Copy.byName(resourceName))
+                  .addTool(<ore:artisansPan>, 4)
                   .setFluid(<liquid:water> * 250)
                   .create();
             }
-            else if(recipe.output.definition.id.contains("block"))
-            {
-
+            else if(outItemId.contains("block")
+                || outItemId.contains("glass"))
+            {//玻璃 瓷
+                if(outItemId.contains("pane"))
+                {
+                    print("pane - id : " ~ outItemId ~ " - name : " ~ resourceName);
+                    recipes.removeByRecipeName(resourceName);
+                    RecipeBuilder.get("potter")
+                      .setCopy(Copy.byName(resourceName))
+                      .addTool(<ore:artisansBurner>, 3)
+                      .create();
+                    continue;
+                }
+                var flag as bool = false; 
+                for ore in recipe.output.ores
+                {
+                    if(ore.name.contains("blockGlass"))
+                    {
+                        recipes.removeByRecipeName(resourceName);
+                        RecipeBuilder.get("potter")
+                          .setCopy(Copy.byName(resourceName))
+                          .addTool(<ore:artisansBurner>, 1)
+                          .create();
+                        flag = true;
+                        break;
+                    }
+                }
+                if(flag)
+                {
+                    continue;
+                }
             }
+            else if(outItemId.contains("terracotta")
+                || outItemId.contains("concrete")
+                || outItemId.contains("clay"))
+            {//陶瓷
+                recipes.removeByRecipeName(resourceName);
+                RecipeBuilder.get("potter")
+                  .setCopy(Copy.byName(resourceName))
+                  .addTool(<ore:artisansBurner>, 3)
+                  .create();
+            }
+            else if(outItemId.contains("wool"))
+            {//羊毛 农夫
+                if (recipe.ingredients1D.length > 4)
+                {
+                    recipes.removeByRecipeName(resourceName);
+                }
+                RecipeBuilder.get("farmer")
+                  .setCopy(Copy.byName(resourceName))
+                  .create();
+            }
+            else if(outItemId.contains("banner"))
+            {//旗帜 皮革
+                recipes.removeByRecipeName(resourceName);
+                RecipeBuilder.get("tanner")
+                  .setCopy(Copy.byName(resourceName))
+                  .create();
+            }
+            else
+            {
+                print("id : " ~ outItemId ~ " - name : " ~ resourceName);
+            }
+            
         }
     }
 }
 
 TraversalRecipe();
-
-<ore:paneGlass>;

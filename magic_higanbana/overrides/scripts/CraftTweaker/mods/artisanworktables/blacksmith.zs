@@ -1,19 +1,15 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 铁匠工作台
 ##================================================
-
+#priority 2000
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 var blacksmithItem = [
-    <minecraft:shield>,
-    <skyresources:diamondgrinder>,
-    <skyresources:irongrinder>,
-    <skyresources:stonegrinder>,
     <harvestcraft:cuttingboarditem>,
     <harvestcraft:potitem>,
     <harvestcraft:skilletitem>,
@@ -21,7 +17,23 @@ var blacksmithItem = [
     <harvestcraft:bakewareitem>,
     <harvestcraft:mortarandpestleitem>,
     <harvestcraft:mixingbowlitem>,
-    <harvestcraft:juiceritem>
+    <harvestcraft:juiceritem>,
+    <harvestcraft:presser>,
+
+    <minecraft:shield>,
+    <minecraft:chest_minecart>,
+    <minecraft:furnace_minecart>,
+    <minecraft:tnt_minecart>,
+    <minecraft:hopper_minecart>,
+    <minecraft:bucket>,
+    <minecraft:compass>,
+    <minecraft:light_weighted_pressure_plate>,
+    <minecraft:heavy_weighted_pressure_plate>,
+
+    <skyresources:diamondgrinder>,
+    <skyresources:irongrinder>,
+    <skyresources:stonegrinder>,
+
 ] as IIngredient[];
 
 

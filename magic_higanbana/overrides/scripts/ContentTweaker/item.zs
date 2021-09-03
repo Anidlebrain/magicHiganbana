@@ -1,6 +1,6 @@
 ##=================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     物品增加
 ##=================================================
 #loader contenttweaker

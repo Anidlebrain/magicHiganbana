@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 泰拉凝聚板
 ##================================================
 
@@ -51,3 +51,11 @@ Agglomeration.addRecipe(<minecraft:sand>,
     888888, 0x993300, 0xFFCC00,
     <extendedcrafting:table_basic>, <chisel:blockgold:3>, <chisel:blockelectrum:3>,
     <extendedcrafting:table_advanced>, <minecraft:sand>, <minecraft:sand>);
+
+//元素土
+mods.roots.Fey.removeRecipe(<roots:elemental_soil>);
+Agglomeration.addRecipe(<bloodmagic:sigil_elemental_affinity>,
+    [<botania:rune:0>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>],
+    6471, 0x993300, 0xFFCC00,
+    <minecraft:dirt>, <minecraft:gravel>, <roots:chiseled_runed_obsidian>,
+    <roots:elemental_soil>, <minecraft:sand>, <roots:chiseled_runestone>);

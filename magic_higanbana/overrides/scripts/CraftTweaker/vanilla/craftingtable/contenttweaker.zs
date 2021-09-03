@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     cot 工作台合成
 ##================================================
 
@@ -18,15 +18,14 @@ zenClass ContentTweakerRecipes {
     }
     
     function recipesInit() {
-        /*
+
         //火柴
-        recipesUtils.addRecipe(<contenttweaker:match_stick>,
-            ["  A",
-             " B ",
-             "   "],
-            { B : <minecraft:coal:1>,
-              A : <prodigytech:ash_bricks> });
-        */
+        RecipeBuilder.get("basic")
+          .setShaped([
+            [null, <minecraft:coal:1>],
+            [<ore:stickWood>, null]])
+          .addOutput(<contenttweaker:match_stick>)
+          .create();
     }
 }
 

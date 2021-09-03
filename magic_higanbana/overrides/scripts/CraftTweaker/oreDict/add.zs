@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     矿物词典 增加
 ##================================================
 #priority 3000
@@ -30,7 +30,7 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <botania:petal:12>,
         <botania:petal:13>,
         <botania:petal:14>,
-        <botania:petal:15>
+        <botania:petal:15>,
     ],
     
     #神秘花瓣
@@ -50,7 +50,7 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <botania:dye:12>,
         <botania:dye:13>,
         <botania:dye:14>,
-        <botania:dye:15>
+        <botania:dye:15>,
     ],
     
     #神秘荧光花
@@ -70,17 +70,17 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <botania:shinyflower:12>,
         <botania:shinyflower:13>,
         <botania:shinyflower:14>,
-        <botania:shinyflower:15>
+        <botania:shinyflower:15>,
     ],
     
     #荔枝
     <ore:cropLychee>: [
-        <harvestcraft:lycheeitem>
+        <harvestcraft:lycheeitem>,
     ],
     
     #菠萝蜜
     <ore:cropJackfruit>: [
-        <harvestcraft:lycheeitem>
+        <harvestcraft:lycheeitem>,
     ],
     
     #五元素晶体
@@ -89,7 +89,7 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <contenttweaker:crystal_earth>,
         <contenttweaker:crystal_wood>,
         <contenttweaker:crystal_metal>,
-        <contenttweaker:crystal_fire>
+        <contenttweaker:crystal_fire>,
     ],
 
     #符文尘
@@ -114,26 +114,47 @@ var oreadd as IItemStack[][IOreDictEntry] = {
 
     #焦煤块
     <ore:blockCoalCoke>: [
-        <immersiveengineering:stone_decoration:3>
+        <immersiveengineering:stone_decoration:3>,
     ],
 
-    #太空锭
+    #天空锭
     <ore:ingotSky> : [
-        <naturesaura:sky_ingot>
+        <naturesaura:sky_ingot>,
     ],
 
     #铝矿石
     <ore:oreAluminum> : [
-        <techreborn:ore:4>
+        <techreborn:ore:4>,
     ],
 
     #铂矿石
     <ore:orePlatinum> : [
-        <techreborn:ore:9>
+        <techreborn:ore:9>,
     ],
     <ore:oreSheldonite> : [
-        <thermalfoundation:ore:6>
+        <thermalfoundation:ore:6>,
     ],
+
+    #种子
+    <ore:listAllseed> : [
+        <extrautils2:enderlilly>,
+        <appliedenergistics2:crystal_seed>,
+        <appliedenergistics2:crystal_seed:1200>,
+        <appliedenergistics2:crystal_seed:600>,
+        <galacticraftplanets:strange_seed:1>,
+        <immersiveengineering:seed>,
+        <prodigytech:energion_crystal_seed>,
+        <actuallyadditions:item_misc:24>,
+        <actuallyadditions:item_misc:23>,
+        <actuallyadditions:item_rice_seed>,
+        <actuallyadditions:item_canola_seed>,
+        <actuallyadditions:item_flax_seed>,
+        <actuallyadditions:item_coffee_seed>,
+        <roots:moonglow_seed>,
+        <roots:spirit_herb_seed>,
+        <roots:wildewheet_seed>,
+        <tp:mycelium_seeds>,
+    ]
 
 };
 

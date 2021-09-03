@@ -1,3 +1,9 @@
+##================================================
+##          [Author]:   Anidlebrain
+##          [since]:    magic_higanbana
+##          [Info]:     工匠之作 厨师工作台
+##================================================
+#priority 2000
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.item.IItemStack;
@@ -12,9 +18,13 @@ var chefItem = [
     <botania_tweaks:compressed_tiny_potato_6>,
     <botania_tweaks:compressed_tiny_potato_7>,
     <botania_tweaks:compressed_tiny_potato_8>,
+    
     <minecraft:golden_apple>,
     <minecraft:golden_apple:1>,
     <minecraft:rabbit_stew>,
+    <minecraft:mushroom_stew>,
+    <minecraft:bread>,
+
 ] as IIngredient[];
 
 

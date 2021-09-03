@@ -1,9 +1,9 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 工程师工作台
 ##================================================
-
+#priority 2000
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.item.IItemStack;

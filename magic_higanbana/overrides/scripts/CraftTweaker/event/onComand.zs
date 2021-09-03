@@ -1,6 +1,6 @@
 ##===============================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     指令管理器
 ##===============================================
 
@@ -99,18 +99,13 @@ survivalCommand.execute = function(command, server, sender, args) {
 };
 survivalCommand.register();
 
-/*
+
 var isCommand as ZenCommand = ZenCommand.create("is");
 isCommand.getCommandUsage = function(sender) {
-    return "commands.is.usage";
+    return "commands.island.usage";
 };
 isCommand.requiredPermissionLevel = 0; 
 isCommand.execute = function(command, server, sender, args) {
     
-    var player as IPlayer = CommandUtils.getCommandSenderAsPlayer(sender);
-    if(!isNull(player)) {
-        server.commandManager.executeCommand(server, "/gamemode survival" ~ player.name);
-    }
 };
 isCommand.register();
-*/

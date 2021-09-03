@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   City & Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     末影接口 末影配方
 ##================================================
 #priority 2000

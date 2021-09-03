@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 工作台合成
 ##================================================
 
@@ -405,7 +405,7 @@ zenClass SkyresourcesRecipes {
             [<botania:manaresource:3>, null, <botania:manaresource:1>]])
           .addOutput(<skyresources:survivalistfishingrod>)
           .create();
-        
+
         //赫耳墨斯之金针
         recipes.remove(<skyresources:alchemyitemcomponent:9>);
         RecipeBuilder.get("blacksmith")
@@ -413,6 +413,7 @@ zenClass SkyresourcesRecipes {
           .addTool(<ore:artisansHammer>, 8)
           .addOutput(<skyresources:alchemyitemcomponent:9>)
           .create();
+        
     }
     
     function itemRemove() {

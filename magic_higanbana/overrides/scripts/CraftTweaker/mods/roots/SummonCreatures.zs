@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 召唤生物
 ##================================================
 #priority 2000
@@ -55,9 +55,11 @@ SummonCreatures.clearLifeEssence();
 SummonCreatures.addEntity(<entity:minecraft:wither_skeleton>, [<item:xreliquary:mob_ingredient:1>, <item:minecraft:arrow>, <item:minecraft:bow>]);
 
 //流髑
+SummonCreatures.removeEntity(<entity:minecraft:stray>);
 SummonCreatures.addEntity(<entity:minecraft:stray>, [<item:skyresources:heavysnowball>, <item:minecraft:arrow>, <item:minecraft:bow>, <item:xreliquary:mob_ingredient>]);
 
 //尸壳
+SummonCreatures.removeEntity(<entity:minecraft:husk>);
 SummonCreatures.addEntity(<entity:minecraft:husk>, [<item:minecraft:sand>, <item:xreliquary:mob_ingredient:6>, <item:thaumcraft:brain>]);
 
 //僵尸村民

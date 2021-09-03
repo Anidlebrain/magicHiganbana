@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     模块化机械 微型魔力制造机
 ##================================================
 #priority 2000
@@ -123,6 +123,18 @@ zenClass MiniManaMachineRecipes {
                     [<ore:netherStar>, <ore:obsidian>],
                     [1, 4]);
 
+        //tnt
+        addRecipes([<item:minecraft:tnt>],
+                    [<item:minecraft:gunpowder> * 5],
+                    [<ore:sand>],
+                    [4]);
+        
+        //钟
+        addRecipes([<item:minecraft:clock>],
+                    [<item:botania:cosmetic:17>],
+                    [<ore:plateGold>],
+                    [4]);
+        
     }
 
     function skyResourceRecipes() {

@@ -1,6 +1,6 @@
 ##================================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 研钵
 ##================================================
 #priority 2000
@@ -57,6 +57,7 @@ rootsMortarRecipe(<threng:material:1>, [<ore:dustFluix>, <ore:dustFluix>, <ore:d
 //花粉
 for kinds in 0 to 15
 {
+    recipes.remove(<botania:dye>.definition.makeStack(kinds));
     rootsMortarRecipe(<botania:dye>.definition.makeStack(kinds), [<botania:petal>.definition.makeStack(kinds)]);
 }
 

@@ -1,6 +1,6 @@
 ##==============================================
 ##          [Author]:   Anidlebrain
-##          [License]:  CC BY-NC-SA 4.0
+##          [since]:    magic_higanbana
 ##          [Info]:     事件管理器
 ##===============================================
 
@@ -11,9 +11,10 @@ import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerRespawnEvent;
+import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.PlayerSleepInBedEvent;
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
-import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.block.IBlock;
 import mods.ctutils.world.World;
 import mods.ctutils.world.IGameRules;
@@ -25,20 +26,24 @@ import scripts.AnildebrainUtils.modLoader.isInvalid;
 
 static storageData as IData[string] = {};
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
+    /*
+    if(!event.commandSender.world.remote) {
+        return ;
+    }
+    */
     val sender as ICommandSender = mods.ctutils.commands.Commands.getServerCommandSender();
     val player as IPlayer = event.player;
     val rules as IGameRules = World.getGameRules(player.world);
 
     if (isInvalid) {
-        while (true)
-        {
+        while (true) {
             player.sendMessage("请不要随意添加mod");
         }
     }
     else
     {
         server.commandManager.executeCommand(sender, "/gamerule keepInventory true");
-        //server.commandManager.executeCommand(sender, "/gamerule mobGriefing true");
+        server.commandManager.executeCommand(sender, "/gamerule mobGriefing true");
         server.commandManager.executeCommand(sender, "/say Anidlebrain test");
         server.commandManager.executeCommand(sender, "/gamerule announceAdvancements false");
         server.commandManager.executeCommand(sender, "/gamerule naturalRegeneration false");
@@ -49,7 +54,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 
         player.update({InheritanceLevel : 0 as int} + player.data);
         player.update({IsCheat : 0 as int} + player.data);
-
+        player.update({DreamJournl : 0 as int} + player.data);
         val Level as int = player.data.InheritanceLevel.asInt();
 
 
@@ -58,14 +63,13 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
             player.update(player.data + {InheritanceLevel : (Level + 1) as int});
         }
 
-        player.sendMessage("欢迎你," ~ player.name ~ "!");
+        player.sendMessage("欢迎你游玩彼岸之法," ~ player.name ~ "!");
         //player.sendMessage("所有配方请参考JEI。");
         player.sendMessage("彼岸之法整合包已经预先设置好以下规则：");
         player.sendMessage("复活可以继承死亡之前的物品；");
-        player.sendMessage("苦力怕等怪物可以破坏方块；");
+        player.sendMessage("世界被给予爆炸保护，无法通过爆炸破坏方块；");
         player.sendMessage("被降下诅咒导致无法正常回复生命值。");
     }
-
     
 });
 
@@ -184,3 +188,16 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
     }
 });
 */
+
+events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent) {
+    var player = event.player;
+    if (!isNull(player.getAttunedConstellation())) {
+
+        val dreamJournl as int = player.data.DreamJournl.asInt();
+        if (dreamJournl == 0) {
+            player.update(player.data + {DreamJournl : (1) as int});
+            player.getAttunedConstellation();
+        }
+    }
+    //return "OK";
+});
