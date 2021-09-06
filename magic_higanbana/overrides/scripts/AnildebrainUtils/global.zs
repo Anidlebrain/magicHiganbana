@@ -163,6 +163,25 @@ global ORGANIC_BLACK_DYE as IOreDictEntry = <ore:dyeBlack>;
 global BLOOD_ORB as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | 
                   <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
 
+global DYE_ORE as IOreDictEntry[] = [
+    <ore:dyeWhite>,
+    <ore:dyeOrange>,
+    <ore:dyeMagenta>,
+    <ore:dyeLightBlue>,
+    <ore:dyeYellow>,
+    <ore:dyeLime>,
+    <ore:dyePink>,
+    <ore:dyeGray>,
+    <ore:dyeLightGray>,
+    <ore:dyeCyan>,
+    <ore:dyePurple>,
+    <ore:dyeBlue>,
+    <ore:dyeBrown>,
+    <ore:dyeGreen>,
+    <ore:dyeRed>,
+    <ore:dyeBlack>
+] as IOreDictEntry[];
+
 //阶段名称
 global stageTheNetherName as string = BaseUtils.cleanName("TheNether");
 global stageTheEndName as string = BaseUtils.cleanName("TheEnd");

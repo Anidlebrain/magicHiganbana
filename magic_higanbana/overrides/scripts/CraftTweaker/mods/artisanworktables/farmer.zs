@@ -13,6 +13,24 @@ import crafttweaker.oredict.IOreDictEntry;
 
 var farmerItem = [
 
+    <botania:floatingspecialflower>,
+    <botania:miniisland:0>,
+    <botania:miniisland:1>,
+    <botania:miniisland:2>,
+    <botania:miniisland:3>,
+    <botania:miniisland:4>,
+    <botania:miniisland:5>,
+    <botania:miniisland:6>,
+    <botania:miniisland:7>,
+    <botania:miniisland:8>,
+    <botania:miniisland:9>,
+    <botania:miniisland:10>,
+    <botania:miniisland:11>,
+    <botania:miniisland:12>,
+    <botania:miniisland:13>,
+    <botania:miniisland:14>,
+    <botania:miniisland:15>,
+
     <harvestcraft:groundtrap>,
     <harvestcraft:watertrap>,
     <harvestcraft:beehive>,
@@ -49,6 +67,9 @@ var farmerItem = [
     <minecraft:paper>,
 
     <skyresources:wildlifeattractor>,
+
+    <tp:bone_block>,
+    
 ] as IIngredient[];
 
 var farmerOre = [

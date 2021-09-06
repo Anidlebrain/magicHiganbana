@@ -14,7 +14,8 @@ var scribeItem = [
     
     <minecraft:map>,
     <minecraft:book>,
-
+    <minecraft:writable_book>,
+    
     
     
 
@@ -25,3 +26,8 @@ RecipeBuilder.get("scribe")
   .setExperienceRequired(50)
   .addTool(<ore:artisansBurner>, 1)
   .create();
+
+for item in scribeItem
+{
+    recipes.remove(item);
+}

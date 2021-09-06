@@ -6,6 +6,7 @@
 
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 zenClass RootsRecipes {
@@ -59,5 +60,11 @@ zenClass RootsRecipes {
           .addTool(<ore:artisansShears>, 1)
           .addOutput(<roots:imbuer>)
           .create();
+    }
+
+    function itemRemove() {
+        //木剪
+        itemHelper.removeItem(<roots:wooden_shears>);
+
     }
 }

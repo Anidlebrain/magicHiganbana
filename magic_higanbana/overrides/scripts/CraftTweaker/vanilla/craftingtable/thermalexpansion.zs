@@ -379,6 +379,9 @@ zenClass ThermalexpansionRecipes {
         //升级: 通货铸造授权
         itemHelper.removeItem(<thermalexpansion:augment:336>);
         itemHelper.removeItem(<thermalexpansion:dynamo:5>);
+
+        //背包
+        itemHelper.removeItem(<thermalexpansion:dynamo:5>);
     }
 
     function TraversalRecipe() {

@@ -10,15 +10,34 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
+var mageItem = [
+    <tp:small_bandage>,
+    <tp:small_med_kit>,
+    <tp:large_med_kit>,
+    <tp:large_bandage>,
+    
+] as IIngredient[];
+
 var mageName = [
-    "minecraft:snow",
 
 ] as string[];
+
+RecipeBuilder.get("basic")
+  .setCopy(Copy.byOutput(mageItem))
+  .create();
+
+for item in mageItem
+{
+    recipes.remove(item);
+}
+
 
 for recipeName in mageName
 {
     recipes.removeByRecipeName(recipeName);
-    RecipeBuilder.get("basic")
+    RecipeBuilder.get("mage")
       .setCopy(Copy.byName(recipeName))
       .create();
 }
+
+<tp:small_bandage>;

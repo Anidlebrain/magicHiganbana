@@ -10,6 +10,7 @@ import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.ctutils.utils.Math;
 
 static recipesNum as int = 0;
 
@@ -76,4 +77,32 @@ function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) {
                     .addOutput(output)
                     .create();
 
+}
+
+function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredient[])
+{
+    if ((inputs.length % 2 == 0) || inputs.length > 7)
+    {
+        logger.logError("[gaiaPlateRecipe] - The input must be odd and less than seven");
+    }
+    else
+    {
+        mods.botanicadds.GaiaPlate.add(output, mana, inputs);
+
+        mods.jei.JEI.createJEIRecipe("gaia_plate")
+            .setInputs(inputs)
+            .addOutput(<botanicadds:gaia_plate>)
+            .addOutput(output)
+            .addOutput(<botanicadds:elven_lapis_block>)
+            .addOutput(<botanicadds:elven_lapis_block>)
+            .addOutput(<botanicadds:elven_lapis_block>)
+            .addOutput(<botanicadds:elven_lapis_block>)
+            .addOutput(<botanicadds:dreamrock>)
+            .addOutput(<botanicadds:dreamrock>)
+            .addOutput(<botanicadds:dreamrock>)
+            .addOutput(<botanicadds:dreamrock>)
+            .addOutput(<botanicadds:dreamrock>)
+            .addJEIElement(mods.jei.JEI.createJEIManaBarElement(30, 57, Math.floor(mana / 100)))
+            .build();
+    }
 }

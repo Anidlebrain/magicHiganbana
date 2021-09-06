@@ -49,6 +49,7 @@ CotUtils.itemCreator("strengthen_geasgeas", 64, false);
 CotUtils.itemCreator("strengthen_iced_touch", 64, false);
 CotUtils.itemCreator("strengthen_rose_thorns", 64, false);
 CotUtils.itemCreator("strengthen_acid_cloud", 64, false);
+CotUtils.itemCreator("strengthen_light_drifter", 64, false);
 CotUtils.itemCreator("strengthen_supplication", 64, false);
 CotUtils.itemCreator("strengthen_fey_light", 64, false);
 

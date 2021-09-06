@@ -23,7 +23,15 @@ var basicItem = [
     <skyresources:ironcuttingknife>,
     <skyresources:diamondcuttingknife>,
     <skyresources:cactusfruitneedle>,
+
+    <tp:wooden_shears>,
+    <tp:flint_shears>,
+    <tp:stone_shears>,
+    <tp:emerald_shears>,
+    <tp:diamond_shears>,
+    <tp:golden_shears>,
     
+
 
 ] as IIngredient[];
 
@@ -46,7 +54,6 @@ var basicNotOre = [
     <ore:plankWood>,
     <ore:stickWood>,
     <ore:treeSapling>,
-    <ore:plankWood>,
 ] as IOreDictEntry[];
 
 var basicNotName = [

@@ -153,9 +153,30 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <roots:moonglow_seed>,
         <roots:spirit_herb_seed>,
         <roots:wildewheet_seed>,
+        <roots:pereskia_bulb>,
         <tp:mycelium_seeds>,
-    ]
+        
+    ],
 
+    <ore:oreEezo> : [
+        <taiga:eezo_ore>,
+    ],
+
+    <ore:oreOsram> : [
+        <taiga:osram_ore>,
+    ],
+
+    <ore:oreDuranite> : [
+        <taiga:duranite_ore>,
+    ],
+
+    <ore:oreKarmesine> : [
+        <taiga:karmesine_ore>,
+    ],
+
+    <ore:oreOvium> : [
+        <taiga:ovium_ore>,
+    ]
 };
 
 

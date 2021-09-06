@@ -4,6 +4,7 @@
 ##          [Info]:     植物魔法 凝矿兰
 ##================================================
 
+#norun
 #priority 2000
 import mods.botania.Orechid;
 import mods.botania.OrechidIgnem;

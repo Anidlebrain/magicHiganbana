@@ -55,6 +55,17 @@ function TraversalRecipe() {
                 recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("potter")
                     .setCopy(Copy.byName(resourceName))
+                    .addTool(<ore:artisansBurner>, 2)
+                    .addTool(<ore:artisansSolderer>, 3)
+                    .setFluid(<liquid:lava> * 50)
+                    .create();
+                continue;
+            }
+            else if (resourceName.contains("compressed"))
+            {
+                recipes.removeByRecipeName(resourceName);
+                RecipeBuilder.get("potter")
+                    .setCopy(Copy.byName(resourceName))
                     .addTool(<ore:artisansBurner>, 1)
                     .create();
                 continue;
@@ -138,7 +149,8 @@ function TraversalRecipe() {
             }
             else if(outItemId.contains("terracotta")
                 || outItemId.contains("concrete")
-                || outItemId.contains("clay"))
+                || outItemId.contains("clay")
+                || outItemId.contains("wall"))
             {//陶瓷
                 recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("potter")

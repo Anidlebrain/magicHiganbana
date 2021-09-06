@@ -22,14 +22,45 @@ var masonItem = [
     <minecraft:repeater>,
     <minecraft:comparator>,
 
+    <roots:runestone_pressure_plate>,
+    <roots:runed_obsidian>,
+    <roots:runed_obsidian_brick>,
+    <roots:runed_obsidian_brick_alt>,
+    <roots:chiseled_runed_obsidian>,
+    <roots:runestone_brick_pressure_plate>,
+    <roots:runestone_brick_alt_pressure_plate>,
+    <roots:runed_obsidian_button>,
+    <roots:runed_obsidian_pressure_plate>,
+    <roots:runed_obsidian_brick_button>,
+    <roots:runed_obsidian_brick_pressure_plate>,
+    <roots:runed_obsidian_brick_alt_button>,
+    <roots:runed_obsidian_brick_alt_pressure_plate>,
+    
+
+
+
 
 ] as IIngredient[];
 
 
 var masonNotItem = [
     <minecraft:stone_button>,
+    <roots:runestone_brick_button>,
+    <roots:runed_obsidian_button>,
+    <roots:runed_obsidian_brick_button>,
+    <roots:runed_obsidian_brick_alt_button>,
+    <roots:runestone_button>,
 
 ] as IIngredient[];
+
+var masonName = [
+    "roots:runestone_brick_unslab",
+    "roots:runestone_brick_alt_unslab",
+    "roots:runestone_unslab",
+
+] as string[];
+
+
 
 RecipeBuilder.get("mason")
   .setCopy(Copy.byOutput(masonItem))
@@ -43,3 +74,12 @@ for item in masonItem
 RecipeBuilder.get("mason")
   .setCopy(Copy.byOutput(masonNotItem))
   .create();
+
+
+for recipeName in masonName
+{
+    recipes.removeByRecipeName(recipeName);
+    RecipeBuilder.get("basic")
+      .setCopy(Copy.byName(recipeName))
+      .create();
+}

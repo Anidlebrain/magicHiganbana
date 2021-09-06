@@ -41,6 +41,21 @@ zenClass CraftingTable {
           .addOutput(<minecraft:furnace>)
           .create();
 
+        //骨头
+        recipes.remove(<minecraft:bone>);
+        RecipeBuilder.get("farmer")
+          .setShapeless([<tp:bone_block>])
+          .addOutput(<minecraft:bone> * 9)
+          .create();
+
+        //剪刀
+        recipes.remove(<minecraft:shears>);
+        RecipeBuilder.get("basic")
+          .setShaped([
+            [<minecraft:stick>, <minecraft:iron_ingot>],
+            [<minecraft:iron_ingot>, <minecraft:stick>]])
+          .addOutput(<minecraft:shears>)
+          .create();
     }
 
     function vanillaRemoveRecipes()
@@ -138,6 +153,7 @@ zenClass CraftingTable {
             craftingtable.skyresources.SkyresourcesRecipes().init();
             craftingtable.techreborn.TechrebornRecipes().init();
             craftingtable.thermalexpansion.ThermalexpansionRecipes().init();
+            craftingtable.tp.TpRecipes().init();
             craftingtable.xreliquary.XreliquaryRecipes().init();
             craftingtable.woot.WootRecipes().init();
             //TraversalRecipe();

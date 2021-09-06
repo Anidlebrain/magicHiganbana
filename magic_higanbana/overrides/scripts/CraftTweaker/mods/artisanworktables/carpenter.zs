@@ -36,12 +36,18 @@ var carpenterItem = [
     <minecraft:birch_door>,
     <minecraft:jungle_door>,
     <minecraft:dark_oak_door>,
-    <roots:wildwood_door>,
     <minecraft:wooden_button>,
     <minecraft:trapdoor>,
     <minecraft:armor_stand>,
     <minecraft:trapped_chest>,
 
+
+    <roots:wildwood_trapdoor>,
+    <roots:wildwood_ladder>,
+    <roots:wildwood_pressure_plate>,
+    <roots:wildwood_door>,
+
+    
     <skyresources:waterextractor>,
 
     <techreborn:treetap>,
@@ -55,6 +61,10 @@ var carpenterItem = [
 
 ] as IIngredient[];
 
+var carpenterNotItem = [
+    <roots:wildwood_button>,
+] as IIngredient[];
+
 
 RecipeBuilder.get("carpenter")
   .setCopy(Copy.byOutput(carpenterItem)
@@ -66,6 +76,12 @@ for item in carpenterItem
 {
     recipes.remove(item);
 }
+
+RecipeBuilder.get("carpenter")
+  .setCopy(Copy.byOutput(carpenterNotItem)
+             .replaceInput(<minecraft:crafting_table>, <artisanworktables:worktable:5>))
+  .addTool(<ore:artisansDriver>, 1)
+  .create();
 
 for kinds in 0 .. 16
 {//床

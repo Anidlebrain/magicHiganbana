@@ -30,9 +30,13 @@ var blacksmithItem = [
     <minecraft:light_weighted_pressure_plate>,
     <minecraft:heavy_weighted_pressure_plate>,
 
+    <roots:reinforced_pyre>,
+
     <skyresources:diamondgrinder>,
     <skyresources:irongrinder>,
     <skyresources:stonegrinder>,
+
+
 
 ] as IIngredient[];
 

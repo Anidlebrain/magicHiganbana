@@ -25,3 +25,7 @@ recipesUtils.removeOreFurnace(<ore:ingotAluminum>);
 
 //铱锭
 recipesUtils.removeOreFurnace(<ore:ingotIridium>);
+
+//精炼铁锭
+furnace.remove(<tp:cooked_bacon>);
+furnace.addRecipe(<tp:cooked_bacon>, <actuallyadditions:item_food:20>, 1.0);

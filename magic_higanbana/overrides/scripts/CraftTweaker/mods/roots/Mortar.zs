@@ -54,11 +54,24 @@ rootsMortarRecipe(<extendedcrafting:material:7> * 2, [<minecraft:gunpowder>, <bo
 recipes.remove(<threng:material:1>);
 rootsMortarRecipe(<threng:material:1>, [<ore:dustFluix>, <ore:dustFluix>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:itemSilicon>]);
 
+
 //花粉
-for kinds in 0 to 15
+for kinds in 0 to 16
 {
     recipes.remove(<botania:dye>.definition.makeStack(kinds));
     rootsMortarRecipe(<botania:dye>.definition.makeStack(kinds), [<botania:petal>.definition.makeStack(kinds)]);
+
+    if(kinds < 4)
+    {
+        recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
+        rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], <minecraft:glowstone_dust>]);
+    }
+}
+
+for kinds in 4 to 15
+{
+    recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
+    rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
 }
 
 //咒术尘 生机灌溉
