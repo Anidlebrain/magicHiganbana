@@ -4,9 +4,8 @@
 ##          [Info]:     无尽贪婪 终极工作台
 ##================================================
 
-#norun
 #priority 2000
-import mods.avaritia.ExtremeCrafting;
+#modloaded avaritia
 
 
 ExtremeCrafting.addShaped("avaritia/Extreme/cosmic_meatballs", <avaritia:cosmic_meatballs>,

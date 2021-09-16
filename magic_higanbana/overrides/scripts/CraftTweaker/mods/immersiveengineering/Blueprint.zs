@@ -29,6 +29,69 @@ Blueprint.addRecipe("发电机", <item:immersiveengineering:metal_device1:2>, [<
 recipes.remove(<item:immersiveengineering:metal_device1:3>);
 Blueprint.addRecipe("发电机", <item:immersiveengineering:metal_device1:3> * 2, [<ore:ingotSteel> * 3, <ore:plateConstantan> * 6, <item:immersiveengineering:metal_decoration0:0>]);
 
+
+
+//熔炉发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator"}),
+    [<ore:plateDenseIron> * 2, <ore:gearIron> * 3, <extrautils2:machine>, <enderio:item_alloy_ingot:3> * 2, <tp:iron_furnace_block>]);
+
+//厨用发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}),
+    [<harvestcraft:cuttingboarditem>, <harvestcraft:bakewareitem>, <harvestcraft:skilletitem>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+    
+//熔岩发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}),
+    [<actuallyadditions:block_lava_factory_controller> * 2, <actuallyadditions:block_misc:7> * 3, <extrautils2:passivegenerator:2>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//高热红石发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_redstone"}),
+    [<mekanism:compressedredstone> * 2, <ore:ingotDemonicMetal> * 3, <extrautils2:machine>, <actuallyadditions:block_crystal_empowered> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"})]);
+
+//末影发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_ender"}),
+    [<ore:plateEnderium> * 2, <ore:ingotEnderium> * 3, <extrautils2:ingredients:2>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//药水发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_potion"}),
+    [<bloodmagic:potion_flask> * 4, <thermalexpansion:augment:448>, <minecraft:brewing_stand>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//粉红发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_pink"}),
+    [<appliedenergistics2:paint_ball:6> * 6, <minecraft:pink_shulker_box>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//超频发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),
+    [<ore:ingotAdvancedAlloy> * 6, <techreborn:upgrades>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//TNT发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}),
+    [<extrautils2:unstableingots> * 6, <minecraft:tnt>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//下界之星发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}),
+    [<woot:structure:4> * 2, <actuallyadditions:item_misc:19> * 3, <xreliquary:witherless_rose>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//龙息发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_dragonsbreath"}),
+    [<ore:dragonEgg> * 4, <minecraft:end_rod> * 3, <actuallyadditions:item_misc:19>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//霜冻发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"}),
+    [<ore:dustCryotheum> * 5, <techreborn:part:12>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//死亡发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_death"}),
+    [<actuallyadditions:item_damage_lens> * 6, <extrautils2:cursedearth>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//祛魔发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_death"}),
+    [<actuallyadditions:item_disenchanting_lens> * 6, <xreliquary:magicbane:0>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+//史莱姆发电机
+Blueprint.addRecipe("发电机", <extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}),
+    [<tconstruct:ingots:3> * 6, <enderio:block_alloy_endergy:4>, <enderio:item_alloy_ingot:3> * 2, <extrautils2:machine>.withTag({Type: "extrautils2:generator"})]);
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 //工程模块
 

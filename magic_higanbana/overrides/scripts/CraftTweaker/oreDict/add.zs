@@ -141,7 +141,6 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <appliedenergistics2:crystal_seed>,
         <appliedenergistics2:crystal_seed:1200>,
         <appliedenergistics2:crystal_seed:600>,
-        <galacticraftplanets:strange_seed:1>,
         <immersiveengineering:seed>,
         <prodigytech:energion_crystal_seed>,
         <actuallyadditions:item_misc:24>,
@@ -158,22 +157,27 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         
     ],
 
+    #零素
     <ore:oreEezo> : [
         <taiga:eezo_ore>,
     ],
 
+    #熔晶
     <ore:oreOsram> : [
         <taiga:osram_ore>,
     ],
 
+    #杜兰特
     <ore:oreDuranite> : [
         <taiga:duranite_ore>,
     ],
 
+    #绯红铁
     <ore:oreKarmesine> : [
         <taiga:karmesine_ore>,
     ],
 
+    #欧维姆
     <ore:oreOvium> : [
         <taiga:ovium_ore>,
     ]

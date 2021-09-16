@@ -25,27 +25,38 @@ import mods.ctutils.utils.Math;
 
 import scripts.AnildebrainUtils.CotUtils;
 
+//元素符文
 CotUtils.itemCreator("thunder_rune", 64, false);
 CotUtils.itemCreator("dark_rune", 64, false);
 CotUtils.itemCreator("earth_rune", 64, false);
 CotUtils.itemCreator("gold_rune", 64, false);
 CotUtils.itemCreator("light_rune", 64, false);
 CotUtils.itemCreator("wood_rune", 64, false);
+
+//爆裂粉
 CotUtils.itemCreator("explosive_dust", 64, false);
 
+//五元素晶体
 CotUtils.itemCreator("crystal_water", 16, false);
 CotUtils.itemCreator("crystal_fire", 16, false);
 CotUtils.itemCreator("crystal_wood", 16, false);
 CotUtils.itemCreator("crystal_earth", 16, false);
 CotUtils.itemCreator("crystal_metal", 16, false);
-CotUtils.itemCreator("alchemical_frame", 1, false);
+//CotUtils.itemCreator("alchemical_frame", 1, false);
+
+//炼金板
 CotUtils.itemCreator("alchemical_plate", 64, false);
+
+//炼金核心部件
 CotUtils.itemCreator("alchemical_corecomponents", 1, false);
 
+//彼岸之页
 CotUtils.itemCreator("page_of_higanbana", 1, false);
 
-CotUtils.itemCreator("monster_essence", 1, false);
+//怪物精华
+CotUtils.itemCreator("monster_essence", 64, false);
 
+//暮色钥匙
 CotUtils.itemCreator("twilightforest_key", 1, true);
 
 //任务图标
@@ -58,8 +69,24 @@ CotUtils.itemCreator("tin_wire", 64, false);
 //七原罪
 CotUtils.itemCreator("seven_deadly_sins", 1, true);
 
-CotUtils.itemCreator("", 64, true);
+//星辉宝石
+CotUtils.itemCreator("starglow_gem", 64, false);
+//天辉宝石
+CotUtils.itemCreator("celestite_gem", 64, false);
+//彩辉宝石
+CotUtils.itemCreator("lridescent_gem", 64, false);
 
+//氯化铝
+CotUtils.itemCreator("aluminium_chloride", 64, false);
+
+//碘晶体
+CotUtils.itemCreator("iodine_crystal", 64, false);
+
+//空间之钥
+CotUtils.itemCreator("space_key", 1, true);
+
+
+//火柴
 var matchStick = VanillaFactory.createItem("match_stick");
 
 matchStick.maxStackSize = 1;
@@ -87,7 +114,7 @@ matchStick.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 };
 matchStick.register();
 
-
+//传承石
 var inheritanceStone = VanillaFactory.createItem("inheritance_stone");
 
 inheritanceStone.maxStackSize = 1;
@@ -97,9 +124,3 @@ inheritanceStone.itemRightClick = function(stack, world, player, hand) {
     return "SUCCESS";
 };
 inheritanceStone.register();
-
-//氯化铝
-CotUtils.itemCreator("aluminium_chloride", 1, true);
-
-//碘晶体
-CotUtils.itemCreator("iodine_crystal", 1, true);

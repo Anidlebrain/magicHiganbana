@@ -18,6 +18,11 @@ Orechid.delOreWeight(<minecraft:stone>, <ore:oreOsmium>);
 Orechid.delOreWeight(<minecraft:stone>, <ore:oreQuartzBlack>);
 
 
+for ore in Orechid.getOreWeight(<minecraft:stone>)
+{
+    Orechid.addOreWeight(<naturesaura:infused_stone>, ore, 1000);
+}
+
 //零素矿石
 Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreEezo>, 549);
 

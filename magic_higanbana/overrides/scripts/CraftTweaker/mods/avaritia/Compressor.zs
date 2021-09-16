@@ -5,4 +5,5 @@
 ##================================================
 
 #priority 2000
+#modloaded avaritia
 import mods.avaritia.Compressor;

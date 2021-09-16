@@ -57,3 +57,10 @@ TreeRitual.addRecipe("naturesaura/TreeRitual/calling_spirit", <tconstruct:slime_
      <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end"}), 
      <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:other"}),
      <naturesaura:infused_iron>, <skyresources:alchemyitemcomponent:7>, <skyresources:alchemyitemcomponent:8>, <skyresources:alchemyitemcomponent:10>]);
+
+//共鸣星杖
+recipes.remove(<astralsorcery:itemwand>);
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand");
+TreeRitual.addRecipe("astralsorcery/TreeRitual/itemwand", <roots:wildwood_sapling>, <astralsorcery:itemwand>, 1200, 
+    [<contenttweaker:starglow_gem>, <minecraft:ender_pearl>,  <bloodmagic:monster_soul>, 
+    <contenttweaker:starglow_gem>, <botania:tornadorod>, <naturesaura:infused_stone>]);

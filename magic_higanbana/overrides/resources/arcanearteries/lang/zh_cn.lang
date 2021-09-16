@@ -1,0 +1,52 @@
+#Translated by Anidlebrain, for 彼岸之法 magic_higanbana
+
+#Tab
+itemGroup.arcanearteriesmodtab=奥法献祭学
+#Daggers
+item.knife.name=精灵匕首
+item.thaumicknife.normal.name=神秘匕首
+item.thaumicknife.creative.name=奥法匕首
+item.configDagger.name=Razor Blade
+item.evilDagger.name=邪恶匕首
+
+item.botaniasacrifice.name=精灵献祭刀
+item.thaumcraftsacrifice.name=神秘献祭刀
+item.evilcraftsacrifice.name=邪恶献祭刀
+
+botania.versioning.outdated=植物魔法mod已过期
+botania.versioning.doneDownloading=正在下载!
+botania.versioning.startingDownload=开始下载!
+botania.versioning.error=下载错误!
+
+#Blocks
+tile.mana_rune.name=精灵符文
+tile.thaumic_rune.name=神秘符文
+#Slates
+item.manaslate.name=精灵石板
+item.thaumicslate.name=神秘石板
+
+
+#Thaumonomicon Stuff
+tc.research_category.ZARTERIES=奥法献祭学
+tc.research_name.SLATE=神秘石板
+tc.research_text.SLATE=至少不需要花费血液
+aa.research_page.SLATE=你发现了一种方法<BR><BR> 这使得石板比普通石板升级更快，比普通的石板更有用。
+tc.research_name.DAGGER=神秘血液收集
+tc.research_text.DAGGER=收集所有的血液
+aa.research_page.DAGGER=收集血液是一件苦差事，但你通过神秘学的了解，发现了缩短你在血魔法祭坛工作的时间。
+tc.research_name.DAGGERH=神秘血液收集
+tc.research_text.DAGGERH=收集所有的血液
+aa.research_page.DAGGERH=收集血液是一件苦差事，但你通过神秘学的了解，发现了缩短你在血魔法祭坛工作的时间。
+tc.research_name.RUNE=神秘符文
+tc.research_text.RUNE=神秘符文升级
+aa.research_page.Rune=A Thaumaturge, and Blood Mage, and a Botanist walked into a bar. Each put forward their idea on how to make a Blood Altar a higher tier.<BR>This is what the Thaumaturge managed to come up with.
+tc.research_name.SACRIFICEDAGGER=怪物的血液
+tc.research_text.SACRIFICEDAGGER=Slice and dice baby!
+aa.research_page.SACRIFICEDAGGER=长时间的献血后，你意识到了更好的方法来获取LP。
+tc.research_name.SACRIFICEDAGGERH=怪物的血液
+tc.research_text.SACRIFICEDAGGERH=Slice and dice baby!
+aa.research_page.SACRIFICEDAGGERH=长时间的献血后，你意识到了更好的方法来获取LP。
+
+
+
+

@@ -74,7 +74,7 @@ zenClass WootRecipes {
             [null, <woot:stygianiron>, null],
             [<ore:blockSkyStone>, <ore:blockSkyStone>, <ore:blockSkyStone>]])
           .addTool(<ore:artisansShears>, 1)
-          .addOutput(<woot:yahhammer>)
+          .addOutput(<woot:anvil>)
           .create();
         
     }

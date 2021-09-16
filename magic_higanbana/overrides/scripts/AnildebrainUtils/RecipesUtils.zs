@@ -424,7 +424,7 @@ zenClass RecipesUtils
         mods.extendedcrafting.TableCrafting.addShaped(output,
             textToIngredients2(ingredients, recipe, replacements));
     }
-
+/*
     //无尽贪婪 终极工作台
     function makeAvaritiaCrafting(output as IItemStack,
                                 recipe as string[],
@@ -445,6 +445,7 @@ zenClass RecipesUtils
         mods.avaritia.ExtremeCrafting.addShaped(name, output,
             textToIngredients2(ingredients, recipe, replacements));
     }
+*/
 
     //移除矿词的配方
     function removeOreRecipes(ore as IOreDictEntry) {
