@@ -41,3 +41,6 @@ ManaInfusion.addAlchemy(<botania:grassseeds>, <roots:spell_dust>.withTag({spell_
 //魔力钢
 ManaInfusion.removeRecipe(<botania:manaresource>);
 ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotSteel>, 1000);
+
+//世界盐
+ManaInfusion.addAlchemy(<thaumcraft:salis_mundus>, <contenttweaker:star_alchemy_powder>, 50000);

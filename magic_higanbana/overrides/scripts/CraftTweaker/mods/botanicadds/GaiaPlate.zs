@@ -19,7 +19,7 @@ gaiaPlateRecipe(<item:minecraft:bow>, 1000000, [<item:mysticalworld:amethyst_hoe
 //gaiaPlateRecipe(<astralsorcery:blockaltar>, 400000, [<artisanworktables:worktable:7>, <ore:stoneMarble>, <botania:starfield>]);
 
 
-gaiaPlateRecipe(<contenttweaker:starglow_gem>, 30000,
+gaiaPlateRecipe(<contenttweaker:basic_synthetic_gem>, 30000,
     [<botanianeedsit:mana_capacitor_manasteel>, <techreborn:gem:1>, <techreborn:gem:2>, <techreborn:gem:3>, <skyresources:itemhealthgem>]);
 
 

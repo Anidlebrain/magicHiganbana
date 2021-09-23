@@ -24,7 +24,7 @@ zenClass ExtendedcraftingRecipes{
         recipes.remove(<extendedcrafting:material>);
         RecipeBuilder.get("blacksmith")
           .setShapeless([<ore:dustCharcoal>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:ingotIron>])
-          .addTool(<ore:artisansShears>, 1)
+          .addTool(<ore:artisansRazor>, 1)
           .addOutput(<extendedcrafting:material>)
           .create();
 
@@ -32,12 +32,24 @@ zenClass ExtendedcraftingRecipes{
         recipes.remove(<extendedcrafting:material:14>);
         RecipeBuilder.get("blacksmith")
           .setShapeless([<extendedcrafting:material:2>, <extendedcrafting:material:7>, <ore:plateIron>, <ore:plateIron>])
-          .addTool(<ore:artisansShears>, 1)
+          .addTool(<ore:artisansRazor>, 1)
+          .addOutput(<extendedcrafting:material:14>)
+          .create();
+
+        //基础工作台
+        recipes.remove(<extendedcrafting:table_basic>);
+        RecipeBuilder.get("basic")
+          .setShaped([
+            [<extendedcrafting:material:14>, <contenttweaker:basic_synthetic_gem>, <extendedcrafting:material:14>],
+            [<contenttweaker:basic_synthetic_gem>, <artisanworktables:worktable:5>, <contenttweaker:basic_synthetic_gem>],
+            [<extendedcrafting:material:14>, <contenttweaker:basic_synthetic_gem>, <extendedcrafting:material:14>]])
+          .addTool(<ore:artisansRazor>, 1)
           .addOutput(<extendedcrafting:material:14>)
           .create();
     }
 
     function itemRemove() {
+        
         itemHelper.removeItem(<extendedcrafting:table_basic>);
         itemHelper.removeItem(<extendedcrafting:table_advanced>);
         itemHelper.removeItem(<extendedcrafting:table_elite>);

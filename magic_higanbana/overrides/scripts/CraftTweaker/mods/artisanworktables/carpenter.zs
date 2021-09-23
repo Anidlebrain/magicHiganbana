@@ -11,6 +11,8 @@ import crafttweaker.item.IIngredient;
 
 var carpenterItem = [
 
+    <arcanearchives:radiant_chest>,
+
     <farmingforblockheads:market>,
 
     <harvestcraft:market>,
@@ -58,6 +60,7 @@ var carpenterItem = [
     <tconstruct:tooltables:4>,
     <tconstruct:tooltables:5>,
     <tconstruct:pattern>,
+
 
 ] as IIngredient[];
 

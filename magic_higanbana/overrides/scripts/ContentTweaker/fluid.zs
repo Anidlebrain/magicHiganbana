@@ -30,3 +30,6 @@ CotUtils.addFluid("iodine", 0x990033, false);
 
 // 格氏试剂
 CotUtils.addFluid("grignard_reagent", 0xF5F5F5, false);
+
+// 星辰液
+CotUtils.addFluid("star_liquid", 0x6A5ACD, false);

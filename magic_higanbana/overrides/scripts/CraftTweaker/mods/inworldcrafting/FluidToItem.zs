@@ -33,4 +33,7 @@ recipes.remove(<extrautils2:suncrystal:250>);
 FluidToItem.transform(<extrautils2:suncrystal:250>, <liquid:liquid_sunshine>, [<immersiveengineering:bullet:2>.withTag({bullet: "crystalwill"}), <prodigytech:aeternus_crystal>], true);
 
 //基片
-FluidToItem.transform(<mekanism:substrate>, <liquid:grignard_reagent>, [<item:contenttweaker:aluminium_chloride>], true);
+FluidToItem.transform(<mekanism:substrate>, <liquid:grignard_reagent>, [<contenttweaker:aluminium_chloride>], true);
+
+//星辉宝石
+FluidToItem.transform(<contenttweaker:starglow_gem>, <liquid:star_liquid>, [<ore:dustAstralStarmetal>], true);

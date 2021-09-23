@@ -49,3 +49,5 @@ addDescription(<contenttweaker:match_stick>, ["可以使用火柴点火，但火
 
 addDescription(<randomthings:naturecore>, ["自然水晶通过自然嬗变的仪式会变成自然核心。自然核心的收集需要一把挖掘等级大于黑曜石的斧子。"]);
 
+
+addDescription(<astralsorcery:blockaltar>, ["传闻只有知道星座的人，才能掌握星辰的力量，最综合成出星辉合成台"]);

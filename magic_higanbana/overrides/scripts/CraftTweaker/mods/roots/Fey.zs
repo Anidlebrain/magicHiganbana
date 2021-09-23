@@ -84,3 +84,13 @@ Fey.addRecipe("naturesaura/Fey/wood_stand", <naturesaura:wood_stand> * 2,
      <ore:logWood>,
      <ore:logWood>,
      <ore:logWood>], 100);
+
+//工业方块
+recipes.remove(<chisel:technical>);
+Fey.addRecipe("naturesaura/Fey/wood_stand", <chisel:technical> * 3,
+    [<naturesaura:infused_stone>,
+     <naturesaura:infused_stone>,
+     <naturesaura:infused_stone>,
+     <enderio:item_material:38>,
+     <enderio:item_material:51>], 100);
+

@@ -57,8 +57,9 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) {
 */
 
 function removeAlloySmelter(output as IItemStack/*, input as IItemStack, input2 as IItemStack*/) {
-    mods.enderio.AlloySmelter.removeRecipe(output);
+    //mods.enderio.AlloySmelter.removeRecipe(output);
     mods.immersiveengineering.ArcFurnace.removeRecipe(output);
+    mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
     //if (!isNull(input)) {
     //    mods.thermalexpansion.Enchanter.removeRecipe(input, input2);
     //}    
@@ -105,4 +106,36 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
             .addJEIElement(mods.jei.JEI.createJEIManaBarElement(30, 57, Math.floor(mana / 100)))
             .build();
     }
+}
+
+function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[]) {
+    var modid as string = output.definition.id.split(":")[0];
+    if (modid == "actuallyadditions")
+    {
+        mods.actuallyadditions.Empowerer.removeRecipe(output);
+        mods.actuallyadditions.Empowerer.removeRecipe(outputblock);
+    }
+    mods.actuallyadditions.Empowerer.addRecipe(output, inputs[0], inputs[2], inputs[3], inputs[4], inputs[5], 10000, 600, [Math.random(), Math.random(), Math.random()]);
+    mods.actuallyadditions.Empowerer.addRecipe(outputblock, inputs[1], inputs[2], inputs[3], inputs[4], inputs[5], 10000, 600, [Math.random(), Math.random(), Math.random()]);
+
+}
+
+function addMillingRecipe(output as IItemStack, input as IItemStack, level as int)
+{
+    if (level < 3)
+    {
+
+    }
+    if (level < 2)
+    {
+        mods.mekanism.crusher.removeRecipe(output, input);
+        mods.thermalexpansion.Pulverizer.addRecipe(output, input, 1500);
+        mods.enderio.SagMill.addRecipe([output], [0.9], input);
+
+    }
+    if (level < 1)
+    {
+        mods.prodigytech.rotarygrinder.addRecipe(input, output);
+    }
+
 }

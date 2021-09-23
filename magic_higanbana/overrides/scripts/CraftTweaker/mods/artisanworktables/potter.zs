@@ -14,6 +14,9 @@ import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
 var potterItem = [
 
+    <arcanearchives:raw_quartz>,
+    <arcanearchives:shaped_quartz>,
+
     <minecraft:dirt:1>,
     <minecraft:dirt:2>,
     <minecraft:cobblestone>,
@@ -45,39 +48,10 @@ var potterItem = [
     <tp:soul_sandstone>,
     <tp:reinforced_glass>,
     <tp:flesh_block>,
-    <tp:colored_glowstone>,
-    <tp:colored_glowstone:1>,
-    <tp:colored_glowstone:2>,
-    <tp:colored_glowstone:3>,
-    <tp:colored_glowstone:4>,
-    <tp:colored_glowstone:5>,
-    <tp:colored_glowstone:6>,
-    <tp:colored_glowstone:7>,
-    <tp:colored_glowstone:8>,
-    <tp:colored_glowstone:9>,
-    <tp:colored_glowstone:10>,
-    <tp:colored_glowstone:11>,
-    <tp:colored_glowstone:12>,
-    <tp:colored_glowstone:13>,
-    <tp:colored_glowstone:14>,
+    <tp:colored_glowstone:*>,
     <tp:hardened_stone_bricks>,
     <tp:flint_block>,
-    <tp:colored_lamp>,
-    <tp:colored_lamp:1>,
-    <tp:colored_lamp:2>,
-    <tp:colored_lamp:3>,
-    <tp:colored_lamp:4>,
-    <tp:colored_lamp:5>,
-    <tp:colored_lamp:6>,
-    <tp:colored_lamp:7>,
-    <tp:colored_lamp:8>,
-    <tp:colored_lamp:9>,
-    <tp:colored_lamp:10>,
-    <tp:colored_lamp:11>,
-    <tp:colored_lamp:12>,
-    <tp:colored_lamp:13>,
-    <tp:colored_lamp:14>,
-    <tp:colored_lamp:15>,
+    <tp:colored_lamp:*>,
 ] as IIngredient[];
 
 var potterNotItem = [
@@ -85,7 +59,6 @@ var potterNotItem = [
     <minecraft:stone:1>,
     <minecraft:stone:3>,
     <minecraft:stone:5>,
-
 
 ] as IIngredient[];
 

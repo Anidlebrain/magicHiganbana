@@ -74,6 +74,12 @@ for kinds in 4 to 15
     rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
 }
 
+//方镁钫混合物
+recipes.remove(<embers:blend_caminite>);
+rootsMortarRecipe(<embers:blend_caminite> * 4, [<enderio:block_holier_fog>, <ore:itemPrecientPowder>, <ore:dyeSoulMachine>, <ore:dustAerotheum>, <bloodmagic:item_demon_crystal:1>]);
+
+
+
 //咒术尘 生机灌溉
 Mortar.changeSpell("spell_growth_infusion",
 [<ore:treeSapling>, <skyresources:baseitemcomponent>, <ore:rootsBark>, <skyresources:baseitemcomponent:4>, <roots:petals>]);

@@ -25,7 +25,8 @@
 			id: "immersivepetroleum:schematic",
 			tag: {
 				multiblock: "IE:Squeezer"
-			}
+			},
+			Count: 1b
 		}
 	}]
 }

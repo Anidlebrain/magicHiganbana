@@ -9,10 +9,7 @@
 		uid: "d0fc6a5b",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "contenttweaker:alchemical_frame"
+			item: "contenttweaker:alchemical_frame"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

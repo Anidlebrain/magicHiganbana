@@ -27,5 +27,14 @@ zenClass RandomthingsRecipes{
           .addOutput(<roots:imbuer>)
           .create();
         
+        //时间之瓶
+        RecipeBuilder.get("mage")
+          .setShaped([
+            [<ore:ingotDyonite>, <ore:ingotDyonite>, <ore:ingotDyonite>],
+            [<ore:manaDiamond>, <naturesaura:clock_hand>, <ore:manaDiamond>],
+            [<botanicadds:mana_lapis>, <ore:bVial>, <botanicadds:mana_lapis>]])
+          .addTool(<ore:artisansGrimoire>, 1)
+          .addOutput(<randomthings:timeinabottle>)
+          .create();
     }
 }

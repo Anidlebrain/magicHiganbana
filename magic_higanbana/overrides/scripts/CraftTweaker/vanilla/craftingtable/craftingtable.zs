@@ -131,7 +131,9 @@ zenClass CraftingTable {
             vanillaRemoveRecipes();
             craftingtable.actuallyadditions.ActuallyadditionsRecipes().init();
             craftingtable.appliedenergistics2.Appliedenergistics2Recipes().init();
+            craftingtable.arcanearchives.ArcanearchivesRecipes().init();
             craftingtable.artisanworktables.Artisanworktables().init();
+            craftingtable.astralsorcery.AstralsorceryRecipes().init();
             craftingtable.bloodmagic.BloodmagicRecipes().init();
             craftingtable.botania.BotaniaRecipes().init();
             craftingtable.chisel.ChiselRecipes().init();

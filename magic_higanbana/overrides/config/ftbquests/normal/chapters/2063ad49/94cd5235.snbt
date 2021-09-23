@@ -19,10 +19,7 @@
 										item: {
 											item: {
 												item: {
-													item: {
-														item: "alchemistry:periodic_diagram"
-													},
-													Count: 1b
+													item: "alchemistry:periodic_diagram"
 												},
 												Count: 1b
 											},
@@ -41,7 +38,8 @@
 					Count: 1b
 				},
 				Count: 1b
-			}
+			},
+			Count: 1b
 		}]
 	}]
 }

@@ -7,7 +7,9 @@
 #priority 2000
 import mods.inworldcrafting.FluidToFluid;
 
-//世界合成  by Anidlebrain
+
+FluidToFluid.transform(<liquid:star_liquid>, <liquid:astralsorcery.liquidstarlight>, [<contenttweaker:stars_gem>, <ore:gemAquamarine>], true);
 
 
-//end file by Anidlebrain
+
+

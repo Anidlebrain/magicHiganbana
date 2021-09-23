@@ -81,6 +81,8 @@ zenClass ItemHelper
         var tmp1 as string = alg.removeColon(tmp);
         return game.getLiquid(tmp1);
     }
+
+    
 }
 
 static itemHelper as ItemHelper = ItemHelper();

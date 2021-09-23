@@ -4,7 +4,8 @@
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
 		},
-		id: "galacticraftcore:rocket_t1"
+		id: "galacticraftcore:rocket_t1",
+		Count: 1b
 	},
 	always_invisible: false,
 	group: 0,

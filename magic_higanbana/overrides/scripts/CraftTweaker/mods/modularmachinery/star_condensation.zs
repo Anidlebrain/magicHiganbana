@@ -22,6 +22,11 @@ zenClass StarCondensation {
         var primer = RecipeBuilder.newBuilder(name, m_machineName, 99) as RecipePrimer;
         primer.addAuraInput(800);
         primer.addFluidInput(<liquid:vapor_of_levity> * 200);
+        primer.addItemInput(<botania:astrolabe>);
+        primer.setChance(0.01);
+        primer.setTime(14000, 22000);
+        primer.setAltitude(200, 256);
+        primer.setWeather("sunny");
         return primer;
     }
 
@@ -29,11 +34,12 @@ zenClass StarCondensation {
         addRecipesEx().addItemOutput(<astralsorcery:itemcraftingcomponent:1>)
                       .setChance(0.8)
                       .addItemInput(<naturesaura:sky_ingot>)
-                      .addItemInput(<botania:astrolabe>)
-                      .setChance(0.01)
-                      .setTime(14000, 22000)
-                      .setAltitude(200, 256)
-                      .setWeather("sunny")
+                      .build();
+        
+        addRecipesEx().addItemOutput(<astralsorcery:blockcustomore>)
+                      .setChance(0.8)
+                      .addItemInput(<embers:glimmer_shard>)
+                      .addItemInput(<astralsorcery:blockmarble>)
                       .build();
     }
 }

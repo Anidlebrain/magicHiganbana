@@ -5,7 +5,6 @@
 ##================================================
 
 #priority 2000
-#norun
 import scripts.AnildebrainUtils.RecipesUtils;
 
 //铁质外壳

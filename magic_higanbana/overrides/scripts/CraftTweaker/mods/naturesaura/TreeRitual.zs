@@ -62,5 +62,51 @@ TreeRitual.addRecipe("naturesaura/TreeRitual/calling_spirit", <tconstruct:slime_
 recipes.remove(<astralsorcery:itemwand>);
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand");
 TreeRitual.addRecipe("astralsorcery/TreeRitual/itemwand", <roots:wildwood_sapling>, <astralsorcery:itemwand>, 1200, 
-    [<contenttweaker:starglow_gem>, <minecraft:ender_pearl>,  <bloodmagic:monster_soul>, 
-    <contenttweaker:starglow_gem>, <botania:tornadorod>, <naturesaura:infused_stone>]);
+    [<contenttweaker:stars_gem>, <minecraft:ender_pearl>, <bloodmagic:monster_soul>, 
+    <contenttweaker:stars_gem>, <botania:tornadorod>, <naturesaura:infused_stone>]);
+
+
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/salvegleam", <roots:wildwood_sapling>, <arcanearchives:salvegleam>, 1200, 
+    [<bloodmagic:component:4>, <naturesaura:token_grief>, <actuallyadditions:item_crystal_empowered>, <ore:dyePink>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:golden_apple>, <minecraft:golden_carrot>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/switchgleam", <roots:wildwood_sapling>, <arcanearchives:switchgleam>, 1200, 
+    [<bloodmagic:component:17>, <naturesaura:token_grief>, <actuallyadditions:item_crystal_empowered:1>, <ore:dyePurple>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:enderpearl>, <apotheosis:farmers_leash>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/cleansegleam", <roots:wildwood_sapling>, <arcanearchives:cleansegleam>, 1200, 
+    [<bloodmagic:component:16>, <naturesaura:token_euphoria>, <actuallyadditions:item_crystal_empowered:2>, <ore:dyeLightBlue>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:milk_bucket>, <ore:listAllfishraw>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/agegleam", <roots:wildwood_sapling>, <arcanearchives:agegleam>, 1200, 
+    [<bloodmagic:component:5>, <naturesaura:token_euphoria>, <actuallyadditions:item_crystal_empowered:3>, <ore:dyeGreen>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <farmingforblockheads:fertilizer>, <actuallyadditions:item_fertilizer>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/murdergleam", <roots:wildwood_sapling>, <arcanearchives:murdergleam>, 1200, 
+    [<bloodmagic:component:11>, <naturesaura:token_terror>, <actuallyadditions:item_crystal_empowered:4>, <ore:dyeYellow>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:blaze_rod>, <botania:elementiumsword>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/slaughtergleam", <roots:wildwood_sapling>, <arcanearchives:slaughtergleam>, 1200, 
+    [<bloodmagic:component:7>, <naturesaura:token_rage>, <actuallyadditions:item_crystal_empowered:5>, <ore:dyeRed>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <actuallyadditions:item_solidified_experience>, <forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000})]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/munchstone", <roots:wildwood_sapling>, <arcanearchives:munchstone>, 1200, 
+    [<bloodmagic:component:11>, <botania:rune:10>, <tconevo:material:2>, <ore:dyeBlack>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:foodMinerstew>, <minecraft:speckled_melon>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/orderstone", <roots:wildwood_sapling>, <arcanearchives:orderstone>, 1200, 
+    [<bloodmagic:component:7>, <botanicadds:rune_energy>, <tconevo:material:2>, <ore:dyePink>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <botania:swapring>, <tp:repair_tablet>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/mountaintear", <roots:wildwood_sapling>, <arcanearchives:mountaintear>, 1200, 
+    [<bloodmagic:component:7>, <bloodmagic:sigil_lava>, <thermalfoundation:material:1024>, <ore:dyeOrange>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:blockMagma>, <minecraft:magma_cream>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/rivertear", <roots:wildwood_sapling>, <arcanearchives:rivertear>, 1200, 
+    [<bloodmagic:component:7>, <bloodmagic:sigil_water>, <thermalfoundation:material:1025>, <ore:dyeBlue>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:ice>, <skyresources:heavysnowball>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/parchtear", <roots:wildwood_sapling>, <arcanearchives:parchtear>, 1200, 
+    [<bloodmagic:component:7>, <bloodmagic:sigil_void>, <thermalfoundation:material:1026>, <ore:dyeBlack>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:sponge>, <minecraft:bucket>]);

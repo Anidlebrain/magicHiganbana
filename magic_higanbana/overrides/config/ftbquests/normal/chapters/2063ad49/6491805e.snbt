@@ -31,10 +31,7 @@
 																						item: {
 																							item: {
 																								item: {
-																									item: {
-																										item: "buildcraftlib:guide"
-																									},
-																									Count: 1b
+																									item: "buildcraftlib:guide"
 																								},
 																								Count: 1b
 																							},
@@ -77,7 +74,8 @@
 					Count: 1b
 				},
 				Count: 1b
-			}
+			},
+			Count: 1b
 		}]
 	}]
 }

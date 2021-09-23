@@ -28,5 +28,50 @@ zenClass ActuallyadditionsRecipes{
           .addTool(<ore:artisansShears>, 1)
           .addOutput(<actuallyadditions:block_coal_generator>)
           .create();
+        
+        //木质框架
+        recipes.remove(<actuallyadditions:block_misc:4>);
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:plankWood>, <ore:stickWood>, <ore:plankWood>],
+            [<ore:stickWood>, <skyresources:casing>, <ore:stickWood>],
+            [<ore:plankWood>, <ore:stickWood>, <ore:plankWood>]])
+          .addTool(<ore:artisansToolWood>, 1)
+          .addOutput(<actuallyadditions:block_misc:4>)
+          .create();
+        
+        //板条箱 小
+        recipes.remove(<actuallyadditions:block_giant_chest>);
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<ore:chestWood>, <ore:plankWood>, <ore:chestWood>],
+            [<ore:plankWood>, <actuallyadditions:block_misc:4>, <ore:plankWood>],
+            [<ore:chestWood>, <ore:plankWood>, <ore:chestWood>]])
+          .addTool(<ore:artisansToolWood>, 1)
+          .addOutput(<actuallyadditions:block_giant_chest>)
+          .create();
+
+        //板条箱 中
+        recipes.remove(<actuallyadditions:block_giant_chest_medium>);
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<minecraft:coal_block>, <actuallyadditions:block_misc:4>, <minecraft:coal_block>],
+            [<actuallyadditions:block_misc:4>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_misc:4>],
+            [<minecraft:coal_block>, <actuallyadditions:block_misc:4>, <minecraft:coal_block>]])
+          .addTool(<ore:artisansToolWood>, 1)
+          .addOutput(<actuallyadditions:block_giant_chest_medium>)
+          .create();
+        
+        //板条箱 大
+        recipes.remove(<actuallyadditions:block_giant_chest_large>);
+        RecipeBuilder.get("carpenter")
+          .setShaped([
+            [<skyresources:coalinfusedblock>, <actuallyadditions:block_misc:4>, <skyresources:coalinfusedblock>],
+            [<actuallyadditions:block_misc:4>, <actuallyadditions:block_giant_chest_medium>, <actuallyadditions:block_misc:4>],
+            [<skyresources:coalinfusedblock>, <actuallyadditions:block_misc:4>, <skyresources:coalinfusedblock>]])
+          .addTool(<ore:artisansToolWood>, 1)
+          .addOutput(<actuallyadditions:block_giant_chest_large>)
+          .create();
+
     }
 }

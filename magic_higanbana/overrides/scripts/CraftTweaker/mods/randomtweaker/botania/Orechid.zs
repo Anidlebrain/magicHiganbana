@@ -20,7 +20,18 @@ Orechid.delOreWeight(<minecraft:stone>, <ore:oreQuartzBlack>);
 
 for ore in Orechid.getOreWeight(<minecraft:stone>)
 {
-    Orechid.addOreWeight(<naturesaura:infused_stone>, ore, 1000);
+    if (!isNull(ore))
+    {
+        if (!ore.empty)
+        {
+            Orechid.addOreWeight(<naturesaura:infused_stone>, ore, 1000);
+        }
+        else
+        {
+            print(ore.name);
+        }
+    }
+
 }
 
 //零素矿石

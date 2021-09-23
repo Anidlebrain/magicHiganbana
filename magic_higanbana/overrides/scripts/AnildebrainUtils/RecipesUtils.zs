@@ -37,8 +37,8 @@ zenClass RecipesUtils
                 if (" " != item) {
                     ingredients[len + j] = replacements[item];
                 }
-                len = len + str.length;
             }
+            len = len + str.length;
         }
         return ingredients;
     }
@@ -178,7 +178,7 @@ zenClass RecipesUtils
 
         val type as string[] = output.definition.id.split(":");
         m_recipesNum = m_recipesNum + 1;
-        var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
+        var name = "magicHiganbana/" ~ type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
         //print(name);
         recipes.addShapeless(name, output, input);
     }
@@ -267,7 +267,7 @@ zenClass RecipesUtils
                                 craftTickTime as int,
                                 input as IIngredient[]) {
         m_recipesNum = m_recipesNum + 1;
-        var name = "addDiscoveryAltarRecipe_" ~ m_recipesNum;
+        var name = "magicHiganbana/addDiscoveryAltarRecipe_" ~ m_recipesNum;
         mods.astralsorcery.Altar.addDiscoveryAltarRecipe(name, output, starLight, craftTickTime, input);
     }
 
@@ -277,7 +277,7 @@ zenClass RecipesUtils
                                 craftTickTime as int,
                                 input as IIngredient[]) {
         m_recipesNum = m_recipesNum + 1;
-        var name = "addAttunmentAltarRecipe_" ~ m_recipesNum;
+        var name = "magicHiganbana/addAttunmentAltarRecipe_" ~ m_recipesNum;
         mods.astralsorcery.Altar.addAttunmentAltarRecipe(name, output, starLight, craftTickTime, input);
     }
 
@@ -287,7 +287,7 @@ zenClass RecipesUtils
                                 craftTickTime as int,
                                 input as IIngredient[]) {
         m_recipesNum = m_recipesNum + 1;
-        var name = "addConstellationAltarRecipe_" ~ m_recipesNum;
+        var name = "magicHiganbana/addConstellationAltarRecipe_" ~ m_recipesNum;
         mods.astralsorcery.Altar.addConstellationAltarRecipe(name, output, starLight, craftTickTime, altarTransformation(input, 2));
     }
 
@@ -298,7 +298,7 @@ zenClass RecipesUtils
                                 input as IIngredient[],
                                 iRequiredConstellationFocusName as string) {
         m_recipesNum = m_recipesNum + 1;
-        var name = "addTraitAltarRecipe_" ~ m_recipesNum;
+        var name = "magicHiganbana/addTraitAltarRecipe_" ~ m_recipesNum;
         mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, altarTransformation(input, 3), iRequiredConstellationFocusName);
     }
 

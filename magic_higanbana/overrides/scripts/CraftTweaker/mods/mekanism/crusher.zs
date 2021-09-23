@@ -7,3 +7,6 @@
 
 #priority 2000
 import mods.mekanism.crusher;
+import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addMillingRecipe;
+
+//addMillingRecipe()

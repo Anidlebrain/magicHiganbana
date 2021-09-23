@@ -69,6 +69,8 @@ CotUtils.itemCreator("tin_wire", 64, false);
 //七原罪
 CotUtils.itemCreator("seven_deadly_sins", 1, true);
 
+//星辰宝石
+CotUtils.itemCreator("stars_gem", 64, false);
 //星辉宝石
 CotUtils.itemCreator("starglow_gem", 64, false);
 //天辉宝石
@@ -85,6 +87,26 @@ CotUtils.itemCreator("iodine_crystal", 64, false);
 //空间之钥
 CotUtils.itemCreator("space_key", 1, true);
 
+//基础合成宝石
+CotUtils.itemCreator("basic_synthetic_gem", 64, false);
+
+//绿宝石晶体
+CotUtils.itemCreator("emerald_crystal", 64, false);
+
+//红石晶体
+CotUtils.itemCreator("redstone_crystal", 64, false);
+
+//青金晶体
+CotUtils.itemCreator("lapis_crystal", 64, false);
+
+//钻晶体
+CotUtils.itemCreator("diamond_crystal", 64, false);
+
+//煤晶体
+CotUtils.itemCreator("coal_crystal", 64, false);
+
+//星辰炼金粉
+CotUtils.itemCreator("star_alchemy_powder", 64, false);
 
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
