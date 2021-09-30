@@ -11,6 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "magic_higanbana",
+  "version": "v0.1",
   "author": "",
   "files": [
     {
@@ -155,7 +156,7 @@
     },
     {
       "projectID": 362056,
-      "fileID": 3239671,
+      "fileID": 3428640,
       "required": true
     },
     {
@@ -329,13 +330,13 @@
       "required": true
     },
     {
-      "projectID": 74072,
-      "fileID": 2902483,
+      "projectID": 514170,
+      "fileID": 3470304,
       "required": true
     },
     {
-      "projectID": 514170,
-      "fileID": 3470304,
+      "projectID": 74072,
+      "fileID": 2902483,
       "required": true
     },
     {
