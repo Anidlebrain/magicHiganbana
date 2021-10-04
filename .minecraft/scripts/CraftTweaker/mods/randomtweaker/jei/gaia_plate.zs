@@ -5,6 +5,7 @@
 ##          [Info]:     植物魔法 JEI-盖亚凝聚板
 ##================================================
 #priority 2001
+#norun
 import mods.jei.JEI;
 import mods.randomtweaker.jei.JEIPanel;
 import mods.randomtweaker.jei.JEIRecipe;

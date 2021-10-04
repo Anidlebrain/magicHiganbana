@@ -14,7 +14,7 @@ rootsMortarRecipe(<skyresources:baseitemcomponent:4> * 2, [<minecraft:rotten_fle
 
 //花肥
 recipes.remove(<botania:fertilizer>);
-rootsMortarRecipe(<botania:fertilizer>, [<skyresources:baseitemcomponent:4>, <forestry:ash>, <ore:rootsBark>, <minecraft:rotten_flesh>, <ore:rootsBark>]);
+//rootsMortarRecipe(<botania:fertilizer>, [<skyresources:baseitemcomponent:4>, <forestry:ash>, <ore:rootsBark>, <minecraft:rotten_flesh>, <ore:rootsBark>]);
 rootsMortarRecipe(<botania:fertilizer> * 2, [<skyresources:baseitemcomponent:4>, <skyresources:baseitemcomponent:4>, <ore:mysticaldyes>, <ore:mysticaldyes>, <ore:mysticaldyes>]);
 
 //花瓣
@@ -73,12 +73,6 @@ for kinds in 4 to 15
     recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
     rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
 }
-
-//方镁钫混合物
-recipes.remove(<embers:blend_caminite>);
-rootsMortarRecipe(<embers:blend_caminite> * 4, [<enderio:block_holier_fog>, <ore:itemPrecientPowder>, <ore:dyeSoulMachine>, <ore:dustAerotheum>, <bloodmagic:item_demon_crystal:1>]);
-
-
 
 //咒术尘 生机灌溉
 Mortar.changeSpell("spell_growth_infusion",

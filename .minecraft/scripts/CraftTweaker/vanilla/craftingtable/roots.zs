@@ -26,7 +26,7 @@ zenClass RootsRecipes {
           .setShaped([
             [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
             [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
-            [null, <forestry:ash_brick>, null]])
+            [null, <embers:block_caminite_brick>, null]])
           .addTool(<ore:artisansShears>, 1)
           .addOutput(<roots:mortar>)
           .create();
@@ -35,7 +35,7 @@ zenClass RootsRecipes {
         recipes.remove(<roots:pestle>);
         RecipeBuilder.get("farmer")
           .setShaped([
-            [null, null, <forestry:ash_brick>],
+            [null, null, <embers:block_caminite_brick>],
             [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null],
             [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null]])
           .addTool(<ore:artisansShears>, 1)

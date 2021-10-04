@@ -4,27 +4,27 @@
 ##          [Info]:     植物魔法 凝矿兰
 ##================================================
 #priority 2000
-import mods.randomtweaker.botania.Orechid;
+import mods.randomtweaker.botania.IOrechid;
 
 
-Orechid.delOreWeight(<minecraft:stone>, <ore:oreMithril>);
+IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreMithril>);
 
-Orechid.delOreWeight(<minecraft:stone>, <ore:dustSulfur>);
+IOrechid.delOreRecipe(<minecraft:stone>, <ore:dustSulfur>);
 
-Orechid.delOreWeight(<minecraft:stone>, <ore:oreTungsten>);
+IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreTungsten>);
 
-Orechid.delOreWeight(<minecraft:stone>, <ore:oreOsmium>);
+IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreOsmium>);
 
-Orechid.delOreWeight(<minecraft:stone>, <ore:oreQuartzBlack>);
+IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreQuartzBlack>);
 
 
-for ore in Orechid.getOreWeight(<minecraft:stone>)
+for ore in IOrechid.getOreRecipes(<minecraft:stone>)
 {
     if (!isNull(ore))
     {
         if (!ore.empty)
         {
-            Orechid.addOreWeight(<naturesaura:infused_stone>, ore, 1000);
+            IOrechid.addOreRecipe(<naturesaura:infused_stone>, ore, 1000);
         }
         else
         {
@@ -35,17 +35,17 @@ for ore in Orechid.getOreWeight(<minecraft:stone>)
 }
 
 //零素矿石
-Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreEezo>, 549);
+IOrechid.addOreRecipe(<naturesaura:infused_stone>, <ore:oreEezo>, 549);
 
 //熔晶矿石
-Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreOsram>, 951);
+IOrechid.addOreRecipe(<naturesaura:infused_stone>, <ore:oreOsram>, 951);
 
 //杜兰特矿石
-Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreDuranite>, 843);
+IOrechid.addOreRecipe(<naturesaura:infused_stone>, <ore:oreDuranite>, 843);
 
 //绯红铁矿石
-Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreKarmesine>, 765);
+IOrechid.addOreRecipe(<naturesaura:infused_stone>, <ore:oreKarmesine>, 765);
 
 //欧维姆矿石
-Orechid.addOreWeight(<naturesaura:infused_stone>, <ore:oreOvium>, 957);
+IOrechid.addOreRecipe(<naturesaura:infused_stone>, <ore:oreOvium>, 957);
 

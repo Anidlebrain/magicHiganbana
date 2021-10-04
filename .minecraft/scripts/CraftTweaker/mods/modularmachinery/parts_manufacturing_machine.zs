@@ -98,6 +98,7 @@ zenClass PartsManufacturingMachineRecipes {
     }
 
     function recipesInit() {
+        /*
         //坚固部件
         addRecipes([<forestry:sturdy_machine>],
                    [<enderio:item_material:44> * 1, <enderio:item_material:68> * 4],
@@ -105,7 +106,8 @@ zenClass PartsManufacturingMachineRecipes {
                    null,
                    false
         );
-
+        */
+        
         //末影钢机械框架
         addRecipes([<enderio:item_material:66>],
                    [<enderio:block_end_iron_bars> * 4, <enderio:item_alloy_ingot:8> * 4, <enderio:item_material:37>],

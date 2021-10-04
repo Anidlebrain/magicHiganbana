@@ -15,15 +15,15 @@ recipes.remove(<immersiveengineering:tool>);
 combustion.addRecipe(<immersiveengineering:tool>, [
     <tconstruct:tool_rod>.withTag({Material: "wood"}) *2,
     <minecraft:string> * 2,
-    <forestry:peat> * 4
+    <embers:brick_caminite> * 4
 ], 200);
 
 //焦炉砖
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/cokebrick");
 combustion.addRecipe(<immersiveengineering:stone_decoration> * 3, [
     <minecraft:brick> * 4,
-    <forestry:ash_brick> * 3,
-    <forestry:peat> * 2
+    <embers:plate_caminite> * 3,
+    <embers:brick_caminite> * 2
 ], 150);
 
 //窑砖

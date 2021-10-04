@@ -114,7 +114,7 @@ Blueprint.addRecipe("工程模块", <item:immersiveengineering:metal_decoration0
 
 //散热模块
 recipes.remove(<item:immersiveengineering:metal_decoration0:7>);
-Blueprint.addRecipe("工程模块", <item:immersiveengineering:metal_decoration0:7> * 2, [<item:forestry:crafting_material:5> * 5, <ore:ingotSteel> * 4, <ore:ingotCopper> * 4]);
+Blueprint.addRecipe("工程模块", <item:immersiveengineering:metal_decoration0:7> * 2, [<contenttweaker:ice_shard> * 5, <ore:ingotSteel> * 4, <ore:ingotCopper> * 4]);
 
 //强化高炉砖 
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick_reinfoced");

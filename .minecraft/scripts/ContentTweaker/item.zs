@@ -108,6 +108,10 @@ CotUtils.itemCreator("coal_crystal", 64, false);
 //星辰炼金粉
 CotUtils.itemCreator("star_alchemy_powder", 64, false);
 
+//碎冰
+CotUtils.itemCreator("ice_shard", 64, false);
+
+
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
 

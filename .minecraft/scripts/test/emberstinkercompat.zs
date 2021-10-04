@@ -5,7 +5,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 import mods.embers.Melter;
 import mods.embers.Stamper;
-
+#norun
 // SOURCE: https://gist.github.com/terrapin47/6564d700656b09f0e8e8b1e252efc047
 
 // REGISTERED MATERIALS

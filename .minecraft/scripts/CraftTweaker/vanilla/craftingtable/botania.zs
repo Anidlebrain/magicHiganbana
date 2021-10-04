@@ -23,8 +23,8 @@ zenClass BotaniaRecipes{
         RecipeBuilder.get("mage")
           .setShaped([
             [<prodigytech:ash_bricks>, <roots:petals>, <prodigytech:ash_bricks>],
-            [null, <forestry:ash_brick>, null],
-            [<forestry:ash_brick>, <forestry:ash_brick>, <forestry:ash_brick>]])
+            [null, <embers:block_caminite_brick>, null],
+            [<embers:block_caminite_brick>, <embers:block_caminite_brick>, <embers:block_caminite_brick>]])
           .addOutput(<botania:altar>)
           .create();
 

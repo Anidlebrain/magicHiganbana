@@ -2,7 +2,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
-
+#norun
 // SOURCE: https://gist.github.com/terrapin47/16fb230d5dd73aec321fbe046b5d573c
 
 // Make lavawood with the stamper

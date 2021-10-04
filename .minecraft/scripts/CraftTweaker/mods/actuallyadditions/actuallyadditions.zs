@@ -24,5 +24,3 @@ AtomicReconstructor.addRecipe(<contenttweaker:block_crystal_tin>, <ore:blockTin>
 //银
 AtomicReconstructor.addRecipe(<contenttweaker:crystal_silver>, <ore:ingotSilver>, 10000);
 AtomicReconstructor.addRecipe(<contenttweaker:block_crystal_silver>, <ore:blockSilver>, 90000);
-
-

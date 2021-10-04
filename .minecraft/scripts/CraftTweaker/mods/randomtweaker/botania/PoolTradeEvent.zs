@@ -1,8 +1,14 @@
-import mods.randomtweaker.botania.PoolTradeEvent;
+##================================================
+##          [Author]:   Anidlebrain
+##          [since]:    magic_higanbana
+##          [Info]:     植物魔法 魔力池事件
+##================================================
+#priority 2000
+import mods.randomtweaker.botania.CTPoolTradeEvent;
 import crafttweaker.item.IItemStack;
 import crafttweaker.world.IWorld;
 
-events.onPoolTrade(function(event as PoolTradeEvent)
+events.onPoolTrade(function(event as CTPoolTradeEvent)
 {
     var world as IWorld = event.world;
     if(!world.remote) 

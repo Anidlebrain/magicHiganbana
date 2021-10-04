@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     林业 工作台合成
 ##================================================
-
+#modloaded forestry
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -33,5 +33,6 @@ zenClass ForestryRecipes {
     }
 }
 
+craftingtable.forestry.ForestryRecipes().init();
 
 

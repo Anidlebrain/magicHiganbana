@@ -12,5 +12,5 @@ import mods.immersiveengineering.Mixer;
 /*mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
 */
 Mixer.addRecipe(<liquid:grignard_reagent>, <liquid:anhydrous_ether>,
-    [<item:contenttweaker:iodine_crystal>, <ore:dustMagnesium>, <forestry:apatite>], 10000);
+    [<item:contenttweaker:iodine_crystal>, <ore:dustMagnesium>, <ore:dustAndradite>], 10000);
 

@@ -20,6 +20,7 @@ zenClass MekanismRecipes {
     }
     
     function recipesInit() {
+        /*
         //控制电路加工
         recipes.remove(<mekanism:basicblock:8>);
         RecipeBuilder.get("engineer")
@@ -27,6 +28,7 @@ zenClass MekanismRecipes {
           .addTool(<ore:artisansShears>, 1)
           .addOutput(<mekanism:basicblock:8>)
           .create();
+        */
     }
 
     function itemRemove() {
@@ -34,6 +36,7 @@ zenClass MekanismRecipes {
     }
 
     function TraversalRecipe() {
+        /*
         for recipe in recipes.all {
             var name as string = recipe.name;
             var ResourceName = recipe.fullResourceDomain;
@@ -59,5 +62,6 @@ zenClass MekanismRecipes {
                 }
             }
         }
+        */
     }
 }

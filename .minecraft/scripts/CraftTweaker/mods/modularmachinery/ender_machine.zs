@@ -87,7 +87,7 @@ zenClass EnderMachineRecipes {
         //共振仪
         recipes.remove(<extrautils2:resonator>);
         addRecipesEx(20).addItemOutput(<extrautils2:passivegenerator>)
-                    .addItemInput(<forestry:thermionic_tubes>)
+                    .addItemInput(<pneumaticcraft:printed_circuit_board>)
         .build();
 
     }

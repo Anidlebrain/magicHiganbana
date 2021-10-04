@@ -6,5 +6,5 @@
 #priority 2000
 import mods.tconstruct.Drying;
 
-//泥炭
-Drying.addRecipe(<forestry:peat>, <forestry:bog_earth>, 1200);
+//方镁钫板
+Drying.addRecipe(<embers:plate_caminite>, <embers:plate_caminite_raw>, 1200);

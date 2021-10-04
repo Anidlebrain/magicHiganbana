@@ -89,7 +89,7 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
     else
     {
         mods.botanicadds.GaiaPlate.add(output, mana, inputs);
-
+/*
         mods.jei.JEI.createJEIRecipe("gaia_plate")
             .setInputs(inputs)
             .addOutput(<botanicadds:gaia_plate>)
@@ -105,6 +105,7 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
             .addOutput(<botanicadds:dreamrock>)
             .addJEIElement(mods.jei.JEI.createJEIManaBarElement(30, 57, Math.floor(mana / 100)))
             .build();
+*/
     }
 }
 

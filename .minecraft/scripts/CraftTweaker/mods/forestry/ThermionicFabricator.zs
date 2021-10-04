@@ -4,6 +4,7 @@
 ##          [Info]:     林业 热电子加工
 ##================================================
 #priority 2000
+#norun
 import mods.forestry.ThermionicFabricator;
 //mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
 //mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);

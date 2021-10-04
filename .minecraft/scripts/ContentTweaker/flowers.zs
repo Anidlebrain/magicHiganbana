@@ -1,10 +1,9 @@
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
-import mods.randomtweaker.cote.SubTileGenerating;
-import mods.randomtweaker.naturesaura.AuraChunk;
+import mods.randomtweaker.cote.ISubTileEntityGenerating;
 
 //沅陵花
-var Yuanlinghua as SubTileGenerating = VanillaFactory.createSubTileGenerating("yuanlinghua", 0xFFFFFF);
+var Yuanlinghua as ISubTileEntityGenerating = VanillaFactory.createSubTileGenerating("yuanlinghua", 0xFFFFFF);
 Yuanlinghua.PassiveFlower = true;
 Yuanlinghua.valueForPassiveGeneration = 160;
 Yuanlinghua.delayBetweenPassiveGeneration = 1;

@@ -84,6 +84,7 @@ zenClass CraftingTable {
             var name as string = recipe.name;
             var ResourceName = recipe.fullResourceDomain;
             if (!isNull(recipe.output)) {
+                /*
                 if(recipe.output.definition.id.contains("mekanism")) {
                     print("recipe for name: " ~ name ~ " and mods is " ~ recipe.output.definition.owner ~ " and outputname is " ~ recipe.output.definition.name);
                     //print("mekanism recipe for name: " ~ name);
@@ -91,18 +92,19 @@ zenClass CraftingTable {
                     //print("Anidlebrain recipe.ingredients2D.length " ~ len);
                     if (len == 3) {
                         if (recipe.output.definition.name.contains("Machine")) {
-                            recipes.removeByRecipeName(ResourceName);
-                            mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:fluxed_electrum> * 1200, <techreborn:part:25>);
+                            //recipes.removeByRecipeName(ResourceName);
+                            //mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:fluxed_electrum> * 1200, <techreborn:part:25>);
                         }
                         else if(!recipe.output.definition.name.contains("Block") &&
                                 !recipe.output.definition.name.contains("Ingot") &&
                                 !recipe.output.definition.name.contains("Plastic")) {
-                            recipes.removeByRecipeName(ResourceName);
-                            mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:lubricant> * 1200);
+                            //recipes.removeByRecipeName(ResourceName);
+                            //mods.forestry.Carpenter.addRecipe(recipe.output, recipe.ingredients2D, 40, <liquid:lubricant> * 1200);
                         }
                     }
                    
                 }
+                */
             }
             else {
                 /*
@@ -141,7 +143,7 @@ zenClass CraftingTable {
             craftingtable.enderio.EnderioRecipes().init();
             craftingtable.extendedcrafting.ExtendedcraftingRecipes().init();
             craftingtable.extrautils2.Extrautils2Recipes().init();
-            craftingtable.forestry.ForestryRecipes().init();
+            //craftingtable.forestry.ForestryRecipes().init();
             craftingtable.harvestcraft.HarvestcraftRecipes().init();
             craftingtable.immersiveengineering.ImmersiveengineeringRecipes().init();
             //craftingtable.mechanics.MechanicsRecipes().init();
