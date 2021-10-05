@@ -29,6 +29,7 @@ var blacksmithItem = [
     <minecraft:compass>,
     <minecraft:light_weighted_pressure_plate>,
     <minecraft:heavy_weighted_pressure_plate>,
+    <minecraft:tipped_arrow>,
 
     <roots:reinforced_pyre>,
 

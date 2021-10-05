@@ -5,9 +5,10 @@
 ##================================================
 #priority 2000
 import mods.skyresources.knife;
-
+/*
 knife.removeRecipe(<minecraft:stick>);
 for item in <ore:plankWood>.items
 {
     knife.addRecipe(<techreborn:plates:3>, item);
 }
+*/

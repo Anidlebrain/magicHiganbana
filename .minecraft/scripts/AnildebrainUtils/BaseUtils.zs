@@ -39,9 +39,49 @@ function cleanName(str as string) as string {
         .toLowerCase();
 }
 
+function binCheck(bin as int, bit as int) as bool {
+    var tmp as int = 0;
+    if (bit == 1) {
+        tmp = 0x01;
+    }
+    else if (bit == 2) {
+        tmp = 0x02;
+    }
+    else if (bit == 3) {
+        tmp = 0x04;
+    }
+    else if (bit == 4) {
+        tmp = 0x08;
+    }
+    else if (bit == 5) {
+        tmp = 0x10;
+    }
+    else if (bit == 6) {
+        tmp = 0x20;
+    }
+    else if (bit == 7) {
+        tmp = 0x40;
+    }
+    else if (bit == 8) {
+        tmp = 0x80;
+    }
+    return (bin & tmp);
+}
+/*
+function binToDex(bin as string) as int {
+    var res as int = 0;
+    var tmp as int = 0;
+    for i in 0 .. bin.length {
+        res = res * 2;
+        tmp = bin[i] - '0';
+        res = res | tmp;
+    }
+    return res;
+}
+*/
 /*
 function quick_pow(a as int, n as int) as int {
-/*
+
     var res as int = 1;
     var tmp as int = a;
     while(n > 0) {

@@ -8,28 +8,26 @@
 #modloaded mechanics
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import scripts.AnildebrainUtils.modLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
-zenClass MechanicsRecipes {
-    zenConstructor() {
-
-    }
-
-    function init() {
-        recipesInit();
-        itemRemove();
-    }
-    
-    function recipesInit() {
-        
-    }
-
-    function itemRemove() {
-        itemHelper.removeItem(<mechanics:drying_table>);
-    }
+function init()
+{
+    recipesInit();
+    itemRemove();
 }
 
-craftingtable.mechanics.MechanicsRecipes().init();
+function recipesInit()
+{
+    
+}
 
+function itemRemove()
+{
+    itemHelper.removeItem(<mechanics:drying_table>);
+}
 
-
+if (!isInvalid)
+{
+    init();
+}

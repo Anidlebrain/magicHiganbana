@@ -12,17 +12,20 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.ctutils.utils.Math;
 
-static recipesNum as int = 0;
+import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
 //沉浸工程 高炉 删除燃料
-function removeImmersiveengIneeringFuel(ore as IOreDictEntry) {
-    for item in ore.items {
+function removeImmersiveengIneeringFuel(ore as IOreDictEntry)
+{
+    for item in ore.items
+    {
         mods.immersiveengineering.BlastFurnace.removeFuel(item);
     }
 }
 
 //圣遗物 配方转换
-function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as int) {
+function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as int)
+{
     var modid as string = output.definition.id.split(":")[0];
     if (modid == "xreliquary") {
         recipes.remove(output);
@@ -35,10 +38,11 @@ function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as
     mods.bloodmagic.AlchemyTable.addRecipe(output, inputs, 500 * (2 * level - 1), 200 * level, level);
 }
 
-    //自然灵气 森林仪式
-function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) {
+//自然灵气 森林仪式
+function treeRitualRecipe(output as IItemStack, inputs as IIngredient[])
+{
     var type as string[] = output.definition.id.split(":");
-    recipesNum = recipesNum + 1;
+    var recipesNum = recipesUtils.getRecipesNum();
     var name = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
     mods.naturesaura.TreeRitual.removeRecipe(output);
     mods.naturesaura.TreeRitual.addRecipe(name, <prodigytech:zorra_sapling>, output, 100, inputs);
@@ -48,7 +52,7 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) {
     function TreeRitualRecipe(output as IItemStack, inputs as IIngredient[], saplingType as IIngredient) {
         var type as string[] = output.definition.id.split(":");
 
-        m_recipesNum = m_recipesNum + 1;
+        var recipesNum = recipesUtils.getRecipesNum();
         var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
 
         mods.naturesaura.TreeRitual.removeRecipe(output);
@@ -56,18 +60,28 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) {
     }
 */
 
-function removeAlloySmelter(output as IItemStack/*, input as IItemStack, input2 as IItemStack*/) {
-    //mods.enderio.AlloySmelter.removeRecipe(output);
+function removeAlloySmelter(output as IItemStack/*, level as int*/)
+{
+    /*
+    var level = 0;
+    if (level & 0x01)
+    {
+        mods.enderio.AlloySmelter.removeRecipe(output);
+    }
+    */
+    //
     mods.immersiveengineering.ArcFurnace.removeRecipe(output);
     mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
-    //if (!isNull(input)) {
+    //if (!isNull(input)) 
+    //{
     //    mods.thermalexpansion.Enchanter.removeRecipe(input, input2);
     //}    
 }
 
-function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) {
+function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[])
+{
     var type as string[] = output.definition.id.split(":");
-    recipesNum = recipesNum + 1;
+    var recipesNum = recipesUtils.getRecipesNum();
     var name = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
     mods.roots.Mortar.addRecipe(name, output, inputs);
     
@@ -89,8 +103,8 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
     else
     {
         mods.botanicadds.GaiaPlate.add(output, mana, inputs);
-/*
-        mods.jei.JEI.createJEIRecipe("gaia_plate")
+
+        mods.jei.JEI.createJeiRecipe("gaia_plate")
             .setInputs(inputs)
             .addOutput(<botanicadds:gaia_plate>)
             .addOutput(output)
@@ -103,13 +117,13 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
             .addOutput(<botanicadds:dreamrock>)
             .addOutput(<botanicadds:dreamrock>)
             .addOutput(<botanicadds:dreamrock>)
-            .addJEIElement(mods.jei.JEI.createJEIManaBarElement(30, 57, Math.floor(mana / 100)))
+            .addElement(mods.randomtweaker.jei.IJeiUtils.createJeiManaBarElement(30, 57, Math.floor(mana / 100)))
             .build();
-*/
     }
 }
 
-function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[]) {
+function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[])
+{
     var modid as string = output.definition.id.split(":")[0];
     if (modid == "actuallyadditions")
     {
@@ -121,6 +135,7 @@ function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inp
 
 }
 
+//磨粉
 function addMillingRecipe(output as IItemStack, input as IItemStack, level as int)
 {
     if (level < 3)
@@ -132,11 +147,69 @@ function addMillingRecipe(output as IItemStack, input as IItemStack, level as in
         mods.mekanism.crusher.removeRecipe(output, input);
         mods.thermalexpansion.Pulverizer.addRecipe(output, input, 1500);
         mods.enderio.SagMill.addRecipe([output], [0.9], input);
-
     }
     if (level < 1)
     {
         mods.prodigytech.rotarygrinder.addRecipe(input, output);
     }
 
+}
+
+//星辉魔法 祭坛
+function addAltarRecipe(output as IItemStack,
+                   level as int,
+                   starLight as int,
+                   craftTickTime as int,
+                   recipe as string[],
+                   replacements as IIngredient[string],
+                   iRequiredConstellationFocusName as string)
+{
+    var recipesNum = recipesUtils.getRecipesNum();
+    if(1 == level)
+    {
+        var name = "magicHiganbana/addDiscoveryAltarRecipe_" ~ recipesNum;
+        mods.astralsorcery.Altar.addDiscoveryAltarRecipe(name, output, starLight, craftTickTime, 
+            recipesUtils.altarTransformation(level, recipe, replacements));
+    }
+    else if(2 == level)
+    {
+        var name = "magicHiganbana/addAttunmentAltarRecipe_" ~ recipesNum;
+        mods.astralsorcery.Altar.addAttunementAltarRecipe(name, output, starLight, craftTickTime, 
+            recipesUtils.altarTransformation(level, recipe, replacements));
+    }
+    else if(3 == level)
+    {
+        var name = "magicHiganbana/addConstellationAltarRecipe_" ~ recipesNum;
+        mods.astralsorcery.Altar.addConstellationAltarRecipe(name, output, starLight, craftTickTime,
+            recipesUtils.altarTransformation(level, recipe, replacements));
+    }
+    else if(4 == level)
+    {
+        var name = "magicHiganbana/addTraitAltarRecipe_" ~ recipesNum;
+        if(iRequiredConstellationFocusName == "")
+        {
+            mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, 
+                recipesUtils.altarTransformation(level, recipe, replacements));
+        }
+        else
+        {
+            mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, 
+                recipesUtils.altarTransformation(level, recipe, replacements), iRequiredConstellationFocusName);
+        }
+    }
+}
+
+//凿子
+function addChiselByOre(ore as IOreDictEntry)
+{
+    var recipesNum = recipesUtils.getRecipesNum();
+    var name = ore.name ~ recipesNum;
+    print(name);
+    mods.chisel.Carving.addGroup(name);
+    for item in ore.items
+    {
+        recipes.remove(item);
+        mods.chisel.Carving.addVariation(name, item);
+    }
+    
 }

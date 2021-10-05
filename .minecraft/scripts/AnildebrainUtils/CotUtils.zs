@@ -6,16 +6,22 @@
 
 #loader contenttweaker
 #priority 30000
-import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
-import mods.contenttweaker.Item;
+import mods.contenttweaker.BlockMaterial;
+import mods.contenttweaker.Color;
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.Fluid;
-import mods.contenttweaker.Color;
-import mods.contenttweaker.BlockMaterial;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.MaterialSystem;
+import mods.contenttweaker.Material;
 import mods.contenttweaker.SoundType;
 import mods.contenttweaker.SoundEvent;
+import mods.contenttweaker.VanillaFactory;
 
+static toolName as string[] =
+[
+    "pickaxe",
+];
 
 function itemCreator(name as string,
                      maxn as int,
@@ -26,7 +32,7 @@ function itemCreator(name as string,
     itemt.register();
 }
 
-function addFluid(name as string, color as int, isLava as bool){
+function fluidCreator(name as string, color as int, isLava as bool){
     var fluidt as Fluid = VanillaFactory.createFluid(name, color);
     fluidt.temperature = 300;
     fluidt.viscosity = 1000;
@@ -45,4 +51,17 @@ function addFluid(name as string, color as int, isLava as bool){
     }
     fluidt.register();
     print("Add fluid " ~ name);
+}
+
+function materialCreator(name as string, color as int, partNames as string[])
+{
+    var metal = MaterialSystem.getMaterialBuilder().setName(name).setColor(color).build();
+    metal.registerParts(partNames);
+}
+
+function blockCreator(name as string, material as BlockMaterial, toolType as int)
+{
+    var blcokC = VanillaFactory.createBlock(name, material);
+    blcokC.setToolClass(toolName[toolType]);
+    blcokC.register();
 }

@@ -108,6 +108,15 @@ CotUtils.itemCreator("coal_crystal", 64, false);
 //星辰炼金粉
 CotUtils.itemCreator("star_alchemy_powder", 64, false);
 
+//星罗锭
+CotUtils.itemCreator("ingot_xingluo", 64, false);
+//霈瀚锭
+CotUtils.itemCreator("ingot_peihan", 64, false);
+//冻金锭
+CotUtils.itemCreator("ingot_frozen_gold", 64, false);
+//聚星锭
+CotUtils.itemCreator("ingot_juxing", 64, false);
+
 //碎冰
 CotUtils.itemCreator("ice_shard", 64, false);
 

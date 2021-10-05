@@ -9,7 +9,7 @@ import mods.randomtweaker.botania.IOrechid;
 
 IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreMithril>);
 
-IOrechid.delOreRecipe(<minecraft:stone>, <ore:dustSulfur>);
+//IOrechid.delOreRecipe(<minecraft:stone>, <ore:dustSulfur>);
 
 IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreTungsten>);
 

@@ -180,7 +180,52 @@ var oreadd as IItemStack[][IOreDictEntry] = {
     #欧维姆
     <ore:oreOvium> : [
         <taiga:ovium_ore>,
-    ]
+    ],
+
+    #阿滋勒赫石砖
+    <ore:custombrick> : [
+        <botania:custombrick:0>,
+        <botania:custombrick:1>,
+        <botania:custombrick:2>,
+        <botania:custombrick:3>,
+        <botania:custombrick:4>,
+        <botania:custombrick:5>,
+        <botania:custombrick:6>,
+        <botania:custombrick:7>,
+        <botania:custombrick:8>,
+        <botania:custombrick:9>,
+        <botania:custombrick:10>,
+        <botania:custombrick:11>,
+        <botania:custombrick:12>,
+        <botania:custombrick:13>,
+        <botania:custombrick:14>,
+        <botania:custombrick:15>,
+    ],
+
+    #陨石块
+    <ore:skyStoneBlock> : [
+        <appliedenergistics2:smooth_sky_stone_block>,
+        <appliedenergistics2:sky_stone_brick>,
+        <appliedenergistics2:sky_stone_small_brick>,
+    ],
+
+    #活石
+    <ore:livingrock> : [
+        <botania:livingrock:1>,
+        <botania:livingrock:2>,
+        <botania:livingrock:3>,
+        <botania:livingrock:4>,
+    ],
+
+    #活木
+    <ore:livingwood> : [
+        <botania:livingwood:1>,
+        <botania:livingwood:2>,
+        <botania:livingwood:3>,
+        <botania:livingwood:4>,
+        <botania:livingwood:5>,
+    ],
+
 };
 
 

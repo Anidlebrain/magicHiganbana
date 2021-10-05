@@ -4,11 +4,11 @@
 ##          [Info]:     植物魔法 魔力池事件
 ##================================================
 #priority 2000
-import mods.randomtweaker.botania.CTPoolTradeEvent;
+import mods.randomtweaker.botania.PoolTradeEvent;
 import crafttweaker.item.IItemStack;
 import crafttweaker.world.IWorld;
 
-events.onPoolTrade(function(event as CTPoolTradeEvent)
+events.onPoolTrade(function(event as PoolTradeEvent)
 {
     var world as IWorld = event.world;
     if(!world.remote) 

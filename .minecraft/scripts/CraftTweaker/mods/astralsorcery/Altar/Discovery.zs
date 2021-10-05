@@ -1,22 +1,34 @@
 ##================================================
 ##          [Author]:   Anidlebrain
 ##          [since]:    magic_higanbana
-##          [Info]:     星辉魔法 祭坛
+##          [Info]:     星辉魔法 星辉合成台
 ##================================================
 #priority 2000
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.astralsorcery.Altar;
-import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addAltarRecipe;
 
-/*
-1 1000
-2 2000
-3 4000
-4 8000
-*/
+function makeAltar(output as IItemStack,
+                   starLight as int,
+                   craftTickTime as int,
+                   recipe as string[],
+                   replacements as IIngredient[string])
+{
+    if(starLight > 1000)
+    {
+        addAltarRecipe(output, 1, 1000, craftTickTime, recipe, replacements, "");
+    }
+    else
+    {
+        addAltarRecipe(output, 1, starLight, craftTickTime, recipe, replacements, "");
+    }
+}
+
 
 //星辉祭坛
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");
-recipesUtils.makeAltar1(<astralsorcery:blockaltar:1>, 488, 600, 
+makeAltar(<astralsorcery:blockaltar:1>, 488, 600, 
     [
         "ABA",
         "CDE",
@@ -34,7 +46,7 @@ recipesUtils.makeAltar1(<astralsorcery:blockaltar:1>, 488, 600,
 
 //辉耀谐振台
 recipes.remove(<arcanearchives:radiant_resonator>);
-recipesUtils.makeAltar1(<arcanearchives:radiant_resonator>, 300, 300, 
+makeAltar(<arcanearchives:radiant_resonator>, 300, 300, 
     [
         "ABA",
         "CDC",
@@ -51,7 +63,7 @@ recipesUtils.makeAltar1(<arcanearchives:radiant_resonator>, 300, 300,
 
 //望远镜
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope");
-recipesUtils.makeAltar1(<astralsorcery:itemhandtelescope>, 100, 60, 
+makeAltar(<astralsorcery:itemhandtelescope>, 100, 60, 
     [
         " CD",
         "CBC",
@@ -68,7 +80,7 @@ recipesUtils.makeAltar1(<astralsorcery:itemhandtelescope>, 100, 60,
 
 //光波振幅器
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/attunementrelay");
-recipesUtils.makeAltar1(<astralsorcery:blockattunementrelay>, 200, 67, 
+makeAltar(<astralsorcery:blockattunementrelay>, 200, 67, 
     [
         "  ",
         "ABA",
@@ -85,7 +97,7 @@ recipesUtils.makeAltar1(<astralsorcery:blockattunementrelay>, 200, 67,
 
 //未加工的辉耀石英块
 recipes.remove(<arcanearchives:storage_raw_quartz>);
-recipesUtils.makeAltar1(<arcanearchives:storage_raw_quartz>, 25, 40, 
+makeAltar(<arcanearchives:storage_raw_quartz>, 25, 40, 
     [
         "AAA",
         "AAA",
@@ -98,7 +110,7 @@ recipesUtils.makeAltar1(<arcanearchives:storage_raw_quartz>, 25, 40,
 
 //辉耀石英块
 recipes.remove(<arcanearchives:storage_shaped_quartz>);
-recipesUtils.makeAltar1(<arcanearchives:storage_shaped_quartz>, 25, 40, 
+makeAltar(<arcanearchives:storage_shaped_quartz>, 25, 40, 
     [
         "AAA",
         "AAA",
@@ -112,7 +124,7 @@ recipesUtils.makeAltar1(<arcanearchives:storage_shaped_quartz>, 25, 40,
 
 //启示权杖
 recipes.remove(<arcanearchives:scepter_revelation>);
-recipesUtils.makeAltar1(<arcanearchives:scepter_revelation>, 25, 40, 
+makeAltar(<arcanearchives:scepter_revelation>, 25, 40, 
     [
         "  C",
         " B ",
@@ -124,4 +136,3 @@ recipesUtils.makeAltar1(<arcanearchives:scepter_revelation>, 25, 40,
         C : <arcanearchives:raw_quartz>
     }
 );
-

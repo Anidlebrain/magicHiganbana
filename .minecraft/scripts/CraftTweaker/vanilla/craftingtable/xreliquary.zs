@@ -5,29 +5,32 @@
 ##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.modLoader.isInvalid;
 
-zenClass XreliquaryRecipes {
-    zenConstructor() {
+function init()
+{
+    recipesInit();
+    recipesRemove();
+}
 
-    }
-
-    function init() {
-        recipesInit();
-        recipesRemove();
-    }
+function recipesInit()
+{
     
-    function recipesInit() {
-        
-    }
+}
 
-    function recipesRemove() {
-        //僵尸之心 => 金粒
-        recipes.removeByRecipeName("xreliquary:items/uncrafting/gold_nugget");
-        
-        //酶腺 => 恶魂之泪
-        recipes.removeByRecipeName("xreliquary:items/uncrafting/ghast_tear");
+function recipesRemove()
+{
+    //僵尸之心 => 金粒
+    recipes.removeByRecipeName("xreliquary:items/uncrafting/gold_nugget");
+    
+    //酶腺 => 恶魂之泪
+    recipes.removeByRecipeName("xreliquary:items/uncrafting/ghast_tear");
 
-        //AlchemyTable 无法统一移除的配方
-        recipes.removeByRecipeName("xreliquary:items/uncrafting/wither_skull");
-    }
+    //AlchemyTable 无法统一移除的配方
+    recipes.removeByRecipeName("xreliquary:items/uncrafting/wither_skull");
+}
+
+if (!isInvalid)
+{
+    init();
 }

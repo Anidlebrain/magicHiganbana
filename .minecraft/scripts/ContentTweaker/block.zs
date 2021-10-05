@@ -12,57 +12,24 @@ import scripts.AnildebrainUtils.CotUtils;
 
 //炼金框架
 var alchemicalFrame = VanillaFactory.createBlock("alchemical_frame", <blockmaterial:wood>);
-alchemicalFrame.setLightOpacity(3);
-alchemicalFrame.setLightValue(0);
-alchemicalFrame.setBlockHardness(5.0);
-alchemicalFrame.setBlockResistance(5.0);
 alchemicalFrame.setToolClass("pickaxe");
-alchemicalFrame.setToolLevel(0);
+alchemicalFrame.setToolLevel(1);
 alchemicalFrame.setBlockSoundType(<soundtype:wood>);
 alchemicalFrame.setSlipperiness(0.3);
 alchemicalFrame.fullBlock = false;
 
 alchemicalFrame.register();
 
-//炼金框架
-var sky_block = VanillaFactory.createBlock("sky_block", <blockmaterial:wood>);
-sky_block.setLightOpacity(3);
-sky_block.setLightValue(0);
-sky_block.setBlockHardness(5.0);
-sky_block.setBlockResistance(5.0);
-sky_block.setToolClass("pickaxe");
-sky_block.setToolLevel(0);
-sky_block.setBlockSoundType(<soundtype:wood>);
-sky_block.setSlipperiness(0.3);
-sky_block.fullBlock = false;
-
-sky_block.register();
+//天空块
+CotUtils.blockCreator("sky_block", <blockmaterial:iron>, 0);
 
 function createCrystal(name as string)
 {
     var clusterName as string = "block_crystal_cluster_" ~ name;
-    var block_crystal_cluster = VanillaFactory.createBlock(clusterName, <blockmaterial:wood>);
-    block_crystal_cluster.setLightOpacity(3);
-    block_crystal_cluster.setLightValue(0);
-    block_crystal_cluster.setBlockHardness(5.0);
-    block_crystal_cluster.setBlockResistance(5.0);
-    block_crystal_cluster.setToolClass("pickaxe");
-    block_crystal_cluster.setToolLevel(0);
-    block_crystal_cluster.setBlockSoundType(<soundtype:wood>);
-    block_crystal_cluster.setSlipperiness(0.3);
-    block_crystal_cluster.register();
+    CotUtils.blockCreator(clusterName, <blockmaterial:iron>, 0);
     
     var crystalName as string = "block_crystal_" ~ name;
-    var block_crystal = VanillaFactory.createBlock(crystalName, <blockmaterial:wood>);
-    block_crystal.setLightOpacity(3);
-    block_crystal.setLightValue(0);
-    block_crystal.setBlockHardness(5.0);
-    block_crystal.setBlockResistance(5.0);
-    block_crystal.setToolClass("pickaxe");
-    block_crystal.setToolLevel(0);
-    block_crystal.setBlockSoundType(<soundtype:wood>);
-    block_crystal.setSlipperiness(0.3);
-    block_crystal.register();
+    CotUtils.blockCreator(crystalName, <blockmaterial:iron>, 0);
 
     var itemClusterName as string = "crystal_cluster_" ~ name;
     CotUtils.itemCreator(itemClusterName, 64, false);
@@ -78,3 +45,59 @@ createCrystal("tin");
 createCrystal("silver");
 createCrystal("lead");
 
+//辰烬石
+CotUtils.blockCreator("chenjin_stone", <blockmaterial:rock>, 0);
+
+/*
+<blockmaterial:sponge>
+<blockmaterial:anvil>
+<blockmaterial:ice>
+<blockmaterial:air>
+<blockmaterial:clay>
+<blockmaterial:rock>
+<blockmaterial:lava>
+<blockmaterial:barrier>
+<blockmaterial:redstone_light>
+<blockmaterial:leaves>
+<blockmaterial:web>
+<blockmaterial:coral>
+<blockmaterial:grass>
+<blockmaterial:cake>
+<blockmaterial:crafted_snow>
+<blockmaterial:plants>
+<blockmaterial:cactus>
+<blockmaterial:fire>
+<blockmaterial:wood>
+<blockmaterial:dragon_egg>
+<blockmaterial:portal>
+<blockmaterial:vine>
+<blockmaterial:circuits>
+<blockmaterial:gourd>
+<blockmaterial:glass>
+<blockmaterial:packed_ice>
+<blockmaterial:piston>
+<blockmaterial:structure_void>
+<blockmaterial:water>
+<blockmaterial:sand>
+<blockmaterial:snow>
+<blockmaterial:carpet>
+<blockmaterial:iron>
+<blockmaterial:ground>
+<blockmaterial:tnt>
+<blockmaterial:cloth>
+*/
+
+/*
+<soundtype:sand>
+<soundtype:glass>
+<soundtype:ladder>
+<soundtype:snow>
+<soundtype:anvil>
+<soundtype:plant>
+<soundtype:field_185859_l>
+<soundtype:metal>
+<soundtype:wood>
+<soundtype:ground>
+<soundtype:stone>
+<soundtype:cloth>
+*/

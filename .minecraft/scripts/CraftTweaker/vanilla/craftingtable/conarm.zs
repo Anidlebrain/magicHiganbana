@@ -7,24 +7,27 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import scripts.AnildebrainUtils.modLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
-zenClass WootRecipes {
-    zenConstructor() {
+function init()
+{
+    recipesInit();
+    itemRemove();
+}
 
-    }
+function recipesInit()
+{
+    
+    
+}
 
-    function init() {
-        recipesInit();
-        itemRemove();
-    }
+function itemRemove()
+{
+    itemHelper.removeItem(<conarm:travel_sack>);
+}
 
-    function recipesInit() {
-        
-        
-    }
-
-    function itemRemove() {
-        itemHelper.removeItem(<conarm:travel_sack>);
-    }
+if (!isInvalid)
+{
+    init();
 }
