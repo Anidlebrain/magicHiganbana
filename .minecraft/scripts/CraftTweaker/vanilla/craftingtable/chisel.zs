@@ -13,7 +13,8 @@ function init()
     //recipesInit();
 }
 
-function recipesInit() {
+function recipesInit()
+{
     recipes.removeByRecipeName("minecraft:stonebrick");
     //recipes.removeByRecipeName("minecraft:mossy_stonebrick");
     recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
