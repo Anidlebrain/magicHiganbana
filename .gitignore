@@ -14,11 +14,12 @@
 !/manifest.json
 
 !/.minecraft/config
-.minecraft/config/AppliedEnergistics2/items.csv
-.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
-.minecraft/config/InvTweaks.cfg
-.minecraft/config/splash.properties
-.minecraft/config/thaumicjei_itemstack_aspects.json
+/.minecraft/config/AppliedEnergistics2/items.csv
+/.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
+/.minecraft/config/splash.properties
+/.minecraft/config/InvTweaks.cfg
+/.minecraft/config/thaumicjei_itemstack_aspects.json
+/.minecraft/config/jei/worldSettings.cfg
 /.minecraft/config/enderio/recipes/*.pdf
 /.minecraft/config/enderio/recipes/examples/*
 !/.minecraft/config/enderio/recipes/user/*.xml
@@ -35,3 +36,5 @@
 /.minecraft/scripts/.zsrc
 
 !/.minecraft/icon.png
+
+
