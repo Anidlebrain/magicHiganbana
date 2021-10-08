@@ -30,4 +30,5 @@ recipesUtils.removeOreFurnace(<ore:ingotIridium>);
 furnace.remove(<tp:cooked_bacon>);
 furnace.addRecipe(<tp:cooked_bacon>, <actuallyadditions:item_food:20>, 1.0);
 
+//方镁矾砖
 furnace.remove(<embers:brick_caminite>);
