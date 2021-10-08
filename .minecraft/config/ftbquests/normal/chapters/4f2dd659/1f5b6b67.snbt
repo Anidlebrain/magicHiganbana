@@ -6,10 +6,10 @@
 		"e11f2792"
 	],
 	tasks: [{
-		uid: "d654ad8d",
+		uid: "9e806d2d",
 		type: "item",
 		items: [{
-			item: "mechanics:bursting_powder"
+			item: "contenttweaker:explosive_dust"
 		}]
 	}]
 }

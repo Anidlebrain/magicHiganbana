@@ -12,7 +12,8 @@
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "forestry:catalogue"
+			id: "forestry:catalogue",
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

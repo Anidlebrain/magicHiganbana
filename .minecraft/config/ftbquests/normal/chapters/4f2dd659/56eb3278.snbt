@@ -9,7 +9,7 @@
 		uid: "6bf25fdd",
 		type: "item",
 		items: [{
-			item: "forestry:peat"
+			item: "embers:brick_caminite"
 		}]
 	}]
 }

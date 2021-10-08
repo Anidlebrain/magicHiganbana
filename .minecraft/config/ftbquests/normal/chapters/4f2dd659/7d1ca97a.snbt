@@ -10,7 +10,7 @@
 		uid: "6d43867e",
 		type: "item",
 		items: [{
-			item: "forestry:ash_brick"
+			item: "embers:block_caminite_brick"
 		}]
 	}]
 }
