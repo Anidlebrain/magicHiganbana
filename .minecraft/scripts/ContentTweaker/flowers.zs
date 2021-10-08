@@ -19,5 +19,5 @@ Yuanlinghua.canGeneratePassively = function(pos, world)
 Yuanlinghua.register();
 
 //通睿花
-var Yuanlinghua as ISubTileEntityGenerating = VanillaFactory.createSubTileGenerating("tongruihua", 0xFFFFFF);
-Yuanlinghua.register();
+var tongruihua as ISubTileEntityGenerating = VanillaFactory.createSubTileGenerating("tongruihua", 0xFFFFFF);
+tongruihua.register();
