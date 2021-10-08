@@ -77,3 +77,7 @@ for kinds in 4 to 15
 //咒术尘 生机灌溉
 Mortar.changeSpell("spell_growth_infusion",
 [<ore:treeSapling>, <skyresources:baseitemcomponent>, <ore:rootsBark>, <skyresources:baseitemcomponent:4>, <roots:petals>]);
+
+//地狱燃料
+recipes.remove(<prodigytech:inferno_fuel>);
+rootsMortarRecipe(<prodigytech:inferno_fuel> * 2, [<minecraft:blaze_powder>, <minecraft:blaze_powder>, <ore:dustCoal>, <ore:dustCoal>, <ore:dustAsh>]);

@@ -38,6 +38,17 @@ function recipesInit() {
       .addTool(<ore:artisansGemCutter>, 1)
       .addOutput(<randomthings:spectrekey>)
     .create();
+
+    //链接粘合剂
+    RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:dustObsidian>, <minecraft:redstone>, <ore:dustObsidian>],
+    [<minecraft:redstone>, <ore:dustObsidian>, <minecraft:redstone>],
+    [<ore:dustObsidian>, <minecraft:redstone>, <ore:dustObsidian>]])
+  .setFluid(<liquid:magma_fluid> * 1000)
+  .addTool(<ore:artisansBurner>, 2)
+  .addOutput(<contenttweaker:link_adhesive>*3)
+  .create();
 }
 
 if (!isInvalid)
