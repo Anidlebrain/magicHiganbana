@@ -9,4 +9,4 @@ import mods.skyresources.waterextractor.insert;
 
 //沼泽泥
 //recipes.remove(<forestry:bog_earth>);
-//insert.addRecipe(<forestry:bog_earth> ,<minecraft:dirt:1>, 1000);
+//insert.addRecipe(<forestry:bog_earth>, <minecraft:dirt:1>, 1000);

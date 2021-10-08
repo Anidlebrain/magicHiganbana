@@ -11,11 +11,6 @@ import crafttweaker.world.IWorld;
 events.onPoolTrade(function(event as PoolTradeEvent)
 {
     var world as IWorld = event.world;
-    if(!world.remote) 
-    {
-        event.cancel();
-    }
-
     var item as IItemStack = event.input.item;
     print(item.definition.id);
     if (item.definition.id == "contenttweaker:star_alchemy_powder")

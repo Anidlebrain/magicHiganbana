@@ -6,5 +6,5 @@
 #priority 2000
 import mods.tconstruct.Drying;
 
-//方镁钫板
-Drying.addRecipe(<embers:plate_caminite>, <embers:plate_caminite_raw>, 1200);
+//方镁矾砖
+Drying.addRecipe(<embers:brick_caminite>, <embers:blend_caminite>, 1200);

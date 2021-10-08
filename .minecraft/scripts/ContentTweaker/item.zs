@@ -120,6 +120,8 @@ CotUtils.itemCreator("ingot_juxing", 64, false);
 //碎冰
 CotUtils.itemCreator("ice_shard", 64, false);
 
+//碎冰
+CotUtils.itemCreator("higanbana", 64, false);
 
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
