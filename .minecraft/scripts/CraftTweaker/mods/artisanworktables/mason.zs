@@ -79,7 +79,7 @@ RecipeBuilder.get("mason")
 for recipeName in masonName
 {
     recipes.removeByRecipeName(recipeName);
-    RecipeBuilder.get("basic")
+    RecipeBuilder.get("mason")
       .setCopy(Copy.byName(recipeName))
       .create();
 }

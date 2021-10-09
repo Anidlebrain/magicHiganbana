@@ -12,7 +12,7 @@ import mods.immersiveengineering.Blueprint;
 recipes.remove(<item:prodigytech:circuit_plate>);
 Blueprint.addRecipe("components", <item:prodigytech:circuit_plate>, [<immersiveengineering:stone_decoration:8>, <ore:plateCopper>, <immersiveengineering:material:26>, <immersiveengineering:material:26>]);
 recipes.remove(<environmentaltech:connector>);
-Blueprint.addRecipe("components", <environmentaltech:connector>*4, [<ore:ingotFerramic>*4 , <contenttweaker:link_adhesive>*5]);
+Blueprint.addRecipe("components", <environmentaltech:connector> * 4, [<ore:ingotFerramic> * 4, <contenttweaker:link_adhesive> * 5]);
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 //传送带
 

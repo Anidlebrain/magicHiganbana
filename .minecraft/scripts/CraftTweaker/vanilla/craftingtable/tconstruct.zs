@@ -31,6 +31,13 @@ function recipesInit()
         {
             var craftinfo as ICraftingInventory = info.inventory;
             var items as IItemStack[][] = craftinfo.items;
+
+            if (items.length != 3)   
+            {
+                print("tconstruct " ~ items[1].length);
+                return null;
+            }
+
             if (items[1].length != 3)
             {
                 print("tconstruct[1] " ~ items[1].length);
@@ -43,7 +50,7 @@ function recipesInit()
                 return null;
             }
             var name as string = items[1][0].definition.id;
-            return out.withCapNBT({"id" : name});
+            return out.updateTag({"id" : name});
         })
       .create();
 

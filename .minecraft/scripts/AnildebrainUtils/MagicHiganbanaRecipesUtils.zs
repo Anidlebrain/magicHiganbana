@@ -11,7 +11,7 @@ import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.ctutils.utils.Math;
-
+import thaumcraft.aspect.CTAspectStack;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 
 //沉浸工程 高炉 删除燃料
@@ -167,25 +167,25 @@ function addAltarRecipe(output as IItemStack,
     var recipesNum = recipesUtils.getRecipesNum();
     if(1 == level)
     {
-        var name = "magicHiganbana/addDiscoveryAltarRecipe_" ~ recipesNum;
+        var name = "MagicHiganbana/addDiscoveryAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addDiscoveryAltarRecipe(name, output, starLight, craftTickTime, 
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
     else if(2 == level)
     {
-        var name = "magicHiganbana/addAttunmentAltarRecipe_" ~ recipesNum;
+        var name = "MagicHiganbana/addAttunmentAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addAttunementAltarRecipe(name, output, starLight, craftTickTime, 
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
     else if(3 == level)
     {
-        var name = "magicHiganbana/addConstellationAltarRecipe_" ~ recipesNum;
+        var name = "MagicHiganbana/addConstellationAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addConstellationAltarRecipe(name, output, starLight, craftTickTime,
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
     else if(4 == level)
     {
-        var name = "magicHiganbana/addTraitAltarRecipe_" ~ recipesNum;
+        var name = "MagicHiganbana/addTraitAltarRecipe_" ~ recipesNum;
         if(iRequiredConstellationFocusName == "")
         {
             mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, 
@@ -212,4 +212,30 @@ function addChiselByOre(ore as IOreDictEntry)
         mods.chisel.Carving.addVariation(name, item);
     }
     
+}
+
+function addArcaneWorkbenchShapedRecipe(output as IItemStack,
+                                        research as string,
+                                        vis as int,
+                                        input as IIngredient[][],
+                                        aspectList as CTAspectStack[])
+{
+    var type as string[] = output.definition.id.split(":");
+    var recipesNum as int = recipesUtils.getRecipesNum();
+    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+
+    mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(name, research, vis, 
+        aspectList, output, input);
+}
+
+function addCrucibleRecipe(output as IItemStack,
+                           research as string,
+                           input as IIngredient,
+                           aspectList as CTAspectStack[])
+{
+    var type as string[] = output.definition.id.split(":");
+    var recipesNum as int = recipesUtils.getRecipesNum();
+    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+
+    mods.thaumcraft.Crucible.registerRecipe(name, research, output, input, aspectList);
 }

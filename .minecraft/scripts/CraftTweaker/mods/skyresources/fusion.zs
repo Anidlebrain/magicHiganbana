@@ -102,3 +102,5 @@ fusion.addRecipe(<skyresources:alchemicalglass>, [<botania:managlass>, <skyresou
 //能量粉
 recipes.remove(<prodigytech:energion_dust>);
 fusion.addRecipe(<prodigytech:energion_dust> * 3, [<botania:manaresource:23>, <skyresources:alchemyitemcomponent:6>], 3.46);
+
+

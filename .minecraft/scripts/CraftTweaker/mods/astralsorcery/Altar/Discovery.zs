@@ -136,3 +136,18 @@ makeAltar(<arcanearchives:scepter_revelation>, 25, 40,
         C : <arcanearchives:raw_quartz>
     }
 );
+
+
+//玻璃安瓿
+recipes.remove(<thaumcraft:phial>);
+makeAltar(<thaumcraft:phial> * 4, 25, 40, 
+    [
+        " B ",
+        "A A",
+        " A ",
+    ],
+    {
+        A : <ore:fusedGlass>,
+        B : <ore:dustAstralStarmetal>
+    }
+);

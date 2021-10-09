@@ -22,7 +22,7 @@ var mageName = [
 
 ] as string[];
 
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mage")
   .setCopy(Copy.byOutput(mageItem))
   .create();
 

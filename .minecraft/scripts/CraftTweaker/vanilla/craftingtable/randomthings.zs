@@ -35,6 +35,25 @@ function recipesInit()
       .addTool(<ore:artisansGrimoire>, 1)
       .addOutput(<randomthings:timeinabottle>)
       .create();
+    
+    //通灵之匙
+    RecipeBuilder.get("jeweler")
+      .setShaped([
+        [<randomthings:ingredient:3>, <randomthings:ingredient:3>, <randomthings:ingredient:3>, null, null],
+        [<randomthings:ingredient:3>, <actuallyadditions:block_crystal_empowered:2>, null, null, null],
+        [<randomthings:ingredient:3>, null, <contenttweaker:space_key>, null, null],
+        [null, null, null, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>],
+        [null, null, null, <actuallyadditions:block_crystal_empowered:2>, <randomthings:ingredient:3>]])
+      .setSecondaryIngredients([<astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent>, 
+            <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent:1>,
+            <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent>])
+      .addTool(<ore:artisansPencil>, 1)
+      .addTool(<ore:artisansLens>, 1)
+      .addTool(<ore:artisansGemCutter>, 1)
+      .addOutput(<randomthings:spectrekey>)
+      .create();
+    
+    
 }
 
 if (!isInvalid)

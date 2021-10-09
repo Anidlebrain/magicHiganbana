@@ -9,6 +9,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import scripts.AnildebrainUtils.BaseUtils;
+import thaumcraft.aspect.CTAspectStack;
 
 //config\enderio\recipes\aliase.pdf  
 global CHASSIS as IOreDictEntry = <ore:itemMachineChassi>;
@@ -181,6 +182,17 @@ global DYE_ORE as IOreDictEntry[] = [
     <ore:dyeRed>,
     <ore:dyeBlack>
 ] as IOreDictEntry[];
+
+//神秘时代 要素
+global Aer as CTAspectStack = <aspect:aer>;
+global Terra as CTAspectStack = <aspect:terra>;
+global Ignis as CTAspectStack = <aspect:ignis>;
+global Aqua as CTAspectStack = <aspect:aqua>;
+global Ordo as CTAspectStack = <aspect:ordo>;
+global Perditio as CTAspectStack = <aspect:perditio>;
+global Vacuos as CTAspectStack = <aspect:vacuos>;
+global Lux as CTAspectStack = <aspect:lux>;
+
 
 //阶段名称
 global stageTheNetherName as string = BaseUtils.cleanName("TheNether");

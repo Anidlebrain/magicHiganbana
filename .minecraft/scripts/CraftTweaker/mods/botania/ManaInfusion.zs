@@ -14,6 +14,7 @@ import mods.botania.ManaInfusion;
 //魔力尘
 ManaInfusion.removeRecipe(<botania:manaresource:23>);
 ManaInfusion.addInfusion(<botania:manaresource:23>, <skyresources:alchemyitemcomponent:2>, 500);
+ManaInfusion.addAlchemy(<botania:manaresource:23>, <naturesaura:gold_powder>, 500);
 
 ManaInfusion.addInfusion(<roots:runic_dust>, <ore:randomThingsRuneDust>, 1000);
 
@@ -42,5 +43,5 @@ ManaInfusion.addAlchemy(<botania:grassseeds>, <roots:spell_dust>.withTag({spell_
 ManaInfusion.removeRecipe(<botania:manaresource>);
 ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotSteel>, 1000);
 
-//世界盐
-ManaInfusion.addAlchemy(<thaumcraft:salis_mundus>, <contenttweaker:star_alchemy_powder>, 50000);
+//世界盐 配方隐藏 有事件控制
+//ManaInfusion.addAlchemy(<thaumcraft:salis_mundus>, <contenttweaker:star_alchemy_powder>, 50000);
