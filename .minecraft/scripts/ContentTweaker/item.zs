@@ -126,6 +126,9 @@ CotUtils.itemCreator("higanbana", 64, false);
 //链接粘合剂
 CotUtils.itemCreator("link_adhesive", 64, false);
 
+//莱泽尔石元素之象征
+CotUtils.itemCreator("aspectus_lesselstone", 64, false);
+
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
 
