@@ -25,11 +25,11 @@ CotUtils.fluidCreator("sodium_hydroxide", 0xF5F5F5, false);
 //碘酒  海草 + 乙醇 溶解    碘酒 氧化 结晶 碘晶体
 CotUtils.fluidCreator("iodine", 0x990033, false);
 
-// 聚乙烯
+//聚乙烯
 //CotUtils.itemCreator("HOPE", 0xF5F5F5, false);
 
-// 格氏试剂
+//格氏试剂
 CotUtils.fluidCreator("grignard_reagent", 0xF5F5F5, false);
 
-// 星辰液
+//星辰液
 CotUtils.fluidCreator("star_liquid", 0x6A5ACD, false);

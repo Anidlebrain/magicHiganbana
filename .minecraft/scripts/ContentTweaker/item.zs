@@ -92,16 +92,12 @@ CotUtils.itemCreator("basic_synthetic_gem", 64, false);
 
 //绿宝石晶体
 CotUtils.itemCreator("emerald_crystal", 64, false);
-
 //红石晶体
 CotUtils.itemCreator("redstone_crystal", 64, false);
-
 //青金晶体
 CotUtils.itemCreator("lapis_crystal", 64, false);
-
 //钻晶体
 CotUtils.itemCreator("diamond_crystal", 64, false);
-
 //煤晶体
 CotUtils.itemCreator("coal_crystal", 64, false);
 
@@ -120,7 +116,7 @@ CotUtils.itemCreator("ingot_juxing", 64, false);
 //碎冰
 CotUtils.itemCreator("ice_shard", 64, false);
 
-//bianhua
+//彼岸花
 CotUtils.itemCreator("higanbana", 64, false);
 
 //链接粘合剂
@@ -128,6 +124,18 @@ CotUtils.itemCreator("link_adhesive", 64, false);
 
 //莱泽尔石元素之象征
 CotUtils.itemCreator("aspectus_lesselstone", 64, false);
+//风元素之象征
+CotUtils.itemCreator("aspectus_aer", 64, false);
+//火元素之象征
+CotUtils.itemCreator("aspectus_ignis", 64, false);
+//水元素之象征
+CotUtils.itemCreator("aspectus_aqua", 64, false);
+//地元素之象征
+CotUtils.itemCreator("aspectus_terra", 64, false);
+//秩序元素之象征
+CotUtils.itemCreator("aspectus_ordo", 64, false);
+//混沌元素之象征
+CotUtils.itemCreator("aspectus_perditio", 64, false);
 
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");

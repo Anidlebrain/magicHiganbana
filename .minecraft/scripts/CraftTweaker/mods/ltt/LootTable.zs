@@ -17,3 +17,5 @@ mods.ltt.LootTable.removeModEntry("techreborn");
 mods.ltt.LootTable.removeModEntry("randomthings");
 mods.ltt.LootTable.removeModEntry("appliedenergistics2");
 mods.ltt.LootTable.removeModEntry("immersiveengineering");
+//注：暂留
+//mods.ltt.LootTable.removeModEntry("voidcraft");

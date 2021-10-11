@@ -68,9 +68,9 @@ function recipesInit()
     recipes.remove(<extrautils2:teleporter:1>);
     RecipeBuilder.get("jeweler")
       .setShaped([
-        [<extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>],
-        [<extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>],
-        [<extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>]])
+        [<voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>],
+        [<voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>],
+        [<voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>, <voidcraft:blockfakebedrock>]])
       .addTool(<ore:artisansGemCutter>, 60)
       .addTool(<ore:artisansTrowel>, 60)
       .addTool(<ore:artisansCarver>, 2000)

@@ -5,7 +5,7 @@
 ##================================================
 #priority 99998
 import mods.zenstages.ZenStager;
-#norun
+
 var stageTheNether = ZenStager.initStage(stageTheNetherName);
 var stageTheEnd = ZenStager.initStage(stageTheEndName);
 var stageTwilightForest = ZenStager.initStage(stageTwilightForestName);

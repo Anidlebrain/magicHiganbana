@@ -226,6 +226,62 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <botania:livingwood:5>,
     ],
 
+    #以太石
+    <ore:blockAethium> : [
+        <environmentaltech:aethium_bricks>,
+        <environmentaltech:aethium_tiles>,
+        <environmentaltech:aethium_paver>,
+        <environmentaltech:aethium>,
+    ],
+
+    #艾洛蒂石
+    <ore:blockErodium> : [
+        <environmentaltech:erodium_bricks>,
+        <environmentaltech:erodium_tiles>,
+        <environmentaltech:erodium_paver>,
+        <environmentaltech:erodium>,
+    ],
+
+    #艾恩尼石
+    <ore:blockIonite> : [
+        <environmentaltech:ionite_bricks>,
+        <environmentaltech:ionite_tiles>,
+        <environmentaltech:ionite_paver>,
+        <environmentaltech:ionite>,
+    ],
+
+    #凯罗尼石
+    <ore:blockKyronite> : [
+        <environmentaltech:kyronite_bricks>,
+        <environmentaltech:kyronite_tiles>,
+        <environmentaltech:kyronite_paver>,
+        <environmentaltech:kyronite>,
+    ],
+
+    #凯罗尼石
+    <ore:blockLitherite> : [
+        <environmentaltech:litherite_bricks>,
+        <environmentaltech:litherite_tiles>,
+        <environmentaltech:litherite_paver>,
+        <environmentaltech:litherite>,
+    ],
+
+    #蓝丝黛尔石
+    <ore:blockLonsdaleite> : [
+        <environmentaltech:lonsdaleite_bricks>,
+        <environmentaltech:lonsdaleite_tiles>,
+        <environmentaltech:lonsdaleite_paver>,
+        <environmentaltech:lonsdaleite>,
+    ],
+
+    #普雷蒂石
+    <ore:blockPladium> : [
+        <environmentaltech:pladium_bricks>,
+        <environmentaltech:pladium_tiles>,
+        <environmentaltech:pladium_paver>,
+        <environmentaltech:pladium>,
+    ],
+
 };
 
 

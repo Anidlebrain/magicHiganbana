@@ -399,6 +399,16 @@ zenClass RecipesUtils
         return [[five, four, five], [four, five, four], [five, four, five]];
     }
 
+    function full3Items(Full as IIngredient) as IIngredient[][]
+    {
+        return [[Full, Full, Full], [Full, Full, Full], [Full, Full, Full]];
+    }
+
+    function full2Items(Full as IIngredient) as IIngredient[][]
+    {
+        return [[Full, Full], [Full, Full]];
+    }
+
     function getRecipesNum() as int
     {
         m_recipesNum = m_recipesNum + 1;

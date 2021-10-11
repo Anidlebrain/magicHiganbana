@@ -6,6 +6,6 @@
 
 #priority -1
 import mods.zenstages.ZenStager;
-#norun
+
 ZenStager.checkConflicts();
 ZenStager.buildAll();

@@ -5,6 +5,10 @@
 ##================================================
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import crafttweaker.recipes.IFurnaceRecipe;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+
 //红砖
 furnace.remove(<minecraft:brick>);
 furnace.addRecipe(<minecraft:brick>, <tconstruct:materials:2>, 1.0);

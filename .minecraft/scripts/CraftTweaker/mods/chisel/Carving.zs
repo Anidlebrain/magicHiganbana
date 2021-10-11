@@ -9,7 +9,7 @@ import mods.chisel.Carving;
 import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addChiselByOre;
 
 //石砖 移除 苔石砖
-Carving.removeVariation("stonebrick", <minecraft:stonebrick:1>);
+//Carving.removeVariation("stonebrick", <minecraft:stonebrick:1>);
 
 //焦煤块 添加 沉浸工程的 
 //Carving.addVariation("blockCoalCoke", <immersiveengineering:stone_decoration:3>);

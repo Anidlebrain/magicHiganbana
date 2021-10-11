@@ -48,8 +48,20 @@ item.contenttweaker.coal_crystal.name=煤晶体
 item.contenttweaker.star_alchemy_powder.name=星辰炼金粉
 
 item.contenttweaker.ingot_xingluo.name=星罗锭
+
+item.contenttweaker.higanbana.name=彼岸花
+
 item.contenttweaker.link_adhesive.name=连接粘合剂
+
 item.contenttweaker.aspectus_lesselstone.name=莱泽尔石元素之象征
+item.contenttweaker.aspectus_aer.name=风元素之象征
+item.contenttweaker.aspectus_ignis.name=火元素之象征
+item.contenttweaker.aspectus_aqua.name=水元素之象征
+item.contenttweaker.aspectus_terra.name=地元素之象征
+item.contenttweaker.aspectus_ordo.name=秩序元素之象征
+item.contenttweaker.aspectus_perditio.name=混沌元素之象征
+item.contenttweaker.aspectus_lesselstone.name=莱泽尔石元素之象征
+
 
 #任务图标
 item.contenttweaker.hope.name=希望
@@ -106,6 +118,8 @@ tc.aspect.nature=自然
 tc.aspect.alloy=合金
 tc.aspect.space=空间
 tc.aspect.will=意志
+
+#Description
 
 #material
 base.material.lithium=锂

@@ -5,6 +5,7 @@
 ##================================================
 
 #priority 2500
+#norun
 import crafttweaker.item.IItemStack;
 import crafttweaker.mods.IMod;
 
@@ -17,7 +18,6 @@ val removeJEI = [
                 
                 # 实用设备手册
                 # 引起整合包崩溃
-                <extrautils2:book>,
                 
                 # 万能溶剂之经
                 # 配置文件里删除
