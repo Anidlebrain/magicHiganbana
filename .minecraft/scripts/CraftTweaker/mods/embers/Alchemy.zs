@@ -31,7 +31,7 @@ Alchemy.addAspect("perditio", <contenttweaker:aspectus_perditio>);
 
 //艾洛蒂水晶
 Alchemy.add(<environmentaltech:erodium_crystal> * 6,
-    [<bloodmagic:slate:1>, <bloodmagic:slate:1>, <ore:gemEmerald>, <ore:gemRedGarnet>, <botania:manaresource:8>],
+    [<botania:manaresource:9>, <bloodmagic:slate:1>, <ore:gemEmerald>, <ore:gemRedGarnet>, <botania:manaresource:8>],
     {"silver":8 to 16, "iron":10 to 16, "lesselstone":12 to 18});
 
 //究极炼金粉

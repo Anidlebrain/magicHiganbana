@@ -217,6 +217,17 @@ function recipesInit()
       .addTool(<ore:artisansSpanner>, 1)
       .addOutput(<tp:emerald_cobblegen_block>)
       .create();
+
+    //软石
+    recipes.remove(<tp:unhardened_stone>);
+    RecipeBuilder.get("mason")
+      .setShaped([
+        [<ore:cobblestone>, <ore:sand>, <ore:cobblestone>],
+        [<ore:itemClay>, <ore:ingotIron>, <ore:itemClay>],
+        [<ore:cobblestone>, <ore:sand>, <ore:cobblestone>]])
+      .addTool(<ore:artisansTrowel>, 1)
+      .addOutput(<tp:unhardened_stone>)
+      .create();
 }
 
 function itemRemove()

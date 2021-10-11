@@ -85,6 +85,69 @@ function recipesInit()
       .addTool(<ore:artisansBurner>, 1)
       .addOutput(<environmentaltech:erodium>)
       .create();
+
+    //二级采矿机
+    recipes.remove(<environmentaltech:void_ore_miner_cont_2>);
+    RecipeBuilder.get("engineer")
+    .setShaped([
+      [<ore:blockErodium>, <ore:blockGaiasteel>, <ore:blockErodium>],
+      [<ore:blockErodium>, <environmentaltech:void_ore_miner_cont_1>, <ore:blockErodium>],
+      [<ore:blockErodium>, <ore:etLaserLens>, <ore:blockErodium>]])
+    .setSecondaryIngredients([<naturesaura:infused_iron>*4, <botania:storage:4>])
+    .addTool(<ore:artisansHammer>, 1)
+    .addTool(<ore:artisansCutters>, 1)
+    .addOutput(<environmentaltech:void_ore_miner_cont_2>)
+    .create();
+
+    //一级资源采集机
+    recipes.remove(<environmentaltech:void_ore_miner_cont_1>);
+    RecipeBuilder.get("engineer")
+    .setShaped([
+      [<ore:blockLitherite>, <tp:lava_infused_stone>, <ore:blockLitherite>],
+      [<ore:blockLitherite>, <environmentaltech:diode>, <ore:blockLitherite>],
+      [<environmentaltech:interconnect>, <ore:etLaserLens>, <environmentaltech:interconnect>]])
+    .addTool(<ore:artisansHammer>, 1)
+    .addTool(<ore:artisansCutters>, 1)
+    .addOutput(<environmentaltech:void_ore_miner_cont_1>)
+    .create();
+
+    //二级资源采集机
+    recipes.remove(<environmentaltech:void_res_miner_cont_2>);
+    RecipeBuilder.get("engineer")
+    .setShaped([
+      [<ore:blockErodium>, <tp:lava_infused_stone>, <ore:blockErodium>],
+      [<ore:blockErodium>, <environmentaltech:void_res_miner_cont_1>, <ore:blockErodium>],
+      [<ore:blockErodium>, <ore:etLaserLens>, <ore:blockErodium>]])
+    .setSecondaryIngredients([<naturesaura:infused_iron>*4, <botania:storage:4>])
+    .addTool(<ore:artisansHammer>, 1)
+    .addTool(<ore:artisansCutters>, 1)
+    .addOutput(<environmentaltech:void_res_miner_cont_2>)
+    .create();
+    
+    //一级植物机
+    recipes.remove(<environmentaltech:void_botanic_miner_cont_1>);
+    RecipeBuilder.get("engineer")
+    .setShaped([
+      [<ore:blockLitherite>, <minecraft:chorus_flower>, <ore:blockLitherite>],
+      [<ore:blockLitherite>, <environmentaltech:diode>, <ore:blockLitherite>],
+      [<environmentaltech:interconnect>, <ore:etLaserLens>, <environmentaltech:interconnect>]])
+    .addTool(<ore:artisansHammer>, 1)
+    .addTool(<ore:artisansCutters>, 1)
+    .addOutput(<environmentaltech:void_botanic_miner_cont_1>)
+    .create();
+
+    //二级植物机
+    recipes.remove(<environmentaltech:void_botanic_miner_cont_2>);
+    RecipeBuilder.get("engineer")
+    .setShaped([
+      [<ore:blockErodium>, <minecraft:chorus_flower>, <ore:blockErodium>],
+      [<ore:blockErodium>, <environmentaltech:void_botanic_miner_cont_1>, <ore:blockErodium>],
+      [<ore:blockErodium>, <ore:etLaserLens>, <ore:blockErodium>]])
+    .setSecondaryIngredients([<naturesaura:infused_iron>*4, <botania:storage:4>])
+    .addTool(<ore:artisansHammer>, 1)
+    .addTool(<ore:artisansCutters>, 1)
+    .addOutput(<environmentaltech:void_botanic_miner_cont_2>)
+    .create();
 }
 
 if (!isInvalid)
