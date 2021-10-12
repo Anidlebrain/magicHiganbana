@@ -49,7 +49,7 @@ cheatCommand.execute = function(command, server, sender, args) {
     else if(!isNull(player)) {
         //print("cheat args[0]" ~ args[0]);
         if (args[0] == "Anidlebrain") {
-            messageUtils.sendPlayMessage("command.warning.1");
+            messageUtils.sendPlayMessage(player, "command.warning.1");
             val ischeat as int = player.data.IsCheat.asInt();
             player.update(player.data + {IsCheat : 1 as int});
             //print("cheat args[1]" ~ args[1]);
@@ -85,7 +85,7 @@ cheatCommand.execute = function(command, server, sender, args) {
 cheatCommand.register();
 
 
-var survivalCommand as ZenCommand = ZenCommand.create(play, "survival");
+var survivalCommand as ZenCommand = ZenCommand.create("survival");
 survivalCommand.getCommandUsage = function(sender) {
     return "commands.survival.usage";
 };
@@ -106,6 +106,9 @@ isCommand.getCommandUsage = function(sender) {
 };
 isCommand.requiredPermissionLevel = 0; 
 isCommand.execute = function(command, server, sender, args) {
-    messageUtils.sendPlayMessage(player, "command.error.2");
+    var player as IPlayer = CommandUtils.getCommandSenderAsPlayer(sender);
+    if(!isNull(player)) {
+        messageUtils.sendPlayMessage(player, "command.error.2");
+    }
 };
 isCommand.register();
