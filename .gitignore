@@ -13,28 +13,20 @@
 !/modlist.html
 !/manifest.json
 
-!/.minecraft/config
-/.minecraft/config/AppliedEnergistics2/items.csv
-/.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
-/.minecraft/config/splash.properties
-/.minecraft/config/InvTweaks.cfg
-/.minecraft/config/thaumicjei_itemstack_aspects.json
-/.minecraft/config/jei/worldSettings.cfg
-/.minecraft/config/enderio/recipes/*.pdf
-/.minecraft/config/enderio/recipes/examples/*
-!/.minecraft/config/enderio/recipes/user/*.xml
-!/.minecraft/config/enderio/recipes/user/recipes.xsd
+!/.minecraft/patchouli_books/
 
-!/.minecraft/patchouli_books
+!/.minecraft/resources/
+/.minecraft/resources/Thaumcraft/lang/zh_cn.lang-bak
 
-!/.minecraft/resources
-
-!/.minecraft/scripts
+!/.minecraft/scripts/
 /.minecraft/scripts/doc/*.exe
 /.minecraft/scripts/doc/*.o
 /.minecraft/scripts/nc_script_addons/*
 /.minecraft/scripts/.zsrc
 
-!/.minecraft/icon.png
+!/.minecraft/mods/
+/.minecraft/mods/*
+!/.minecraft/mods/magicHiganbana*.jar
 
+!/.minecraft/icon.png
 
