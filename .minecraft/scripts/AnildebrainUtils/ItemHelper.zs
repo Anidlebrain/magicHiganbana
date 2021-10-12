@@ -12,6 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
 import scripts.AnildebrainUtils.BaseUtils as alg;
+import scripts.AnildebrainUtils.messageUtils.getMessageKey;
 
 zenClass ItemHelper
 {
@@ -26,7 +27,7 @@ zenClass ItemHelper
         furnace.remove(item);
         furnace.setFuel(item, 0);
         mods.jei.JEI.removeAndHide(item);
-        item.addTooltip("该物品已被禁用");
+        item.addTooltip(getMessageKey("utils.currentlybanned"));
     }
 
     //删除物品

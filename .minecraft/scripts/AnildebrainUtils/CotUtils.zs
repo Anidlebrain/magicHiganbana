@@ -23,13 +23,17 @@ static toolName as string[] =
     "pickaxe",
 ];
 
+static tab as CreativeTab = VanillaFactory.createCreativeTab("magichiganbana", <minecraft:dragon_egg> as crafttweaker.item.IItemStack);
+tab.register();
+
 function itemCreator(name as string,
                      maxn as int,
                      glow as bool) {
-    var itemt = VanillaFactory.createItem(name);
-    itemt.maxStackSize = maxn;
-    itemt.glowing = glow;
-    itemt.register();
+    var itemC = VanillaFactory.createItem(name);
+    itemC.maxStackSize = maxn;
+    itemC.glowing = glow;
+    itemC.creativeTab = tab;
+    itemC.register();
 }
 
 function fluidCreator(name as string, color as int, isLava as bool){
@@ -61,7 +65,8 @@ function materialCreator(name as string, color as int, partNames as string[])
 
 function blockCreator(name as string, material as BlockMaterial, toolType as int)
 {
-    var blcokC = VanillaFactory.createBlock(name, material);
-    blcokC.setToolClass(toolName[toolType]);
-    blcokC.register();
+    var blockC = VanillaFactory.createBlock(name, material);
+    blockC.setToolClass(toolName[toolType]);
+    blockC.creativeTab = tab;
+    blockC.register();
 }

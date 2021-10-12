@@ -17,7 +17,7 @@ import mods.zenutils.command.ZenCommand;
 import mods.zenutils.command.ZenUtilsCommandSender;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.command.TabCompletion;
-
+import scripts.AnildebrainUtils.messageUtils;
 
 var clearupCommand as ZenCommand = ZenCommand.create("clearup");
 clearupCommand.getCommandUsage = function(sender) {
@@ -28,7 +28,7 @@ clearupCommand.execute = function(command, server, sender, args) {
     server.commandManager.executeCommand(server, "/kill @e[type=Item]");
     var player as IPlayer = CommandUtils.getCommandSenderAsPlayer(sender);
     if(!isNull(player)) {
-        player.sendChat("§6已清除所有掉落物");
+        messageUtils.sendPlayMessage(player, "command.success.1");
     }
 };
 clearupCommand.register();
@@ -44,12 +44,12 @@ cheatCommand.execute = function(command, server, sender, args) {
         player.sendStatusMessage("§6未知指令", true);
     }
     else if (args.length == 2 || args.length >= 4) {
-        player.sendChat("§6参数错误");
+        messageUtils.sendPlayMessage(player, "command.error.1");
     }
     else if(!isNull(player)) {
         //print("cheat args[0]" ~ args[0]);
         if (args[0] == "Anidlebrain") {
-            player.sendChat("§6已开启作弊模式，此操作不可逆!");
+            messageUtils.sendPlayMessage("command.warning.1");
             val ischeat as int = player.data.IsCheat.asInt();
             player.update(player.data + {IsCheat : 1 as int});
             //print("cheat args[1]" ~ args[1]);
@@ -78,14 +78,14 @@ cheatCommand.execute = function(command, server, sender, args) {
             } 
         }
         else {
-            player.sendChat("§6未知指令");
+            messageUtils.sendPlayMessage(player, "command.error.2");
         }
     }  
 };
 cheatCommand.register();
 
 
-var survivalCommand as ZenCommand = ZenCommand.create("survival");
+var survivalCommand as ZenCommand = ZenCommand.create(play, "survival");
 survivalCommand.getCommandUsage = function(sender) {
     return "commands.survival.usage";
 };
@@ -106,6 +106,6 @@ isCommand.getCommandUsage = function(sender) {
 };
 isCommand.requiredPermissionLevel = 0; 
 isCommand.execute = function(command, server, sender, args) {
-    
+    messageUtils.sendPlayMessage(player, "command.error.2");
 };
 isCommand.register();

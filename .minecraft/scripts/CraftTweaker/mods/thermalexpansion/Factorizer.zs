@@ -7,22 +7,22 @@
 import mods.thermalexpansion.Factorizer;
 
 //莱泽尔石
-Factorizer.addRecipeBoth(<environmentaltech:litherite>, <environmentaltech:litherite_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:litherite>, <environmentaltech:litherite_crystal> * 9);
 
 //艾洛蒂石
-Factorizer.addRecipeBoth(<environmentaltech:erodium>, <environmentaltech:erodium_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:erodium>, <environmentaltech:erodium_crystal> * 9);
 
 //艾恩尼石
-Factorizer.addRecipeBoth(<environmentaltech:ionite>, <environmentaltech:ionite_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:ionite>, <environmentaltech:ionite_crystal> * 9);
 
 //凯罗尼石
-Factorizer.addRecipeBoth(<environmentaltech:kyronite>, <environmentaltech:kyronite_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:kyronite>, <environmentaltech:kyronite_crystal> * 9);
 
 //蓝丝黛尔石
-Factorizer.addRecipeBoth(<environmentaltech:lonsdaleite>, <environmentaltech:lonsdaleite_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:lonsdaleite>, <environmentaltech:lonsdaleite_crystal> * 9);
 
 //普雷蒂石
-Factorizer.addRecipeBoth(<environmentaltech:pladium>, <environmentaltech:pladium_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:pladium>, <environmentaltech:pladium_crystal> * 9);
 
 //以太水石
-Factorizer.addRecipeBoth(<environmentaltech:aethium>, <environmentaltech:aethium_crystal>);
+Factorizer.addRecipeBoth(<environmentaltech:aethium>, <environmentaltech:aethium_crystal> * 9);

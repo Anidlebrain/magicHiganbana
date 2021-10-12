@@ -3,25 +3,34 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     事件管理器
 ##===============================================
-
 #priority 200
 import crafttweaker.command.ICommandSender;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.event.CommandEvent;
+
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.PlayerSleepInBedEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
+import crafttweaker.event.ExplosionStartEvent;
+import crafttweaker.event.PlayerChangedDimensionEvent;
+
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
 import crafttweaker.block.IBlock;
+import crafttweaker.world.IWorld;
+
 import mods.ctutils.world.World;
 import mods.ctutils.world.IGameRules;
 import mods.ctutils.player.Player;
 import mods.ctutils.commands.Commands;
 import mods.ctutils.utils.Math;
+
 import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.messageUtils;
+
 
 
 static storageData as IData[string] = {};
@@ -37,11 +46,12 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 
     if (isInvalid) {
         while (true) {
-            player.sendMessage("请不要随意添加mod");
+            messageUtils.sendPlayMessage(player, "mods.warning");
         }
     }
     else
     {
+        server.commandManager.executeCommand(sender, "/gamerule commandBlockOutput false");
         server.commandManager.executeCommand(sender, "/gamerule keepInventory true");
         server.commandManager.executeCommand(sender, "/gamerule mobGriefing true");
         server.commandManager.executeCommand(sender, "/say Anidlebrain test");
@@ -63,12 +73,13 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
             player.update(player.data + {InheritanceLevel : (Level + 1) as int});
         }
 
-        player.sendMessage("欢迎你游玩彼岸之法," ~ player.name ~ "!");
-        //player.sendMessage("所有配方请参考JEI。");
-        player.sendMessage("彼岸之法整合包已经预先设置好以下规则：");
-        player.sendMessage("复活可以继承死亡之前的物品；");
-        player.sendMessage("世界被给予爆炸保护，无法通过爆炸破坏方块；");
-        player.sendMessage("被降下诅咒导致无法正常回复生命值。");
+        messageUtils.sendPlayMessage(player, "mods.warning");
+        player.sendMessage(messageUtils.getMessageKey("welcome.words.1") ~ player.name ~ "!");
+        //player.sendMessage(messageUtils.getMessageKey("welcome.words.2"));
+        player.sendMessage(messageUtils.getMessageKey("welcome.words.3"));
+        player.sendMessage(messageUtils.getMessageKey("welcome.words.4"));
+        player.sendMessage(messageUtils.getMessageKey("welcome.words.5"));
+        player.sendMessage(messageUtils.getMessageKey("welcome.words.6"));
     }
     
 });
@@ -188,7 +199,7 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
     }
 });
 */
-
+/*
 events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent) {
     var player = event.player;
     if (!isNull(player.getAttunedConstellation())) {
@@ -200,4 +211,60 @@ events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent) {
         }
     }
     //return "OK";
+});
+*/
+
+events.onExplosionStart(function(event as ExplosionStartEvent) {
+    event.explosion.clearAffectedBlockPositions();
+});
+
+events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
+
+    var player = event.player;
+    print(player.name ~ " dim: " ~ event.fromWorld.getDimension() ~ " to " ~ event.toWorld.getDimension());
+    val dreamJournl as int = player.data.DreamJournl.asInt();
+    if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == -1) {
+        if (dreamJournl == 1) {
+            player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
+            messageUtils.sendPlayMessage(player, "true.start.1");
+            messageUtils.sendPlayMessage(player, "true.start.2");
+        }
+        else if (dreamJournl < 1) {
+            messageUtils.sendPlayMessage(player, "false.start");
+        }
+    }
+
+    else if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == 1) {
+        if (dreamJournl == 2) {
+            player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
+            messageUtils.sendPlayMessage(player, "true.start.1");
+            messageUtils.sendPlayMessage(player, "true.start.2");
+
+        }
+        else if (dreamJournl < 2) {
+            messageUtils.sendPlayMessage(player, "false.start");
+        }
+    }
+
+    else if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == -2) {
+        if (dreamJournl == 3) {
+            player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
+            messageUtils.sendPlayMessage(player, "true.start.1");
+            messageUtils.sendPlayMessage(player, "true.start.2");
+        }
+        else if (dreamJournl < 3) {
+            messageUtils.sendPlayMessage(player, "false.start");
+        }
+    }
+
+    else if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == 58) {
+        
+        if (dreamJournl == 4) {
+            player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
+            player.giverDreamJournl();
+        }
+        else if (dreamJournl < 4) {
+            messageUtils.sendPlayMessage(player, "false.start");
+        }
+    }
 });
