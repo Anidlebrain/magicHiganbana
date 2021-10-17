@@ -18,7 +18,8 @@ modifyLocalLang("book.start.title");
 modifyLocalLang("book.start.1");
 modifyLocalLang("book.start.2");
 modifyLocalLang("book.start.3");
-
+modifyLocalLang("got.crystals");
+modifyLocalLang("got.dream");
 
 //工匠之作
 modifyLocalLang("tile.artisanworktables.worktable.chemist.name");

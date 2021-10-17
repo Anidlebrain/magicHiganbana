@@ -4,7 +4,7 @@
 ##          [Info]:     虚空工艺 虚空灌注磨粉机
 ##================================================
 #priority 2000
-#norun
+#modloaded voidcraft
 import moretweaker.voidcraft.VoidMacerator;
 /*
 VoidMacerator.add(IItemStack output, IIngredient input, optional int voidicPower);

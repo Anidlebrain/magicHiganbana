@@ -4,7 +4,7 @@
 ##          [Info]:     虚空工艺 虚空炼金台
 ##================================================
 #priority 2000
-
+#modloaded voidcraft
 import moretweaker.voidcraft.VoidAlchemy;
 /*
 //inputs must be 6

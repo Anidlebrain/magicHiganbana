@@ -30,3 +30,18 @@
 
 !/.minecraft/icon.png
 
+!/.minecraft/config
+/.minecraft/config/AppliedEnergistics2/items.csv
+/.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
+
+
+/.minecraft/config/InvTweaks.cfg
+/.minecraft/config/qmd.cfg
+/.minecraft/config/splash.properties
+/.minecraft/config/thaumicjei_itemstack_aspects.json
+/.minecraft/config/jei/worldSettings.cfg
+/.minecraft/config/enderio/recipes/*.pdf
+/.minecraft/config/enderio/recipes/examples/*
+!/.minecraft/config/enderio/recipes/user/*.xml
+!/.minecraft/config/enderio/recipes/user/recipes.xsd
+/.minecraft/config/Guide-API/Guide-API.cfg

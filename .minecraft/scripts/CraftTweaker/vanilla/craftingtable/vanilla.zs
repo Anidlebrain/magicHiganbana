@@ -11,6 +11,7 @@ import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.artisanworktables.builder.Copy;
 
 function vanillaAddRecipes()
 {
@@ -52,6 +53,12 @@ function vanillaAddRecipes()
         [<minecraft:iron_ingot>, <minecraft:stick>]])
       .addOutput(<minecraft:shears>)
       .create();
+    
+    RecipeBuilder.get("carpenter")
+      .setCopy(Copy.byOutput(<ore:slabWood>.items))
+      .addTool(<ore:artisansDriver>, 1)
+      .create();
+    
 }
 
 function vanillaRemoveRecipes()

@@ -34,6 +34,7 @@ Alchemy.add(<environmentaltech:erodium_crystal> * 6,
     [<botania:manaresource:9>, <bloodmagic:slate:1>, <ore:gemEmerald>, <ore:gemRedGarnet>, <botania:manaresource:8>],
     {"silver":8 to 16, "iron":10 to 16, "lesselstone":12 to 18});
 
+/*
 //究极炼金粉
 Alchemy.add(<skyresources:alchemyitemcomponent:5>,
     [<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemperkgem:1>, <skyresources:baseitemcomponent:3>, <voidcraft:diamonddust>, <skyresources:baseitemcomponent:7>],
@@ -43,4 +44,5 @@ Alchemy.add(<skyresources:alchemyitemcomponent:5>,
 Alchemy.add(<skyresources:alchemyitemcomponent:5>,
     [<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemperkgem:2>, <skyresources:baseitemcomponent:3>, <voidcraft:diamonddust>, <skyresources:baseitemcomponent:7>],
     {"aer":32 to 64, "ignis":16 to 32, "aqua":8 to 16, "terra":24 to 48, "perditio":100 to 120});
+*/
 

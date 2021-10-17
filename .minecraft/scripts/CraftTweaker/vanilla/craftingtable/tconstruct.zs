@@ -11,6 +11,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.ICraftingInventory;
 import crafttweaker.item.IItemStack;
+import mods.artisanworktables.builder.Copy;
 
 function init()
 {
@@ -21,6 +22,12 @@ function init()
 function recipesInit()
 {
     recipes.remove(<tconstruct:rack:1>);
+    RecipeBuilder.get("basic")
+      .setCopy(Copy.byOutput([<tconstruct:rack:1>]))
+      .addTool(<ore:artisansDriver>, 1)
+      .create();
+    /*
+    
     RecipeBuilder.get("basic")
       .setShaped([
         [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>]])
@@ -53,7 +60,7 @@ function recipesInit()
             return out.updateTag({"id" : name});
         })
       .create();
-
+    */
     //冲模加工台
     recipes.remove(<embersconstruct:stamptable>);
     RecipeBuilder.get("basic")

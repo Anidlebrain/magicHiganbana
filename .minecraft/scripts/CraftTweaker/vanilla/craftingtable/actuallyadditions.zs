@@ -6,6 +6,7 @@
 #priority 2000
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import mods.artisanworktables.builder.RecipeBuilder;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 
 function init()
@@ -69,6 +70,12 @@ function recipesInit()
       .addTool(<ore:artisansToolWood>, 1)
       .addOutput(<actuallyadditions:block_giant_chest_large>)
       .create();
+}
+
+function itemRemove()
+{
+    itemHelper.removeItem(<actuallyadditions:item_bag>);
+    itemHelper.removeItem(<actuallyadditions:item_void_bag>);
 }
 
 if (!isInvalid)
