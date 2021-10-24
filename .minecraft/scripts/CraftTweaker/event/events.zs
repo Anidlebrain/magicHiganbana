@@ -51,13 +51,15 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     }
     else
     {
+        /*
         server.commandManager.executeCommand(sender, "/gamerule commandBlockOutput false");
         server.commandManager.executeCommand(sender, "/gamerule keepInventory true");
         server.commandManager.executeCommand(sender, "/gamerule mobGriefing true");
         server.commandManager.executeCommand(sender, "/say Anidlebrain test");
         server.commandManager.executeCommand(sender, "/gamerule announceAdvancements false");
         server.commandManager.executeCommand(sender, "/gamerule naturalRegeneration false");
-
+        */
+        
         if (!rules.hasRule("verification")) {
             rules.addGameRule("verification", "2", "Numeric");
         }
@@ -215,7 +217,7 @@ events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent) {
 */
 
 events.onExplosionStart(function(event as ExplosionStartEvent) {
-    event.explosion.clearAffectedBlockPositions();
+    //event.explosion.clearAffectedBlockPositions();
 });
 
 events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {

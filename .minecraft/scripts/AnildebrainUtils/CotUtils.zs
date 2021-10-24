@@ -22,17 +22,22 @@ static toolName as string[] =
 [
     "pickaxe",
 ];
+/*
+var itemC = VanillaFactory.createItem("bian");
+itemC.maxStackSize = 64;
+itemC.glowing = false;
+itemC.register();
 
-static tab as CreativeTab = VanillaFactory.createCreativeTab("magichiganbana", <minecraft:dragon_egg> as crafttweaker.item.IItemStack);
+static tab as CreativeTab = VanillaFactory.createCreativeTab("magichiganbana", itemC);
 tab.register();
-
+*/
 function itemCreator(name as string,
                      maxn as int,
                      glow as bool) {
     var itemC = VanillaFactory.createItem(name);
     itemC.maxStackSize = maxn;
     itemC.glowing = glow;
-    itemC.creativeTab = tab;
+    //itemC.creativeTab = tab;
     itemC.register();
 }
 
@@ -67,6 +72,6 @@ function blockCreator(name as string, material as BlockMaterial, toolType as int
 {
     var blockC = VanillaFactory.createBlock(name, material);
     blockC.setToolClass(toolName[toolType]);
-    blockC.creativeTab = tab;
+    //blockC.creativeTab = tab;
     blockC.register();
 }

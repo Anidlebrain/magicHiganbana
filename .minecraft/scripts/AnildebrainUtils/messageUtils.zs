@@ -16,6 +16,7 @@ function getMessageKey(key as string) as string
 function sendPlayMessage(player as IPlayer, key as string)
 {
     player.sendMessage(getMessageKey(key));
+    //player.sendRichTextMessage(getMessageKey(key));
 }
 
 function modifyLocalLang(key as string)

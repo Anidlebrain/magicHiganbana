@@ -5,5 +5,11 @@
 ##================================================
 #priority 2000
 import mods.naturesaura.Offering;
+import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addOfferingRecipe;
 
 //mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
+
+//雷石
+recipes.remove(<lightningcraft:stone_block>);
+addOfferingRecipe(<lightningcraft:stone_block>, <botanicadds:dreamrock> * 3, <contenttweaker:thunder_rune>);
+

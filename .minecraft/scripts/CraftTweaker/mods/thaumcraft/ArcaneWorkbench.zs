@@ -17,9 +17,11 @@ mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20,
 [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
 */
 
+//魔导透镜
 ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
 addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, "FIRSTSTEPS", 20, 
     [[null, <contenttweaker:crystal_gold>, null],
     [<contenttweaker:crystal_gold>, <astralsorcery:itemcoloredlens:6>, <contenttweaker:crystal_gold>],
     [null, <contenttweaker:crystal_gold>, null]],
     [Aer, Terra, Ignis, Aqua, Ordo, Perditio]);
+

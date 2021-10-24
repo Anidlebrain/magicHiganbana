@@ -6,44 +6,45 @@
 
 #priority 2000
 import mods.enderio.AlloySmelter;
+import mods.magichiganbana.IUtils;
 import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.removeAlloySmelter;
 
 //mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
 print(1);
 //磁钢锭
-removeAlloySmelter(<enderio:item_alloy_ingot>);
+removeAlloySmelter(<enderio:item_alloy_ingot>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot>, [<ore:ingotTungstensteel>, <ore:dustCoal>, <ore:itemSilicon>], 10000);
 print(2);
 //充能合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:1>);
+removeAlloySmelter(<enderio:item_alloy_ingot:1>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<enderio:block_holy_fog>, <ore:ingotImperomite>, <threng:material:5>], 10000);
 print(3);
 //脉冲合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:2>);
+removeAlloySmelter(<enderio:item_alloy_ingot:2>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<enderio:item_alloy_ingot:1>, <ore:ingotEnderium>], 10000);
 print(4);
 //红石合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:3>);
+removeAlloySmelter(<enderio:item_alloy_ingot:3>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<minecraft:redstone>, <ore:ingotIox>], 10000);
 print(5);
 //导电铁锭
-removeAlloySmelter(<enderio:item_alloy_ingot:4>);
+removeAlloySmelter(<enderio:item_alloy_ingot:4>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>, [<ore:ingotTerrax>, <minecraft:redstone>], 10000);
 print(6);
 //脉冲铁锭
-removeAlloySmelter(<enderio:item_alloy_ingot:5>);
+removeAlloySmelter(<enderio:item_alloy_ingot:5>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:5>, [<ore:ingotConductiveIron>, <ore:ingotEnderium>], 10000);
 print(7);
 //玄钢锭
-removeAlloySmelter(<enderio:item_alloy_ingot:6>);
+removeAlloySmelter(<enderio:item_alloy_ingot:6>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:6>, [<ore:ingotTungstensteel>, <ore:ingotObsidiorite>, <ore:ingotBasalt>], 10000);
 print(8);
 //魂金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:7>);
+removeAlloySmelter(<enderio:item_alloy_ingot:7>, IUtils.binaryCreation("111"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:7>, [<ore:ingotTritonite>, <woot:soulsanddust> * 2], 10000);
 print(9);
 //铁合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:9>);
+removeAlloySmelter(<enderio:item_alloy_ingot:9>, IUtils.binaryCreation("011"));
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9>, [<ore:ingotAdvancedAlloy>, <ore:ingotIron>], 20000);
 print(10);
 

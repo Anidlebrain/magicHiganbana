@@ -71,5 +71,8 @@ RuneAltar.addRecipe(<botania:rune:14>, [<tconevo:metal:25>, <tconevo:metal:30>, 
 RuneAltar.removeRecipe(<botania:rune:15>);
 RuneAltar.addRecipe(<botania:rune:15>, [<tconevo:metal:25>, <tconevo:metal:30>, <botania:rune:1>, <botania:rune:5>, <naturesaura:token_rage>], 23400);
 
+//雷之符文
+RuneAltar.addRecipe(<contenttweaker:thunder_rune>, [<animus:sigil_storm>, <ore:ingotElectricium>, <xreliquary:mob_ingredient:8>, <botania:manaresource:0>, <botania:manaresource:23>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_storm_cloud"}})], 5200);
+
 //魔力立方
 //RuneAltar.removeRecipe(<botanicadds:mana_tesseract>);

@@ -72,7 +72,7 @@ makeAltar(<astralsorcery:itemhandtelescope>, 100, 60,
     {
         A : <astralsorcery:blockinfusedwood:1>,
         B : <actuallyadditions:item_crystal_empowered:1>,
-        C : <naturesaura:ancient_stick>,
+        C : <contenttweaker:arch_stick>,
         D : <astralsorcery:itemcraftingcomponent:3>
     }
 );
@@ -132,7 +132,7 @@ makeAltar(<arcanearchives:scepter_revelation>, 25, 40,
     ],
     {
         A : <contenttweaker:crystal_cluster_silver>,
-        B : <naturesaura:ancient_stick>,
+        B : <contenttweaker:arch_stick>,
         C : <arcanearchives:raw_quartz>
     }
 );
@@ -149,5 +149,49 @@ makeAltar(<thaumcraft:phial> * 4, 25, 40,
     {
         A : <ore:fusedGlass>,
         B : <ore:dustAstralStarmetal>
+    }
+);
+
+//透镜
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/glasslens");
+makeAltar(<astralsorcery:itemcraftingcomponent:3>, 89, 40, 
+    [
+        " A ",
+        "ABA",
+        " A ",
+    ],
+    {
+        A : <botania:bifrostpermpane>,
+        B : <ore:gemAquamarine>
+    }
+);
+
+//辉光粉
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminationpowder");
+makeAltar(<astralsorcery:itemusabledust> * 4, 89, 40, 
+    [
+        " A ",
+        "ABA",
+        " A ",
+    ],
+    {
+        A : <randomthings:ingredient:5>,
+        B : <arcanearchives:radiant_dust>
+    }
+);
+
+//暗夜粉
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
+makeAltar(<astralsorcery:itemcraftingcomponent:3> * 4, 89, 40, 
+    [
+        " A ",
+        "DBD",
+        " C ",
+    ],
+    {
+        A : <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end"}),
+        B : <astralsorcery:itemusabledust>,
+        C : <thaumcraft:nitor_black>,
+        D : <ore:dustQuartzBlack>
     }
 );

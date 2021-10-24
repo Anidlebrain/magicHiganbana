@@ -11,6 +11,8 @@ import mods.bloodmagic.BloodAltar;
 BloodAltar.removeRecipe(<minecraft:stone>);
 BloodAltar.addRecipe(<bloodmagic:slate>, <roots:runestone>, 0, 1000, 5, 5);
 
+BloodAltar.addRecipe(<lightningcraft:material:5>, <randomthings:ingredient:1>, 5, 30000, 100, 500);
+
 #BloodAltar.addRecipe(<bloodmagic:slate:1>,<bloodmagic:slate>, 1, 1000, 5, 5);
 
 /*

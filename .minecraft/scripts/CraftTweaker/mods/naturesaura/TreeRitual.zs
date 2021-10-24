@@ -66,7 +66,7 @@ TreeRitual.addRecipe("astralsorcery/TreeRitual/itemwand", <roots:wildwood_saplin
     <contenttweaker:stars_gem>, <botania:tornadorod>, <naturesaura:infused_stone>]);
 
 
-
+//奥术缓存的宝石
 TreeRitual.addRecipe("arcanearchives/TreeRitual/salvegleam", <roots:wildwood_sapling>, <arcanearchives:salvegleam>, 1200, 
     [<bloodmagic:component:4>, <naturesaura:token_grief>, <actuallyadditions:item_crystal_empowered>, <ore:dyePink>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:golden_apple>, <minecraft:golden_carrot>]);
@@ -110,3 +110,11 @@ TreeRitual.addRecipe("arcanearchives/TreeRitual/rivertear", <roots:wildwood_sapl
 TreeRitual.addRecipe("arcanearchives/TreeRitual/parchtear", <roots:wildwood_sapling>, <arcanearchives:parchtear>, 1200, 
     [<bloodmagic:component:7>, <bloodmagic:sigil_void>, <thermalfoundation:material:1026>, <ore:dyeBlack>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:sponge>, <minecraft:bucket>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/stormway", <roots:wildwood_sapling>, <arcanearchives:stormway>, 1200, 
+    [<animus:component:4>, <contenttweaker:thunder_rune>, <animus:sigil_consumption>, <ore:dyeYellow>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:ingotElectricium>, <botania:lightrelay>]);
+
+TreeRitual.addRecipe("arcanearchives/TreeRitual/phoenixway", <roots:wildwood_sapling>, <arcanearchives:phoenixway>, 1200, 
+    [<bloodmagic:component:30>, <botania:rune:1>, <animus:sigil_consumption>, <ore:dyeRed>,
+    <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <skyresources:alchemyitemcomponent:6>, <randomthings:blazeandsteel>]);

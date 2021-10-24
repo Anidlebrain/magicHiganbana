@@ -137,6 +137,13 @@ CotUtils.itemCreator("aspectus_ordo", 64, false);
 //混沌元素之象征
 CotUtils.itemCreator("aspectus_perditio", 64, false);
 
+//灰烬
+CotUtils.itemCreator("ashes", 64, false);
+
+//灰烬
+CotUtils.itemCreator("arch_stick", 64, false);
+
+
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
 

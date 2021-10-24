@@ -13,6 +13,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.ctutils.utils.Math;
 import thaumcraft.aspect.CTAspectStack;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import mods.magichiganbana.IUtils;
 
 //沉浸工程 高炉 删除燃料
 function removeImmersiveengIneeringFuel(ore as IOreDictEntry)
@@ -60,22 +61,20 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[])
     }
 */
 
-function removeAlloySmelter(output as IItemStack/*, level as int*/)
+function removeAlloySmelter(output as IItemStack, level as int)
 {
-    /*
-    var level = 0;
-    if (level & 0x01)
+    if(IUtils.bitwiseJudgment(level, 1))
     {
         mods.enderio.AlloySmelter.removeRecipe(output);
     }
-    */
-    //
-    mods.immersiveengineering.ArcFurnace.removeRecipe(output);
-    mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
-    //if (!isNull(input)) 
-    //{
-    //    mods.thermalexpansion.Enchanter.removeRecipe(input, input2);
-    //}    
+    if(IUtils.bitwiseJudgment(level, 2))
+    {
+        mods.immersiveengineering.ArcFurnace.removeRecipe(output);
+    }
+    if(IUtils.bitwiseJudgment(level, 3))
+    {
+        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
+    }
 }
 
 function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[])
@@ -204,7 +203,7 @@ function addChiselByOre(ore as IOreDictEntry)
 {
     var recipesNum = recipesUtils.getRecipesNum();
     var name = ore.name ~ recipesNum;
-    print(name);
+    //print(name);
     mods.chisel.Carving.addGroup(name);
     for item in ore.items
     {
@@ -238,4 +237,16 @@ function addCrucibleRecipe(output as IItemStack,
     var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
 
     mods.thaumcraft.Crucible.registerRecipe(name, research, output, input, aspectList);
+}
+
+function addOfferingRecipe(output as IItemStack,
+                           input as IIngredient,
+                           startItem as IIngredient)
+{
+    var type as string[] = output.definition.id.split(":");
+    var recipesNum as int = recipesUtils.getRecipesNum();
+    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var num as int = input.amount;
+
+    mods.naturesaura.Offering.addRecipe(name, input.transformConsume(1), num, startItem, output);
 }

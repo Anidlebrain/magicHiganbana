@@ -17,3 +17,9 @@ Resonator.add(<extrautils2:decorativesolid:7>, <actuallyadditions:block_misc:2>,
 //基础升级
 Resonator.remove(<extrautils2:ingredients:9>);
 Resonator.add(<extrautils2:ingredients:9>, <thermalfoundation:material:512>, 80);
+
+/*
+//基础升级
+recipes.remove(<voidcraft:voidinfuser>);
+Resonator.add(<voidcraft:voidinfuser>, <voidcraft:voidinfuserinert>, 200);
+*/

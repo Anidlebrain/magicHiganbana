@@ -37,6 +37,7 @@ function recipesInit()
       .create();
     
     //通灵之匙
+    recipes.remove(<randomthings:spectrekey>);
     RecipeBuilder.get("jeweler")
       .setShaped([
         [<randomthings:ingredient:3>, <randomthings:ingredient:3>, <randomthings:ingredient:3>, null, null],
@@ -53,7 +54,16 @@ function recipesInit()
       .addOutput(<randomthings:spectrekey>)
       .create();
     
-    
+    //恶魔之泪
+    recipes.remove(<randomthings:spectrekey>);
+    RecipeBuilder.get("chemist")
+      .setShaped([
+        [null, null, <minecraft:ghast_tear>, null, null],
+        [null, <minecraft:ghast_tear>, <bloodmagic:blood_shard:1>, <minecraft:ghast_tear>, null],
+        [<minecraft:ghast_tear>, <minecraft:ender_eye>, <extrautils2:ingredients:17>, <minecraft:ender_eye>, <minecraft:ghast_tear>],
+        [null, <minecraft:ghast_tear>, null, <minecraft:ghast_tear>, null]])
+      .addOutput(<randomthings:ingredient:1>)
+      .create();
 }
 
 if (!isInvalid)

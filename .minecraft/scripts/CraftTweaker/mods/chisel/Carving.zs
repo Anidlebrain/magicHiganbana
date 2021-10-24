@@ -20,6 +20,9 @@ import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addChiselByOre;
 //移除 根源魔法 元素土
 Carving.removeGroup("rootsRunicSoilTypes");
 
+//雷石 添加 雷石台阶
+//Carving.addVariation("lightningcraft.chisel.thunder", <lightningcraft:slab_block_double>);
+
 //阿滋勒赫石砖
 addChiselByOre(<ore:custombrick>);
 
