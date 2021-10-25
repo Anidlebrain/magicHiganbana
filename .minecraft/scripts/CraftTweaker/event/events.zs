@@ -1,7 +1,7 @@
 ##==============================================
 ##          [Author]:   Anidlebrain
 ##          [since]:    magic_higanbana
-##          [Info]:     事件管理器
+##          [Info]:     玩家 事件管理器
 ##===============================================
 #priority 200
 import crafttweaker.command.ICommandSender;
@@ -76,12 +76,12 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         }
 
         messageUtils.sendPlayMessage(player, "mods.warning");
-        player.sendMessage(messageUtils.getMessageKey("welcome.words.1") ~ player.name ~ "!");
-        //player.sendMessage(messageUtils.getMessageKey("welcome.words.2"));
-        player.sendMessage(messageUtils.getMessageKey("welcome.words.3"));
-        player.sendMessage(messageUtils.getMessageKey("welcome.words.4"));
-        player.sendMessage(messageUtils.getMessageKey("welcome.words.5"));
-        player.sendMessage(messageUtils.getMessageKey("welcome.words.6"));
+        player.sendMessage(messageUtils.getWelcomeMessage("words.1") ~ player.name ~ "!");
+        //player.sendMessage(messageUtils.getWelcomeMessage("words.2"));
+        player.sendMessage(messageUtils.getWelcomeMessage("words.3"));
+        player.sendMessage(messageUtils.getWelcomeMessage("words.4"));
+        player.sendMessage(messageUtils.getWelcomeMessage("words.5"));
+        player.sendMessage(messageUtils.getWelcomeMessage("words.6"));
     }
     
 });

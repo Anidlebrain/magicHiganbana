@@ -140,45 +140,5 @@ CotUtils.itemCreator("aspectus_perditio", 64, false);
 //灰烬
 CotUtils.itemCreator("ashes", 64, false);
 
-//灰烬
+//聚星木棍
 CotUtils.itemCreator("arch_stick", 64, false);
-
-
-//火柴
-var matchStick = VanillaFactory.createItem("match_stick");
-
-matchStick.maxStackSize = 1;
-matchStick.maxDamage = 10;
-matchStick.onItemUse = function(player, world, pos, hand, facing, blockHit) {
-    var firePos = pos.getOffset(facing, 1);
-    if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
-        var chance as double = Math.random();
-        if (chance < 0.66) {
-            world.setBlockState(<block:minecraft:fire>, firePos);
-            player.getHeldItem(hand).damage(2, player);
-        }
-        else if (chance < 0.98) {
-            player.sendMessage("由于天气寒冷，点火失败。");
-            player.getHeldItem(hand).damage(1, player);
-        }
-        else {
-            player.sendMessage("点火失败，导致火柴损坏");
-            player.getHeldItem(hand).damage(10, player);
-        }
-        return ActionResult.success();
-    }
-
-    return ActionResult.pass();
-};
-matchStick.register();
-
-//传承石
-var inheritanceStone = VanillaFactory.createItem("inheritance_stone");
-
-inheritanceStone.maxStackSize = 1;
-inheritanceStone.glowing = true;
-inheritanceStone.itemRightClick = function(stack, world, player, hand) {
-    player.give(<item:modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mini_mana_machine"}));
-    return "SUCCESS";
-};
-inheritanceStone.register();

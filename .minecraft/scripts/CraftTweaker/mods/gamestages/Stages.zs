@@ -4,7 +4,7 @@
 ##          [Info]:     游戏阶段 创建
 ##================================================
 
-#priority 99997
+#priority 3997
 import mods.zenstages.ZenStager;
 
 static StageTheNether = ZenStager.getStage(stageTheNetherName);

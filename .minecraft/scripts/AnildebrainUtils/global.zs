@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     全局变量
 ##=================================================
-#priority 99999999
+#priority 4000
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -11,6 +11,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import scripts.AnildebrainUtils.BaseUtils;
 import thaumcraft.aspect.CTAspectStack;
 import mods.astralsorcery.Utils;
+import scripts.AnildebrainUtils.messageUtils;
 
 //config\enderio\recipes\aliase.pdf  
 global CHASSIS as IOreDictEntry = <ore:itemMachineChassi>;
@@ -188,6 +189,10 @@ global AS_CRYSTAL1 as IIngredient = Utils.getCrystalORIngredient(false, false);
 global AS_CRYSTAL2 as IIngredient = Utils.getCrystalORIngredient(false, true);
 global AS_CRYSTAL3 as IIngredient = Utils.getCrystalORIngredient(true, false);
 global AS_CRYSTAL4 as IIngredient = Utils.getCrystalORIngredient(true, true);
+
+global FAILEDPRODUCT as IItemStack = <contenttweaker:ashes>.withLore([
+    messageUtils.getLoreMessage("failed.product.1"),
+    messageUtils.getLoreMessage("failed.product.2")]);
 
 //神秘时代 要素
 global Aer as CTAspectStack = <aspect:aer>;

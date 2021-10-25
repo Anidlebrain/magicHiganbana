@@ -24,13 +24,13 @@ function recipesInit()
         val player as IPlayer = info.player;
         if (isNull(player) || Player.isFake(player))
         {
-            return <item:minecraft:stone>.withLore(["你已经合成的神秘农业的种子已达到限定范围", "不可以再次合成新的了。"]);
+            return FAILEDPRODUCT;
         }
 
         var SeenConstellations as [string] = player.getSeenConstellations();
         if (isNull(SeenConstellations) || SeenConstellations.length == 0)
         {
-            return <item:minecraft:stone>.withLore(["你已经合成的神秘农业的种子已达到限定范围", "不可以再次合成新的了。"]);
+            return FAILEDPRODUCT;
         }
 
         return out;

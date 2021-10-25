@@ -30,7 +30,6 @@ magichiganbana.book.start.1="在灾祸之前，我曾看见一位神秘使将富
 magichiganbana.book.start.2="我记得，我若如此做，我应当得到一种散发着微弱光芒的粉末。映像中神秘使将粉末撒向了书架和法师使用的工作台。"
 magichiganbana.book.start.3="我在想，我要不要重演一遍神秘使的行为？\n\n直觉告诉我，这粉末将为我掀开一个惊艳而危险的世界的面纱。"
 
-
 #研究
 magichiganbana.research.FIRSTSTEPS.title=最初的摸索
 magichiganbana.research.FIRSTSTEPS.stage.1=有谁能想到一些粉末就能够创造出这本奇异的书呢？它大部分是空白的，但是它揭示着一种强大的全新魔法形式：神秘学。 <BR>首先，我需要研究这个魔法世界，为此我需要一个工具：魔导透镜，至少这本书上是这么写的。 <BR>因为制作时需要引导微妙的魔法能量，普通的法师工作台并没有什么用处，向法师工作台上撒上一把世界盐应该就能解决这个问题了。这本书上写着正确的咒语，我想这一切应当是非常容易的。 <BR>我在每个项目的第一页记录我所需要满足的目标，这样我就能够知道自己应该怎么做了。
@@ -58,4 +57,51 @@ magichiganbana.description.recipes.nether.after=在地狱合成时吸收地狱�
 magichiganbana.description.recipes.end.after=在末地合成时吸收末地的灵气异变而成。
 magichiganbana.description.contenttweaker:match_stick.1=可以使用火柴点火，但火柴是不稳定的，点火的几率和空气的潮湿程度、环境温度的高低有关。
 magichiganbana.description.contenttweaker:match_stick.2=火柴点燃的火焰过小，因此不可以直接用于柴堆点火，可以在柴堆旁边点火，等待一段时间后柴堆会吸收他的火焰，然后点燃自己。
-magichiganbana.description.astralsorcery:blockaltar=传闻只有知道星座的人，才能掌握星辰的力量，最综合成出星辉合成台
+magichiganbana.description.astralsorcery:blockaltar=传闻只有知道星座的人，才能掌握星辰的力量，最综合成出星辉合成台。
+
+#物品描述
+magichiganbana.lore.failed.product.1=合成失败。
+magichiganbana.lore.failed.product.2=你还不理解这个工艺，需要学习更多的知识。
+
+#事件输出
+magichiganbana.event.match_stick.1=由于天气寒冷，点火失败。
+magichiganbana.event.match_stick.2=点火失败，导致火柴损坏。
+
+#匠魂
+magichiganbana.tconstruct.lifedrain.name=生命汲取
+magichiganbana.tconstruct.lifedrain.description=§o多兰剑§r\n§f降低伤害，吸取造成伤害一定比例的血量
+magichiganbana.tconstruct.wildfire.name=野火
+magichiganbana.tconstruct.wildfire.description=§o野火烧不尽，春风吹又生§r\n§f燃烧物品，有几率把物品烧成灰烬\n原木堆=>木炭 树苗=>枯死的灌木
+magichiganbana.tconstruct.magnetism.name=磁化之力
+magichiganbana.tconstruct.magnetism.description=§o传说只要磁力足够强，就可以吸附起物品§r\n§f
+magichiganbana.tconstruct.shatter.name=粉碎
+magichiganbana.tconstruct.shatter.description=§o你是不是想到了无中生有的锤子？§r\n§f圆石=>沙砾 沙砾=>沙子 冰=>碎冰
+magichiganbana.tconstruct.rampantgrowth.name=狂野生长
+magichiganbana.tconstruct.rampantgrowth.description=§o让骨粉的效果更好§r\n§f杀死怪物后，副手若有骨粉，将骨粉转换为强化骨粉
+magichiganbana.tconstruct.sanctuary.name=神圣领域
+magichiganbana.tconstruct.sanctuary.description=§o领域内不容许外人的存在§r\n§f攻击附加额外的击退效果
+magichiganbana.tconstruct.secondWind.name=吐故纳新
+magichiganbana.tconstruct.secondWind.description=§o辟谷之法，只需要服食天地元气§r\n§f
+magichiganbana.tconstruct.skysoarer.name=澄空漫游
+magichiganbana.tconstruct.skysoarer.description=§o御六气之辩，以游无穷§r\n§f
+magichiganbana.tconstruct.senseanimals.name=动物感知
+magichiganbana.tconstruct.senseanimals.description=§o可以倾听动物的声音§r\n§f
+magichiganbana.tconstruct.senseanimals.message.1=哞~哞~~
+magichiganbana.tconstruct.senseanimals.message.2=汪~汪~~
+magichiganbana.tconstruct.senseanimals.message.3=喵~喵~~
+magichiganbana.tconstruct.senseanimals.message.4=咯~咯~~
+magichiganbana.tconstruct.senseanimals.message.5=叽~叽~~
+magichiganbana.tconstruct.senseanimals.message.6=嘎~嘎~~
+magichiganbana.tconstruct.dandelionWinds.name=蒲公英之风
+magichiganbana.tconstruct.dandelionWinds.description=§o生命的延续§r\n§f
+magichiganbana.tconstruct.growthinfusion.name=生机灌注
+magichiganbana.tconstruct.growthinfusion.description=§o生机现，万物复苏§r\n§f等级越高，转化几率越高\n重型雪块=>泥土 泥土=>草方块 枯死的灌木=>树苗等
+magichiganbana.tconstruct.roseThorns.name=玫瑰荆棘
+magichiganbana.tconstruct.rosethorns.description=§o苦难中绽放光彩§r\n§f
+magichiganbana.tconstruct.feylight.name=精灵微光
+magichiganbana.tconstruct.feylight.description=§o星星之火可以燎原§r\n§f
+magichiganbana.tconstruct.lightdrifter.name=超然游魂
+magichiganbana.tconstruct.lightdrifter.description=§o三山五岳，五湖四海，六合八荒，九天十地§r\n§f
+
+
+

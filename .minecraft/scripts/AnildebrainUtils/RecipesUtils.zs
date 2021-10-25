@@ -414,6 +414,13 @@ zenClass RecipesUtils
         m_recipesNum = m_recipesNum + 1;
         return m_recipesNum;
     }
+
+    function getRecipeName(item as IItemStack) as string
+    {
+        var type as string[] = item.definition.id.split(":");
+        var recipesNum as int = getRecipesNum();
+        return type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    }
     
 }
 

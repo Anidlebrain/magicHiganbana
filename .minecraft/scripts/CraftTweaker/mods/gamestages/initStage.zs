@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     游戏阶段 初始化
 ##================================================
-#priority 99998
+#priority 3998
 import mods.zenstages.ZenStager;
 
 var stageTheNether = ZenStager.initStage(stageTheNetherName);

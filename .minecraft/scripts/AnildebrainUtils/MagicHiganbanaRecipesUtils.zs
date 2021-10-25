@@ -42,9 +42,7 @@ function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as
 //自然灵气 森林仪式
 function treeRitualRecipe(output as IItemStack, inputs as IIngredient[])
 {
-    var type as string[] = output.definition.id.split(":");
-    var recipesNum = recipesUtils.getRecipesNum();
-    var name = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var name = recipesUtils.getRecipeName(output);
     mods.naturesaura.TreeRitual.removeRecipe(output);
     mods.naturesaura.TreeRitual.addRecipe(name, <prodigytech:zorra_sapling>, output, 100, inputs);
 }
@@ -79,9 +77,7 @@ function removeAlloySmelter(output as IItemStack, level as int)
 
 function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[])
 {
-    var type as string[] = output.definition.id.split(":");
-    var recipesNum = recipesUtils.getRecipesNum();
-    var name = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var name = recipesUtils.getRecipeName(output);
     mods.roots.Mortar.addRecipe(name, output, inputs);
     
     mods.artisanworktables.builder.RecipeBuilder.get("chemist")
@@ -219,9 +215,7 @@ function addArcaneWorkbenchShapedRecipe(output as IItemStack,
                                         input as IIngredient[][],
                                         aspectList as CTAspectStack[])
 {
-    var type as string[] = output.definition.id.split(":");
-    var recipesNum as int = recipesUtils.getRecipesNum();
-    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var name = recipesUtils.getRecipeName(output);
 
     mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(name, research, vis, 
         aspectList, output, input);
@@ -232,9 +226,7 @@ function addCrucibleRecipe(output as IItemStack,
                            input as IIngredient,
                            aspectList as CTAspectStack[])
 {
-    var type as string[] = output.definition.id.split(":");
-    var recipesNum as int = recipesUtils.getRecipesNum();
-    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var name = recipesUtils.getRecipeName(output);
 
     mods.thaumcraft.Crucible.registerRecipe(name, research, output, input, aspectList);
 }
@@ -243,9 +235,7 @@ function addOfferingRecipe(output as IItemStack,
                            input as IIngredient,
                            startItem as IIngredient)
 {
-    var type as string[] = output.definition.id.split(":");
-    var recipesNum as int = recipesUtils.getRecipesNum();
-    var name as string = type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;
+    var name = recipesUtils.getRecipeName(output);
     var num as int = input.amount;
 
     mods.naturesaura.Offering.addRecipe(name, input.transformConsume(1), num, startItem, output);
