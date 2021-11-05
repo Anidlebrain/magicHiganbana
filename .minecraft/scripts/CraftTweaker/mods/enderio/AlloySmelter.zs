@@ -134,7 +134,7 @@ AlloySmelter.addRecipe(<modularmachinery:itemmodularium>, [<skyresources:alchemy
 由 电弧炉 配方转移而来
 */
 //合金锭
-AlloySmelter.addRecipe(<techreborn:ingot:21>, [<ore:ingotBrass> * 3, <ore:ingotIronCompressed> * 3, <ore:ingotSilver> * 3]);
+AlloySmelter.addRecipe(<techreborn:ingot:21>, [<ore:ingotBronze> * 3, <ore:ingotIronCompressed> * 3, <ore:ingotSilver> * 3]);
 
 //铱合金锭
 AlloySmelter.addRecipe(<techreborn:ingot:21>, [<ore:ingotIridium> * 3, <techreborn:plates:36> * 3, <ore:dustDiamond> * 3]);
@@ -161,3 +161,7 @@ AlloySmelter.addRecipe(<enderio:block_industrial_insulation>, [<minecraft:sponge
 
 AlloySmelter.removeRecipe(<enderio:item_material:76>);
 AlloySmelter.addRecipe(<enderio:item_material:76>, [<ore:dustGlowstone>, <ore:dustClay>]);
+
+//黄铜
+removeAlloySmelter(<techreborn:ingot:1>,  IUtils.binaryCreation("001"));
+removeAlloySmelter(<techreborn:storage:5>,  IUtils.binaryCreation("001"));

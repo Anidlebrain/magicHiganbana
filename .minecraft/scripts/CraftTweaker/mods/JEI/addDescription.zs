@@ -6,15 +6,15 @@
 #priority 2000
 import mods.jei.JEI.addDescription;
 import crafttweaker.item.IItemStack;
-import scripts.AnildebrainUtils.messageUtils.getMessageKey;
+import scripts.AnildebrainUtils.messageUtils.getDescriptionMessage;
 
-var m_netherRecipes as string =  getMessageKey("description.nether.recipes");
-var m_endRecipes as string = getMessageKey("description.end.recipes");
+var m_netherRecipes as string =  getDescriptionMessage("nether.recipes");
+var m_endRecipes as string = getDescriptionMessage("end.recipes");
 
-var m_before as string = getMessageKey("description.recipes.before");
+var m_before as string = getDescriptionMessage("recipes.before");
 
-var m_netherAfter as string = getMessageKey("description.recipes.nether.after");
-var m_endAfter as string = getMessageKey("description.recipes.end.after");
+var m_netherAfter as string = getDescriptionMessage("recipes.nether.after");
+var m_endAfter as string = getDescriptionMessage("recipes.end.after");
 
 var m_skyItem = [
     <skyresources:combustionheater>,
@@ -40,7 +40,10 @@ for item in m_skyItemhide {
     addDescription(item.definition.makeStack(10), [m_before ~ item.definition.makeStack(1).displayName ~ m_endAfter]);
 }
 
-addDescription(<contenttweaker:match_stick>, [getMessageKey("description.contenttweaker:match_stick.1"),
-                                              getMessageKey("description.contenttweaker:match_stick.2")]);
+addDescription(<contenttweaker:match_stick>, [getDescriptionMessage("contenttweaker:match_stick.1"),
+                                              getDescriptionMessage("contenttweaker:match_stick.2")]);
 
-addDescription(<astralsorcery:blockaltar>, [getMessageKey("description.astralsorcery:blockaltar")]);
+addDescription(<astralsorcery:blockaltar>, [getDescriptionMessage("astralsorcery:blockaltar")]);
+
+addDescription(<astralsorcery:blockaltar>, [getDescriptionMessage("astralsorcery:blockaltar")]);
+

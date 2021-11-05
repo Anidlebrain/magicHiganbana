@@ -22,11 +22,11 @@ function recipesInit()
     recipes.remove(<arcanearchives:gemcutters_table>);
     RecipeBuilder.get("jeweler")
       .setShaped([
-        [<arcanearchives:raw_quartz>, <ore:quartzLavender>, null, <ore:quartzLavender>, <arcanearchives:raw_quartz>],
+        [<arcanearchives:raw_quartz>, <ore:quartzLavender>, <thaumcraft:inlay>, <ore:quartzLavender>, <arcanearchives:raw_quartz>],
         [<ore:quartzSunny>, null, <astralsorcery:itemcraftingcomponent:3>, null, <ore:quartzBlaze>],
-        [null, <astralsorcery:blockinfusedwood>, <artisanworktables:workshop:4>, <astralsorcery:blockinfusedwood>, null],
+        [<thaumcraft:inlay>, <astralsorcery:blockinfusedwood>, <artisanworktables:workshop:4>, <astralsorcery:blockinfusedwood>, <thaumcraft:inlay>],
         [<ore:quartzSunny>, null, <astralsorcery:blockinfusedwood>, null, <ore:quartzBlaze>],
-        [<arcanearchives:raw_quartz>, <ore:quartzElven>, null, <ore:quartzElven>, <arcanearchives:raw_quartz>]])
+        [<arcanearchives:raw_quartz>, <ore:quartzElven>, <thaumcraft:inlay>, <ore:quartzElven>, <arcanearchives:raw_quartz>]])
       .setSecondaryIngredients([<minecraft:emerald>, <techreborn:gem>, <tconstruct:materials:16>, <techreborn:gem:1>, <astralsorcery:itemcraftingcomponent>])
       .addTool(<ore:artisansHammer>, 348)
       .addOutput(<arcanearchives:gemcutters_table>)

@@ -13,3 +13,6 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <m
 
 //星辰炼金粉
 StarlightInfusion.addInfusion(<skyresources:alchemyitemcomponent:5>, <contenttweaker:star_alchemy_powder>, true, 0.9, 200);
+
+//高级炼金粉
+StarlightInfusion.addInfusion(<astralsorcery:itemcraftingcomponent:2>, <skyresources:alchemyitemcomponent:4>, true, 0.1, 40);

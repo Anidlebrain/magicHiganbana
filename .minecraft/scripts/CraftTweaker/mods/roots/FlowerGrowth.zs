@@ -6,20 +6,23 @@
 
 #priority 2000
 import mods.roots.FlowerGrowth;
+import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addFlowerGrowth;
+
+
 
 for i in 0 .. 15 {
     //植物魔法神秘花
-    FlowerGrowth.addRecipeBlock("mystical_flower" ~ i, <botania:flower>.asBlock(), i);
+    addFlowerGrowth(<botania:flower>, i);
     //
 }
 
 //微光苋 
-FlowerGrowth.addRecipeBlock("custom_flower", <astralsorcery:blockcustomflower>.asBlock(), 0);
+addFlowerGrowth(<astralsorcery:blockcustomflower>, 0);
 
 //水银花
-FlowerGrowth.addRecipeBlock("shimmer_leaf", <thaumcraft:shimmerleaf>.asBlock(), 0);
+addFlowerGrowth(<thaumcraft:shimmerleaf>, 0);
 
 //烈焰草
-FlowerGrowth.addRecipeBlock("cinder_pearl", <thaumcraft:cinderpearl>.asBlock(), 0);
+addFlowerGrowth(<thaumcraft:cinderpearl>, 0);
 
 

@@ -1,7 +1,7 @@
 {
 	x: -5.0d,
 	y: 9.0d,
-	description: "右键水可以取水，给花药台加水用",
+	description: "{magichiganbana.ftb.5c213afa.description.1}",
 	dependencies: [
 		"59cd9fce"
 	],

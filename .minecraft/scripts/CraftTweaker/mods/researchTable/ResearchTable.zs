@@ -3,6 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     研究台
 ##================================================
+#norun
 import mods.ResearchTable;
 import ResearchTable.Category;
 import ResearchTable.Builder;

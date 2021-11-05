@@ -41,7 +41,7 @@ function recipesInit()
         [<contenttweaker:basic_synthetic_gem>, <artisanworktables:worktable:5>, <contenttweaker:basic_synthetic_gem>],
         [<extendedcrafting:material:14>, <contenttweaker:basic_synthetic_gem>, <extendedcrafting:material:14>]])
       .addTool(<ore:artisansRazor>, 1)
-      .addOutput(<extendedcrafting:material:14>)
+      .addOutput(<extendedcrafting:table_basic>)
       .create();
 }
 

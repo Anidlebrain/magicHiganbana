@@ -126,6 +126,9 @@ function itemRemove()
 
     //UU物质
     itemHelper.removeItem(<techreborn:uumatter>);
+
+    //黄铜
+    //itemHelper.removeItem(<techreborn:ingot:1>);
     
 }
 

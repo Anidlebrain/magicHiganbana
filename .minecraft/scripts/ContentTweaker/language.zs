@@ -21,6 +21,9 @@ modifyLocalLang("book.start.3");
 modifyLocalLang("got.crystals");
 modifyLocalLang("got.dream");
 
+modifyLocalLang("item.ingot.thaumium.name");
+modifyLocalLang("item.nugget.thaumium.name");
+modifyLocalLang("item.plate.thaumium.name");
 /*
 //工匠之作
 modifyLocalLang("tile.artisanworktables.worktable.chemist.name");

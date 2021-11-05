@@ -17,6 +17,11 @@ magichiganbana.command.error.2=§6未知指令
 magichiganbana.command.warning.1=§6已开启作弊模式，此操作不可逆!
 magichiganbana.command.success.1=§6已清除所有掉落物
 
+#神秘时代
+magichiganbana.item.ingot.thaumium.name=强化神秘锭
+magichiganbana.item.nugget.thaumium.name=强化神秘粒
+magichiganbana.item.plate.thaumium.name=强化神秘板
+
 #灵感
 magichiganbana.got.crystals=手捧水晶的你，指尖忽然感受到一阵刺痛。灵光一闪，但却没有捉住这突如其来的灵感，唯独记得通灵空间隐藏着己失去的记忆。
 
@@ -44,7 +49,6 @@ magichiganbana.tile.artisanworktables.workshop.chemist.name=化学工作坊
 #工具提示
 magichiganbana.tooltip.minecraft:bowl=这是一个神奇的碗，丢入水里能够吸收水。
 magichiganbana.tooltip.skyresources:survivalistfishingrod=垂钓生存必须物，方名为生存者钓竿！
-magichiganbana.tooltip.minecraft:bowl=这是一个神奇的碗，丢入水里能够吸收水。
 magichiganbana.tooltip.modularmachinery:knowledge_inheritance.1=冰天雪地的荒芜，灾后的重建，但愿雨后能看见
 magichiganbana.tooltip.modularmachinery:knowledge_inheritance.2=彩虹；
 magichiganbana.tooltip.modularmachinery:knowledge_inheritance.3=世代传承的意志，时代的变迁，但愿文明能一直延续。
@@ -58,6 +62,7 @@ magichiganbana.description.recipes.end.after=在末地合成时吸收末地的�
 magichiganbana.description.contenttweaker:match_stick.1=可以使用火柴点火，但火柴是不稳定的，点火的几率和空气的潮湿程度、环境温度的高低有关。
 magichiganbana.description.contenttweaker:match_stick.2=火柴点燃的火焰过小，因此不可以直接用于柴堆点火，可以在柴堆旁边点火，等待一段时间后柴堆会吸收他的火焰，然后点燃自己。
 magichiganbana.description.astralsorcery:blockaltar=传闻只有知道星座的人，才能掌握星辰的力量，最综合成出星辉合成台。
+magichiganbana.description.flower.growth=可以通过根源魔法的繁花争艳仪式召唤
 
 #物品描述
 magichiganbana.lore.failed.product.1=合成失败。
@@ -103,5 +108,9 @@ magichiganbana.tconstruct.feylight.description=§o星星之火可以燎原§r\n�
 magichiganbana.tconstruct.lightdrifter.name=超然游魂
 magichiganbana.tconstruct.lightdrifter.description=§o三山五岳，五湖四海，六合八荒，九天十地§r\n§f
 
+#模块化机械
+modularmachinery.symbolic_cohesion_altar=象征凝聚祭坛
 
+#任务
+magichiganbana.ftb.5c213afa.description.1=右键水可以取水，给花药台加水用
 

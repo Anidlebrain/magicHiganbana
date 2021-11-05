@@ -10,9 +10,11 @@ import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.block.IBlockState;
 import mods.ctutils.utils.Math;
 import thaumcraft.aspect.CTAspectStack;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.messageUtils;
 import mods.magichiganbana.IUtils;
 
 //沉浸工程 高炉 删除燃料
@@ -71,7 +73,7 @@ function removeAlloySmelter(output as IItemStack, level as int)
     }
     if(IUtils.bitwiseJudgment(level, 3))
     {
-        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
+        //mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
     }
 }
 
@@ -221,6 +223,18 @@ function addArcaneWorkbenchShapedRecipe(output as IItemStack,
         aspectList, output, input);
 }
 
+function addArcaneWorkbenchShapelessRecipe(output as IItemStack,
+                                        research as string,
+                                        vis as int,
+                                        input as IIngredient[],
+                                        aspectList as CTAspectStack[])
+{
+    var name = recipesUtils.getRecipeName(output);
+
+    mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(name, research, vis, 
+        aspectList, output, input);
+}
+
 function addCrucibleRecipe(output as IItemStack,
                            research as string,
                            input as IIngredient,
@@ -239,4 +253,12 @@ function addOfferingRecipe(output as IItemStack,
     var num as int = input.amount;
 
     mods.naturesaura.Offering.addRecipe(name, input.transformConsume(1), num, startItem, output);
+}
+
+function addFlowerGrowth(item as IItemStack,
+                         Metadata as int)
+{
+    var name = recipesUtils.getRecipeName(item);
+    mods.jei.JEI.addDescription(item.definition.makeStack(Metadata), messageUtils.getDescriptionMessage("flower.growth"));
+    mods.roots.FlowerGrowth.addRecipeBlock(name, item.asBlock(), Metadata);
 }

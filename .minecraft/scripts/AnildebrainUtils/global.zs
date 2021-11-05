@@ -203,6 +203,11 @@ global Ordo as CTAspectStack = <aspect:ordo>;
 global Perditio as CTAspectStack = <aspect:perditio>;
 global Vacuos as CTAspectStack = <aspect:vacuos>;
 global Lux as CTAspectStack = <aspect:lux>;
+global Alkimia as CTAspectStack = <aspect:alkimia>;
+global Fabrico as CTAspectStack = <aspect:fabrico>;
+global Praecantatio as CTAspectStack = <aspect:praecantatio>;
+global Praemunio as CTAspectStack = <aspect:praemunio>;
+global Thunder as CTAspectStack = <aspect:thunder>;
 
 
 //阶段名称

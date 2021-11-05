@@ -1,0 +1,6 @@
+{
+	"name": "彼岸百科",
+	"landing_text": "欢迎游玩彼岸之法整合包，在这本书中记载着部分整合包物品的内容",
+	"version": 1,
+	"model" : "minecraft:enchanted_book"
+}
