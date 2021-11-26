@@ -54,6 +54,7 @@ item.contenttweaker.higanbana.name=彼岸花
 item.contenttweaker.link_adhesive.name=连接粘合剂
 
 item.contenttweaker.inheritance_stone.name=传承石
+
 item.contenttweaker.aspectus_aer.name=风元素之象征
 item.contenttweaker.aspectus_ignis.name=火元素之象征
 item.contenttweaker.aspectus_aqua.name=水元素之象征
@@ -62,6 +63,22 @@ item.contenttweaker.aspectus_ordo.name=秩序元素之象征
 item.contenttweaker.aspectus_perditio.name=混沌元素之象征
 item.contenttweaker.aspectus_lesselstone.name=莱泽尔石元素之象征
 
+item.contenttweaker.ashes.name=合成失败物
+
+item.contenttweaker.arch_stick.name=聚星木棍
+
+item.contenttweaker.decorative_shard.name=晶簇碎片
+
+item.contenttweaker.eight_diagrams_renpao.name=任匏
+item.contenttweaker.eight_diagrams_chongzhu.name=冲竹
+item.contenttweaker.eight_diagrams_fumu.name=辅木
+item.contenttweaker.eight_diagrams_yingsi.name=莹丝
+item.contenttweaker.eight_diagrams_bingtu.name=苪土
+item.contenttweaker.eight_diagrams_guijin.name=桂金
+item.contenttweaker.eight_diagrams_xinshi.name=心石
+item.contenttweaker.eight_diagrams_pengge.name=篷革
+
+item.contenttweaker.aspectus_stat.name=象征之星
 
 #任务图标
 item.contenttweaker.hope.name=希望
@@ -96,6 +113,9 @@ tile.contenttweaker.block_crystal_cluster_lead.name=充能铅晶块
 tile.contenttweaker.block_crystal_lead.name=铅晶块
 item.contenttweaker.crystal_cluster_lead.name=充能铅晶
 item.contenttweaker.crystal_lead.name=铅晶
+
+tile.contenttweaker.chenjin_stone.name=辰烬石
+tile.contenttweaker.dark_magic_stone.name=暗魔石
 
 #flower
 tile.botania:flower.yuanlinghua.name=沅陵花
