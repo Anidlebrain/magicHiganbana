@@ -11,14 +11,16 @@ import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.block.IBlockState;
-import mods.ctutils.utils.Math;
 import thaumcraft.aspect.CTAspectStack;
+
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.messageUtils;
+
 import mods.magichiganbana.IUtils;
+import mods.ctutils.utils.Math;
 
 //沉浸工程 高炉 删除燃料
-function removeImmersiveengIneeringFuel(ore as IOreDictEntry)
+function removeImmersiveengIneeringFuel(ore as IOreDictEntry) as void
 {
     for item in ore.items
     {
@@ -27,7 +29,7 @@ function removeImmersiveengIneeringFuel(ore as IOreDictEntry)
 }
 
 //圣遗物 配方转换
-function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as int)
+function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as int) as void
 {
     var modid as string = output.definition.id.split(":")[0];
     if (modid == "xreliquary") {
@@ -35,14 +37,14 @@ function reliquaryRecipe(output as IItemStack, inputs as IIngredient[], level as
     }
     else if (modid == "minecraft") {
         var recipre_name as string = "xreliquary:items/uncrafting/" ~ output.definition.id.split(":")[1];
-        print(recipre_name);
+        //print(recipre_name);
         recipes.removeByRecipeName(recipre_name);
     }
     mods.bloodmagic.AlchemyTable.addRecipe(output, inputs, 500 * (2 * level - 1), 200 * level, level);
 }
 
 //自然灵气 森林仪式
-function treeRitualRecipe(output as IItemStack, inputs as IIngredient[])
+function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) as void
 {
     var name = recipesUtils.getRecipeName(output);
     mods.naturesaura.TreeRitual.removeRecipe(output);
@@ -50,18 +52,19 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[])
 }
 
 /*
-    function TreeRitualRecipe(output as IItemStack, inputs as IIngredient[], saplingType as IIngredient) {
-        var type as string[] = output.definition.id.split(":");
+function TreeRitualRecipe(output as IItemStack, inputs as IIngredient[], saplingType as IIngredient) as void
+{
+    var type as string[] = output.definition.id.split(":");
 
-        var recipesNum = recipesUtils.getRecipesNum();
-        var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
+    var recipesNum = recipesUtils.getRecipesNum();
+    var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
 
-        mods.naturesaura.TreeRitual.removeRecipe(output);
-        mods.naturesaura.TreeRitual.addRecipe(name, saplingType, output, 100, inputs);
-    }
+    mods.naturesaura.TreeRitual.removeRecipe(output);
+    mods.naturesaura.TreeRitual.addRecipe(name, saplingType, output, 100, inputs);
+}
 */
 
-function removeAlloySmelter(output as IItemStack, level as int)
+function removeAlloySmelter(output as IItemStack, level as int) as void
 {
     if(IUtils.bitwiseJudgment(level, 1))
     {
@@ -77,49 +80,47 @@ function removeAlloySmelter(output as IItemStack, level as int)
     }
 }
 
-function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[])
+function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) as void
 {
     var name = recipesUtils.getRecipeName(output);
     mods.roots.Mortar.addRecipe(name, output, inputs);
     
     mods.artisanworktables.builder.RecipeBuilder.get("chemist")
-                    .setShapeless(inputs)
-                    .addTool(<ore:artisansBurner>, 1)
-                    .setName(name)
-                    .addOutput(output)
-                    .create();
+      .setShapeless(inputs)
+      .addTool(<ore:artisansBurner>, 1)
+      .setName(name)
+      .addOutput(output)
+      .create();
 
 }
 
-function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredient[])
+function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredient[]) as void
 {
     if ((inputs.length % 2 == 0) || inputs.length > 7)
     {
         logger.logError("[gaiaPlateRecipe] - The input must be odd and less than seven");
+        return ;
     }
-    else
-    {
-        mods.botanicadds.GaiaPlate.add(output, mana, inputs);
+    mods.botanicadds.GaiaPlate.add(output, mana, inputs);
 
-        mods.jei.JEI.createJeiRecipe("gaia_plate")
-            .setInputs(inputs)
-            .addOutput(<botanicadds:gaia_plate>)
-            .addOutput(output)
-            .addOutput(<botanicadds:elven_lapis_block>)
-            .addOutput(<botanicadds:elven_lapis_block>)
-            .addOutput(<botanicadds:elven_lapis_block>)
-            .addOutput(<botanicadds:elven_lapis_block>)
-            .addOutput(<botanicadds:dreamrock>)
-            .addOutput(<botanicadds:dreamrock>)
-            .addOutput(<botanicadds:dreamrock>)
-            .addOutput(<botanicadds:dreamrock>)
-            .addOutput(<botanicadds:dreamrock>)
-            .addElement(mods.randomtweaker.jei.IJeiUtils.createJeiManaBarElement(30, 57, Math.floor(mana / 100)))
-            .build();
-    }
+    mods.jei.JEI.createJeiRecipe("gaia_plate")
+      .setInputs(inputs)
+      .addOutput(<botanicadds:gaia_plate>)
+      .addOutput(output)
+      .addOutput(<botanicadds:elven_lapis_block>)
+      .addOutput(<botanicadds:elven_lapis_block>)
+      .addOutput(<botanicadds:elven_lapis_block>)
+      .addOutput(<botanicadds:elven_lapis_block>)
+      .addOutput(<botanicadds:dreamrock>)
+      .addOutput(<botanicadds:dreamrock>)
+      .addOutput(<botanicadds:dreamrock>)
+      .addOutput(<botanicadds:dreamrock>)
+      .addOutput(<botanicadds:dreamrock>)
+      .addElement(mods.randomtweaker.jei.IJeiUtils.createJeiManaBarElement(30, 57, Math.floor(mana / 100)))
+      .build();
 }
 
-function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[])
+function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[]) as void
 {
     var modid as string = output.definition.id.split(":")[0];
     if (modid == "actuallyadditions")
@@ -133,7 +134,7 @@ function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inp
 }
 
 //磨粉
-function addMillingRecipe(output as IItemStack, input as IItemStack, level as int)
+function addMillingRecipe(output as IItemStack, input as IItemStack, level as int) as void
 {
     if (level < 3)
     {
@@ -152,6 +153,36 @@ function addMillingRecipe(output as IItemStack, input as IItemStack, level as in
 
 }
 
+function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytick as int, time as int, level as int) as void
+{
+    if (inputs.length < 2 || inputs.length > 3)
+    {
+        logger.logError("[alloyRecipe] - The input must be equal to 2 or 3");
+        return ;
+    }
+    if (level < 3)
+    {
+        mods.enderio.AlloySmelter.addRecipe(output, inputs, energytick * time);
+    }
+    if (level < 2)
+    {
+        if (inputs.length == 2)
+        {
+            mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
+                [inputs[0]], "Alloying");
+        }
+        if (inputs.length == 3)
+        {
+            mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
+                [inputs[1], inputs[2]], "Alloying");
+        }
+    }
+    if (level < 1)
+    {
+        mods.immersiveengineering.AlloySmelter.addRecipe(output, inputs[0], inputs[1], time);
+    }
+}
+
 //星辉魔法 祭坛
 function addAltarRecipe(output as IItemStack,
                    level as int,
@@ -159,7 +190,7 @@ function addAltarRecipe(output as IItemStack,
                    craftTickTime as int,
                    recipe as string[],
                    replacements as IIngredient[string],
-                   iRequiredConstellationFocusName as string)
+                   iRequiredConstellationFocusName as string) as void
 {
     var recipesNum = recipesUtils.getRecipesNum();
     if(1 == level)
@@ -197,7 +228,7 @@ function addAltarRecipe(output as IItemStack,
 }
 
 //凿子
-function addChiselByOre(ore as IOreDictEntry)
+function addChiselByOre(ore as IOreDictEntry) as void
 {
     var recipesNum = recipesUtils.getRecipesNum();
     var name = ore.name ~ recipesNum;
@@ -215,7 +246,7 @@ function addArcaneWorkbenchShapedRecipe(output as IItemStack,
                                         research as string,
                                         vis as int,
                                         input as IIngredient[][],
-                                        aspectList as CTAspectStack[])
+                                        aspectList as CTAspectStack[]) as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -227,7 +258,7 @@ function addArcaneWorkbenchShapelessRecipe(output as IItemStack,
                                         research as string,
                                         vis as int,
                                         input as IIngredient[],
-                                        aspectList as CTAspectStack[])
+                                        aspectList as CTAspectStack[]) as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -238,7 +269,7 @@ function addArcaneWorkbenchShapelessRecipe(output as IItemStack,
 function addCrucibleRecipe(output as IItemStack,
                            research as string,
                            input as IIngredient,
-                           aspectList as CTAspectStack[])
+                           aspectList as CTAspectStack[]) as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -247,7 +278,7 @@ function addCrucibleRecipe(output as IItemStack,
 
 function addOfferingRecipe(output as IItemStack,
                            input as IIngredient,
-                           startItem as IIngredient)
+                           startItem as IIngredient) as void
 {
     var name = recipesUtils.getRecipeName(output);
     var num as int = input.amount;
@@ -256,9 +287,69 @@ function addOfferingRecipe(output as IItemStack,
 }
 
 function addFlowerGrowth(item as IItemStack,
-                         Metadata as int)
+                         Metadata as int) as void
 {
     var name = recipesUtils.getRecipeName(item);
     mods.jei.JEI.addDescription(item.definition.makeStack(Metadata), messageUtils.getDescriptionMessage("flower.growth"));
     mods.roots.FlowerGrowth.addRecipeBlock(name, item.asBlock(), Metadata);
+}
+
+function modifyWoodRecipe(log as IItemStack, flag as bool) as void
+{
+    val plank as IItemStack = recipes.craft([[log]]);
+    if (isNull(plank))
+    {
+        return;
+    }
+    var name = recipesUtils.getRecipeName(plank);
+    recipes.removeShaped(plank, [[log]]);
+    if(flag)
+    {
+        recipesUtils.addRecipe(plank.withAmount(1), [[log]]);
+
+        mods.artisanworktables.builder.RecipeBuilder.get("basic")
+          .setShaped([[log]])
+          .addOutput(plank.withAmount(1))
+          .setName("basic/" ~ name)
+          .create();
+
+        mods.skyresources.knife.removeRecipe(plank);
+        mods.skyresources.knife.addRecipe(plank.withAmount(4), log);
+    }
+    else
+    {
+        mods.skyresources.knife.addRecipe(plank.withAmount(2), log);
+    }
+
+    mods.artisanworktables.builder.RecipeBuilder.get("carpenter")
+      .setShaped([[log]])
+      .addOutput(plank.withAmount(2))
+      .addTool(<ore:artisansHandsaw>, 1)
+      .setName("carpenter/" ~ name)
+      .create();
+}
+
+function modifyStickRecipe(stick as IItemStack, wood as IOreDictEntry) as void
+{
+    var name = recipesUtils.getRecipeName(stick);
+
+    recipes.remove(stick);
+    recipesUtils.addRecipe(stick, [[wood], [wood]]);
+
+    mods.artisanworktables.builder.RecipeBuilder.get("basic")
+      .setShaped([[wood], [wood]])
+      .addOutput(stick * 2)
+      .setName("basic/" ~ name)
+      .create();
+    
+    mods.artisanworktables.builder.RecipeBuilder.get("carpenter")
+      .setShaped([[wood], [wood]])
+      .addOutput(stick * 4)
+      .setName("carpenter/" ~ name)
+      .create();
+
+    for item in wood.items
+    {
+        mods.skyresources.knife.addRecipe(stick * 4, item);
+    }
 }

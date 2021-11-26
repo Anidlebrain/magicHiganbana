@@ -31,7 +31,7 @@ var matchStick = VanillaFactory.createItem("match_stick");
 
 matchStick.maxStackSize = 1;
 matchStick.maxDamage = 10;
-matchStick.creativeTab = CotUtils.tab;
+//matchStick.creativeTab = CotUtils.tab;
 matchStick.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     var firePos = pos.getOffset(facing, 1);
     if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
@@ -60,7 +60,7 @@ var inheritanceStone = VanillaFactory.createItem("inheritance_stone");
 
 inheritanceStone.maxStackSize = 1;
 inheritanceStone.glowing = true;
-inheritanceStone.creativeTab = CotUtils.tab;
+//inheritanceStone.creativeTab = CotUtils.tab;
 inheritanceStone.itemRightClick = function(stack, world, player, hand) {
     player.give(<item:modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mini_mana_machine"}));
     return "SUCCESS";

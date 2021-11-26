@@ -48,6 +48,10 @@ createCrystal("lead");
 //辰烬石
 CotUtils.blockCreator("chenjin_stone", <blockmaterial:rock>, 0);
 
+//辰烬石
+CotUtils.blockCreator("dark_magic_stone", <blockmaterial:rock>, 0);
+
+
 /*
 <blockmaterial:sponge>
 <blockmaterial:anvil>

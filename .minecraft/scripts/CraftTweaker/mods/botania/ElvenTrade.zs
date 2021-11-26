@@ -12,6 +12,6 @@ recipes.remove(<naturesaura:gold_fiber>);
 ElvenTrade.addRecipe([<naturesaura:gold_fiber>], [<botania:thornchakram:1>, <randomthings:ingredient:12>]);
 
 //暮色钥匙
-ElvenTrade.addRecipe([<contenttweaker:twilightforest_key>], [<randomthings:spectrekey>]);
+//ElvenTrade.addRecipe([<contenttweaker:twilightforest_key>], [<randomthings:spectrekey>]);
 
 

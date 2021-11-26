@@ -125,13 +125,12 @@ function recipesInit()
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<prodigytech:ore_refinery>)
       .create();
-    
 }
 
 function itemRemove()
 {
     //碳板
-    itemHelper.removeItemAndOre(<prodigytech:carbon_plate>, <ore:plateCarbon>);
+    itemHelper.removeItemAndOre(<prodigytech:carbon_plate>);
 }
 
 if (!isInvalid)

@@ -17,14 +17,12 @@ import mods.contenttweaker.Material;
 import mods.contenttweaker.SoundType;
 import mods.contenttweaker.SoundEvent;
 import mods.contenttweaker.VanillaFactory;
+import crafttweaker.creativetabs.ICreativeTab;
 
 static toolName as string[] =
 [
     "pickaxe",
 ];
-
-static tab as CreativeTab = VanillaFactory.createCreativeTab("magichiganbana", <item:contenttweaker:page_of_higanbana>);
-tab.register();
 
 function itemCreator(name as string,
                      maxn as int,
@@ -32,7 +30,7 @@ function itemCreator(name as string,
     var itemC = VanillaFactory.createItem(name);
     itemC.maxStackSize = maxn;
     itemC.glowing = glow;
-    itemC.creativeTab = tab;
+    //itemC.creativeTab = <creativetab:magichiganbana>;
     itemC.register();
 }
 
@@ -47,7 +45,8 @@ function fluidCreator(name as string, color as int, isLava as bool){
         fluidt.material = <blockmaterial:lava>;
         fluidt.stillLocation = "base:fluids/molten";
         fluidt.flowingLocation = "base:fluids/molten_flowing";
-    } else
+    }
+    else
     {
         fluidt.material = <blockmaterial:water>;
         fluidt.stillLocation = "base:fluids/liquid";
@@ -67,6 +66,6 @@ function blockCreator(name as string, material as BlockMaterial, toolType as int
 {
     var blockC = VanillaFactory.createBlock(name, material);
     blockC.setToolClass(toolName[toolType]);
-    blockC.creativeTab = tab;
+    //blockC.creativeTab = <creativetab:magichiganbana>;
     blockC.register();
 }

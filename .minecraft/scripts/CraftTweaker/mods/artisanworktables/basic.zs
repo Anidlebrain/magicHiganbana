@@ -51,8 +51,6 @@ var basicOre = [
 ] as IOreDictEntry[];
 
 var basicNotOre = [
-    <ore:plankWood>,
-    <ore:stickWood>,
     <ore:treeSapling>,
 ] as IOreDictEntry[];
 

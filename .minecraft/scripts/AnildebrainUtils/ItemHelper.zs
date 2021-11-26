@@ -32,17 +32,18 @@ zenClass ItemHelper
 
     //删除物品
     function removeItems(items as IItemStack[]) {
-        for item in items
-        {
+        for item in items {
             removeItem(item);
         }
 
     }
 
     //删除物品 并且删除矿词
-    function removeItemAndOre(item as IItemStack, ore as IOreDictEntry) {
+    function removeItemAndOre(item as IItemStack) {
+        for ore in item.ores {
+            ore.remove(item);
+        }
         removeItem(item);
-        ore.removeItems([item]);
     }
 
     function typeConversion(ore as IOreDictEntry) as IItemStack {

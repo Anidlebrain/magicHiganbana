@@ -57,7 +57,7 @@ CotUtils.itemCreator("page_of_higanbana", 1, false);
 CotUtils.itemCreator("monster_essence", 64, false);
 
 //暮色钥匙
-CotUtils.itemCreator("twilightforest_key", 1, true);
+//CotUtils.itemCreator("twilightforest_key", 1, true);
 
 //任务图标
 CotUtils.itemCreator("hope", 1, false);
@@ -145,5 +145,25 @@ CotUtils.itemCreator("ashes", 64, false);
 //聚星木棍
 CotUtils.itemCreator("arch_stick", 64, false);
 
-//聚星木棍
-CotUtils.itemCreator("decorative_shard", 1, false);
+//晶簇碎片
+CotUtils.itemCreator("decorative_shard", 16, false);
+
+//任匏
+CotUtils.itemCreator("eight_diagrams_renpao", 64, false);
+//冲竹
+CotUtils.itemCreator("eight_diagrams_chongzhu", 64, false);
+//辅木
+CotUtils.itemCreator("eight_diagrams_fumu", 64, false);
+//莹丝
+CotUtils.itemCreator("eight_diagrams_yingsi", 64, false);
+//苪土
+CotUtils.itemCreator("eight_diagrams_bingtu", 64, false);
+//桂金
+CotUtils.itemCreator("eight_diagrams_guijin", 64, false);
+//心石
+CotUtils.itemCreator("eight_diagrams_xinshi", 64, false);
+//篷革
+CotUtils.itemCreator("eight_diagrams_pengge", 64, false);
+
+//象征之星
+CotUtils.itemCreator("aspectus_stat", 1, false);

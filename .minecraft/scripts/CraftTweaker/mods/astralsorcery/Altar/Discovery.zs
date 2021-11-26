@@ -195,3 +195,16 @@ makeAltar(<astralsorcery:itemcraftingcomponent:3> * 4, 89, 40,
         D : <ore:dustQuartzBlack>
     }
 );
+
+//荒古木板
+recipes.remove(<naturesaura:ancient_stick>);
+makeAltar(<naturesaura:ancient_stick>, 20, 60, 
+    [
+        " A ",
+        " A ",
+        "   ",
+    ],
+    {
+        A : <naturesaura:ancient_planks> | <naturesaura:ancient_bark>,
+    }
+);

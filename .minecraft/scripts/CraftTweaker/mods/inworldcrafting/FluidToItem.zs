@@ -1,7 +1,7 @@
 ##================================================
 ##          [Author]:   Anidlebrain
 ##          [since]:    magic_higanbana
-##          [Info]:     沉浸工程 丢入流体合成物品
+##          [Info]:     世界合成 丢入流体合成物品
 ##================================================
 
 #priority 2000
@@ -20,10 +20,6 @@ FluidToItem.transform(<contenttweaker:crystal_water>, <liquid:water>, [<skyresou
 recipes.removeByRecipeName("botania:blazeblock");
 FluidToItem.transform(<botania:blazeblock>, <liquid:srcrystalfluid>, [<minecraft:blaze_powder> * 9, <tconstruct:edible:34> * 3], true);
 
-//云朵
-recipes.remove(<chisel:cloud>);
-FluidToItem.transform(<chisel:cloud>, <liquid:srcrystalfluid>, [<skyresources:alchemicalglass>], false);
-
 //生佐拉钢锭
 recipes.remove(<prodigytech:zorrasteel_raw>);
 FluidToItem.transform(<prodigytech:zorrasteel_raw>, <liquid:plantoil>, [<pneumaticcraft:ingot_iron_compressed>, <prodigytech:zorra_leaf> * 8], true);
@@ -31,9 +27,3 @@ FluidToItem.transform(<prodigytech:zorrasteel_raw>, <liquid:plantoil>, [<pneumat
 //太阳晶体 空
 recipes.remove(<extrautils2:suncrystal:250>);
 FluidToItem.transform(<extrautils2:suncrystal:250>, <liquid:liquid_sunshine>, [<immersiveengineering:bullet:2>.withTag({bullet: "crystalwill"}), <prodigytech:aeternus_crystal>], true);
-
-//基片
-FluidToItem.transform(<mekanism:substrate>, <liquid:grignard_reagent>, [<contenttweaker:aluminium_chloride>], true);
-
-//星辉宝石
-FluidToItem.transform(<contenttweaker:starglow_gem>, <liquid:star_liquid>, [<ore:dustAstralStarmetal>], true);

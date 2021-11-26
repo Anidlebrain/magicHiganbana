@@ -7,10 +7,13 @@
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.modLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
+import crafttweaker.item.IItemStack;
 
 function init()
 {
     recipesInit();
+    itemRemove();
 }
 
 function recipesInit()
@@ -123,6 +126,31 @@ function recipesInit()
 
     //魔力透镜 超频
     recipesUtils.addShapeless(<gugu-utils:lensoverclocking>, [<botania:lens>, <botanicadds:rune_energy>]);
+}
+
+function itemRemove()
+{
+    var items as IItemStack[] = [
+        <botania:quartztypeblaze:3>,
+        <botania:quartztypeblaze:4>,
+        <botania:quartztypedark:3>,
+        <botania:quartztypedark:4>,
+        <botania:quartztypeelf:3>,
+        <botania:quartztypeelf:4>,
+        <botania:quartztypelavender:3>,
+        <botania:quartztypelavender:4>,
+        <botania:quartztypemana:3>,
+        <botania:quartztypemana:4>,
+        <botania:quartztypered:3>,
+        <botania:quartztypered:4>,
+        <botania:quartztypesunny:3>,
+        <botania:quartztypesunny:4>,
+    ];
+
+    for item in items
+    {
+        itemHelper.removeItemAndOre(item);
+    }
 }
 
 if (!isInvalid)
