@@ -9,6 +9,9 @@ import mods.ctutils.utils.Math;
 
 
 function removeBraces(str as string) as string {
+    if (str.length == 0) {
+        return "";
+    }
     var len as int = str.length - 1;
     var res as string = "";
     if (str[0] == '<' & str[len] == '>') {

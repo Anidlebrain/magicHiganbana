@@ -48,6 +48,17 @@ item.contenttweaker.coal_crystal.name=煤晶体
 item.contenttweaker.star_alchemy_powder.name=星辰炼金粉
 
 item.contenttweaker.ingot_xingluo.name=星罗锭
+item.contenttweaker.ingot_peihan.name=霈瀚锭
+item.contenttweaker.ingot_frozen_gold.name=凌金锭
+item.contenttweaker.ingot_frozen_copper.name=沧铜锭
+item.contenttweaker.ingot_juxing.name=聚星锭
+item.contenttweaker.ingot_shihai.name=释海之锭
+item.contenttweaker.ingot_xingluo.name=星罗锭
+item.contenttweaker.ingot_fluix_gold.name=福鲁伊克斯金锭
+item.contenttweaker.ingot_fluix_iron.name=福鲁伊克斯铁锭
+item.contenttweaker.ingot_fluix_copper.name=福鲁伊克斯铜锭
+item.contenttweaker.ingot_fluix_copper_plating.name=福鲁伊克斯镀层铜锭
+item.contenttweaker.ingot_fluix_gold_plating.name=福鲁伊克斯镀层金锭
 
 item.contenttweaker.higanbana.name=彼岸花
 
@@ -79,6 +90,13 @@ item.contenttweaker.eight_diagrams_xinshi.name=心石
 item.contenttweaker.eight_diagrams_pengge.name=篷革
 
 item.contenttweaker.aspectus_stat.name=象征之星
+
+item.contenttweaker.magic_clay_ball.name=蕴魔粘土球
+
+item.contenttweaker.basic_plasma_circuit_board.name=基础等离子电路板
+item.contenttweaker.advanced_plasma_circuit_board.name=高级等离子电路板
+item.contenttweaker.elite_plasma_circuit_board.name=精英等离子电路板
+item.contenttweaker.ultimate_plasma_circuit_board.name=终极等离子电路板
 
 #任务图标
 item.contenttweaker.hope.name=希望
@@ -116,6 +134,7 @@ item.contenttweaker.crystal_lead.name=铅晶
 
 tile.contenttweaker.chenjin_stone.name=辰烬石
 tile.contenttweaker.dark_magic_stone.name=暗魔石
+tile.contenttweaker.block_starmetal.name=星辰块
 
 #flower
 tile.botania:flower.yuanlinghua.name=沅陵花

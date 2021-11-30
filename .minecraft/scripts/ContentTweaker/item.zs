@@ -110,10 +110,23 @@ CotUtils.itemCreator("ingot_xingluo", 64, false);
 CotUtils.itemCreator("ingot_peihan", 64, false);
 //冻金锭
 CotUtils.itemCreator("ingot_frozen_gold", 64, false);
+//沧铜锭
+CotUtils.itemCreator("ingot_frozen_copper", 64, false);
 //聚星锭
 CotUtils.itemCreator("ingot_juxing", 64, false);
 //释海之锭
 CotUtils.itemCreator("ingot_shihai", 64, false);
+
+//福鲁伊克斯金锭
+CotUtils.itemCreator("ingot_fluix_gold", 64, false);
+//福鲁伊克斯铁锭
+CotUtils.itemCreator("ingot_fluix_iron", 64, false);
+//福鲁伊克斯铜锭
+CotUtils.itemCreator("ingot_fluix_copper", 64, false);
+//福鲁伊克斯镀层铜锭
+CotUtils.itemCreator("ingot_fluix_copper_plating", 64, false);
+//福鲁伊克斯镀层金锭
+CotUtils.itemCreator("ingot_fluix_gold_plating", 64, false);
 
 //碎冰
 CotUtils.itemCreator("ice_shard", 64, false);
@@ -167,3 +180,15 @@ CotUtils.itemCreator("eight_diagrams_pengge", 64, false);
 
 //象征之星
 CotUtils.itemCreator("aspectus_stat", 1, false);
+
+//蕴魔粘土球
+CotUtils.itemCreator("magic_clay_ball", 64, false);
+
+//基础等离子电路板
+CotUtils.itemCreator("basic_plasma_circuit_board", 64, false);
+//高级等离子电路板
+CotUtils.itemCreator("advanced_plasma_circuit_board", 64, false);
+//精英等离子电路板
+CotUtils.itemCreator("elite_plasma_circuit_board", 64, false);
+//终极等离子电路板
+CotUtils.itemCreator("ultimate_plasma_circuit_board", 64, false);
