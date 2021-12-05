@@ -5,3 +5,7 @@
 ##================================================
 #priority 2000
 import mods.prodigytech.orerefinery;
+
+orerefinery.removeAll();
+
+

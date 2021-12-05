@@ -19,7 +19,7 @@ var partNames as string[] = [
 ];
 
 var modIds as string[] = [
-    "techreborn" , "thermalfoundation", "enderio", "immersiveengineering"
+    "techreborn", "immersiveengineering"
 ];
 
 for partName in partNames {

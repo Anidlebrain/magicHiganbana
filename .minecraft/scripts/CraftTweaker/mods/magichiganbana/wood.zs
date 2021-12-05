@@ -27,7 +27,7 @@ for log in <ore:logWood>.items
     }
     else
     {
-        modifyWoodRecipe(log, falses);
+        modifyWoodRecipe(log, false);
     }
 }
 

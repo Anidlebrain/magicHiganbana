@@ -24,7 +24,7 @@ for ore in oreDict {
         var oreName as string = ore.name;
         var metal as string = oreName.substring(5, oreName.length());
         var fluidname as string = metal;
-        var fluid = itemHelper.geLiquid(fluidname);
+        var fluid = itemHelper.getLiquid(fluidname);
 
         //金属板
         var plate as string = "plate" ~ metal;

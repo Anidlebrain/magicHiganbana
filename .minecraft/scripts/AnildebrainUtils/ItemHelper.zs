@@ -78,12 +78,11 @@ zenClass ItemHelper
         return oreDict has tmp;
     }
 
-    function geLiquid(name as string) as ILiquidStack {
+    function getLiquid(name as string) as ILiquidStack {
         var tmp as string = alg.removeBraces(name);
         var tmp1 as string = alg.removeColon(tmp);
         return game.getLiquid(tmp1);
     }
-
     
 }
 

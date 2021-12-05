@@ -20,7 +20,7 @@ function sendPlayMessage(player as IPlayer, key as string)
 
 function modifyLocalLang(key as string)
 {
-    game.setLocalization("zh_cn", key, getMessageKey(key));
+    game.setLocalization(key, getMessageKey(key));
 }
 
 function getWelcomeMessage(key as string) as string

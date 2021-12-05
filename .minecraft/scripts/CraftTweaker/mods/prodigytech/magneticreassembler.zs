@@ -5,3 +5,5 @@
 ##================================================
 #priority 2000
 import mods.prodigytech.magneticreassembler;
+
+magneticreassembler.removeAll();

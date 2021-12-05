@@ -42,9 +42,26 @@ magichiganbana.research.FIRSTSTEPS.stage.2=有所进展！我拥有属于自己�
 magichiganbana.research.FIRSTSTEPS.stage.3=这些奇特的事物正向我揭示着这个世界。通过魔导透镜，我看到了一个萦绕着魔力的世界，或者按书中所说，充满了Vis。 <BR>通常，这种能量是一片纯净的魔法海洋，不断地渗透、流动，但它也同时渗透到世间万物当中，无论是有生命的，还是无生命的。这本书将这种形态的Vis称为“源质”。如果说Vis是无形而纯净的，源质则固化为许多明确的类型，相互结合，形成更强大、更复杂的源质类型。 <BR>我不清楚是世间万物凝聚了这些源质，还是这些源质聚合成了世间万物，这还有待我进一步的研究发现。 <BR>我记录了所有我发现的源质类型，左侧的书签会显示我当前的知识水平。 <BR>现在，我需要把我的精力集中到其他地方。对于源质的研究可能是一个很好的开始。
 
 #工匠工作台
+magichiganbana.tile.prodigytech.ferramic_block.name=瓷铁块
 magichiganbana.tile.artisanworktables.worktable.chemist.name=化学工作台
 magichiganbana.tile.artisanworktables.workstation.chemist.name=化学工作站
 magichiganbana.tile.artisanworktables.workshop.chemist.name=化学工作坊
+
+#奇才妙械
+magichiganbana.item.prodigytech.ferramic_ingot.name=磁铁锭
+magichiganbana.item.prodigytech.ferramic_nugget.name=磁铁粒
+magichiganbana.item.prodigytech.ferramic_gear.name=磁铁齿轮
+magichiganbana.item.prodigytech.ferramic_dust.name=磁铁粉
+magichiganbana.item.prodigytech.ferramic_dust_tiny.name=小撮磁铁粉
+magichiganbana.item.prodigytech.ferramic_handbow.name=磁铁手弓
+magichiganbana.item.prodigytech.circuit_plate.name=封装电路板
+magichiganbana.advancements.prodigytech.main.explosion_furnace.description=做一个爆炸熔炉来制作磁铁
+magichiganbana.tile.prodigytech.magnetic_reassembler.tooltip=通过磁化使粒子重新组合在一起
+magichiganbana.tile.prodigytech.solderer.tooltip=使用金粉、封装电路板\n和一个模板来制作电路
+magichiganbana.tile.prodigytech.ore_refinery.name=矿石精炼机
+magichiganbana.container.prodigytech.ore_refinery=矿石精炼机
+magichiganbana.container.prodigytech.jei.ptrefinery=矿石精炼机
+magichiganbana.tile.prodigytech.ore_refinery.tooltip=处理矿石又快又好
 
 #工具提示
 magichiganbana.tooltip.minecraft:bowl=这是一个神奇的碗，丢入水里能够吸收水。
