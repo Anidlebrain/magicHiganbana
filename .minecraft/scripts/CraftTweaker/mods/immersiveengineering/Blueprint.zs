@@ -12,10 +12,6 @@ import mods.immersiveengineering.Blueprint;
 recipes.remove(<prodigytech:circuit_plate>);
 Blueprint.addRecipe("components", <prodigytech:circuit_plate>, [<immersiveengineering:material:27>, <immersiveengineering:stone_decoration:8> * 3, <techreborn:part:32> * 4]);
 
-//连接器
-recipes.remove(<environmentaltech:connector>);
-Blueprint.addRecipe("components", <environmentaltech:connector> * 4, [<ore:ingotFerramic> * 4, <contenttweaker:link_adhesive> * 5]);
-
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 //传送带
 
@@ -60,10 +56,6 @@ Blueprint.addRecipe("工程模块", <immersiveengineering:metal_decoration0:7> *
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick_reinfoced");
 Blueprint.addRecipe("工程模块", <immersiveengineering:stone_decoration:2>, [<immersiveengineering:stone_decoration:1>, <ore:plateSteel>]);
 
-//强化高炉砖 
-//recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick_reinfoced");
-//Blueprint.addRecipe("工程模块", <immersiveengineering:stone_decoration:2>, [<forestry:stone_decoration:1>, <ore:plateSteel>]);
-
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 //脚手架
 
@@ -72,7 +64,6 @@ recipes.remove(<immersiveengineering:metal_decoration1:0>);
 Blueprint.addRecipe("脚手架", <immersiveengineering:metal_decoration1:0> * 3, [<ore:ingotSteel> * 4, <ore:stickSteel> * 2]);
 //钢脚手架
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/steel_scaffolding");
-//Blueprint.addRecipe("components", <immersiveengineering:metal_decoration1:1>, [<ore:ingotSteel> * 2, <ore:stickSteel> * 3]);
 Blueprint.addRecipe("脚手架", <immersiveengineering:metal_decoration1:1> * 4, [<ore:ingotSteel> * 2, <ore:stickSteel> * 3]);
 
 //栅栏

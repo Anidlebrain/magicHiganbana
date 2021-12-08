@@ -46,10 +46,6 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:1>);
 rootsMortarRecipe(<skyresources:alchemyitemcomponent:1> * 2, [<ore:fivePhasesCrystal>]);
 
-//流明精华
-recipes.remove(<extendedcrafting:material:7>);
-rootsMortarRecipe(<extendedcrafting:material:7> * 2, [<minecraft:gunpowder>, <botania:manaresource:8>, <botania:manaresource:8>, <botania:manaresource:23>, <botania:manaresource:23>]);
-
 //含碳福鲁伊克斯复合物
 recipes.remove(<threng:material:1>);
 rootsMortarRecipe(<threng:material:1>, [<ore:dustFluix>, <ore:dustFluix>, <ore:dustCharcoal>, <ore:dustCharcoal>, <ore:itemSilicon>]);
@@ -61,23 +57,23 @@ for kinds in 0 to 16
     recipes.remove(<botania:dye>.definition.makeStack(kinds));
     rootsMortarRecipe(<botania:dye>.definition.makeStack(kinds), [<botania:petal>.definition.makeStack(kinds)]);
 
-    if(kinds < 4)
-    {
+    if (kinds < 4) {
         recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
-        rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], <minecraft:glowstone_dust>]);
+        rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds),
+            [DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], DYE_ORE[kinds], <minecraft:glowstone_dust>]);
     }
-}
-
-for kinds in 4 to 15
-{
-    recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
-    rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds), [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
+    else if (kinds < 15) {
+        recipes.remove(<tp:colored_dust>.definition.makeStack(kinds));
+        rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds),
+            [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
+    }
 }
 
 //咒术尘 生机灌溉
 Mortar.changeSpell("spell_growth_infusion",
-[<ore:treeSapling>, <skyresources:baseitemcomponent>, <ore:rootsBark>, <skyresources:baseitemcomponent:4>, <roots:petals>]);
+    [<ore:treeSapling>, <skyresources:baseitemcomponent>, <ore:rootsBark>, <skyresources:baseitemcomponent:4>, <roots:petals>]);
 
 //地狱燃料
 recipes.remove(<prodigytech:inferno_fuel>);
-rootsMortarRecipe(<prodigytech:inferno_fuel> * 2, [<minecraft:blaze_powder>, <minecraft:blaze_powder>, <ore:dustCoal>, <ore:dustCoal>, <ore:dustAsh>]);
+rootsMortarRecipe(<prodigytech:inferno_fuel> * 2,
+    [<minecraft:blaze_powder>, <minecraft:blaze_powder>, <ore:dustCoal>, <ore:dustCoal>, <ore:dustAsh>]);

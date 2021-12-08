@@ -22,8 +22,7 @@ import mods.ctutils.utils.Math;
 //沉浸工程 高炉 删除燃料
 function removeImmersiveengIneeringFuel(ore as IOreDictEntry) as void
 {
-    for item in ore.items
-    {
+    for item in ore.items {
         mods.immersiveengineering.BlastFurnace.removeFuel(item);
     }
 }
@@ -51,31 +50,15 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) as void
     mods.naturesaura.TreeRitual.addRecipe(name, <prodigytech:zorra_sapling>, output, 100, inputs);
 }
 
-/*
-function TreeRitualRecipe(output as IItemStack, inputs as IIngredient[], saplingType as IIngredient) as void
-{
-    var type as string[] = output.definition.id.split(":");
-
-    var recipesNum = recipesUtils.getRecipesNum();
-    var name = type[0] ~ "/add/" ~ type[1] ~ "_" ~ m_recipesNum;
-
-    mods.naturesaura.TreeRitual.removeRecipe(output);
-    mods.naturesaura.TreeRitual.addRecipe(name, saplingType, output, 100, inputs);
-}
-*/
-
 function removeAlloySmelter(output as IItemStack, level as int) as void
 {
-    if(IUtils.bitwiseJudgment(level, 1))
-    {
-        mods.enderio.AlloySmelter.removeRecipe(output);
+    if(IUtils.bitwiseJudgment(level, 1)) {
+        //mods.enderio.AlloySmelter.removeRecipe(output);
     }
-    if(IUtils.bitwiseJudgment(level, 2))
-    {
+    if(IUtils.bitwiseJudgment(level, 2)) {
         mods.immersiveengineering.ArcFurnace.removeRecipe(output);
     }
-    if(IUtils.bitwiseJudgment(level, 3))
-    {
+    if(IUtils.bitwiseJudgment(level, 3)) {
         //mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
     }
 }
@@ -96,8 +79,7 @@ function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) as voi
 
 function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredient[]) as void
 {
-    if ((inputs.length % 2 == 0) || inputs.length > 7)
-    {
+    if ((inputs.length % 2 == 0) || inputs.length > 7) {
         logger.logError("[gaiaPlateRecipe] - The input must be odd and less than seven");
         return ;
     }
@@ -123,8 +105,7 @@ function gaiaPlateRecipe(output as IItemStack, mana as int, inputs as IIngredien
 function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inputs as IIngredient[]) as void
 {
     var modid as string = output.definition.id.split(":")[0];
-    if (modid == "actuallyadditions")
-    {
+    if (modid == "actuallyadditions") {
         mods.actuallyadditions.Empowerer.removeRecipe(output);
         mods.actuallyadditions.Empowerer.removeRecipe(outputblock);
     }
@@ -136,18 +117,15 @@ function addEmpowererRecipe(output as IItemStack, outputblock as IItemStack, inp
 //磨粉
 function addMillingRecipe(output as IItemStack, input as IItemStack, level as int) as void
 {
-    if (level < 3)
-    {
+    if (level < 3) {
 
     }
-    if (level < 2)
-    {
+    if (level < 2) {
         mods.mekanism.crusher.removeRecipe(output, input);
-        mods.thermalexpansion.Pulverizer.addRecipe(output, input, 1500);
-        mods.enderio.SagMill.addRecipe([output], [0.9], input);
+        //mods.thermalexpansion.Pulverizer.addRecipe(output, input, 1500);
+        //mods.enderio.SagMill.addRecipe([output], [0.9], input);
     }
-    if (level < 1)
-    {
+    if (level < 1) {
         mods.prodigytech.rotarygrinder.addRecipe(input, output);
     }
 
@@ -155,30 +133,24 @@ function addMillingRecipe(output as IItemStack, input as IItemStack, level as in
 
 function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytick as int, time as int, level as int) as void
 {
-    if (inputs.length < 2 || inputs.length > 3)
-    {
+    if (inputs.length < 2 || inputs.length > 3) {
         logger.logError("[alloyRecipe] - The input must be equal to 2 or 3");
         return ;
     }
-    if (level < 3)
-    {
-        mods.enderio.AlloySmelter.addRecipe(output, inputs, energytick * time);
+    if (level < 3) {
+        //mods.enderio.AlloySmelter.addRecipe(output, inputs, energytick * time);
     }
-    if (level < 2)
-    {
-        if (inputs.length == 2)
-        {
+    if (level < 2) {
+        if (inputs.length == 2) {
             mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
                 [inputs[0]], "Alloying");
         }
-        if (inputs.length == 3)
-        {
+        if (inputs.length == 3) {
             mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
                 [inputs[1], inputs[2]], "Alloying");
         }
     }
-    if (level < 1)
-    {
+    if (level < 1) {
         mods.immersiveengineering.AlloySmelter.addRecipe(output, inputs[0], inputs[1], time);
     }
 }
@@ -193,34 +165,28 @@ function addAltarRecipe(output as IItemStack,
                    iRequiredConstellationFocusName as string) as void
 {
     var recipesNum = recipesUtils.getRecipesNum();
-    if(1 == level)
-    {
+    if(1 == level) {
         var name = "MagicHiganbana/addDiscoveryAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addDiscoveryAltarRecipe(name, output, starLight, craftTickTime, 
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
-    else if(2 == level)
-    {
+    else if(2 == level) {
         var name = "MagicHiganbana/addAttunmentAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addAttunementAltarRecipe(name, output, starLight, craftTickTime, 
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
-    else if(3 == level)
-    {
+    else if(3 == level) {
         var name = "MagicHiganbana/addConstellationAltarRecipe_" ~ recipesNum;
         mods.astralsorcery.Altar.addConstellationAltarRecipe(name, output, starLight, craftTickTime,
             recipesUtils.altarTransformation(level, recipe, replacements));
     }
-    else if(4 == level)
-    {
+    else if(4 == level) {
         var name = "MagicHiganbana/addTraitAltarRecipe_" ~ recipesNum;
-        if(iRequiredConstellationFocusName == "")
-        {
+        if(iRequiredConstellationFocusName == "") {
             mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, 
                 recipesUtils.altarTransformation(level, recipe, replacements));
         }
-        else
-        {
+        else {
             mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starLight, craftTickTime, 
                 recipesUtils.altarTransformation(level, recipe, replacements), iRequiredConstellationFocusName);
         }
@@ -234,8 +200,7 @@ function addChiselByOre(ore as IOreDictEntry) as void
     var name = ore.name ~ recipesNum;
     //print(name);
     mods.chisel.Carving.addGroup(name);
-    for item in ore.items
-    {
+    for item in ore.items {
         recipes.remove(item);
         mods.chisel.Carving.addVariation(name, item);
     }
@@ -297,14 +262,12 @@ function addFlowerGrowth(item as IItemStack,
 function modifyWoodRecipe(log as IItemStack, flag as bool) as void
 {
     val plank as IItemStack = recipes.craft([[log]]);
-    if (isNull(plank))
-    {
+    if (isNull(plank)) {
         return;
     }
     var name = recipesUtils.getRecipeName(plank);
     recipes.removeShaped(plank, [[log]]);
-    if(flag)
-    {
+    if(flag) {
         recipesUtils.addRecipe(plank.withAmount(1), [[log]]);
 
         mods.artisanworktables.builder.RecipeBuilder.get("basic")
@@ -316,8 +279,7 @@ function modifyWoodRecipe(log as IItemStack, flag as bool) as void
         mods.skyresources.knife.removeRecipe(plank);
         mods.skyresources.knife.addRecipe(plank.withAmount(4), log);
     }
-    else
-    {
+    else {
         mods.skyresources.knife.addRecipe(plank.withAmount(2), log);
     }
 
@@ -348,8 +310,7 @@ function modifyStickRecipe(stick as IItemStack, wood as IOreDictEntry) as void
       .setName("carpenter/" ~ name)
       .create();
 
-    for item in wood.items
-    {
+    for item in wood.items {
         mods.skyresources.knife.addRecipe(stick * 4, item);
     }
 }

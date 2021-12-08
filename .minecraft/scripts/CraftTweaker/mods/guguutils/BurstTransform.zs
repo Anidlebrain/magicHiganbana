@@ -6,7 +6,7 @@
 import mods.guguutils.BurstTransform;
 
 //大理石
-BurstTransform.addRecipe(<astralsorcery:blockmarble>, 900, <ore:stoneLimestone>);
+//BurstTransform.addRecipe(<astralsorcery:blockmarble>, 900, <ore:stoneLimestone>);
 
 //野木树苗
 BurstTransform.addRecipe(<roots:wildwood_sapling>, 300, <minecraft:sapling>);

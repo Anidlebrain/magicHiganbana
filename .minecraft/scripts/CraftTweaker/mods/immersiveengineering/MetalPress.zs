@@ -86,7 +86,3 @@ for ore in oreDict {
 }
 
 MetalPress.removeRecipe(<techreborn:plates:38>);
-
-//黑铁板
-recipes.remove(<extendedcrafting:material:2>);
-MetalPress.addRecipe(<extendedcrafting:material:2>, <extendedcrafting:material>, <immersiveengineering:mold>, 2000, 4);

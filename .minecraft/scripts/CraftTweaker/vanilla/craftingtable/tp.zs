@@ -101,21 +101,8 @@ function recipesInit()
       .addTool(<ore:artisansGrimoire>, 1)
       .addOutput(<tp:growth_upgrade>)
       .create();
-
-    //三级生长结晶
-    recipes.remove(<tp:growth_upgrade_two>);
-    RecipeBuilder.get("mage")
-      .setShaped([
-        [<tp:growth_upgrade>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <tp:growth_upgrade>],
-        [<minecraft:dragon_breath>, null, <extendedcrafting:material:40>, null, <minecraft:dragon_breath>],
-        [null, <extendedcrafting:material:40>, <minecraft:end_crystal>, <extendedcrafting:material:40>, null],
-        [<minecraft:dragon_breath>, null, <extendedcrafting:material:40>, null, <minecraft:dragon_breath>],
-        [<tp:growth_upgrade>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <tp:growth_upgrade>]])
-      .addTool(<ore:artisansAthame>, 1)
-      .addTool(<ore:artisansGrimoire>, 1)
-      .addOutput(<tp:growth_upgrade_two>)
-      .create();
-
+    
+    
     //漂浮方块
     recipes.remove(<tp:fmf_block>);
     RecipeBuilder.get("basic")
@@ -135,17 +122,6 @@ function recipesInit()
         [null, <ore:ingotRefinedObsidian>, null]])
       .addTool(<ore:artisansHammer>, 1)
       .addOutput(<tp:watering_can_upgrade>)
-      .create();
-
-    //水壶
-    recipes.remove(<tp:watering_can>);
-    RecipeBuilder.get("farmer")
-      .setShaped([
-        [<ore:ingotIron>, <minecraft:dye:15>, null],
-        [<ore:ingotIron>, <extrautils2:wateringcan>, <ore:ingotIron>],
-        [null, <ore:ingotIron>, null]])
-      .addTool(<ore:artisansHammer>, 1)
-      .addOutput(<tp:watering_can>)
       .create();
 
     //万用修复器

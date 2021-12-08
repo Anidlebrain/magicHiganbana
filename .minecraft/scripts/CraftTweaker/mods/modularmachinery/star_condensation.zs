@@ -4,6 +4,7 @@
 ##          [Info]:     模块化机械 星辰凝聚
 ##================================================
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 

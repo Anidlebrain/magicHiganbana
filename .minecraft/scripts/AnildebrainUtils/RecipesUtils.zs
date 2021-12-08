@@ -19,8 +19,7 @@ import scripts.AnildebrainUtils.modLoader.isInvalid;
 
 zenClass RecipesUtils
 {
-    zenConstructor()
-    {
+    zenConstructor() {
 
     }
 
@@ -60,7 +59,7 @@ zenClass RecipesUtils
 
     //工作台配方添加
     function addRecipe(output as IItemStack,
-                    input as IIngredient[][]){
+                    input as IIngredient[][]) {
         
         val type as string[] = output.definition.id.split(":");
         m_recipesNum = m_recipesNum + 1;
@@ -71,12 +70,12 @@ zenClass RecipesUtils
 
     function addRecipe(output as IItemStack,
                     recipe as string[],
-                    replacements as IIngredient[string]){
+                    replacements as IIngredient[string]) {
                     
         var ingredients =
             [[null, null, null],
-                [null, null, null],
-                [null, null, null]] as IIngredient[][];
+             [null, null, null],
+             [null, null, null]] as IIngredient[][];
         
         val type as string[] = output.definition.id.split(":");
         m_recipesNum = m_recipesNum + 1;
@@ -88,12 +87,12 @@ zenClass RecipesUtils
     function addRecipe(output as IItemStack,
                     recipe as string[],
                     replacements as IIngredient[string],
-                    fun as IRecipeFunction){
+                    fun as IRecipeFunction) {
                     
         var ingredients =
             [[null, null, null],
-                [null, null, null],
-                [null, null, null]] as IIngredient[][];
+             [null, null, null],
+             [null, null, null]] as IIngredient[][];
         
         val type as string[] = output.definition.id.split(":");
         m_recipesNum = m_recipesNum + 1;
@@ -105,12 +104,12 @@ zenClass RecipesUtils
                     recipe as string[],
                     replacements as IIngredient[string],
                     fun as IRecipeFunction,
-                    action as IRecipeAction){
+                    action as IRecipeAction) {
                     
         var ingredients =
             [[null, null, null],
-                [null, null, null],
-                [null, null, null]] as IIngredient[][];
+             [null, null, null],
+             [null, null, null]] as IIngredient[][];
         
         val type as string[] = output.definition.id.split(":");
         m_recipesNum = m_recipesNum + 1;
@@ -118,9 +117,8 @@ zenClass RecipesUtils
         recipes.addShaped(name, output, textToIngredients2(ingredients, recipe, replacements), fun, action);
     }
 
-    function addSurroundRecipe(output as IItemStack, centre as IIngredient, surrounded as IIngredient)
-    {
-        addRecipe(output,[
+    function addSurroundRecipe(output as IItemStack, centre as IIngredient, surrounded as IIngredient) {
+        addRecipe(output, [
             "AAA",
             "ABA",
             "AAA"],{
@@ -129,9 +127,8 @@ zenClass RecipesUtils
             });
     }
 
-    function addFull3Recipe(output as IItemStack, Full as IIngredient)
-    {
-        addRecipe(output,[
+    function addFull3Recipe(output as IItemStack, Full as IIngredient) {
+        addRecipe(output, [
             "AAA",
             "AAA",
             "AAA"],{
@@ -139,9 +136,8 @@ zenClass RecipesUtils
             });
     }
 
-    function addFull2Recipe(output as IItemStack, Full as IIngredient)
-    {
-        addRecipe(output,[
+    function addFull2Recipe(output as IItemStack, Full as IIngredient) {
+        addRecipe(output, [
             "AA ",
             "AA ",
             "   "],{
@@ -150,9 +146,8 @@ zenClass RecipesUtils
     }
 
 
-    function addCrossRecipe(output as IItemStack, five as IIngredient, four as IIngredient)
-    {
-        addRecipe(output,[
+    function addCrossRecipe(output as IItemStack, five as IIngredient, four as IIngredient) {
+        addRecipe(output, [
             "BAB",
             "ABA",
             "BAB"],{
@@ -161,8 +156,7 @@ zenClass RecipesUtils
             });
     }
 
-    function addCentreCrossRecipe(output as IItemStack, a as IIngredient, b as IIngredient, centre as IIngredient)
-    {
+    function addCentreCrossRecipe(output as IItemStack, a as IIngredient, b as IIngredient, centre as IIngredient) {
         addRecipe(output,[
             "BAB",
             "ACA",
@@ -211,8 +205,7 @@ zenClass RecipesUtils
                                 recipe as string[],
                                 replacements as IIngredient[string]) as IIngredient[] {
         
-        if(1 == level)
-        {
+        if(1 == level) {
             var ingredients = [null, null, null, null, null,
                 null, null, null, null] as IIngredient[];
             return textToIngredients1(ingredients, recipe, replacements);
@@ -273,96 +266,6 @@ zenClass RecipesUtils
         return res;
     }
 
-    //合成拓展 3*3
-    function makeExtendedTable3(output as IItemStack,
-                                recipe as string[],
-                                replacements as IIngredient[string]) {
-
-    var ingredients =
-        [[null, null, null],
-            [null, null, null],
-            [null, null, null]] as IIngredient[][];
-
-    mods.extendedcrafting.TableCrafting.addShaped(output,
-        textToIngredients2(ingredients, recipe, replacements));
-    }
-
-    //合成拓展 5*5
-    function makeExtendedTable5(output as IItemStack,
-                                recipe as string[],
-                                replacements as IIngredient[string]) {
-
-        var ingredients =
-            [[null, null, null, null, null],
-                [null, null, null, null, null],
-                [null, null, null, null, null],
-                [null, null, null, null, null],
-                [null, null, null, null, null]] as IIngredient[][];
-
-        mods.extendedcrafting.TableCrafting.addShaped(output,
-            textToIngredients2(ingredients, recipe, replacements));
-    }
-
-    //合成拓展 7*7
-    function makeExtendedTable7(output as IItemStack,
-                                recipe as string[],
-                                replacements as IIngredient[string]) {
-
-            var ingredients =
-            [[null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null]] as IIngredient[][];
-
-        mods.extendedcrafting.TableCrafting.addShaped(output,
-            textToIngredients2(ingredients, recipe, replacements));
-    }
-
-    //合成拓展 7*7
-    function makeExtendedTable9(output as IItemStack,
-                                recipe as string[],
-                                replacements as IIngredient[string]) {
-
-        var ingredients =
-            [[null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null]] as IIngredient[][];
-
-        mods.extendedcrafting.TableCrafting.addShaped(output,
-            textToIngredients2(ingredients, recipe, replacements));
-    }
-/*
-    //无尽贪婪 终极工作台
-    function makeAvaritiaCrafting(output as IItemStack,
-                                recipe as string[],
-                                replacements as IIngredient[string]) {
-        var ingredients =
-            [[null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null],
-                [null, null, null, null, null, null, null, null, null]] as IIngredient[][];
-
-        m_recipesNum = m_recipesNum + 1;
-        var name = "addConstellationAltarRecipe_" ~ m_recipesNum;
-        mods.avaritia.ExtremeCrafting.addShaped(name, output,
-            textToIngredients2(ingredients, recipe, replacements));
-    }
-*/
-
     //移除矿词的配方
     function removeOreRecipes(ore as IOreDictEntry) {
         for item in ore.items {
@@ -384,39 +287,32 @@ zenClass RecipesUtils
         }
     }
 
-    function centreCrossitem(a as IIngredient, b as IIngredient, centre as IIngredient) as IIngredient[][]
-    {
+    function centreCrossitem(a as IIngredient, b as IIngredient, centre as IIngredient) as IIngredient[][] {
         return [[a, b, a], [b, centre, b], [a, b, a]];
     }
 
-    function surroundItems(surrounded as IIngredient, centre as IIngredient) as IIngredient[][]
-    {
+    function surroundItems(surrounded as IIngredient, centre as IIngredient) as IIngredient[][] {
         return [[surrounded, surrounded, surrounded], [surrounded, centre, surrounded], [surrounded, surrounded, surrounded]];
     }
 
-    function crossItems(five as IIngredient, four as IIngredient) as IIngredient[][]
-    {
+    function crossItems(five as IIngredient, four as IIngredient) as IIngredient[][] {
         return [[five, four, five], [four, five, four], [five, four, five]];
     }
 
-    function full3Items(Full as IIngredient) as IIngredient[][]
-    {
+    function full3Items(Full as IIngredient) as IIngredient[][] {
         return [[Full, Full, Full], [Full, Full, Full], [Full, Full, Full]];
     }
 
-    function full2Items(Full as IIngredient) as IIngredient[][]
-    {
+    function full2Items(Full as IIngredient) as IIngredient[][] {
         return [[Full, Full], [Full, Full]];
     }
 
-    function getRecipesNum() as int
-    {
+    function getRecipesNum() as int {
         m_recipesNum = m_recipesNum + 1;
         return m_recipesNum;
     }
 
-    function getRecipeName(item as IItemStack) as string
-    {
+    function getRecipeName(item as IItemStack) as string {
         var type as string[] = item.definition.id.split(":");
         var recipesNum as int = getRecipesNum();
         return type[0] ~ "/MagicHiganbana/" ~ type[1] ~ "_" ~ recipesNum;

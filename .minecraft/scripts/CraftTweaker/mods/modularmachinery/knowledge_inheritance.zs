@@ -5,6 +5,7 @@
 ##================================================
 
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
@@ -69,10 +70,8 @@ zenClass KnowledgeInheritanceRecipes {
         
         addRecipes(<immersiveengineering:blueprint>.withTag({blueprint: "发电机"}),
                    [<botania:rfgenerator> * 2]);
-
-        addRecipes(<immersiveengineering:blueprint>.withTag({blueprint: "components"}),
-                   [<extendedcrafting:material:14>]);
-        
+/*<immersiveengineering:blueprint>.withTag({blueprint: "components"}
+*/
         addRecipes(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}),
                    [<tconstruct:pattern> * 6]);
         
@@ -89,4 +88,9 @@ zenClass KnowledgeInheritanceRecipes {
 
     }
 
+}
+
+if (!isInvalid)
+{
+    init();
 }

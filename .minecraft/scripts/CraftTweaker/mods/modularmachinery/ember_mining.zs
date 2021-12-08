@@ -4,6 +4,7 @@
 ##          [Info]:     模块化机械 余烬开采机
 ##================================================
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 
@@ -34,4 +35,9 @@ zenClass EmberMining {
                       .setChance(0.8)
                       .build();
     }
+}
+
+if (!isInvalid)
+{
+    init();
 }

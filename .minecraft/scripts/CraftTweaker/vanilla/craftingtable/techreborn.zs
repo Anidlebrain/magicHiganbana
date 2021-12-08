@@ -81,7 +81,7 @@ function recipesInit()
         [<techreborn:plates:17>, <techreborn:machine_casing:1>, <techreborn:plates:17>],
         [<techreborn:part:30>, <techreborn:plates:17>, <techreborn:part:30>]])
       .addTool(<ore:artisansCutters>, 3)
-      .addOutput(<thermalexpansion:dynamo:1>)
+      .addOutput(<techreborn:assembling_machine>)
       .create();
 
     //铱强化石
@@ -89,7 +89,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped(recipesUtils.centreCrossitem(<techreborn:plates:38>, <techreborn:plates:2>, <naturesaura:infused_stone>))
       .addTool(<ore:artisansCutters>, 3)
-      .addOutput(<thermalexpansion:dynamo:1>)
+      .addOutput(<techreborn:storage2:2>)
       .create();
 
     //强化铱钨钢混合块
@@ -97,7 +97,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped(recipesUtils.crossItems(<techreborn:ingot:17>, <techreborn:storage2:2>))
       .addTool(<ore:artisansCutters>, 3)
-      .addOutput(<thermalexpansion:dynamo:1>)
+      .addOutput(<techreborn:storage2:2>)
       .create();
 
     //木板
@@ -118,11 +118,11 @@ function itemRemove()
     recipes.removeByRecipeName("techreborn:energycrystal");
     
     //线缆加工机
-    itemHelper.removeItem(<techreborn:wire_mill>);
+    //itemHelper.removeItem(<techreborn:wire_mill>);
 
     //合金炉
-    itemHelper.removeItem(<techreborn:iron_alloy_furnace>);
-    itemHelper.removeItem(<techreborn:alloy_smelter>);
+    //itemHelper.removeItem(<techreborn:iron_alloy_furnace>);
+    //itemHelper.removeItem(<techreborn:alloy_smelter>);
 
     //UU物质
     itemHelper.removeItem(<techreborn:uumatter>);

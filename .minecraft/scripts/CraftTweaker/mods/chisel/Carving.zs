@@ -11,12 +11,6 @@ import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addChiselByOre;
 //石砖 移除 苔石砖
 //Carving.removeVariation("stonebrick", <minecraft:stonebrick:1>);
 
-//焦煤块 添加 沉浸工程的 
-//Carving.addVariation("blockCoalCoke", <immersiveengineering:stone_decoration:3>);
-
-//玻璃 添加 末影接口的纯净玻璃 
-//Carving.addVariation("glass", <enderio:block_fused_glass>);
-
 //移除 根源魔法 元素土
 Carving.removeGroup("rootsRunicSoilTypes");
 
@@ -55,26 +49,5 @@ addChiselByOre(<ore:livingrock>);
 
 //活木
 addChiselByOre(<ore:livingwood>);
-
-//以太石
-addChiselByOre(<ore:blockAethium>);
-
-//艾洛蒂石
-addChiselByOre(<ore:blockErodium>);
-
-//艾恩尼石
-addChiselByOre(<ore:blockIonite>);
-
-//凯罗尼石
-addChiselByOre(<ore:blockKyronite>);
-
-//莱泽尔石
-addChiselByOre(<ore:blockLitherite>);
-
-//蓝丝黛尔石
-addChiselByOre(<ore:blockLonsdaleite>);
-
-//普雷蒂石
-addChiselByOre(<ore:blockPladium>);
 
 

@@ -11,12 +11,8 @@ import mods.skyresources.cauldronclean;
 
 //cauldronclean.removeRecipe(<>);
 
-//铱
-cauldronclean.removeRecipe(<thermalfoundation:material:71>);
 //锂
 cauldronclean.removeRecipe(<mekanism:otherdust:4>);
-//蕴魔秘银
-cauldronclean.removeRecipe(<thermalfoundation:material:72>);
 //海蓝宝石
 cauldronclean.removeRecipe(<astralsorcery:itemcraftingcomponent>);
 //焦黑石英

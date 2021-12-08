@@ -23,7 +23,3 @@ FluidToItem.transform(<botania:blazeblock>, <liquid:srcrystalfluid>, [<minecraft
 //生佐拉钢锭
 recipes.remove(<prodigytech:zorrasteel_raw>);
 FluidToItem.transform(<prodigytech:zorrasteel_raw>, <liquid:plantoil>, [<pneumaticcraft:ingot_iron_compressed>, <prodigytech:zorra_leaf> * 8], true);
-
-//太阳晶体 空
-recipes.remove(<extrautils2:suncrystal:250>);
-FluidToItem.transform(<extrautils2:suncrystal:250>, <liquid:liquid_sunshine>, [<immersiveengineering:bullet:2>.withTag({bullet: "crystalwill"}), <prodigytech:aeternus_crystal>], true);

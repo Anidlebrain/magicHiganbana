@@ -22,7 +22,7 @@ Fey.addRecipe("chisel/Fey/tyrian", <chisel:tyrian> * 4,
      <minecraft:stonebrick>,
      <minecraft:stonebrick>,
      <minecraft:stonebrick>], 40);
-
+/*
 //牺牲匕首
 recipes.remove(<bloodmagic:sacrificial_dagger>);
 Fey.addRecipe("bloodmagic/Fey/sacrificial_dagger", <bloodmagic:sacrificial_dagger>,
@@ -31,7 +31,7 @@ Fey.addRecipe("bloodmagic/Fey/sacrificial_dagger", <bloodmagic:sacrificial_dagge
      <skyresources:alchemicalglass>,
      <skyresources:alchemicalglass>,
      <skyresources:alchemicalglass>], 100);
-
+*/
 //虚空石
 recipes.remove(<chisel:voidstone>);
 Fey.addRecipe("chisel/Fey/voidstone", <chisel:voidstone>,
@@ -48,15 +48,6 @@ Fey.addRecipe("chisel/Fey/voidstone_2", <chisel:voidstone> * 3,
      <minecraft:purpur_block>,
      <minecraft:purpur_block>,
      <ore:pearlEnderEye>], 100);
-
-//纯色玻璃
-recipes.remove(<chisel:antiblock:15>);
-Fey.addRecipe("chisel/Fey/antiblock/12", <chisel:antiblock:12>,
-    [<ore:dustEnergion>,
-     <enderio:block_fused_glass>,
-     <enderio:block_fused_glass>,
-     <enderio:block_fused_glass>,
-     <enderio:block_fused_glass>], 100);
 
 //纯色玻璃
 recipes.remove(<chisel:brownstone>);
@@ -84,13 +75,4 @@ Fey.addRecipe("naturesaura/Fey/wood_stand", <naturesaura:wood_stand> * 2,
      <ore:logWood>,
      <ore:logWood>,
      <ore:logWood>], 100);
-
-//工业方块
-recipes.remove(<chisel:technical>);
-Fey.addRecipe("naturesaura/Fey/wood_stand", <chisel:technical> * 3,
-    [<naturesaura:infused_stone>,
-     <naturesaura:infused_stone>,
-     <naturesaura:infused_stone>,
-     <enderio:item_material:38>,
-     <enderio:item_material:51>], 100);
 

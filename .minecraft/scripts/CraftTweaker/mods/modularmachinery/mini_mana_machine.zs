@@ -4,6 +4,7 @@
 ##          [Info]:     模块化机械 微型魔力制造机
 ##================================================
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;

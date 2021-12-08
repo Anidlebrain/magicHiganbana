@@ -11,6 +11,3 @@ rotarygrinder.addRecipe(<ore:crystalCertusQuartz>, <appliedenergistics2:material
 
 //福鲁伊水晶粉
 rotarygrinder.addRecipe(<appliedenergistics2:material:7>, <appliedenergistics2:material:8>);
-
-//黑曜石粉
-rotarygrinder.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770>);

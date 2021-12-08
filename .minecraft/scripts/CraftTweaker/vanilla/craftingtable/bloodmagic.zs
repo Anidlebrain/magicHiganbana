@@ -37,30 +37,7 @@ function recipesInit()
       .addOutput(<bloodmagic:altar>)
       .create();
 
-    /*
-    //符文石
-    recipes.remove(<bloodmagic:blood_rune>);
-    recipesUtils.addRecipe(<bloodmagic:blood_rune>,
-        ["AAA",
-            "BCB",
-            "AAA"],
-        { A : <roots:runestone>,
-            B : <bloodmagic:slate>,
-            C : orb}
-    );
-    */
 
-    //恶魔 气血碎片
-    RecipeBuilder.get("chemist")
-      .setShaped([
-        [<bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>],
-        [<bloodmagic:item_demon_crystal>, <extrautils2:ingredients:11>, <bloodmagic:slate:3>, <extrautils2:ingredients:11>, <bloodmagic:item_demon_crystal>],
-        [<bloodmagic:item_demon_crystal>, <bloodmagic:slate:3>, <bloodmagic:blood_shard>, <bloodmagic:slate:3>, <bloodmagic:item_demon_crystal>],
-        [<bloodmagic:item_demon_crystal>, <extrautils2:ingredients:11>, <bloodmagic:slate:3>, <extrautils2:ingredients:11>, <bloodmagic:item_demon_crystal>],
-        [<bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal>]])
-      .setSecondaryIngredients([<bloodmagic:monster_soul:1>, <bloodmagic:monster_soul:2>, <bloodmagic:monster_soul:3>, <bloodmagic:monster_soul:4>])
-      .addOutput(<bloodmagic:blood_shard:1>)
-      .create();
 }
 
 if (!isInvalid)

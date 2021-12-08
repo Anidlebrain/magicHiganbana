@@ -15,7 +15,7 @@ AnvilRecipe.addRecipe(IItemStack output, IItemStack base, boolean preserveBase, 
 //地狱铁粉
 AnvilRecipe.removeRecipe(<woot:stygianirondust>);
 AnvilRecipe.addRecipe(<woot:stygianirondust>, <woot:die>, false, [<woot:stygianironingot>]);
-AnvilRecipe.addRecipe(<woot:stygianirondust> * 3, <woot:die>, false, [<prodigytech:inferno_crystal>, <extendedcrafting:material>, <enderio:item_material:72>]);
+
 
 //灵魂粉
 recipes.remove(<woot:soulsanddust>);

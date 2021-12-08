@@ -29,8 +29,8 @@ static invalidMods as string[] = [
     "ISM"
 ];
 
-for i in invalidMods{
-    if(loadedMods in i){
+for i in invalidMods {
+    if(loadedMods in i) {
         isInvalid = true;
         print("[ModLoader] Found invalid mods, no gameplay scripts will be loaded anymore.");
         break;
@@ -39,6 +39,6 @@ for i in invalidMods{
 
 //calling
 //import scripts.AnildebrainUtils.modLoader.isInvalid;
-if(!isInvalid){
+if(!isInvalid) {
     print("[ModLoader] The check for invalid mods has been completed, and all scripts will now be loaded.");
 }

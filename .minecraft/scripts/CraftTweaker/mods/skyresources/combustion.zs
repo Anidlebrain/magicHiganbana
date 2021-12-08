@@ -41,15 +41,6 @@ combustion.addRecipe(<minecraft:wheat_seeds>, [
     <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_growth_infusion", selectedSlot: 0, lastCooldown: 0, cooldown: 0}})
 ], 50);
 
-/*
-//超级滑滑冰
-recipes.remove(<randomthings:superlubricentice>);
-combustion.addRecipe(<randomthings:superlubricentice>, [
-    <mechanics:burst_seed_ice>,
-    <minecraft:slime>
-], 50);
-*/
-
 //赫耳墨斯煤炭块
 fusion.removeRecipe(<skyresources:alchemyitemcomponent:6>);
 combustion.addRecipe(<skyresources:coalinfusedblock>, [
@@ -57,16 +48,6 @@ combustion.addRecipe(<skyresources:coalinfusedblock>, [
     <skyresources:alchemyitemcomponent:2> * 2,
     <contenttweaker:explosive_dust> * 3
 ], 1000);
-
-/*
-//石制重锤
-recipes.remove(<mechanics:martlet_stone>);
-combustion.addRecipe(<mechanics:martlet_stone>, [
-    <tconstruct:hammer_head>.withTag({Material: "stone"}) * 2,
-    <tconstruct:tool_rod>.withTag({Material: "wood"}) * 3,
-    <minecraft:string> * 2
-], 50);
-*/
 
 //水泥
 recipes.remove(<tconstruct:soil>);
@@ -120,7 +101,6 @@ combustion.addRecipe(<skyresources:baseitemcomponent:7>, [
 combustion.removeRecipe(<skyresources:baseitemcomponent:3>);
 combustion.addRecipe(<skyresources:baseitemcomponent:3>, [
     <minecraft:soul_sand> * 5,
-    <thermalfoundation:material:167> * 4,
     <skyresources:compressedcoalblock> * 3,
     <mekanism:ingot> * 2,
     <techreborn:ingot:17>

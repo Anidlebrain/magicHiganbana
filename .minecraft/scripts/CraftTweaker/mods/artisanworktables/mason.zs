@@ -35,10 +35,6 @@ var masonItem = [
     <roots:runed_obsidian_brick_pressure_plate>,
     <roots:runed_obsidian_brick_alt_button>,
     <roots:runed_obsidian_brick_alt_pressure_plate>,
-    
-
-
-
 
 ] as IIngredient[];
 

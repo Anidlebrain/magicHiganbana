@@ -4,6 +4,7 @@
 ##          [Info]:     模块化机械 魔力蕴魔
 ##================================================
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 

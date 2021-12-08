@@ -4,6 +4,7 @@
 ##          [Info]:     空岛资源 冷凝器
 ##================================================
 #priority 2000
+#norun
 import mods.skyresources.condenser;
 import mods.skyresources.fusion;
 

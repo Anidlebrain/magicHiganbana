@@ -15,9 +15,6 @@ var carpenterItem = [
 
     <farmingforblockheads:market>,
 
-    <harvestcraft:market>,
-    <harvestcraft:shippingbin>,
-
     <minecraft:jukebox>,
     <minecraft:bowl>,
     <minecraft:bookshelf>,

@@ -11,22 +11,17 @@ import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.modifyStickRecipe;
 
 for log in <ore:logWood>.items
 {
-    if (log.metadata == 32767)
-    {
-        for item in log.definition.subItems
-        {
-            if (log.definition.id == "minecraft:log")
-            {
+    if (log.metadata == 32767) {
+        for item in log.definition.subItems {
+            if (log.definition.id == "minecraft:log") {
                 modifyWoodRecipe(item, true);
             }
-            else
-            {
+            else {
                 modifyWoodRecipe(item, false);
             }
         }
     }
-    else
-    {
+    else {
         modifyWoodRecipe(log, false);
     }
 }

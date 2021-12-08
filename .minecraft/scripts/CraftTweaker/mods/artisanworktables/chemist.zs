@@ -10,12 +10,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 var chemistItem = [
-    
-    <harvestcraft:well>,
-    
 
     <minecraft:slime_ball>,
-
 
 ] as IIngredient[];
 

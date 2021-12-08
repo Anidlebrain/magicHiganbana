@@ -4,6 +4,7 @@
 ##          [Info]:     模块化机械 激光蚀刻机
 ##================================================
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;

@@ -17,14 +17,6 @@ function init()
 
 function recipesInit()
 {
-    //隔音器
-    recipes.remove(<randomthings:sounddampener>);
-    RecipeBuilder.get("farmer")
-      .setShaped(recipesUtils.centreCrossitem(<randomthings:portablesounddampener>, <thermalfoundation:rockwool:15>, <ore:plankWood>))
-      .addTool(<ore:artisansShears>, 1)
-      .addOutput(<roots:imbuer>)
-      .create();
-    
     //时间之瓶
     recipes.remove(<randomthings:timeinabottle>);
     RecipeBuilder.get("mage")
@@ -52,17 +44,6 @@ function recipesInit()
       .addTool(<ore:artisansLens>, 1)
       .addTool(<ore:artisansGemCutter>, 1)
       .addOutput(<randomthings:spectrekey>)
-      .create();
-    
-    //恶魔之泪
-    recipes.remove(<randomthings:spectrekey>);
-    RecipeBuilder.get("chemist")
-      .setShaped([
-        [null, null, <minecraft:ghast_tear>, null, null],
-        [null, <minecraft:ghast_tear>, <bloodmagic:blood_shard:1>, <minecraft:ghast_tear>, null],
-        [<minecraft:ghast_tear>, <minecraft:ender_eye>, <extrautils2:ingredients:17>, <minecraft:ender_eye>, <minecraft:ghast_tear>],
-        [null, <minecraft:ghast_tear>, null, <minecraft:ghast_tear>, null]])
-      .addOutput(<randomthings:ingredient:1>)
       .create();
 }
 

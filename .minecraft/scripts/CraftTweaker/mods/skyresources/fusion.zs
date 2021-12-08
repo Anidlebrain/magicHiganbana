@@ -51,9 +51,6 @@ fusion.addRecipe(<skyresources:orealchdust:11>, [<minecraft:magma_cream> * 2, <m
 fusion.removeRecipe(<skyresources:orealchdust:12>);
 fusion.addRecipe(<skyresources:orealchdust:12>, [<minecraft:clay>, <minecraft:glowstone_dust> * 2, <botania:manaresource:8> * 2], 1.88);
 
-fusion.removeRecipe(<skyresources:orealchdust:14>);
-fusion.addRecipe(<skyresources:orealchdust:14>, [<thermalfoundation:storage_resource>, <minecraft:glowstone_dust> * 2, <botania:manaresource:8> * 2], 1.89);
-
 fusion.removeRecipe(<skyresources:orealchdust:15>);
 fusion.addRecipe(<skyresources:orealchdust:15>, [<mekanism:basicblock:2>, <minecraft:glowstone_dust> * 2, <botania:manaresource:8> * 2], 1.90);
 
@@ -84,8 +81,8 @@ fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [<skyresources:techitemcomponent:2> * 2, <minecraft:redstone> * 3], 0.62);
 
 //赫耳墨斯之金锭
-fusion.removeRecipe(<skyresources:alchemyitemcomponent:7>);
-fusion.addRecipe(<skyresources:alchemyitemcomponent:7>, [<contenttweaker:material_part:3763> * 2, <minecraft:glowstone_dust> * 3], 0.58);
+//fusion.removeRecipe(<skyresources:alchemyitemcomponent:7>);
+//fusion.addRecipe(<skyresources:alchemyitemcomponent:7>, [<contenttweaker:material_part:3763> * 2, <minecraft:glowstone_dust> * 3], 0.58);
 
 //中级炼金粉
 fusion.removeRecipe(<skyresources:alchemyitemcomponent:3>);

@@ -94,11 +94,6 @@ function recipesInit()
     
     //强化机械外壳
     recipes.remove(<modularmachinery:blockcasing:4>);
-    RecipeBuilder.get("engineer")
-      .setShaped(recipesUtils.crossItems(<enderio:block_reinforced_obsidian>, <modularmachinery:blockcasing>))
-      .addTool(<ore:artisansShears>, 1)
-      .addOutput(<modularmachinery:blockcasing:4>)
-      .create();
 
     //中型物品输入
     RecipeBuilder.get("engineer")

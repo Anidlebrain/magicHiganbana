@@ -4,6 +4,7 @@
 ##          [Info]:     彼岸之法 合金
 ##================================================
 #priority 2000
+#norun
 import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addAlloyRecipe;
 import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.removeAlloySmelter;
 import mods.magichiganbana.IUtils;

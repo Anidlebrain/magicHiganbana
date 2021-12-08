@@ -13,17 +13,14 @@ events.onPoolTrade(function(event as PoolTradeEvent)
     var world as IWorld = event.world;
     var item as IItemStack = event.input.item;
     print(item.definition.id);
-    if (item.definition.id == "contenttweaker:star_alchemy_powder")
-    {
-        if (!event.alchemy)
-        {
+    if (item.definition.id == "contenttweaker:star_alchemy_powder") {
+        if (!event.alchemy) {
             event.cancel();
         }
         
         var dimension as int = world.getDimension();
         print(dimension);
-        if (dimension != 58)
-        {
+        if (dimension != 58) {
             event.cancel();
         }
 

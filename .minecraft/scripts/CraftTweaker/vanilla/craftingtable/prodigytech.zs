@@ -51,14 +51,7 @@ function recipesInit()
     
     //air_funnel
     recipes.remove(<prodigytech:air_funnel>);
-    RecipeBuilder.get("farmer")
-      .setShaped([
-        [ferramic_ingot, null, ferramic_ingot],
-        [ferramic_ingot, <flopper:flopper>, ferramic_ingot],
-        [ferramic_ingot, null, ferramic_ingot]])
-      .addTool(<ore:artisansShears>, 1)
-      .addOutput(<prodigytech:air_funnel>)
-      .create();
+    
     
     //能源气热炉
     recipes.remove(<prodigytech:energion_aeroheater>);

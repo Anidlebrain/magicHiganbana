@@ -6,7 +6,7 @@
 
 #priority 1999
 import scripts.AnildebrainUtils.modLoader.isInvalid;
-
+/*
 if(!isInvalid)
 {
     scripts.CraftTweaker.mods.modularmachinery.mini_mana_machine.MiniManaMachineRecipes().recipesInit();
@@ -18,7 +18,7 @@ if(!isInvalid)
     scripts.CraftTweaker.mods.modularmachinery.star_condensation.StarCondensation().recipesInit();
     scripts.CraftTweaker.mods.modularmachinery.ember_mining.EmberMining().recipesInit();
 }
-
+*/
 /*
 // mana
 addManaInput(int mana)

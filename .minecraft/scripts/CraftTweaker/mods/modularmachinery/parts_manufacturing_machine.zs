@@ -5,6 +5,7 @@
 ##================================================
 
 #priority 2000
+#norun
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
@@ -144,3 +145,4 @@ zenClass PartsManufacturingMachineRecipes {
         
     }
 }
+

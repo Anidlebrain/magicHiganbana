@@ -10,4 +10,4 @@ import mods.skyresources.freezer;
 //freezer.addRecipe(<mechanics:burst_seed_ice>, <botania:specialflower>.withTag({type: "hydroangeas"}) * 4, 1200);
 
 //冻金锭
-freezer.addRecipe(<contenttweaker:material_part:225>, <minecraft:gold_ingot>, 3000);
+//freezer.addRecipe(<contenttweaker:material_part:225>, <minecraft:gold_ingot>, 3000);

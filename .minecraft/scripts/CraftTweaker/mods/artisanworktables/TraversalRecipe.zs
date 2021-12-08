@@ -4,6 +4,7 @@
 ##          [Info]:     工匠之作 工作台 遍历
 ##================================================
 #priority 1999
+#norun
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;

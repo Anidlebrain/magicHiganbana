@@ -10,11 +10,6 @@ import mods.prodigytech.atomicreshaper;
 atomicreshaper.removeRecipe(<prodigytech:circuit_plate>);
 atomicreshaper.removeRecipe(<minecraft:paper>);
 
-//秘银矿石
-atomicreshaper.removeRecipe(<ore:oreMithril>);
-atomicreshaper.removeRecipe(<thermalfoundation:ore:8>);
-atomicreshaper.removeRecipe(<ore:bricksStone>);
-
 atomicreshaper.removeRecipe(<ore:oreQuartzBlack>);
 
 

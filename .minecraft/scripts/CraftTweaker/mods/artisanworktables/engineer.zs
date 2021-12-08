@@ -12,7 +12,6 @@ import crafttweaker.oredict.IOreDictEntry;
 
 var engineerItem = [
     
-
     <skyresources:rockcrusher>,
     <skyresources:rockcleaner>,
     <skyresources:combustioncollector>,

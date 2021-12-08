@@ -14,8 +14,6 @@ Alchemy.add(<botania:rune:15>, [<embers:ember_cluster>,<botania:rune:1>,<botania
 
 import mods.embers.Alchemy;
 
-//莱泽尔石元素之象征
-Alchemy.addAspect("lesselstone", <contenttweaker:aspectus_lesselstone>);
 //风元素之象征
 Alchemy.addAspect("aer", <contenttweaker:aspectus_aer>);
 //火元素之象征
@@ -28,12 +26,6 @@ Alchemy.addAspect("terra", <contenttweaker:aspectus_terra>);
 Alchemy.addAspect("ordo", <contenttweaker:aspectus_ordo>);
 //混沌元素之象征
 Alchemy.addAspect("perditio", <contenttweaker:aspectus_perditio>);
-
-//艾洛蒂水晶
-Alchemy.add(<environmentaltech:erodium_crystal> * 6,
-    [<botania:manaresource:9>, <bloodmagic:slate:1>, <ore:gemEmerald>, <ore:gemRedGarnet>, <botania:manaresource:8>],
-    {"silver":8 to 16, "iron":10 to 16, "lesselstone":12 to 18});
-
 
 //究极炼金粉
 Alchemy.add(<skyresources:alchemyitemcomponent:5>,

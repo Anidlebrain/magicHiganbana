@@ -27,9 +27,6 @@ LootBag.removeLoot(<minecraft:nether_star>, [0, 1, 2]);
 LootBag.addLoot(<mysticalworld:assorted_seeds> % 20, [0, 1, 2]);
 LootBag.addLoot(<minecraft:dirt> % 20, [0, 1]);
 
-LootBag.addLoot(<harvestcraft:gourmetbeefburgeritem> % 2, [0, 2]);
-LootBag.addLoot(<harvestcraft:bbqchickenbiscuititem> % 2, [0, 1]);
-LootBag.addLoot(<harvestcraft:cookedtofaconitem> % 2, [0, 1, 2]);
 LootBag.addLoot(<minecraft:glowstone_dust> % 2, [1, 2]);
 
 LootBag.addLoot(<skyresources:orealchdust> % 0.2, [0]);

@@ -10,16 +10,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 var blacksmithItem = [
-    <harvestcraft:cuttingboarditem>,
-    <harvestcraft:potitem>,
-    <harvestcraft:skilletitem>,
-    <harvestcraft:saucepanitem>,
-    <harvestcraft:bakewareitem>,
-    <harvestcraft:mortarandpestleitem>,
-    <harvestcraft:mixingbowlitem>,
-    <harvestcraft:juiceritem>,
-    <harvestcraft:presser>,
-
     <minecraft:shield>,
     <minecraft:chest_minecart>,
     <minecraft:furnace_minecart>,
@@ -36,8 +26,6 @@ var blacksmithItem = [
     <skyresources:diamondgrinder>,
     <skyresources:irongrinder>,
     <skyresources:stonegrinder>,
-
-
 
 ] as IIngredient[];
 

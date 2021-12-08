@@ -10,4 +10,6 @@ import mods.roots.predicates.BlockStateBelow;
 import mods.roots.predicates.PropertyPredicate;
 import mods.roots.Transmutation;
 
-Transmutation.addStateToStateRecipe("transmutation_recipe_naturecore", PropertyPredicate.create(<blockstate:botania:pylon:variant=natura> as IBlockState, ["variant"]), <blockstate:randomthings:naturecore>, null);
+Transmutation.addStateToStateRecipe("transmutation_recipe_naturecore",
+    PropertyPredicate.create(<blockstate:botania:pylon:variant=natura> as IBlockState, ["variant"]),
+    <blockstate:randomthings:naturecore>, null);

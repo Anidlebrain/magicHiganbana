@@ -98,7 +98,7 @@ TreeRitual.addRecipe("arcanearchives/TreeRitual/munchstone", <roots:wildwood_sap
 TreeRitual.addRecipe("arcanearchives/TreeRitual/orderstone", <roots:wildwood_sapling>, <arcanearchives:orderstone>, 1200, 
     [<bloodmagic:component:7>, <botanicadds:rune_energy>, <tconevo:material:2>, <ore:dyePink>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <botania:swapring>, <tp:repair_tablet>]);
-
+/*
 TreeRitual.addRecipe("arcanearchives/TreeRitual/mountaintear", <roots:wildwood_sapling>, <arcanearchives:mountaintear>, 1200, 
     [<bloodmagic:component:7>, <bloodmagic:sigil_lava>, <thermalfoundation:material:1024>, <ore:dyeOrange>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:blockMagma>, <minecraft:magma_cream>]);
@@ -110,7 +110,7 @@ TreeRitual.addRecipe("arcanearchives/TreeRitual/rivertear", <roots:wildwood_sapl
 TreeRitual.addRecipe("arcanearchives/TreeRitual/parchtear", <roots:wildwood_sapling>, <arcanearchives:parchtear>, 1200, 
     [<bloodmagic:component:7>, <bloodmagic:sigil_void>, <thermalfoundation:material:1026>, <ore:dyeBlack>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <minecraft:sponge>, <minecraft:bucket>]);
-
+*/
 TreeRitual.addRecipe("arcanearchives/TreeRitual/stormway", <roots:wildwood_sapling>, <arcanearchives:stormway>, 1200, 
     [<animus:component:4>, <contenttweaker:thunder_rune>, <animus:sigil_consumption>, <ore:dyeYellow>,
     <ore:gemAquamarine>, <contenttweaker:basic_synthetic_gem>, <ore:ingotElectricium>, <botania:lightrelay>]);

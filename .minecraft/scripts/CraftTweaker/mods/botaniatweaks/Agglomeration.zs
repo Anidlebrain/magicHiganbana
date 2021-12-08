@@ -45,13 +45,6 @@ Agglomeration.addRecipe(<woot:stygianironingot>,
     <minecraft:nether_brick>, <minecraft:soul_sand>, <minecraft:nether_brick>,
     null, null, null);
 
-//高级工作台
-Agglomeration.addRecipe(<minecraft:sand>,
-    [<xreliquary:midas_touchstone>],
-    888888, 0x993300, 0xFFCC00,
-    <extendedcrafting:table_basic>, <chisel:blockgold:3>, <chisel:blockelectrum:3>,
-    <extendedcrafting:table_advanced>, <minecraft:sand>, <minecraft:sand>);
-
 //元素土
 mods.roots.Fey.removeRecipe(<roots:elemental_soil>);
 Agglomeration.addRecipe(<bloodmagic:sigil_elemental_affinity>,

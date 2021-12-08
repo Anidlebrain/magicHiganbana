@@ -20,18 +20,14 @@ IOrechid.delOreRecipe(<minecraft:stone>, <ore:oreQuartzBlack>);
 
 for ore in IOrechid.getOreRecipes(<minecraft:stone>)
 {
-    if (!isNull(ore))
-    {
-        if (!ore.empty)
-        {
+    if (!isNull(ore)) {
+        if (!ore.empty) {
             IOrechid.addOreRecipe(<naturesaura:infused_stone>, ore, 1000);
         }
-        else
-        {
+        else {
             print(ore.name);
         }
     }
-
 }
 
 //零素矿石

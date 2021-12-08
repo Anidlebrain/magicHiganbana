@@ -23,7 +23,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<minecraft:netherra
 
 
 //碘酒
-thermopneumaticprocessingplant.addRecipe(<liquid:ethanol> * 80, <harvestcraft:seaweeditem>, 3.0, 333, <liquid:iodine> * 80);
+//thermopneumaticprocessingplant.addRecipe(<liquid:ethanol> * 80, <harvestcraft:seaweeditem>, 3.0, 333, <liquid:iodine> * 80);
 
 //液态塑料
 thermopneumaticprocessingplant.removeRecipe(<liquid:plastic>);

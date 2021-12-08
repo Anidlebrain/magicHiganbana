@@ -16,8 +16,7 @@ import scripts.AnildebrainUtils.messageUtils.getMessageKey;
 
 zenClass ItemHelper
 {
-    zenConstructor()
-    {
+    zenConstructor() {
 
     }
 

@@ -4,7 +4,7 @@
 ##          [Info]:     本地化语言设置
 ##=================================================
 
-#priority -1
+#priority 2000
 import scripts.AnildebrainUtils.messageUtils.modifyLocalLang;
 
 var modifyLangs as string[] = [
