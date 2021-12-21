@@ -29,8 +29,6 @@
 /.minecraft/mods/*
 !/.minecraft/mods/Higanbana*.jar
 
-!/.minecraft/icon.png
-
 !/.minecraft/config
 /.minecraft/config/AppliedEnergistics2/items.csv
 /.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
