@@ -12,7 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
 import scripts.AnildebrainUtils.BaseUtils as alg;
-import scripts.AnildebrainUtils.messageUtils.getMessageKey;
+import scripts.AnildebrainUtils.MessageUtils.getMessageKey;
 
 zenClass ItemHelper
 {

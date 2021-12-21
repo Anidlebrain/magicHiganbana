@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 工作台 遍历
 ##================================================
-#priority 1999
+#modloaded higanbanautils
+#priority 2000
+
 #norun
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;

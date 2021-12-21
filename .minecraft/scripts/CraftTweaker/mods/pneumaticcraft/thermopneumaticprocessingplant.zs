@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     气动工艺 热动力加工
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.pneumaticcraft.thermopneumaticprocessingplant;
 /*
 // Add a recipe converting an input item into an output fluid

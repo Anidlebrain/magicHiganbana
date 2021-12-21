@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     生物掉落 蜘蛛
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.entity.IEntityDefinition;
 
 val entity = <entity:minecraft:cave_spider>;

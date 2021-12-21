@@ -4,9 +4,11 @@
 ##          [Info]:     林业 工作台合成
 ##================================================
 #modloaded forestry
+#modloaded higanbanautils
 #priority 2000
+
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 

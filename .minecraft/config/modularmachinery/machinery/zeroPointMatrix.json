@@ -9,7 +9,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -33,7 +33,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -49,7 +49,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -65,7 +65,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -73,7 +73,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -81,7 +81,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -89,7 +89,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -123,7 +123,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_mana@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -189,7 +189,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_mana@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -246,7 +246,7 @@
             "y": 4,
             "z": 0,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -254,7 +254,7 @@
             "y": 4,
             "z": 0,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -262,7 +262,7 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -278,7 +278,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -286,7 +286,7 @@
             "y": 4,
             "z": 0,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -302,7 +302,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -310,7 +310,7 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -336,7 +336,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_mana@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -344,7 +344,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "gregtech:wire_coil@5"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {

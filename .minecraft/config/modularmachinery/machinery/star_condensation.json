@@ -113,7 +113,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "thermalfoundation:storage@6"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -281,7 +281,7 @@
             "y": -1,
             "z": -8,
             "elements": [
-                "extendedcrafting:storage@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {

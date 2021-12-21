@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     神秘时代 世界盐
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.thaumcraft.SalisMundus;
 /*
 //mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in, IItemStack out, @Optional String research);

@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 融合机
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.mekanism.combiner;
 
 /*

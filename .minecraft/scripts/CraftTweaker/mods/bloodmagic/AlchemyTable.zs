@@ -3,11 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 炼金术桌
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
-import mods.bloodmagic.AlchemyTable;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.reliquaryRecipe;
 
+import mods.bloodmagic.AlchemyTable;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.reliquaryRecipe;
 
 //骨头
 reliquaryRecipe(<item:minecraft:bone> * 4, 

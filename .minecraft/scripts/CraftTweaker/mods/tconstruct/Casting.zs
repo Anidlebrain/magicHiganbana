@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     匠魂 铸造
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.tconstruct.Casting;
 
 //mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);

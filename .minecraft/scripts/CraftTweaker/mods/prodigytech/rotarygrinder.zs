@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     奇才妙械 旋转粉碎机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.prodigytech.rotarygrinder;
 
 //赛特石英粉

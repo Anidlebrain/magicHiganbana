@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 冷凝器
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 #norun
 import mods.skyresources.condenser;
 import mods.skyresources.fusion;

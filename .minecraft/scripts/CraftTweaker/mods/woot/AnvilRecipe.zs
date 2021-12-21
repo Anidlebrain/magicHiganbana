@@ -3,8 +3,10 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     生物工厂 地狱铁砧 
 ##================================================
+#modloaded higanbanautils
 #priority 2000
-import mods.magichiganbana.Woot.AnvilRecipe;
+
+import mods.Higanbana.Woot.AnvilRecipe;
 
 /*
 AnvilRecipe.removeAll();

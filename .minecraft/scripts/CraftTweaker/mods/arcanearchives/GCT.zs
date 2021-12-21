@@ -3,6 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     奥术集存 宝石切割台
 ##===============================================
+#modloaded higanbanautils
 #priority 2000
 
 import mods.arcanearchives.GCT;

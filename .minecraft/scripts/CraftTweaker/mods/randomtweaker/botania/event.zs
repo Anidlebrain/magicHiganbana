@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 精灵门
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.item.IItemStack;
 import mods.randomtweaker.botania.AlfPortalDroppedEvent;
 

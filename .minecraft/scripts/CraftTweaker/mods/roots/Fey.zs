@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 精灵工作台
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.roots.Fey;
 
 //符文石

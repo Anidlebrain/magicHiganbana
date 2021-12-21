@@ -3,9 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 花药台
 ##================================================
-
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.botania.Apothecary;
 
 //水绣球

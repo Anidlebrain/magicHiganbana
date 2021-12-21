@@ -3,9 +3,12 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     自然灵气 森林仪式
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.naturesaura.TreeRitual;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.treeRitualRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.treeRitualRecipe;
+
 //mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
 
 //精灵门核心

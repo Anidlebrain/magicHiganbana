@@ -5,7 +5,7 @@
 ##=================================================
 
 #priority 2000
-import scripts.AnildebrainUtils.messageUtils.modifyLocalLang;
+import scripts.AnildebrainUtils.MessageUtils.modifyLocalLang;
 
 var modifyLangs as string[] = [
     //神秘时代

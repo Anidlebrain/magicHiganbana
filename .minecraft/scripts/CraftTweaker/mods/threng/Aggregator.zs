@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     懒人AE 福鲁伊克斯聚合器
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.threng.Aggregator;
 
 Aggregator.removeRecipe(<threng:material:1>);

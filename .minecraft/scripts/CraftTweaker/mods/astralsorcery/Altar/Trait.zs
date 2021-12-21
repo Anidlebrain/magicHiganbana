@@ -3,11 +3,13 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 五彩祭坛
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.astralsorcery.Altar;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addAltarRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addAltarRecipe;
 
 function makeAltar(output as IItemStack,
                    starLight as int,

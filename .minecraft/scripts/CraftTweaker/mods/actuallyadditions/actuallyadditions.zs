@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 原子再构机
 ##===============================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.actuallyadditions.AtomicReconstructor;
 
 

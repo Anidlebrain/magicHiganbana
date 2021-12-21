@@ -24,7 +24,7 @@ import mods.contenttweaker.IItemRightClick;
 import mods.ctutils.utils.Math;
 
 import scripts.AnildebrainUtils.CotUtils;
-import scripts.AnildebrainUtils.messageCotUtils;
+import scripts.AnildebrainUtils.MessageCotUtils;
 
 //火柴
 var matchStick = VanillaFactory.createItem("match_stick");
@@ -41,11 +41,11 @@ matchStick.onItemUse = function(player, world, pos, hand, facing, blockHit) {
             player.getHeldItem(hand).damage(2, player);
         }
         else if (chance < 0.98) {
-            player.sendMessage(messageCotUtils.getEventMessage("match_stick.1"));
+            player.sendMessage(MessageCotUtils.getEventMessage("match_stick.1"));
             player.getHeldItem(hand).damage(1, player);
         }
         else {
-            player.sendMessage(messageCotUtils.getEventMessage("match_stick.2"));
+            player.sendMessage(MessageCotUtils.getEventMessage("match_stick.2"));
             player.getHeldItem(hand).damage(10, player);
         }
         return ActionResult.success();

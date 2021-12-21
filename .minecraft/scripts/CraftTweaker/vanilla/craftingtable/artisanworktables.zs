@@ -3,9 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 工匠之作
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 function init()

@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 抽水器 注入
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.waterextractor.insert;
 
 //沼泽泥

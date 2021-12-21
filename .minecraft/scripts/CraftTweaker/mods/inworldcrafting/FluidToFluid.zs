@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     世界合成 丢入流体合成流体
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.inworldcrafting.FluidToFluid;
 
 

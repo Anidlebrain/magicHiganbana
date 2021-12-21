@@ -28,8 +28,8 @@ import mods.ctutils.player.Player;
 import mods.ctutils.commands.Commands;
 import mods.ctutils.utils.Math;
 
-import scripts.AnildebrainUtils.modLoader.isInvalid;
-import scripts.AnildebrainUtils.messageUtils;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
+import scripts.AnildebrainUtils.MessageUtils;
 
 
 
@@ -46,7 +46,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 
     if (isInvalid) {
         while (true) {
-            messageUtils.sendPlayMessage(player, "mods.warning");
+            MessageUtils.sendPlayMessage(player, "mods.warning");
         }
     }
     else
@@ -66,13 +66,13 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
             player.update(player.data + {InheritanceLevel : (Level + 1) as int});
         }
 
-        messageUtils.sendPlayMessage(player, "mods.warning");
-        player.sendMessage(messageUtils.getWelcomeMessage("words.1") ~ player.name ~ "!");
-        //player.sendMessage(messageUtils.getWelcomeMessage("words.2"));
-        player.sendMessage(messageUtils.getWelcomeMessage("words.3"));
-        player.sendMessage(messageUtils.getWelcomeMessage("words.4"));
-        player.sendMessage(messageUtils.getWelcomeMessage("words.5"));
-        player.sendMessage(messageUtils.getWelcomeMessage("words.6"));
+        MessageUtils.sendPlayMessage(player, "mods.warning");
+        player.sendMessage(MessageUtils.getWelcomeMessage("words.1") ~ player.name ~ "!");
+        //player.sendMessage(MessageUtils.getWelcomeMessage("words.2"));
+        player.sendMessage(MessageUtils.getWelcomeMessage("words.3"));
+        player.sendMessage(MessageUtils.getWelcomeMessage("words.4"));
+        player.sendMessage(MessageUtils.getWelcomeMessage("words.5"));
+        player.sendMessage(MessageUtils.getWelcomeMessage("words.6"));
     }
     
 });
@@ -219,34 +219,34 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == -1) {
         if (dreamJournl == 1) {
             player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
-            messageUtils.sendPlayMessage(player, "true.start.1");
-            messageUtils.sendPlayMessage(player, "true.start.2");
+            MessageUtils.sendPlayMessage(player, "true.start.1");
+            MessageUtils.sendPlayMessage(player, "true.start.2");
         }
         else if (dreamJournl < 1) {
-            messageUtils.sendPlayMessage(player, "false.start");
+            MessageUtils.sendPlayMessage(player, "false.start");
         }
     }
 
     else if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == 1) {
         if (dreamJournl == 2) {
             player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
-            messageUtils.sendPlayMessage(player, "true.start.1");
-            messageUtils.sendPlayMessage(player, "true.start.2");
+            MessageUtils.sendPlayMessage(player, "true.start.1");
+            MessageUtils.sendPlayMessage(player, "true.start.2");
 
         }
         else if (dreamJournl < 2) {
-            messageUtils.sendPlayMessage(player, "false.start");
+            MessageUtils.sendPlayMessage(player, "false.start");
         }
     }
 
     else if (event.fromWorld.getDimension() == 0 && event.toWorld.getDimension() == -2) {
         if (dreamJournl == 3) {
             player.update(player.data + {"dreamJournl" : (dreamJournl + 1) as int});
-            messageUtils.sendPlayMessage(player, "true.start.1");
-            messageUtils.sendPlayMessage(player, "true.start.2");
+            MessageUtils.sendPlayMessage(player, "true.start.1");
+            MessageUtils.sendPlayMessage(player, "true.start.2");
         }
         else if (dreamJournl < 3) {
-            messageUtils.sendPlayMessage(player, "false.start");
+            MessageUtils.sendPlayMessage(player, "false.start");
         }
     }
 
@@ -257,7 +257,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
             player.giverDreamJournl();
         }
         else if (dreamJournl < 4) {
-            messageUtils.sendPlayMessage(player, "false.start");
+            MessageUtils.sendPlayMessage(player, "false.start");
         }
     }
 });

@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     匠魂 流体 合金
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.tconstruct.Alloy;
 
 //陨铁

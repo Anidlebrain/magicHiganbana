@@ -3,9 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 冶金灌注机
 ##================================================
-
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.mekanism.infuser;
 
 //mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IItemStack inputStack, IItemStack outputStack)

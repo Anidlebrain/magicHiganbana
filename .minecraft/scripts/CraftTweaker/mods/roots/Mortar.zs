@@ -3,10 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 研钵
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.roots.Mortar;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.rootsMortarRecipe;
-import crafttweaker.item.IIngredient;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.rootsMortarRecipe;
 
 //强化骨粉
 recipes.remove(<skyresources:baseitemcomponent:4>);
@@ -22,13 +23,11 @@ Mortar.removeRecipe(<roots:petals>);
 rootsMortarRecipe(<roots:petals>, [<ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>, <ore:mysticalPetals>]);
 
 //自然物质
-var plant as IIngredient = <ore:treeSapling> | <ore:listAllgrain> | <ore:listAllveggie> | <ore:sugarcane> | <skyresources:cactusfruit> | <ore:listAllfruit> | <ore:listAllberry> | <ore:listAllgreenveggie>;
 recipes.remove(<skyresources:baseitemcomponent>);
-rootsMortarRecipe(<skyresources:baseitemcomponent>, [plant, plant, plant, plant, plant]);
+rootsMortarRecipe(<skyresources:baseitemcomponent>, [PLANT, PLANT, PLANT, PLANT, PLANT]);
 
 //怪物精华
-var monster as IIngredient = <thaumcraft:brain> | <xreliquary:mob_ingredient:6> | <xreliquary:mob_ingredient:2> | <xreliquary:mob_ingredient> | <xreliquary:mob_ingredient:3>;
-rootsMortarRecipe(<item:contenttweaker:monster_essence> * 3, [monster, monster, monster, monster, monster]);
+rootsMortarRecipe(<contenttweaker:monster_essence>, [MONSTER, MONSTER, MONSTER, MONSTER, MONSTER]);
 
 //烈焰粉
 Mortar.removeRecipe(<minecraft:blaze_powder>);

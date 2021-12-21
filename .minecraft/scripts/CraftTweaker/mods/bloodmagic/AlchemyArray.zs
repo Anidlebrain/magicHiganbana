@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 炼金矩阵
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.bloodmagic.AlchemyArray;
 /*
 //mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);

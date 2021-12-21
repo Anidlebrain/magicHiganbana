@@ -15,7 +15,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 import scripts.AnildebrainUtils.BaseUtils as alg;
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 
 zenClass RecipesUtils
 {

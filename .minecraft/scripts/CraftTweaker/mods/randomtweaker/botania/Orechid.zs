@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 凝矿兰
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.randomtweaker.botania.IOrechid;
 
 

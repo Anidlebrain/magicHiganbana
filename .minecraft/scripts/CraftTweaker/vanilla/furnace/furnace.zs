@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     原版 熔炉
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import crafttweaker.recipes.IFurnaceRecipe;
 import crafttweaker.oredict.IOreDict;

@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     奇才妙械 原子重塑机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.prodigytech.atomicreshaper;
 
 //电路板

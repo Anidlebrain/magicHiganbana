@@ -3,10 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     工作台合成
 ##================================================
+#modloaded higanbanautils
+#priority 2000
 
-#priority 1999
 import scripts.CraftTweaker.vanilla.craftingtable;
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;

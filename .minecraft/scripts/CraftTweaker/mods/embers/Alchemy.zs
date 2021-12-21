@@ -4,6 +4,8 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 炼金术
 ##================================================
+#modloaded higanbanautils
+#priority 2000
 
 /*
 mods.embers.Alchemy.add(IItemStack output, IIngredient[] inputs, int[][string] aspectRange);

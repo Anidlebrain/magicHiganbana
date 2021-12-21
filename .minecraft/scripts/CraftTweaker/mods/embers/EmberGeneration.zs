@@ -4,7 +4,10 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 基础设置
 ##================================================
+#modloaded higanbanautils
+#priority 2000
 
+import mods.embers.DawnstoneAnvil;
 /*
 燃料
 mods.embers.EmberGeneration.addEmberFuel(IIngredient item, double ember);
@@ -27,4 +30,3 @@ mods.embers.EmberGeneration.removeBoilerFluid(ILiquidStack input);
 mods.embers.EmberGeneration.addSteamEngineFuel(ILiquidStack fluid, double multiplier);
 mods.embers.EmberGeneration.removeSteamEngineFuel(ILiquidStack fluid);
 */
-import mods.embers.DawnstoneAnvil;

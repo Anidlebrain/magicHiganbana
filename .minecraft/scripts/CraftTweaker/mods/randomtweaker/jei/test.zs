@@ -1,8 +1,9 @@
 #loader crafttweaker reloadableevents
 #norun
 import mods.jei.JEI;
-import mods.randomtweaker.jei.JEIPanel;
-import mods.randomtweaker.jei.JEIRecipe;
+import mods.randomtweaker.jei.IJeiPanel;
+import mods.randomtweaker.jei.IJeiRecipe;
+import mods.randomtweaker.jei.IJeiUtils;
 
 <jei:anidlebrain>.JEISlots[0].x = 75;
 <jei:anidlebrain>.JEISlots[0].y = 0;

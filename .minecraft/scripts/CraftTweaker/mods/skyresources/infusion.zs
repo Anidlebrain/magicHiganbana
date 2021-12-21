@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 生命注入
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.infusion;
 
 //冰种子

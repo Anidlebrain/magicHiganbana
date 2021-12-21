@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 血之祭坛
 ##=============================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.bloodmagic.BloodAltar;
 
 //移除配方 移除的是 输入的物品

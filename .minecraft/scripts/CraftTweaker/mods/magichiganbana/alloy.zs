@@ -3,11 +3,35 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     彼岸之法 合金
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 #norun
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addAlloyRecipe;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.removeAlloySmelter;
-import mods.magichiganbana.IUtils;
+import mods.Higanbana.IUtils;
+
+function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytick as int, time as int, level as int) as void
+{
+    if (inputs.length < 2 || inputs.length > 3) {
+        logger.logError("[alloyRecipe] - The input must be equal to 2 or 3");
+        return ;
+    }
+    if (level < 3) {
+        //mods.enderio.AlloySmelter.addRecipe(output, inputs, energytick * time);
+    }
+    if (level < 2) {
+        if (inputs.length == 2) {
+            mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
+                [inputs[0]], "Alloying");
+        }
+        if (inputs.length == 3) {
+            mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
+                [inputs[1], inputs[2]], "Alloying");
+        }
+    }
+    if (level < 1) {
+        mods.immersiveengineering.AlloySmelter.addRecipe(output, inputs[0], inputs[1], time);
+    }
+}
 
 /*
  * 一级合金

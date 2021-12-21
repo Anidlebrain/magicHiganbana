@@ -9,7 +9,7 @@ import crafttweaker.player.IPlayer;
 
 function getMessageKey(key as string) as string
 {
-    return game.localize("magichiganbana." ~ key);
+    return game.localize("higanbana." ~ key);
 }
 
 function sendPlayMessage(player as IPlayer, key as string)

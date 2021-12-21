@@ -3,10 +3,12 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 充能台
 ##===============================================
+#modloaded higanbanautils
 #priority 2000
 
 import mods.actuallyadditions.Empowerer;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addEmpowererRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addEmpowererRecipe;
+
 
 
 //mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);

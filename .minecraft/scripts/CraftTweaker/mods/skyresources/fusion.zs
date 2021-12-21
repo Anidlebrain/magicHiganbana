@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 炼金灌注台
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.fusion;
 
 

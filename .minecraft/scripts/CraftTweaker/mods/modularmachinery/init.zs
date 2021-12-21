@@ -5,7 +5,7 @@
 ##================================================
 
 #priority 1999
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 /*
 if(!isInvalid)
 {

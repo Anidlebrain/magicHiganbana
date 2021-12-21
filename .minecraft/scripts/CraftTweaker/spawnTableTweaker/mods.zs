@@ -4,6 +4,9 @@
 ##          [Info]:     生物生成修改
 ##================================================
 /*
+#modloaded higanbanautils
+#priority 2000
+
 import mods.spawntabletweaker;
 
 MONSTER ：怪物

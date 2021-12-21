@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 符文祭坛
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.botania.RuneAltar;
 
 //水之符文

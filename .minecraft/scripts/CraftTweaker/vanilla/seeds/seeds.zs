@@ -3,11 +3,13 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     打草 掉落物
 ##================================================
-#profile 2000
-vanilla.seeds.removeSeed(<roots:terra_spores:0>);
-vanilla.seeds.removeSeed(<minecraft:wheat_seeds:0>);
-vanilla.seeds.removeSeed(<roots:wildroot:0>);
-vanilla.seeds.removeSeed(<mysticalworld:aubergine_seed:0>);
+#modloaded higanbanautils
+#priority 2000
+
+for seed in vanilla.seeds.seeds
+{
+    vanilla.seeds.removeSeed(seed.stack);
+}
 
 //混合种子
 vanilla.seeds.addSeed(<mysticalworld:assorted_seeds> % 50);

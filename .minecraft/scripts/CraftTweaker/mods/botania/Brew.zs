@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 酿造
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.botania.Brew;
 
 

@@ -4,7 +4,7 @@
 ##          [Info]:     工具提示
 ##===============================================
 import crafttweaker.item.IItemStack;
-import scripts.AnildebrainUtils.messageUtils.getTooltipMessage;
+import scripts.AnildebrainUtils.MessageUtils.getTooltipMessage;
 #priority 2000
 
 

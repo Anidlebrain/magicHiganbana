@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 炼金术桌
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.bloodmagic.TartaricForge;
 
 //灌注石

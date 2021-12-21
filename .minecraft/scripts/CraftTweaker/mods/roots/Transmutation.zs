@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 自然嬗变
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.block.IBlockState;
 import mods.roots.predicates.Predicates;
 import mods.roots.predicates.BlockStateBelow;

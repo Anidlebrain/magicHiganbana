@@ -11,14 +11,15 @@ import crafttweaker.oredict.IOreDictEntry;
 import scripts.AnildebrainUtils.BaseUtils;
 import thaumcraft.aspect.CTAspectStack;
 import mods.astralsorcery.Utils;
-import scripts.AnildebrainUtils.messageUtils;
-
-global ORGANIC_GREEN_DYE as IOreDictEntry = <ore:dyeGreen>;
-global ORGANIC_BROWN_DYE as IOreDictEntry = <ore:dyeBrown>;
-global ORGANIC_BLACK_DYE as IOreDictEntry = <ore:dyeBlack>;
+import scripts.AnildebrainUtils.MessageUtils;
 
 global BLOOD_ORB as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | 
                   <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
+
+global PLANT as IIngredient = <ore:treeSapling> | <ore:listAllgrain> | <ore:listAllveggie> | <ore:sugarcane> | <skyresources:cactusfruit> | <ore:listAllfruit> | <ore:listAllberry> | <ore:listAllgreenveggie>;
+
+global MONSTER as IIngredient = <thaumcraft:brain> | <xreliquary:mob_ingredient:6> | <xreliquary:mob_ingredient:2> | <xreliquary:mob_ingredient> | <xreliquary:mob_ingredient:3>;
+
 
 global DYE_ORE as IOreDictEntry[] = [
     <ore:dyeWhite>,
@@ -45,8 +46,8 @@ global AS_CRYSTAL3 as IIngredient = Utils.getCrystalORIngredient(true, false);
 global AS_CRYSTAL4 as IIngredient = Utils.getCrystalORIngredient(true, true);
 
 global FAILEDPRODUCT as IItemStack = <contenttweaker:ashes>.withLore([
-    messageUtils.getLoreMessage("failed.product.1"),
-    messageUtils.getLoreMessage("failed.product.2")]);
+    MessageUtils.getLoreMessage("failed.product.1"),
+    MessageUtils.getLoreMessage("failed.product.2")]);
 
 //神秘时代 要素
 global Aer as CTAspectStack = <aspect:aer>;

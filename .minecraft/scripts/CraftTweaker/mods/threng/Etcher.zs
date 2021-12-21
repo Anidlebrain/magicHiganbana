@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     懒人AE ME电路板蚀刻机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.threng.Etcher;
 
 //Engineering Processor     工程处理器

@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 冰箱
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.freezer;
 
 //冰种子

@@ -337,7 +337,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "integrateddynamics:crystalized_menril_block@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -409,7 +409,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "integrateddynamics:crystalized_menril_block@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -481,7 +481,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "integrateddynamics:crystalized_menril_block@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {

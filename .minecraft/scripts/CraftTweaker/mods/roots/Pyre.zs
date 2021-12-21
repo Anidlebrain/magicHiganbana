@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 柴堆
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.roots.Pyre;
 
 //炼金灌注台

@@ -17,7 +17,7 @@ import mods.zenutils.command.ZenCommand;
 import mods.zenutils.command.ZenUtilsCommandSender;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.command.TabCompletion;
-import scripts.AnildebrainUtils.messageUtils;
+import scripts.AnildebrainUtils.MessageUtils;
 
 var clearupCommand as ZenCommand = ZenCommand.create("clearup");
 clearupCommand.getCommandUsage = function(sender) {
@@ -28,7 +28,7 @@ clearupCommand.execute = function(command, server, sender, args) {
     server.commandManager.executeCommand(server, "/kill @e[type=Item]");
     var player as IPlayer = CommandUtils.getCommandSenderAsPlayer(sender);
     if(!isNull(player)) {
-        messageUtils.sendPlayMessage(player, "command.success.1");
+        MessageUtils.sendPlayMessage(player, "command.success.1");
     }
 };
 clearupCommand.register();
@@ -44,12 +44,12 @@ cheatCommand.execute = function(command, server, sender, args) {
         player.sendStatusMessage("§6未知指令", true);
     }
     else if (args.length == 2 || args.length >= 4) {
-        messageUtils.sendPlayMessage(player, "command.error.1");
+        MessageUtils.sendPlayMessage(player, "command.error.1");
     }
     else if(!isNull(player)) {
         //print("cheat args[0]" ~ args[0]);
         if (args[0] == "Anidlebrain") {
-            messageUtils.sendPlayMessage(player, "command.warning.1");
+            MessageUtils.sendPlayMessage(player, "command.warning.1");
             val ischeat as int = player.data.IsCheat.asInt();
             player.update(player.data + {IsCheat : 1 as int});
             //print("cheat args[1]" ~ args[1]);
@@ -78,7 +78,7 @@ cheatCommand.execute = function(command, server, sender, args) {
             } 
         }
         else {
-            messageUtils.sendPlayMessage(player, "command.error.2");
+            MessageUtils.sendPlayMessage(player, "command.error.2");
         }
     }  
 };
@@ -108,7 +108,7 @@ isCommand.requiredPermissionLevel = 0;
 isCommand.execute = function(command, server, sender, args) {
     var player as IPlayer = CommandUtils.getCommandSenderAsPlayer(sender);
     if(!isNull(player)) {
-        messageUtils.sendPlayMessage(player, "command.error.2");
+        MessageUtils.sendPlayMessage(player, "command.error.2");
     }
 };
 isCommand.register();

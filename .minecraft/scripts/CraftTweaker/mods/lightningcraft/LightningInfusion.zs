@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     雷电工艺 LE融合器
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import moretweaker.lightningcraft.LightningInfusion;
 /*
 注1: moretweaker 里判断了 inputs.length 必须等于 4

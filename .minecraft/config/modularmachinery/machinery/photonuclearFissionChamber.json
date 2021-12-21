@@ -121,7 +121,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_cryotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -137,7 +137,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_cryotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -145,7 +145,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_cryotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -465,7 +465,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_pyrotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -497,7 +497,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_pyrotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -513,7 +513,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thermalfoundation:fluid_pyrotheum@0"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {

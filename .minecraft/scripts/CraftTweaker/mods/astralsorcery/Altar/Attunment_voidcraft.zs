@@ -3,12 +3,14 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 星辉祭坛 虚空工艺
 ##================================================
-#priority 2000
+#modloaded higanbanautils
 #modloaded voidcraft
+#priority 2000
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.astralsorcery.Altar;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addAltarRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addAltarRecipe;
 
 
 function makeAltar(output as IItemStack,

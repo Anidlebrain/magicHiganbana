@@ -16,7 +16,8 @@
 				}
 			},
 			id: "thermalfoundation:tome_experience",
-			tag: {}
+			tag: {},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

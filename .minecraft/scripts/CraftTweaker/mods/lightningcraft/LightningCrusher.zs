@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     雷电工艺 LE粉碎机
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import moretweaker.lightningcraft.LightningCrusher;
 /*
 LightningCrusher.add(IItemStack output, IIngredient input);

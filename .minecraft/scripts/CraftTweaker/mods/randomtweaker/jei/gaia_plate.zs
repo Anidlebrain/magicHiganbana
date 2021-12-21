@@ -4,6 +4,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 JEI-盖亚凝聚板
 ##================================================
+#modloaded higanbanautils
 #priority 2001
 
 import mods.jei.JEI;

@@ -3,9 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     沉浸工程 混合机
 ##================================================
-
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.immersiveengineering.Mixer;
 
 

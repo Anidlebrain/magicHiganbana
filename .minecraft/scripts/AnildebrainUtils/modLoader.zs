@@ -38,7 +38,7 @@ for i in invalidMods {
 }
 
 //calling
-//import scripts.AnildebrainUtils.modLoader.isInvalid;
+//import scripts.AnildebrainUtils.ModLoader.isInvalid;
 if(!isInvalid) {
     print("[ModLoader] The check for invalid mods has been completed, and all scripts will now be loaded.");
 }

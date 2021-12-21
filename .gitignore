@@ -17,6 +17,7 @@
 
 !/.minecraft/resources/
 /.minecraft/resources/Thaumcraft/lang/zh_cn.lang-bak
+/.minecraft/resources/modularcontroller/
 
 !/.minecraft/scripts/
 /.minecraft/scripts/doc/*.exe
@@ -26,9 +27,20 @@
 
 !/.minecraft/mods/
 /.minecraft/mods/*
-!/.minecraft/mods/magicHiganbana*.jar
+!/.minecraft/mods/Higanbana*.jar
 
 !/.minecraft/icon.png
 
 !/.minecraft/config
-/.minecraft/config/*
+/.minecraft/config/AppliedEnergistics2/items.csv
+/.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
+/.minecraft/config/InvTweaks.cfg
+/.minecraft/config/splash.properties
+/.minecraft/config/jei/worldSettings.cfg
+/.minecraft/config/Guide-API/Guide-API.cfg
+/.minecraft/config/*.txt
+/.minecraft/config/*/*.txt
+/.minecraft/config/*.json
+/.minecraft/config/*/*.json
+/.minecraft/config/*/*/*.json
+/.minecraft/config/*.xml

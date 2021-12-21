@@ -66,7 +66,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "extendedcrafting:storage@6"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -90,7 +90,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "extendedcrafting:storage@6"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -227,7 +227,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "enderio:block_transceiver"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {

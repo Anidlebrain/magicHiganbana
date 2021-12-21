@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 召唤生物
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.roots.SummonCreatures;
 import crafttweaker.entity.IEntityDefinition;
 
@@ -97,7 +99,7 @@ SummonCreatures.addEntity(<entity:minecraft:zombie>, [<item:xreliquary:mob_ingre
 SummonCreatures.addEntity(<entity:minecraft:slime>, [<item:xreliquary:mob_ingredient:4>]);
 
 //恶魂
-SummonCreatures.addEntity(<entity:minecraft:ghast>, [<item:minecraft:fire_charge>, <item:xreliquary:holy_hand_grenade>, <item:xreliquary:wraith_node>]);
+//SummonCreatures.addEntity(<entity:minecraft:ghast>, [<item:minecraft:fire_charge>, <item:xreliquary:holy_hand_grenade>, <item:xreliquary:wraith_node>]);
 
 //僵尸猪人
 SummonCreatures.removeEntity(<entity:minecraft:zombie_pigman>);
@@ -141,7 +143,7 @@ SummonCreatures.addEntity(<entity:minecraft:wolf>, [<item:minecraft:bone>, <item
 SummonCreatures.addEntity(<entity:minecraft:mooshroom>, [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:tallgrass:1>, <item:minecraft:red_mushroom>]);
 
 //豹猫
-SummonCreatures.addEntity(<entity:minecraft:ocelot>, [<item:minecraft:fish>, <item:tconstruct:edible:20>, <item:harvestcraft:gravlaxitem>]);
+//SummonCreatures.addEntity(<entity:minecraft:ocelot>, [<item:minecraft:fish>, <item:tconstruct:edible:20>, <item:harvestcraft:gravlaxitem>]);
 
 //马
 SummonCreatures.addEntity(<entity:minecraft:horse>, [<item:minecraft:hay_block>, <item:minecraft:golden_apple>, <item:minecraft:leather>]);
@@ -151,15 +153,6 @@ SummonCreatures.addEntity(<entity:minecraft:rabbit>, [<item:minecraft:carrot>, <
 
 //鹦鹉
 SummonCreatures.addEntity(<entity:minecraft:parrot>, [<item:minecraft:cookie>, <item:mysticalworld:assorted_seeds>]);
-
-//暴雪人
-SummonCreatures.addEntity(<entity:thermalfoundation:blizz>, [<item:bloodmagic:component:32>, <item:botania:grasshorn:2>]);
-
-//狂风人
-SummonCreatures.addEntity(<entity:thermalfoundation:blitz>, [<item:bloodmagic:component:2>, <item:botania:grasshorn:0>]);
-
-//岩石人
-SummonCreatures.addEntity(<entity:thermalfoundation:basalz>, [<item:bloodmagic:component:24>, <item:botania:grasshorn:1>]);
 
 var firendlyCreatures = [
     <entity:minecraft:pig>,

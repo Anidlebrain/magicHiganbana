@@ -29,8 +29,8 @@ import mods.contenttweaker.tconstruct.Material;
 import mods.tconstruct.traits.CanApplyTogetherEnchantment;
 
 import scripts.AnildebrainUtils.CotUtils;
-import scripts.AnildebrainUtils.messageCotUtils.getTconstructMessage as getMessage;
-import scripts.AnildebrainUtils.messageCotUtils.sendPlayMessage as sendMessage;
+import scripts.AnildebrainUtils.MessageCotUtils.getTconstructMessage as getMessage;
+import scripts.AnildebrainUtils.MessageCotUtils.sendPlayMessage as sendMessage;
 
 val canApplyTogetherEnchantment as CanApplyTogetherEnchantment = function(trait, enchantment) {
     return true;

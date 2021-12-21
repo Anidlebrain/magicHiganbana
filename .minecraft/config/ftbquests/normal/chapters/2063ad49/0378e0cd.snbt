@@ -12,7 +12,8 @@
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "thermalfoundation:tome_lexicon"
+			id: "thermalfoundation:tome_lexicon",
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

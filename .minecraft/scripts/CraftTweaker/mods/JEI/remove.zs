@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     JEI 物品隐藏
 ##================================================
-
+#modloaded higanbanautils
 #priority 2500
+
 #norun
 import crafttweaker.item.IItemStack;
 import crafttweaker.mods.IMod;

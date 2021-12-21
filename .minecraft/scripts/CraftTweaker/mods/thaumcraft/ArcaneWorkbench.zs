@@ -3,10 +3,12 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     神秘时代 奥术工作台
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.thaumcraft.ArcaneWorkbench;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addArcaneWorkbenchShapelessRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils;
+
 
 /*
 //mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
@@ -21,7 +23,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20,
 
 //魔导透镜
 ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
-addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, "FIRSTSTEPS", 20, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, "FIRSTSTEPS", 20, 
     [[null, <contenttweaker:crystal_gold>, null],
     [<contenttweaker:crystal_gold>, <astralsorcery:itemcoloredlens:6>, <contenttweaker:crystal_gold>],
     [null, <contenttweaker:crystal_gold>, null]],
@@ -29,14 +31,14 @@ addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, "FIRSTSTEPS", 20,
 
 //红石镶嵌
 ArcaneWorkbench.removeRecipe(<thaumcraft:inlay>);
-addArcaneWorkbenchShapedRecipe(<thaumcraft:inlay> * 2, "INFUSIONSTABLE", 25, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:inlay> * 2, "INFUSIONSTABLE", 25, 
     [[<ore:ingotRedstoneAlloy>, <actuallyadditions:item_crystal_empowered>],
     [<actuallyadditions:item_crystal_empowered>]],
     [Aqua]);
 
 //奥术石材
 recipes.remove(<thaumcraft:stone_arcane>);
-addArcaneWorkbenchShapedRecipe(<thaumcraft:stone_arcane> * 8, "BASEINFUSION", 30, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:stone_arcane> * 8, "BASEINFUSION", 30, 
     [[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <thaumcraft:crystal_essence>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]],
@@ -44,7 +46,7 @@ addArcaneWorkbenchShapedRecipe(<thaumcraft:stone_arcane> * 8, "BASEINFUSION", 30
 
 //镜面玻璃
 ArcaneWorkbench.removeRecipe(<thaumcraft:mirrored_glass>);
-addArcaneWorkbenchShapelessRecipe(<thaumcraft:mirrored_glass>, "MIRROR", 50,
+HiganbanaRecipesUtils.addArcaneWorkbenchShapelessRecipe(<thaumcraft:mirrored_glass>, "MIRROR", 50,
     [<thaumcraft:quicksilver>, <astralsorcery:itemcraftingcomponent:3>],
     [Aqua, Ordo]);
 

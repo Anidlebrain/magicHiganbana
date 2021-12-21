@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 木匠工作台
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.item.IItemStack;

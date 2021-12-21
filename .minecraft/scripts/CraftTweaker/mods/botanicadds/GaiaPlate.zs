@@ -3,9 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 盖亚凝聚板
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.gaiaPlateRecipe;
+
+import mods.botanicadds.GaiaPlate;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.gaiaPlateRecipe;
 
 /*
 

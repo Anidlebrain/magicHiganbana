@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 加压反应室
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.mekanism.reaction;
 
 //mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);

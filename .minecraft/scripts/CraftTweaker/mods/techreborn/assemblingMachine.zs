@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     科技复兴 控制电路加工机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.techreborn.assemblingMachine;
 
 

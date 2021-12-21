@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 炼金术
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.catalysts;
 
 //删除时会导致游戏出错

@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     气动工艺 装配系统
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.pneumaticcraft.assembly;
 // 注：addDrillLaserRecipe 没有效果 原因不明
 

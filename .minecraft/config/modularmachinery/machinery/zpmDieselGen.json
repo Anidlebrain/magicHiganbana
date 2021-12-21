@@ -9,7 +9,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -17,7 +17,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -26,7 +26,7 @@
             "z": 1,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -34,7 +34,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -42,7 +42,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -50,7 +50,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -58,7 +58,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -66,7 +66,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -74,7 +74,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -90,7 +90,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -98,7 +98,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -106,7 +106,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -114,7 +114,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -130,7 +130,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -139,7 +139,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -148,7 +148,7 @@
             "z": 1,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -157,7 +157,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -166,7 +166,7 @@
             "z": 1,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -175,7 +175,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -184,7 +184,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -193,7 +193,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -202,7 +202,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -211,7 +211,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -219,7 +219,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -227,7 +227,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "enderio:block_transceiver"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -236,7 +236,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -245,7 +245,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -253,7 +253,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "gregtech:boiler_firebox_casing@3"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -261,7 +261,7 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -269,7 +269,7 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -277,7 +277,7 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -285,7 +285,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -301,7 +301,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -309,7 +309,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "libvulpes:coil0@10"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -317,7 +317,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "gregtech:wire_coil@8"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -334,7 +334,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -343,7 +343,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -352,7 +352,7 @@
             "z": 0,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -361,7 +361,7 @@
             "z": 1,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -370,7 +370,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -378,7 +378,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "gregtech:metal_casing@7"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -387,7 +387,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -396,7 +396,7 @@
             "z": 2,
 
             "elements": [
-                "gregtech:frame_tungsten_steel@11"
+                "thaumcraft:stone_arcane@0"
             ]
         },
         {
@@ -404,7 +404,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "gregtech:wire_coil@8"
+                "thaumcraft:stone_arcane@0"
             ]
         }
     ]}

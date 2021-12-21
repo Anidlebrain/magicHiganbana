@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 炼金嬗变
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.roots.Chrysopoeia;
 
 Chrysopoeia.removeRecipeByOutput(<minecraft:iron_ingot>);

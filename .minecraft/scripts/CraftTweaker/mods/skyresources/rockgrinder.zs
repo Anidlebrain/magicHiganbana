@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 碎石机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.rockgrinder;
 
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);

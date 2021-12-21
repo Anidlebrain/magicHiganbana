@@ -4,6 +4,8 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 黎明石砧
 ##================================================
+#modloaded higanbanautils
+#priority 2000
 
 /*
 mods.embers.DawnstoneAnvil.add(IItemStack[] outputs, IIngredient inputTop, IIngredient inputBottom);

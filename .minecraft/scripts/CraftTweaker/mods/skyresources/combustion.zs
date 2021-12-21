@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 氧化器
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.skyresources.combustion;
 import mods.skyresources.fusion;
 

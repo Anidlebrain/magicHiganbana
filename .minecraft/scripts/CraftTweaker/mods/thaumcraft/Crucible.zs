@@ -3,14 +3,16 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     神秘时代 坩埚
 ##================================================
+#modloaded higanbanautils
 #priority 2000
 
 import mods.thaumcraft.Crucible;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addCrucibleRecipe;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addCrucibleRecipe;
 /*
 //mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 */
+
 
 //黄色闪耀之光
 Crucible.removeRecipe(<thaumcraft:nitor_yellow>);

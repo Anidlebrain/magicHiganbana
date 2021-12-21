@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 工作台合成
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.ctutils.world.World;
@@ -15,7 +16,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;
-import scripts.AnildebrainUtils.modLoader.isInvalid;
+import scripts.AnildebrainUtils.ModLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 

@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     科技复兴 蒸馏塔
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.techreborn.distillationTower;
 
 //mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);

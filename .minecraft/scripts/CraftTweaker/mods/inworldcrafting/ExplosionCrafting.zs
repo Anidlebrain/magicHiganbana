@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     世界合成 爆炸合成
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.inworldcrafting.ExplosionCrafting;
 
 recipes.remove(<prodigytech:explosion_furnace>);

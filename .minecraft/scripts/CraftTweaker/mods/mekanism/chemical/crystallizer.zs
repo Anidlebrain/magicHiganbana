@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 化学结晶机
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.mekanism.chemical.crystallizer;
 //mods.mekanism.chemical.crystallizer.addRecipe(IGasStack inputGas, IItemStack outputStack);
 

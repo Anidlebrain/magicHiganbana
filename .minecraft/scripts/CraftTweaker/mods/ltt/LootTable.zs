@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     战利品
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 
 //注：战利品不能删除植物魔法模组 会导致盖亚死亡时不掉落任何物品
 //mods.ltt.LootTable.removeModEntry("botania");

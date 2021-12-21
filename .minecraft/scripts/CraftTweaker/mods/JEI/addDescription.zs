@@ -3,10 +3,12 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     JEI 添加物品描述
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.jei.JEI.addDescription;
 import crafttweaker.item.IItemStack;
-import scripts.AnildebrainUtils.messageUtils.getDescriptionMessage;
+import scripts.AnildebrainUtils.MessageUtils.getDescriptionMessage;
 
 var m_netherRecipes as string =  getDescriptionMessage("nether.recipes");
 var m_endRecipes as string = getDescriptionMessage("end.recipes");

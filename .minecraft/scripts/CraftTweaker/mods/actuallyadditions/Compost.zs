@@ -3,8 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 堆肥机
 ##===============================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.actuallyadditions.AtomicReconstructor;
 
 //mods.actuallyadditions.Compost.addRecipe(IItemStack output, IItemStack outputDisplay, IItemStack input, IItemStack inputDisplay);

@@ -3,10 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     凿子
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
+
 import mods.chisel.Carving;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addChiselByOre;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addChiselByOre;
 
 //石砖 移除 苔石砖
 //Carving.removeVariation("stonebrick", <minecraft:stonebrick:1>);

@@ -3,11 +3,11 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 繁花争艳
 ##================================================
-
+#modloaded higanbanautils
 #priority 2000
-import mods.roots.FlowerGrowth;
-import scripts.AnildebrainUtils.MagicHiganbanaRecipesUtils.addFlowerGrowth;
 
+import mods.roots.FlowerGrowth;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addFlowerGrowth;
 
 
 for i in 0 .. 15 {

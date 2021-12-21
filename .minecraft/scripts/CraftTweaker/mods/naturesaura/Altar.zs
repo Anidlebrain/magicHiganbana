@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     自然灵气 自然祭坛
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import mods.naturesaura.Altar;
 //mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 

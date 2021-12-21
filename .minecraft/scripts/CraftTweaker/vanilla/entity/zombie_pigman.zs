@@ -3,7 +3,9 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     生物掉落 僵尸猪人
 ##================================================
+#modloaded higanbanautils
 #priority 2000
+
 import crafttweaker.entity.IEntityDefinition;
 
 val entity = <entity:minecraft:zombie_pigman>;

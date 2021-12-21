@@ -4,6 +4,6 @@
 	tasks: [{
 		uid: "f289c803",
 		type: "fluid",
-		fluid: "mana"
+		fluid: "water"
 	}]
 }
