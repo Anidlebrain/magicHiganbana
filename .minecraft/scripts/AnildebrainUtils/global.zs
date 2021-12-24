@@ -40,10 +40,12 @@ global DYE_ORE as IOreDictEntry[] = [
     <ore:dyeBlack>
 ] as IOreDictEntry[];
 
-global AS_CRYSTAL1 as IIngredient = Utils.getCrystalORIngredient(false, false);
-global AS_CRYSTAL2 as IIngredient = Utils.getCrystalORIngredient(false, true);
-global AS_CRYSTAL3 as IIngredient = Utils.getCrystalORIngredient(true, false);
-global AS_CRYSTAL4 as IIngredient = Utils.getCrystalORIngredient(true, true);
+global AS_CRYSTAL as IIngredient[] = [
+    Utils.getCrystalORIngredient(false, false),
+    Utils.getCrystalORIngredient(false, true),
+    Utils.getCrystalORIngredient(true, false),
+    Utils.getCrystalORIngredient(true, true)
+];
 
 global FAILEDPRODUCT as IItemStack = <contenttweaker:ashes>.withLore([
     MessageUtils.getLoreMessage("failed.product.1"),

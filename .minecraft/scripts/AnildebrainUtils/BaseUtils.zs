@@ -24,6 +24,9 @@ function removeBraces(str as string) as string {
 }
 
 function removeColon(str as string ) as string {
+    if (str.length == 0) {
+        return "";
+    }
     var len as int = str.length;
     var res as string = "";
     if (str.startsWith("liquid")) {

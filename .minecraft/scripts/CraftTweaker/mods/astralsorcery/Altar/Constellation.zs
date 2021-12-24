@@ -19,10 +19,10 @@ function makeAltar(output as IItemStack,
 {
     if(starLight > 4000)
     {
-        addAltarRecipe(output, 3, 4000, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 3, 4000, craftTickTime, recipe, replacements);
     }
     else
     {
-        addAltarRecipe(output, 3, starLight, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 3, starLight, craftTickTime, recipe, replacements);
     }
 }

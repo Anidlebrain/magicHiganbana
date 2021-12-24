@@ -24,13 +24,13 @@ import mods.ctutils.utils.Math;
 function removeAlloySmelter(output as IItemStack, level as int) as void
 {
     if(IUtils.bitwiseJudgment(level, 1)) {
-        //mods.enderio.AlloySmelter.removeRecipe(output);
+        
     }
     if(IUtils.bitwiseJudgment(level, 2)) {
         mods.immersiveengineering.ArcFurnace.removeRecipe(output);
     }
     if(IUtils.bitwiseJudgment(level, 3)) {
-        //mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(output);
+        
     }
 }
 
@@ -41,7 +41,7 @@ function addAltarRecipe(output as IItemStack,
                    craftTickTime as int,
                    recipe as string[],
                    replacements as IIngredient[string],
-                   iRequiredConstellationFocusName as string) as void
+                   iRequiredConstellationFocusName as string = "") as void
 {
     var recipesNum = recipesUtils.getRecipesNum();
     if(1 == level) {
@@ -73,10 +73,10 @@ function addAltarRecipe(output as IItemStack,
 }
 
 function addArcaneWorkbenchShapedRecipe(output as IItemStack,
-                                        research as string,
                                         vis as int,
                                         input as IIngredient[][],
-                                        aspectList as CTAspectStack[]) as void
+                                        aspectList as CTAspectStack[],
+                                        research as string = "") as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -85,10 +85,10 @@ function addArcaneWorkbenchShapedRecipe(output as IItemStack,
 }
 
 function addArcaneWorkbenchShapelessRecipe(output as IItemStack,
-                                        research as string,
                                         vis as int,
                                         input as IIngredient[],
-                                        aspectList as CTAspectStack[]) as void
+                                        aspectList as CTAspectStack[],
+                                        research as string = "") as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -261,9 +261,9 @@ function treeRitualRecipe(output as IItemStack, inputs as IIngredient[]) as void
 }
 
 function addCrucibleRecipe(output as IItemStack,
-                           research as string,
                            input as IIngredient,
-                           aspectList as CTAspectStack[]) as void
+                           aspectList as CTAspectStack[],
+                           research as string = "" ) as void
 {
     var name = recipesUtils.getRecipeName(output);
 
@@ -289,5 +289,11 @@ function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) as voi
       .setName(name)
       .addOutput(output)
       .create();
+}
 
+function addRootsPyreRecipe(output as IItemStack, inputs as IIngredient[], xp as int = 0) as void
+{
+    var name = recipesUtils.getRecipeName(output);
+
+    mods.roots.Pyre.addRecipe(name, output, inputs, xp);
 }

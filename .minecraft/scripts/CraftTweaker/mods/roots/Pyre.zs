@@ -7,10 +7,11 @@
 #priority 2000
 
 import mods.roots.Pyre;
+import scripts.AnildebrainUtils.HiganbanaRecipesUtils.addRootsPyreRecipe;
 
 //炼金灌注台
 recipes.remove(<skyresources:fusiontable>);
-Pyre.addRecipe("skyresources/Pyre/fusiontable", <skyresources:fusiontable>, [
+addRootsPyreRecipe(<skyresources:fusiontable>, [
     <botania:specialflower>.withTag({type: "manastar"}),
     <botania:platform>,
     <contenttweaker:alchemical_frame>,
@@ -18,7 +19,7 @@ Pyre.addRecipe("skyresources/Pyre/fusiontable", <skyresources:fusiontable>, [
     <contenttweaker:alchemical_plate>]);
 
 //炼金板
-Pyre.addRecipe("contenttweaker/Pyre/alchemical_plate", <contenttweaker:alchemical_plate>, [
+addRootsPyreRecipe(<contenttweaker:alchemical_plate>, [
     <botania:managlass>,
     <botania:manabottle>,
     <skyresources:alchemyitemcomponent:2>,

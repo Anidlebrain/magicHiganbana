@@ -21,7 +21,10 @@ alchemicalFrame.fullBlock = false;
 alchemicalFrame.register();
 
 //天空块
-CotUtils.blockCreator("sky_block", <blockmaterial:iron>, 0);
+CotUtils.blockCreator("block_sky", <blockmaterial:iron>, 0);
+
+//盖亚块
+CotUtils.blockCreator("block_gaia", <blockmaterial:iron>, 0);
 
 function createCrystal(name as string)
 {

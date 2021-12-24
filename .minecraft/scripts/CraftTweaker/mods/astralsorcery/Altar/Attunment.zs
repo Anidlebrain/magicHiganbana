@@ -20,11 +20,11 @@ function makeAltar(output as IItemStack,
 {
     if(starLight > 2000)
     {
-        addAltarRecipe(output, 2, 2000, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 2, 2000, craftTickTime, recipe, replacements);
     }
     else
     {
-        addAltarRecipe(output, 2, starLight, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 2, starLight, craftTickTime, recipe, replacements);
     }
 }
 
@@ -98,7 +98,7 @@ makeAltar(<astralsorcery:blockritualpedestal>, 1999, 40,
         "G   G",
     ],
     {
-        A : AS_CRYSTAL1,
+        A : AS_CRYSTAL[0],
         B : <contenttweaker:starglow_gem>,
         C : <naturesaura:range_visualizer>,
         D : <astralsorcery:blockmarble:6>,
@@ -119,7 +119,7 @@ makeAltar(<astralsorcery:blockattunementaltar>, 1999, 40,
         "D   D",
     ],
     {
-        A : AS_CRYSTAL1,
+        A : AS_CRYSTAL[0],
         B : <contenttweaker:starglow_gem>,
         C : <astralsorcery:blockattunementrelay>,
         D : <astralsorcery:blockmarble:6>,
@@ -141,7 +141,7 @@ makeAltar(<astralsorcery:blockattunementaltar>, 1999, 40,
         A : <astralsorcery:blockinfusedwood>,
         B : <contenttweaker:arch_stick>,
         C : <contenttweaker:starglow_gem>,
-        D : AS_CRYSTAL1,
+        D : AS_CRYSTAL[0],
     }
 );
 

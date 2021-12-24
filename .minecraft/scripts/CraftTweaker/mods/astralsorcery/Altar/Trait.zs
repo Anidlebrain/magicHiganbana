@@ -16,14 +16,14 @@ function makeAltar(output as IItemStack,
                    craftTickTime as int,
                    recipe as string[],
                    replacements as IIngredient[string],
-                   iRequiredConstellationFocusName as string)
+                   iRequiredConstellationFocusName = "" as string)
 {
-    if(starLight > 1000)
+    if(starLight > 8000)
     {
-        addAltarRecipe(output, 4, 8000, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 4, 8000, craftTickTime, recipe, replacements, iRequiredConstellationFocusName);
     }
     else
     {
-        addAltarRecipe(output, 4, starLight, craftTickTime, recipe, replacements, "");
+        addAltarRecipe(output, 4, starLight, craftTickTime, recipe, replacements, iRequiredConstellationFocusName);
     }
 }

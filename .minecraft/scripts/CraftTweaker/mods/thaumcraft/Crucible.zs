@@ -16,12 +16,12 @@ mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>,
 
 //黄色闪耀之光
 Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
-addCrucibleRecipe(<thaumcraft:nitor_yellow>, "FIRSTSTEPS", <skyresources:alchemyitemcomponent:4>, [Perditio * 10, Ignis * 10, Lux * 10]);
+addCrucibleRecipe(<thaumcraft:nitor_yellow>, <skyresources:alchemyitemcomponent:4>, [Perditio * 10, Ignis * 10, Lux * 10], "FIRSTSTEPS");
 
 //炼金黄铜锭
 Crucible.removeRecipe(<thaumcraft:ingot:2>);
-addCrucibleRecipe(<thaumcraft:ingot:2>, "METALLURGY", <ore:ingotVibranium>, [Alkimia * 3, Fabrico * 8, Praemunio * 2]);
+addCrucibleRecipe(<thaumcraft:ingot:2>, <ore:ingotVibranium>, [Alkimia * 3, Fabrico * 8, Praemunio * 2], "METALLURGY");
 
 //神秘锭
 Crucible.removeRecipe(<thaumcraft:ingot>);
-addCrucibleRecipe(<thaumcraft:ingot>, "METALLURGY", <ore:ingotMystic>, [Thunder * 10, Praecantatio * 5, Terra * 5]);
+addCrucibleRecipe(<thaumcraft:ingot>, <ore:ingotMystic>, [Thunder * 10, Praecantatio * 5, Terra * 5], "METALLURGY");

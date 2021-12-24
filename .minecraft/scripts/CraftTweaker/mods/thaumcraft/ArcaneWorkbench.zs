@@ -23,30 +23,30 @@ mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20,
 
 //魔导透镜
 ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
-HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, "FIRSTSTEPS", 20, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:thaumometer>, 20, 
     [[null, <contenttweaker:crystal_gold>, null],
     [<contenttweaker:crystal_gold>, <astralsorcery:itemcoloredlens:6>, <contenttweaker:crystal_gold>],
     [null, <contenttweaker:crystal_gold>, null]],
-    [Aer, Terra, Ignis, Aqua, Ordo, Perditio]);
+    [Aer, Terra, Ignis, Aqua, Ordo, Perditio], "FIRSTSTEPS");
 
 //红石镶嵌
 ArcaneWorkbench.removeRecipe(<thaumcraft:inlay>);
-HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:inlay> * 2, "INFUSIONSTABLE", 25, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:inlay> * 2, 25, 
     [[<ore:ingotRedstoneAlloy>, <actuallyadditions:item_crystal_empowered>],
     [<actuallyadditions:item_crystal_empowered>]],
-    [Aqua]);
+    [Aqua], "INFUSIONSTABLE");
 
 //奥术石材
 recipes.remove(<thaumcraft:stone_arcane>);
-HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:stone_arcane> * 8, "BASEINFUSION", 30, 
+HiganbanaRecipesUtils.addArcaneWorkbenchShapedRecipe(<thaumcraft:stone_arcane> * 8, 30, 
     [[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <thaumcraft:crystal_essence>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]],
-    [Terra]);
+    [Terra], "BASEINFUSION");
 
 //镜面玻璃
 ArcaneWorkbench.removeRecipe(<thaumcraft:mirrored_glass>);
-HiganbanaRecipesUtils.addArcaneWorkbenchShapelessRecipe(<thaumcraft:mirrored_glass>, "MIRROR", 50,
+HiganbanaRecipesUtils.addArcaneWorkbenchShapelessRecipe(<thaumcraft:mirrored_glass>, 50,
     [<thaumcraft:quicksilver>, <astralsorcery:itemcraftingcomponent:3>],
-    [Aqua, Ordo]);
+    [Aqua, Ordo], "MIRROR");
 
