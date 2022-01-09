@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     气动工艺 装配系统
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.pneumaticcraft.assembly;

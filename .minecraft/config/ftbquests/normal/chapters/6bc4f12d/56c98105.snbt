@@ -5,10 +5,10 @@
 		"7f0c7eb2"
 	],
 	tasks: [{
-		uid: "aae55b1a",
+		uid: "dd5ef5a5",
 		type: "item",
 		items: [{
-			item: "minecraft:crafting_table"
+			item: "artisanworktables:worktable 1 5"
 		}]
 	}]
 }

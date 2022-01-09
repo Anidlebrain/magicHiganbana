@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     匠魂 铸造
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.tconstruct.Casting;

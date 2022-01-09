@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 铁匠工作台
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.artisanworktables.builder.RecipeBuilder;

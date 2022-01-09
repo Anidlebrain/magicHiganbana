@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     JEI 添加物品描述
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.jei.JEI.addDescription;

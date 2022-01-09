@@ -4,7 +4,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 黎明石砧
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 /*

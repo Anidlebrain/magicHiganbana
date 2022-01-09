@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 融合机
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.mekanism.combiner;

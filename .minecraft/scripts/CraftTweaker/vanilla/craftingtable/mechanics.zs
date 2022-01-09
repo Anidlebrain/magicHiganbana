@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     力学合成 工作台合成
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #modloaded mechanics
 #priority 2000
 

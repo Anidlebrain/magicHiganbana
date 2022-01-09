@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     懒人AE 福鲁伊克斯聚合器
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.threng.Aggregator;

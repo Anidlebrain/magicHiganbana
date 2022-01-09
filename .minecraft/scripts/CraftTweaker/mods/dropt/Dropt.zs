@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     掉落物修改
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.dropt.Dropt;

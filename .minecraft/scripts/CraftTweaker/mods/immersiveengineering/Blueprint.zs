@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     沉浸工程 蓝图
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.immersiveengineering.Blueprint;

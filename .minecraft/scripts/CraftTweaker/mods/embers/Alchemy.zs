@@ -4,7 +4,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 炼金术
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 /*

@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 工作台合成
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import crafttweaker.item.IItemStack;

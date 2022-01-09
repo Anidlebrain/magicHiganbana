@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 聚星缸
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.astralsorcery.Lightwell;

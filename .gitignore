@@ -42,3 +42,11 @@
 /.minecraft/config/*/*.json
 /.minecraft/config/*/*/*.json
 /.minecraft/config/*.xml
+!/.minecraft/config/modularmachinery/machinery/astrologicalColumn.json
+!/.minecraft/config/modularmachinery/machinery/manaMachine.json
+!/.minecraft/config/modularmachinery/machinery/symbolicCohesionAltar.json
+!/.minecraft/config/modularmachinery/machinery/waterAltar.json
+!/.minecraft/config/modularmachinery/machinery/fireAltar.json
+!/.minecraft/config/modularmachinery/machinery/windAltar.json
+!/.minecraft/config/modularmachinery/machinery/groundAltar.json
+!/.minecraft/config/modularmachinery/machinery/smelteryAeroheater.json

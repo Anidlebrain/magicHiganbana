@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 魔力池
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.botania.ManaInfusion;

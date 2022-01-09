@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     JEI 物品隐藏
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2500
 
 #norun

@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 五彩祭坛
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import crafttweaker.item.IItemStack;
@@ -16,7 +16,7 @@ function makeAltar(output as IItemStack,
                    craftTickTime as int,
                    recipe as string[],
                    replacements as IIngredient[string],
-                   iRequiredConstellationFocusName = "" as string)
+                   iRequiredConstellationFocusName as string = "")
 {
     if(starLight > 8000)
     {

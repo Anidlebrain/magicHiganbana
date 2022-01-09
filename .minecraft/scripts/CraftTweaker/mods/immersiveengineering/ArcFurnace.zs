@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     沉浸工程 电弧炉
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.immersiveengineering.ArcFurnace;

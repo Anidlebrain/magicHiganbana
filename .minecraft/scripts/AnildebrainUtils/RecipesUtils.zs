@@ -279,14 +279,6 @@ zenClass RecipesUtils
         }
     }
 
-
-    //熔炉 根据矿词移除配方
-    function removeOreFurnace(ore as IOreDictEntry) {
-        for item in ore.items {
-            furnace.remove(item);
-        }
-    }
-
     function centreCrossitem(a as IIngredient, b as IIngredient, centre as IIngredient) as IIngredient[][] {
         return [[a, b, a], [b, centre, b], [a, b, a]];
     }

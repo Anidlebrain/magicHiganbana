@@ -2,7 +2,7 @@
 ##          [Author]:   Anidlebrain
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 坩埚洗矿
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.skyresources.cauldronclean;

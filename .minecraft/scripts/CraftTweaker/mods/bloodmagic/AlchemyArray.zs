@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 炼金矩阵
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.bloodmagic.AlchemyArray;

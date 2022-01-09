@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     自然灵气 生育仪式
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.naturesaura.AnimalSpawner;

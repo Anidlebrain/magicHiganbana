@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     匠魂 晾干架
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.tconstruct.Drying;

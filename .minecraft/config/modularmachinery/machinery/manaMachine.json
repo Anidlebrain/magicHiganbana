@@ -1,6 +1,6 @@
 {
-    "registryname": "mini_mana_machine",
-    "localizedname": "微型魔力制造机",
+    "registryname": "mana_machine",
+    "localizedname": "higanbana.modularmachinery.mana_machine.name",
     "color":"8B4513",
     "parts": [
         {

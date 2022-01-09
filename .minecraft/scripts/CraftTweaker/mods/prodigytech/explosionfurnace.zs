@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     奇才妙械 爆炸熔炉
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.prodigytech.explosionfurnace.recipes as re;

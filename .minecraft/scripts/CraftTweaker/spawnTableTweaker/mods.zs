@@ -4,7 +4,7 @@
 ##          [Info]:     生物生成修改
 ##================================================
 /*
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.spawntabletweaker;

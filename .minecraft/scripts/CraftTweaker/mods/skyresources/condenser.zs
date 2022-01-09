@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     空岛资源 冷凝器
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 #norun

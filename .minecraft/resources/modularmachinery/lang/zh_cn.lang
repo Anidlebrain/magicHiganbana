@@ -1,3 +1,11 @@
-# Written by Anidlebrain, for 彼岸之法 magic_higanbana
+# Written by Anidlebrain, for 彼岸之法 Higanbana
 #模块化机械名
-modularmachinery.symbolic_cohesion_altar=象征凝聚祭坛
+modularmachinery.symbolic_cohesion_altar=§a彩襄祭坛§r
+modularmachinery.astrological_column=§1占星柱§r
+modularmachinery.mana_machine=§0魔力制造机§r
+modularmachinery.star_condensation=§5星辰§0凝聚§r
+modularmachinery.water_altar=§b「原生」§7水源雩坛§r
+modularmachinery.fire_altar=§b「原生」§7火源雩坛§r
+modularmachinery.wind_altar=§b「原生」§7风源雩坛§r
+modularmachinery.ground_altar=§b「原生」§7地源雩坛§r
+modularmachinery.smeltery_aeroheater=§f气热焦黑炉§r

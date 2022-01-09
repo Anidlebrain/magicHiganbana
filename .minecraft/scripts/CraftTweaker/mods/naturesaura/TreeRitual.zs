@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     自然灵气 森林仪式
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.naturesaura.TreeRitual;

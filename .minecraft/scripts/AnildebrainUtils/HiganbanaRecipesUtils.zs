@@ -3,7 +3,8 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     mod 配方函数
 ##=================================================
-#modloaded higanbanautils
+
+#modloaded higanbana
 #priority 9999999
 
 import crafttweaker.item.IItemStack;

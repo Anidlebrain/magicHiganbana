@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 工匠之作
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;

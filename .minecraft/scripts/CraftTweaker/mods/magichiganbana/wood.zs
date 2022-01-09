@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     彼岸之法 木头
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import scripts.AnildebrainUtils.HiganbanaRecipesUtils;

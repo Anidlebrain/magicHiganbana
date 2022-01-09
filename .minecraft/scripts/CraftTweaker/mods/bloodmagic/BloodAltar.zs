@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     血魔法 血之祭坛
 ##=============================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.bloodmagic.BloodAltar;

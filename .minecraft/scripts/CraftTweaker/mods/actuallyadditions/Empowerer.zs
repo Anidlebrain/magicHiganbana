@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     实用拓展 充能台
 ##===============================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.actuallyadditions.Empowerer;

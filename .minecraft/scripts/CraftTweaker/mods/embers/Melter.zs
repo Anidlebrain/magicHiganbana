@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 熔炼炉
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.embers.Melter;

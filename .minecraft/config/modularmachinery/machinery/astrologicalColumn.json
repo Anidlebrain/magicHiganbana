@@ -1,31 +1,53 @@
 {
-    "registryname": "zero_point_matrix",
-    "localizedname": "Zero Point Matrix",
-	"requires-blueprint": true,
-    "color": "223B64",
+    "registryname": "astrological_column",
+    "localizedname": "higanbana.modularmachinery.astrological_column.name",
+    "requires-blueprint": true,
+    "color": "CDC4C6",
+    "modifiers": [
+        {
+            "elements": "contenttweaker:star_liquid@0",
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "description": "核心液体使用星辰液将有双倍产出，但会使得合成时间翻倍",
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 2.0
+                },
+                {
+                    "io":"input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "elements": "astralsorcery:blockcelestialcollectorcrystal@0",
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "description": "核心使用聚能水晶, 合成所需星能减半",
+            "modifier": [
+                {
+                    "io":"input",
+                    "target": "gugu-utils:starlight",
+                    "operation": 1,
+                    "multiplier": 0.5
+                }
+            ]
+        }
+    ],
     "parts": [
         {
             "x": -1,
             "y": 0,
             "z": 0,
             "elements": [
-                "thaumcraft:stone_arcane@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "mekanism:basicblock@10"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockfluidoutputhatch"
+                "astralsorcery:blockmarble@6"
             ]
         },
         {
@@ -33,7 +55,23 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "inspirations:glass_trapdoor@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "inspirations:glass_trapdoor@7"
             ]
         },
         {
@@ -41,7 +79,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "actuallyadditions:block_crystal_empowered@2"
+                "modularmachinery:blockcasing@5"
             ]
         },
         {
@@ -49,15 +87,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "thaumcraft:stone_arcane@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "astralsorcery:blockmarble@6"
             ]
         },
         {
@@ -65,7 +95,15 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarble@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -73,7 +111,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "modularmachinery:blockcasing@5"
             ]
         },
         {
@@ -81,7 +119,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "modularmachinery:blockcasing@5"
             ]
         },
         {
@@ -89,7 +127,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarble@6"
             ]
         },
         {
@@ -97,25 +135,15 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 0,
-
-            "elements": [
-                "mekanism:basicblock@10"
+                "chisel:marblepillar@12"
             ]
         },
         {
             "x": -1,
             "y": 3,
             "z": 1,
-
             "elements": [
-                "mekanism:basicblock@10"
+                "astralsorcery:blockmarbleslab@8"
             ]
         },
         {
@@ -123,7 +151,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "inspirations:glass_trapdoor@1"
             ]
         },
         {
@@ -131,7 +159,7 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -139,7 +167,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -147,33 +175,23 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 0,
-
-            "elements": [
-                "mekanism:basicblock@10"
+                "chisel:marblepillar@12"
             ]
         },
         {
             "x": 1,
             "y": 3,
             "z": 1,
-
             "elements": [
-                "mekanism:basicblock@10"
+                "astralsorcery:blockmarbleslab@8"
             ]
         },
         {
             "x": 0,
-            "y": 3,
-            "z": 2,
+            "y": 1,
+            "z": 0,
             "elements": [
-                "modularmachinery:blockinputbus"
+                "astralsorcery:blockmarbleslab@0"
             ]
         },
         {
@@ -181,7 +199,15 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "mekanism:basicblock@10"
+                "astralsorcery:blockmarbleslab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -189,7 +215,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:fluidblockliquidstarlight@0"
             ]
         },
         {
@@ -197,15 +223,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -213,16 +231,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-
-            "elements": [
-                "mekanism:basicblock@10"
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -230,7 +239,15 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockenergyinputhatch@7"
+                "astralsorcery:blockmarbleslab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "astralsorcery:blockmarbleslab@0"
             ]
         },
         {
@@ -238,7 +255,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
             ]
         },
         {
@@ -246,15 +263,7 @@
             "y": 4,
             "z": 0,
             "elements": [
-                "thaumcraft:stone_arcane@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 0,
-            "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarblestairs@4"
             ]
         },
         {
@@ -262,31 +271,15 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarblestairs@4"
             ]
         },
         {
             "x": 0,
             "y": 4,
-            "z": 1,
-            "elements": [
-                "actuallyadditions:block_crystal_empowered@2"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "thaumcraft:stone_arcane@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
             "z": 0,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarblestairs@6"
             ]
         },
         {
@@ -294,65 +287,63 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "astralsorcery:blockmarblestairs@4"
             ]
         },
         {
             "x": 0,
             "y": 4,
-            "z": 2,
+            "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "gugu-utils:environmenthatch@0"
             ]
         },
         {
             "x": 1,
             "y": 4,
-            "z": 1,
-            "elements": [
-                "thaumcraft:stone_arcane@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
             "z": 0,
-
             "elements": [
-                "mekanism:basicblock@10"
+                "astralsorcery:blockmarblestairs@5"
             ]
         },
         {
             "x": -1,
             "y": 2,
             "z": 1,
-
             "elements": [
-                "mekanism:basicblock@10"
+                "inspirations:glass_trapdoor@6"
             ]
         },
         {
             "x": 0,
-            "y": 2,
-            "z": 1,
+            "y": 4,
+            "z": 2,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarblestairs@7"
             ]
         },
         {
             "x": 1,
             "y": 4,
-            "z": 2,
+            "z": 1,
             "elements": [
-                "thaumcraft:stone_arcane@0"
+                "astralsorcery:blockmarblestairs@5"
             ]
         },
         {
-            "x": 1,
+            "x": 0,
             "y": 2,
             "z": 0,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "inspirations:glass_trapdoor@4"
             ]
         },
         {
@@ -360,7 +351,31 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "appliedenergistics2:spatial_pylon@0"
+                "chisel:marblepillar@12"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "astralsorcery:blockmarblestairs@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "astralsorcery:blockcollectorcrystal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:marblepillar@12"
             ]
         }
     ]}

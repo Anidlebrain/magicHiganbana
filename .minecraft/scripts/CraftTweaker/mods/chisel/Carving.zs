@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     凿子
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.chisel.Carving;

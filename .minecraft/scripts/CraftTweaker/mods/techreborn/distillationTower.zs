@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     科技复兴 蒸馏塔
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.techreborn.distillationTower;

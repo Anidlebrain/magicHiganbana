@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 泰拉凝聚板
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.botaniatweaks.Agglomeration;

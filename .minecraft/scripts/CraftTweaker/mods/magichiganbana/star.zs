@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     彼岸之法 星座
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2001
 
 import mods.Higanbana.AstralSorcery.Constellation;

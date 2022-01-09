@@ -4,7 +4,7 @@
 ##          [Info]:     通用机械 气体添加
 ##================================================
 //#loader mekatweaker
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 4995
 
 import mods.mekatweaker.GasFactory;

@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     世界合成 丢入流体合成物品
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.inworldcrafting.FluidToItem;

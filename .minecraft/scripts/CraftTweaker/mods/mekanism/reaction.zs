@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 加压反应室
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.mekanism.reaction;

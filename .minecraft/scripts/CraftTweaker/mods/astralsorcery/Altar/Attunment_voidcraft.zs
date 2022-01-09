@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 星辉祭坛 虚空工艺
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #modloaded voidcraft
 #priority 2000
 

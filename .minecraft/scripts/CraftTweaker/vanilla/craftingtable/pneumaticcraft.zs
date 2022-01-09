@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     启动工艺 工作台合成
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;

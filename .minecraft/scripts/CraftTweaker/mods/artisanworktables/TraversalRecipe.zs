@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     工匠之作 工作台 遍历
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 #norun

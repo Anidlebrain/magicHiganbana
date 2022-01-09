@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     打草 掉落物
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 for seed in vanilla.seeds.seeds

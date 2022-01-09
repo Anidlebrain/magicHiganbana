@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     星辉魔法 星辉聚合
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.astralsorcery.StarlightInfusion;

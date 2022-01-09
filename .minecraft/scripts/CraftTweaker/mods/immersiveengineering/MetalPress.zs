@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     沉浸工程 金属冲压机
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import crafttweaker.item.IItemStack;

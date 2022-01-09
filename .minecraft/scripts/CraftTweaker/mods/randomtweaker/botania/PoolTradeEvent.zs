@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     植物魔法 魔力池事件
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.randomtweaker.botania.PoolTradeEvent;

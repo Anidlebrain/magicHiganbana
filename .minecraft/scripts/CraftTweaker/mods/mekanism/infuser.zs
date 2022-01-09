@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     通用机械 冶金灌注机
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.mekanism.infuser;

@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     雷电工艺 闪电合成
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import moretweaker.lightningcraft.LightningTransforming;

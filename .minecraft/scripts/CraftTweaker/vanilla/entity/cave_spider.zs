@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     生物掉落 洞穴蜘蛛
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import crafttweaker.entity.IEntityDefinition;

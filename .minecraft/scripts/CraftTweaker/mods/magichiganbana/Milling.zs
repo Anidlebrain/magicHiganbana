@@ -3,6 +3,6 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     彼岸之法 磨粉
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 

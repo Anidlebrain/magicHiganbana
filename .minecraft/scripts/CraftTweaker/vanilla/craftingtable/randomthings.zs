@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     随意作品 工作台合成
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;

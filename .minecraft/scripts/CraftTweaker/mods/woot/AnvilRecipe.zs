@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     生物工厂 地狱铁砧 
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.Higanbana.Woot.AnvilRecipe;
@@ -23,4 +23,3 @@ AnvilRecipe.addRecipe(<woot:stygianirondust>, <woot:die>, false, [<woot:stygiani
 recipes.remove(<woot:soulsanddust>);
 AnvilRecipe.removeRecipe(<woot:soulsanddust>);
 AnvilRecipe.addRecipe(<woot:soulsanddust>, <woot:die>, false, [<roots:spirit_herb>]);
-

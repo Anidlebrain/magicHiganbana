@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     彼岸之法 合金
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 #norun

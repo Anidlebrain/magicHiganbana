@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 繁花争艳
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.roots.FlowerGrowth;

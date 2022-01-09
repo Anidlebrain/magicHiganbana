@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     根源魔法 仪式: 召唤生物
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.roots.SummonCreatures;

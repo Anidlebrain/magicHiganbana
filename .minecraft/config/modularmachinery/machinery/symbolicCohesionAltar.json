@@ -1,6 +1,6 @@
 {
     "registryname": "symbolic_cohesion_altar",
-    "localizedname": "magichiganbana.modularmachinery.symbolic_cohesion_altar.name",
+    "localizedname": "higanbana.modularmachinery.symbolic_cohesion_altar.name",
     "requires-blueprint": true,
     "color":"00FFFF",
     "parts": [

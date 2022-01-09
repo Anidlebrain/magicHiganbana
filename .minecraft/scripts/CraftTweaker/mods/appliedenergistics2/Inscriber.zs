@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     应用能源2 压印器
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.appliedenergistics2.Inscriber;

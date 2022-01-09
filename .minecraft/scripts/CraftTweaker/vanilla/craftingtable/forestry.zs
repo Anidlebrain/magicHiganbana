@@ -4,7 +4,7 @@
 ##          [Info]:     林业 工作台合成
 ##================================================
 #modloaded forestry
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;

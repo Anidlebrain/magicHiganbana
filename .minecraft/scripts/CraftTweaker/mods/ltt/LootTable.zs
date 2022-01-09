@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     战利品
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 

@@ -3,7 +3,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     神秘时代 藏宝袋
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.thaumcraft.LootBag;

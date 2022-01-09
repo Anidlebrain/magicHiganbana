@@ -4,7 +4,7 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     余烬 基础设置
 ##================================================
-#modloaded higanbanautils
+#modloaded higanbana
 #priority 2000
 
 import mods.embers.DawnstoneAnvil;
