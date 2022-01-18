@@ -1,0 +1,14 @@
+{
+	x: 8.5d,
+	y: 4.5d,
+	dependencies: [
+		"1f3d6bc4"
+	],
+	tasks: [{
+		uid: "d3d7da0d",
+		type: "item",
+		items: [{
+			item: "embers:block_caminite_brick"
+		}]
+	}]
+}

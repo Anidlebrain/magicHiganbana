@@ -1,6 +1,6 @@
 {
-	x: -8.0d,
-	y: -1.0d,
+	x: -7.5d,
+	y: -2.5d,
 	description: "无限的水资源",
 	dependencies: [
 		"93e0f748"

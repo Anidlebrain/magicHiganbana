@@ -1,14 +1,14 @@
 {
 	x: -5.0d,
-	y: 11.0d,
+	y: 0.0d,
 	dependencies: [
-		"7748fc67"
+		"b8c8bded"
 	],
 	tasks: [{
-		uid: "fc19de65",
+		uid: "c6eebe68",
 		type: "item",
 		items: [{
-			item: "mechanics:burst_seed_ice"
+			item: "randomthings:lightredirector"
 		}]
 	}]
 }

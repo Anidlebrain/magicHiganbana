@@ -83,8 +83,8 @@ fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [<skyresources:techitemcomponent:2> * 2, <minecraft:redstone> * 3], 0.62);
 
 //赫耳墨斯之金锭
-//fusion.removeRecipe(<skyresources:alchemyitemcomponent:7>);
-//fusion.addRecipe(<skyresources:alchemyitemcomponent:7>, [<contenttweaker:material_part:3763> * 2, <minecraft:glowstone_dust> * 3], 0.58);
+fusion.removeRecipe(<skyresources:alchemyitemcomponent:7>);
+fusion.addRecipe(<skyresources:alchemyitemcomponent:7>, [<contenttweaker:ingot_frozen_gold> * 2, <minecraft:glowstone_dust> * 3], 0.58);
 
 //中级炼金粉
 fusion.removeRecipe(<skyresources:alchemyitemcomponent:3>);

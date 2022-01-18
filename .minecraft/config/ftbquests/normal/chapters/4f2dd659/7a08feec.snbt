@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: -5.0d,
+	dependencies: [
+		"9d499222"
+	],
+	tasks: [{
+		uid: "d6628768",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unburned_mortar"
+		}]
+	}]
+}

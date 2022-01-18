@@ -1,9 +1,9 @@
 {
-	x: 2.0d,
-	y: 3.0d,
+	x: 18.0d,
+	y: 1.5d,
 	description: "放在坩埚的的旁边可以让坩埚的液体流到漏液器下方的格子",
 	dependencies: [
-		"5ef08e3e"
+		"40102909"
 	],
 	hide: true,
 	tasks: [{

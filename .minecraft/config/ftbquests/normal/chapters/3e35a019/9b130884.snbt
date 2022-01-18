@@ -1,18 +1,17 @@
 {
-	x: 7.0d,
-	y: -1.0d,
+	x: -5.0d,
+	y: -3.5d,
 	dependencies: [
-		"aebbc829"
+		"bf6b400d"
 	],
 	tasks: [{
-		uid: "fb61d25e",
+		uid: "36963112",
 		type: "item",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "mechanics:martlet_stone",
-			Count: 1b
+			id: "roots:wood_knife"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

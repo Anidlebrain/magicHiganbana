@@ -38,6 +38,12 @@ furnace.addRecipe(<tp:cooked_bacon>, <actuallyadditions:item_food:20>, 1.0);
 //方镁矾砖
 furnace.remove(<embers:brick_caminite>);
 
+//研钵
+furnace.addRecipe(<roots:mortar>, <contenttweaker:unburned_mortar>);
+
+//研杵
+furnace.addRecipe(<roots:pestle>, <contenttweaker:unburned_pestle>);
+
 //熔融虚空锁链
 //furnace.remove(<voidcraft:moltenvoidchainpart>);
 

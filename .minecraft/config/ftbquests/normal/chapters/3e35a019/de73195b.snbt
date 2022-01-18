@@ -1,0 +1,26 @@
+{
+	x: 6.5d,
+	y: -1.5d,
+	dependencies: [
+		"974e0a28"
+	],
+	tasks: [{
+		uid: "4292aaa7",
+		type: "item",
+		title: "任意一种花瓣",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "mysticalPetals",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any mysticalPetals"
+				}
+			}
+		}]
+	}]
+}

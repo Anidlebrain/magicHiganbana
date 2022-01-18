@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 3.5d,
+	dependencies: [
+		"c0f6a8d2"
+	],
+	tasks: [{
+		uid: "a5874b39",
+		type: "item",
+		items: [{
+			item: "contenttweaker:strengthen_growth_infusion"
+		}]
+	}]
+}

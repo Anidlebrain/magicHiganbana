@@ -155,7 +155,7 @@ function recipesInit()
     RecipeBuilder.get("basic")
       .setShaped([
         [<ore:hardenedClay>, <ore:hardenedClay>, <ore:hardenedClay>],
-        [<skyresources:heat>, <artisanworktables:worktable:5>, <skyresources:heat>],
+        [<embers:brick_caminite>, <artisanworktables:worktable:5>, <embers:brick_caminite>],
         [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
       .addTool(<ore:artisansDriver>, 1)
       .addOutput(<artisanworktables:worktable:14>)

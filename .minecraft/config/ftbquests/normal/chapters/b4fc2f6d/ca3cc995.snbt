@@ -8,7 +8,7 @@
 		uid: "ae9b3dbb",
 		type: "item",
 		items: [{
-			item: "contenttweaker:material_part 1 3763"
+			item: "contenttweaker:ingot_frozen_gold"
 		}]
 	}]
 }

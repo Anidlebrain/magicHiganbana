@@ -80,8 +80,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>],
-        [<ore:ingotFluixSteel>, <appliedenergistics2:material:43>,<ore:ingotFluixSteel>],
-        [null, null, null]])
+        [<ore:ingotFluixSteel>, <appliedenergistics2:material:43>,<ore:ingotFluixSteel>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:320>)
       .create();
@@ -91,8 +90,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>],
-        [<ore:plateLapis>, <appliedenergistics2:material:43>, <ore:plateLapis>],
-        [null, null, null]])
+        [<ore:plateLapis>, <appliedenergistics2:material:43>, <ore:plateLapis>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:321>)
       .create();
@@ -102,8 +100,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>],
-        [<ore:ingotFluixSteel>, <appliedenergistics2:material:44>, <ore:ingotFluixSteel>],
-        [null, null, null]])
+        [<ore:ingotFluixSteel>, <appliedenergistics2:material:44>, <ore:ingotFluixSteel>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:300>)
       .create();
@@ -113,8 +110,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>],
-        [<ore:plateLapis>, <appliedenergistics2:material:44>, <ore:plateLapis>],
-        [null, null, null]])
+        [<ore:plateLapis>, <appliedenergistics2:material:44>, <ore:plateLapis>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:302>)
       .create();
@@ -132,8 +128,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<ore:ingotFluixSteel>, <appliedenergistics2:material:43>, <ore:ingotFluixSteel>],
-        [null, <immersiveengineering:wooden_device0:3>, null],
-        [null, null, null]])
+        [null, <immersiveengineering:wooden_device0:3>, null]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:260>)
       .create();
@@ -143,8 +138,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<ore:plateLapis>, <appliedenergistics2:material:43>, <ore:plateLapis>],
-        [null, <immersiveengineering:wooden_device0:7>, null],
-        [null, null, null]])
+        [null, <immersiveengineering:wooden_device0:7>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:261>)
       .create();
@@ -153,7 +147,6 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:part:240>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, null, null],
         [null, <immersiveengineering:wooden_device0:3>, null],
         [<ore:ingotFluixSteel>, <appliedenergistics2:material:44>, <ore:ingotFluixSteel>]])
       .addTool(<ore:artisansCutters>, 8)
@@ -164,8 +157,7 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:part:241>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, null, null],
-        [null, <immersiveengineering:wooden_device0:7>, null],
+        [null, <immersiveengineering:wooden_device0:7>],
         [<ore:plateLapis>, <appliedenergistics2:material:44>, <ore:plateLapis>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:part:241>)
@@ -183,7 +175,7 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:part:460>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, <ore:plateinvar>, null],
+        [null, <ore:plateinvar>],
         [<ore:plateinvar>, <appliedenergistics2:material:24>, <ore:plateinvar>],
         [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]])
       .addTool(<ore:artisansCutters>, 8)
@@ -210,9 +202,9 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:material:25>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [<prodigytech:circuit_crude>, <ore:plateIron>, null],
+        [<prodigytech:circuit_crude>, <ore:plateIron>],
         [<prodigytech:circuit_crude>, <appliedenergistics2:material:23>, <ore:plateIron>],
-        [<prodigytech:circuit_crude>, <ore:plateIron>, null]])
+        [<prodigytech:circuit_crude>, <ore:plateIron>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:material:25>)
       .create();
@@ -221,9 +213,9 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:material:28>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [<prodigytech:circuit_perfected>, <ore:plateRedstone>, null],
+        [<prodigytech:circuit_perfected>, <ore:plateRedstone>],
         [<prodigytech:circuit_perfected>, <appliedenergistics2:material:23>, <ore:plateRedstone>],
-        [<prodigytech:circuit_perfected>, <ore:plateRedstone>, null]])
+        [<prodigytech:circuit_perfected>, <ore:plateRedstone>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:material:28>)
       .create();
@@ -243,9 +235,9 @@ function recipesInit()
     recipes.remove(<appliedenergistics2:material:41>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, <botania:turntable>, null],
+        [null, <botania:turntable>],
         [<ore:plateTitanium>, <minecraft:nether_star>, <ore:plateTitanium>],
-        [null, <ore:plateTitanium>, null]])
+        [null, <ore:plateTitanium>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:material:41>)
       .create();
@@ -315,7 +307,7 @@ function recipesInit()
     RecipeBuilder.get("engineer")
       .setShaped([
         [<ore:plateIron>, <appliedenergistics2:material>, <ore:plateIron>],
-        [<ore:plateIron>, null, null],
+        [<ore:plateIron>],
         [<ore:plateIron>, <appliedenergistics2:material>,<ore:plateIron>]])
       .addTool(<ore:artisansCutters>, 8)
       .addOutput(<appliedenergistics2:charger>)

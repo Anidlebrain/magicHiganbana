@@ -1,10 +1,10 @@
 {
 	icon: "roots:mortar",
-	x: -2.0d,
-	y: 5.0d,
+	x: 6.0d,
+	y: -4.0d,
 	dependencies: [
-		"7d1ca97a",
-		"5ef08e3e"
+		"517ce03c",
+		"7a08feec"
 	],
 	tasks: [{
 		uid: "bb6ff0cd",

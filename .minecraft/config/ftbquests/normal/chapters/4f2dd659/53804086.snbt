@@ -1,0 +1,14 @@
+{
+	x: 12.5d,
+	y: 1.0d,
+	dependencies: [
+		"a741fa83"
+	],
+	tasks: [{
+		uid: "dffffa5a",
+		type: "item",
+		items: [{
+			item: "roots:wildroot"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -3.5d,
+	y: 0.0d,
+	dependencies: [
+		"d40e0819"
+	],
+	tasks: [{
+		uid: "53e43599",
+		type: "item",
+		items: [{
+			item: "minecraft:glass"
+		}]
+	}]
+}

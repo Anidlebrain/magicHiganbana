@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 0.5d,
+	dependencies: [
+		"847d01a9"
+	],
+	tasks: [{
+		uid: "5ed35d20",
+		type: "observation",
+		title: "粘土块",
+		icon: "minecraft:clay",
+		match_type: "block_id",
+		match: "minecraft:clay",
+		timer: 0L
+	}]
+}

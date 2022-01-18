@@ -1,6 +1,6 @@
 {
-	x: 4.0d,
-	y: 5.0d,
+	x: 8.0d,
+	y: -4.0d,
 	description: "再一次的强化",
 	dependencies: [
 		"505118be"

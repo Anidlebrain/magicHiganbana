@@ -1,6 +1,6 @@
 {
-	x: -5.0d,
-	y: 9.0d,
+	x: 9.0d,
+	y: 1.0d,
 	description: "{magichiganbana.ftb.5c213afa.description.1}",
 	dependencies: [
 		"59cd9fce"

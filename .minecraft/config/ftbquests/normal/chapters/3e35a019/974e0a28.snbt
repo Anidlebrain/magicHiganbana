@@ -1,15 +1,14 @@
 {
-	x: 8.0d,
+	x: 4.5d,
 	y: -1.5d,
 	dependencies: [
-		"25b693c6",
-		"b424745b"
+		"b912e308"
 	],
 	tasks: [{
-		uid: "7d6e257c",
+		uid: "13f7def3",
 		type: "item",
 		items: [{
-			item: "roots:bonfire"
+			item: "botania:fertilizer"
 		}]
 	}]
 }

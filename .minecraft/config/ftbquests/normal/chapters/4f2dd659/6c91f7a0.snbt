@@ -1,8 +1,8 @@
 {
 	title: "五彩缤纷的花瓣",
 	icon: "roots:petals",
-	x: 4.0d,
-	y: 7.0d,
+	x: 9.0d,
+	y: -4.0d,
 	dependencies: [
 		"bd8cd657"
 	],

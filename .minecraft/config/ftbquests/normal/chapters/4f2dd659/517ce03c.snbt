@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: -2.5d,
+	dependencies: [
+		"9d499222"
+	],
+	tasks: [{
+		uid: "18b33fd9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unburned_pestle"
+		}]
+	}]
+}

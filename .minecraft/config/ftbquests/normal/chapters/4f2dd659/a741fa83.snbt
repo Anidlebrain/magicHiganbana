@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	dependencies: [
+		"40c15695",
+		"162874dd",
+		"5c213afa"
+	],
+	tasks: [{
+		uid: "51e5c8a6",
+		type: "checkmark",
+		title: "没有桶，只能使用碗装水"
+	}]
+}

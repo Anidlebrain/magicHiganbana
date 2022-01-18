@@ -1,0 +1,17 @@
+{
+	x: 1.0d,
+	y: 3.5d,
+	dependencies: [
+		"c049068a"
+	],
+	tasks: [{
+		uid: "6f96ac9f",
+		type: "item",
+		items: [{
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:water"
+			}
+		}]
+	}]
+}

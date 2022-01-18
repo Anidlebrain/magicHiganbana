@@ -1,7 +1,7 @@
 {
 	title: "生机灌注",
-	x: -8.0d,
-	y: 5.0d,
+	x: 6.0d,
+	y: 2.0d,
 	description: "生机灌注 万物复苏",
 	dependencies: [
 		"04130363",

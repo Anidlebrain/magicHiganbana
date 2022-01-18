@@ -19,6 +19,8 @@ var potterItem = [
     <arcanearchives:raw_quartz>,
     <arcanearchives:shaped_quartz>,
 
+    <embers:block_caminite_brick>,
+
     <minecraft:dirt:1>,
     <minecraft:dirt:2>,
     <minecraft:cobblestone>,

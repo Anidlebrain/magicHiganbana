@@ -6,7 +6,6 @@
 #modloaded higanbana
 #priority 2000
 
-#norun
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
 import scripts.AnildebrainUtils.ItemHelper.itemHelper;

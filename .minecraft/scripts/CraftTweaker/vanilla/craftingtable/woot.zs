@@ -26,7 +26,7 @@ function recipesInit()
       .setShaped([
         [null, <ore:stickTreatedWood>, <woot:stygianironingot>],
         [<ore:plankWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
-        [<ore:stickTreatedWood>, <ore:plankWood>, null]])
+        [<ore:stickTreatedWood>, <ore:plankWood>]])
       .addTool(<ore:artisansHammer>, 1)
       .addOutput(<woot:yahhammer>)
       .create();
@@ -71,7 +71,7 @@ function recipesInit()
     RecipeBuilder.get("blacksmith")
       .setShaped([
         [<woot:stygianiron>, <woot:stygianiron>, <woot:stygianiron>],
-        [null, <woot:stygianiron>, null],
+        [null, <woot:stygianiron>],
         [<ore:blockSkyStone>, <ore:blockSkyStone>, <ore:blockSkyStone>]])
       .addTool(<ore:artisansHammer>, 1)
       .addOutput(<woot:anvil>)

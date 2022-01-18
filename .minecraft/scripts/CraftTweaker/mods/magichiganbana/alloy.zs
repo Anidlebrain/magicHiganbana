@@ -6,8 +6,9 @@
 #modloaded higanbana
 #priority 2000
 
-#norun
 import mods.Higanbana.IUtils;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytick as int, time as int, level as int) as void
 {
@@ -16,6 +17,7 @@ function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytic
         return ;
     }
     if (level < 3) {
+        //mods.techreborn.alloySmelter.
         //mods.enderio.AlloySmelter.addRecipe(output, inputs, energytick * time);
     }
     if (level < 2) {
@@ -55,7 +57,6 @@ addAlloyRecipe(<modularmachinery:itemmodularium>, [<skyresources:alchemyitemcomp
  * 二级合金
  */
 
-
 //合金锭
 recipes.remove(<techreborn:ingot:21>);
 addAlloyRecipe(<techreborn:ingot:21>, [<ore:ingotIronCompressed> * 3, <ore:ingotSilver> * 3, <ore:ingotBronze> * 3], 2000, 200, 1);
@@ -65,46 +66,7 @@ recipes.remove(<techreborn:ingot:22>);
 addAlloyRecipe(<techreborn:ingot:22>, [<ore:ingotIridium> * 3, <techreborn:plates:36> * 3, <ore:dustDiamond> * 3], 2000, 200, 1);
 
 //黄铜
-removeAlloySmelter(<techreborn:ingot:1>, IUtils.binaryCreation("01"));
-
-/*
- * 三级合金
- */
-//磁钢锭
-removeAlloySmelter(<enderio:item_alloy_ingot>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot>, [<ore:ingotTungstensteel>, <ore:dustCoal>, <ore:itemSilicon>], 100, 100, 2);
-
-//充能合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:1>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:1>, [<enderio:block_holy_fog>, <ore:ingotImperomite>, <threng:material:5>], 100, 100, 2);
-
-//脉冲合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:2>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:2>, [<enderio:item_alloy_ingot:1>, <ore:ingotEnderium>], 100, 100, 2);
-print(4);
-//红石合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:3>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:3>, [<minecraft:redstone>, <ore:ingotIox>], 100, 100, 2);
-
-//导电铁锭
-removeAlloySmelter(<enderio:item_alloy_ingot:4>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:4>, [<ore:ingotTerrax>, <minecraft:redstone>], 100, 100, 2);
-
-//脉冲铁锭
-removeAlloySmelter(<enderio:item_alloy_ingot:5>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:5>, [<ore:ingotConductiveIron>, <ore:ingotEnderium>], 100, 100, 2);
-
-//玄钢锭
-removeAlloySmelter(<enderio:item_alloy_ingot:6>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:6>, [<ore:ingotTungstensteel>, <ore:ingotObsidiorite>, <ore:ingotBasalt>], 100, 100, 2);
-
-//魂金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:7>, IUtils.binaryCreation("111"));
-addAlloyRecipe(<enderio:item_alloy_ingot:7>, [<ore:ingotTritonite>, <woot:soulsanddust> * 2], 100, 100, 2);
-
-//铁合金锭
-removeAlloySmelter(<enderio:item_alloy_ingot:9>, IUtils.binaryCreation("11"));
-addAlloyRecipe(<enderio:item_alloy_ingot:9>, [<ore:ingotAdvancedAlloy>, <ore:ingotIron>], 100, 100, 2);
+//removeAlloySmelter(<techreborn:ingot:1>, IUtils.binaryCreation("01"));
 
 /*
 由 匠魂 液体 合金配方转移而来
@@ -171,26 +133,3 @@ addAlloyRecipe(<taiga:lumix_ingot>, [<taiga:palladium_ingot>, <taiga:terrax_ingo
 addAlloyRecipe(<taiga:nucleum_ingot>, [<taiga:proxii_ingot> * 3, <taiga:duranite_ingot>, <taiga:osram_ingot>], 150, 100, 2);
 addAlloyRecipe(<taiga:nucleum_ingot>, [<taiga:imperomite_ingot> * 3, <taiga:osram_ingot>, <taiga:eezo_ingot>], 150, 100, 2);
 addAlloyRecipe(<taiga:nucleum_ingot>, [<taiga:niob_ingot> * 3, <taiga:eezo_ingot>, <taiga:abyssum_ingot>], 150, 100, 2);
-
-/*
-末影接口 管道拓展 合金
-*/
-//充能银锭
-addAlloyRecipe(<enderio:item_alloy_endergy_ingot:5>, [<enderio:block_holy_fog>, <extrautils2:ingredients>, <ore:ingotMithril>], 1500, 100, 2);
-
-//生动合金锭
-addAlloyRecipe(<enderio:item_alloy_endergy_ingot:6>, [<extendedcrafting:material:36>, <enderio:item_alloy_endergy_ingot:5>, <ore:ingotOsmium>], 1500, 100, 2);
-
-//旋律合金锭
-addAlloyRecipe(<enderio:item_alloy_endergy_ingot:2>, [<tconevo:metal:25>, <minecraft:chorus_fruit_popped>, <enderio:item_alloy_ingot:8>], 1500, 100, 2);
-
-
-/*
-other
-*/
-//工业隔离方块
-removeAlloySmelter(<enderio:block_industrial_insulation>, IUtils.binaryCreation("1"));
-addAlloyRecipe(<enderio:block_industrial_insulation>, [<minecraft:sponge>, <ore:dustLapis>, <ore:dustBedrock>], 100, 100, 2);
-
-removeAlloySmelter(<enderio:item_material:76>, IUtils.binaryCreation("1"));
-addAlloyRecipe(<enderio:item_material:76>, [<ore:dustGlowstone>, <ore:dustClay>], 100, 100, 2);

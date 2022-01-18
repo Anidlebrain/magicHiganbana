@@ -1,0 +1,11 @@
+{
+	x: -7.5d,
+	y: 0.0d,
+	tasks: [{
+		uid: "65070a25",
+		type: "item",
+		items: [{
+			item: "artisanworktables:worktable 1 1"
+		}]
+	}]
+}

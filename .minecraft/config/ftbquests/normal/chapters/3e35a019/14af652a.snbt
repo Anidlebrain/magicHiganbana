@@ -1,0 +1,14 @@
+{
+	x: 16.5d,
+	y: -2.0d,
+	dependencies: [
+		"b0c367da"
+	],
+	tasks: [{
+		uid: "f9a2763a",
+		type: "item",
+		items: [{
+			item: "minecraft:bread"
+		}]
+	}]
+}

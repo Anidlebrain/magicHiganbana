@@ -28,7 +28,7 @@ function recipesInit()
     RecipeBuilder.get("mason")
       .setShaped([
         [<tp:hardened_stone>, null, <tp:hardened_stone>],
-        [null, <skyresources:magmafiedstone>, null],
+        [null, <skyresources:magmafiedstone>],
         [<tp:hardened_stone>, null, <tp:hardened_stone>]])
       .addTool(<ore:artisansHammer>, 1)
       .addTool(<ore:artisansDriver>, 1)
@@ -81,7 +81,7 @@ function recipesInit()
       .setShaped([
         [<ore:ingotFrozenIron>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <ore:ingotFrozenIron>],
         [<minecraft:dragon_breath>, null, <xreliquary:fertile_lilypad>, null, <minecraft:dragon_breath>],
-        [null, <xreliquary:fertile_lilypad>, <minecraft:sea_lantern>, <xreliquary:fertile_lilypad>, null],
+        [null, <xreliquary:fertile_lilypad>, <minecraft:sea_lantern>, <xreliquary:fertile_lilypad>],
         [<minecraft:dragon_breath>, null, <xreliquary:fertile_lilypad>, null, <minecraft:dragon_breath>],
         [<ore:ingotFrozenIron>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <ore:ingotFrozenIron>]])
       .addTool(<ore:artisansAthame>, 1)
@@ -95,7 +95,7 @@ function recipesInit()
       .setShaped([
         [<tp:growth_block>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <tp:growth_block>],
         [<minecraft:dragon_breath>, null, <xreliquary:witherless_rose>, null, <minecraft:dragon_breath>],
-        [null, <xreliquary:witherless_rose>, <minecraft:sea_lantern>, <xreliquary:witherless_rose>, null],
+        [null, <xreliquary:witherless_rose>, <minecraft:sea_lantern>, <xreliquary:witherless_rose>],
         [<minecraft:dragon_breath>, null, <xreliquary:witherless_rose>, null, <minecraft:dragon_breath>],
         [<tp:growth_block>, <minecraft:dragon_breath>, null, <minecraft:dragon_breath>, <tp:growth_block>]])
       .addTool(<ore:artisansAthame>, 1)

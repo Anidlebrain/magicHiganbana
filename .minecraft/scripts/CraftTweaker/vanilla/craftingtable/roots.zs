@@ -15,38 +15,16 @@ import mods.artisanworktables.builder.RecipeBuilder;
 function init()
 {
     recipesInit();
+    itemRemove();
 }
 
 function recipesInit()
 {
-
-    //研钵
-    recipes.remove(<roots:mortar>);
-    RecipeBuilder.get("farmer")
-      .setShaped([
-        [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
-        [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
-        [null, <embers:block_caminite_brick>, null]])
-      .addTool(<ore:artisansShears>, 1)
-      .addOutput(<roots:mortar>)
-      .create();
-    
-    //研杵
-    recipes.remove(<roots:pestle>);
-    RecipeBuilder.get("farmer")
-      .setShaped([
-        [null, null, <embers:block_caminite_brick>],
-        [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null],
-        [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, null]])
-      .addTool(<ore:artisansShears>, 1)
-      .addOutput(<roots:pestle>)
-      .create();
-
     //柴堆
     recipes.remove(<roots:pyre>);
     RecipeBuilder.get("farmer")
       .setShaped([
-        [null, <botania:livingwood>, null],
+        [null, <botania:livingwood>],
         [<botania:livingwood>, <ore:powderMana>, <botania:livingwood>],
         [<minecraft:stonebrick:2>, <roots:terra_moss>, <minecraft:stonebrick:2>]])
       .addTool(<ore:artisansShears>, 1)

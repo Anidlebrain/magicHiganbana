@@ -1,6 +1,6 @@
 {
-	x: -5.0d,
-	y: 5.0d,
+	x: 6.0d,
+	y: -1.0d,
 	description: "捣一捣，留下精华",
 	dependencies: [
 		"b776318d"

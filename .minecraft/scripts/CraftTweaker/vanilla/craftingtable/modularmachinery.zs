@@ -41,8 +41,8 @@ function recipesInit()
     recipes.remove(<modularmachinery:blockinputbus>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, <tconstruct:wooden_hopper>, null],
-        [null, <modularmachinery:blockcasing>, null],
+        [null, <tconstruct:wooden_hopper>],
+        [null, <modularmachinery:blockcasing>],
         [null, <minecraft:chest>, null]])
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<modularmachinery:blockinputbus>)
@@ -52,9 +52,9 @@ function recipesInit()
     recipes.remove(<modularmachinery:blockoutputbus>);
     RecipeBuilder.get("engineer")
       .setShaped([
-        [null, <tconstruct:wooden_hopper>, null],
-        [null, <modularmachinery:blockcasing>, null],
-        [null, <minecraft:chest>, null]])
+        [null, <tconstruct:wooden_hopper>],
+        [null, <modularmachinery:blockcasing>],
+        [null, <minecraft:chest>]])
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<modularmachinery:blockoutputbus>)
       .create();

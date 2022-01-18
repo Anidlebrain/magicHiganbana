@@ -33,7 +33,33 @@ function recipesInit() {
         [<ore:dustObsidian>, <minecraft:redstone>, <ore:dustObsidian>]])
       .setFluid(<liquid:magma_fluid> * 1000)
       .addTool(<ore:artisansBurner>, 2)
-      .addOutput(<contenttweaker:link_adhesive>*3)
+      .addOutput(<contenttweaker:link_adhesive> * 3)
+      .create();
+    
+    //未烧制的研钵
+    recipes.remove(<roots:mortar>);
+    RecipeBuilder.get("potter")
+      .setShaped([
+        [<ore:blockClay>, null, <ore:blockClay>],
+        [<ore:blockClay>, null, <ore:blockClay>],
+        [null, <ore:blockClay>]])
+      .addOutput(<contenttweaker:unburned_mortar>)
+      .create();
+    
+    //未烧制的研杵
+    recipes.remove(<roots:pestle>);
+    RecipeBuilder.get("potter")
+      .setShaped([
+        [null, null, <ore:blockClay>],
+        [<ore:blockClay>, <ore:blockClay>],
+        [<ore:blockClay>, <ore:blockClay>]])
+      .addOutput(<contenttweaker:unburned_pestle>)
+      .create();
+
+    //升级灌注
+    RecipeBuilder.get("basic")
+      .setShapeless([<skyresources:baseitemcomponent>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_growth_infusion"}})])
+      .addOutput(<contenttweaker:strengthen_growth_infusion>)
       .create();
 }
 

@@ -57,6 +57,8 @@ CotUtils.blockCreator("dark_magic_stone", <blockmaterial:rock>, 0);
 //星辰块
 CotUtils.blockCreator("block_starmetal", <blockmaterial:rock>, 0);
 
+//未烧制的研杵
+CotUtils.blockCreator("unburned_mortar", <blockmaterial:rock>, 0);
 
 /*
 <blockmaterial:sponge>

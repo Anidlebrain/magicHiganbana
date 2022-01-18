@@ -1,0 +1,20 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "texture": "contenttweaker:blocks/unburned_mortar",
+            "particle": "contenttweaker:blocks/unburned_mortar"
+        },
+        "model": "roots:mortar",
+        "uvlock": true,
+        "transform": "forge:default-block"
+    },
+    "variants": {
+        "normal": [
+            {}
+        ],
+        "inventory": [
+            {}
+        ]
+    }
+}

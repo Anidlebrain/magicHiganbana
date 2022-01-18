@@ -22,16 +22,85 @@ function recipesInit()
 {
     //花药台
     recipes.remove(<botania:altar>);
-    RecipeBuilder.get("mage")
-      .setShaped([
-        [<prodigytech:ash_bricks>, <roots:petals>, <prodigytech:ash_bricks>],
-        [null, <embers:block_caminite_brick>, null],
-        [<embers:block_caminite_brick>, <embers:block_caminite_brick>, <embers:block_caminite_brick>]])
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <embers:block_caminite_brick>}))
       .addOutput(<botania:altar>)
       .create();
 
-    //杵和臼
-    recipes.remove(<botania:pestleandmortar>);
+    recipes.remove(<botania:altar:1>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:8>}))
+      .addOutput(<botania:altar:1>)
+      .create();
+    
+    recipes.remove(<botania:altar:2>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:9>}))
+      .addOutput(<botania:altar:2>)
+      .create();
+    
+    recipes.remove(<botania:altar:3>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:10>}))
+      .addOutput(<botania:altar:3>)
+      .create();
+    
+    recipes.remove(<botania:altar:4>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:3>}))
+      .addOutput(<botania:altar:4>)
+      .create();
+    
+    recipes.remove(<botania:altar:5>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:4>}))
+      .addOutput(<botania:altar:5>)
+      .create();
+    
+    recipes.remove(<botania:altar:6>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:5>}))
+      .addOutput(<botania:altar:6>)
+      .create();
+    
+    recipes.remove(<botania:altar:7>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:6>}))
+      .addOutput(<botania:altar:7>)
+      .create();
+    
+    recipes.remove(<botania:altar:8>);
+    RecipeBuilder.get("potter")
+      .setShaped(
+          inputPatternGet(["BAB", " B", "BBB"], {
+              "A" : <roots:petals>,
+              "B" : <botania:biomestonea:7>}))
+      .addOutput(<botania:altar:8>)
+      .create();
 
     //烈焰网 => 烈焰棒
     recipes.removeByRecipeName("botania:conversions/blazeblock_deconstruct");
@@ -43,7 +112,6 @@ function recipesInit()
     recipes.removeByRecipeName("botania:pool_2");
     RecipeBuilder.get("mage")
       .setShaped([
-        [null, null, null],
         [<botania:livingrock>, null, <botania:livingrock>],
         [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
       .addOutput(<botania:pool:2>)
@@ -73,7 +141,6 @@ function recipesInit()
     recipes.remove(<botania:runealtar>);
     RecipeBuilder.get("mage")
       .setShaped([
-        [null, null, null],
         [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
         [<botania:livingrock>, <bloodmagic:sigil_elemental_affinity>, <botania:livingrock>]])
       .addOutput(<botania:runealtar>)
@@ -94,9 +161,9 @@ function recipesInit()
     recipes.remove(<botania:lens>);
     RecipeBuilder.get("mage")
       .setShaped([
-        [null, <botania:manaresource>, null],
+        [null, <botania:manaresource>],
         [<botania:manaresource>, <botania:managlasspane>, <botania:manaresource>],
-        [null, <botania:manaresource>, null]])
+        [null, <botania:manaresource>]])
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<botania:lens>)
       .create();
@@ -116,9 +183,9 @@ function recipesInit()
     recipes.remove(<botania:cosmetic:17>);
     RecipeBuilder.get("mage")
       .setShaped([
-        [null, <botania:manaresource:23>, null],
+        [null, <botania:manaresource:23>],
         [<botania:manaresource:23>, <botania:manaresource:16>, <botania:manaresource:23>],
-        [null, <botania:manaresource:23>, null]])
+        [null, <botania:manaresource:23>]])
       .addTool(<ore:artisansGrimoire>, 3)
       .addOutput(<botania:cosmetic:17>)
       .create();
@@ -153,6 +220,9 @@ function itemRemove()
     {
         itemHelper.removeItemAndOre(item);
     }
+
+    //杵和臼
+    itemHelper.removeItem(<botania:pestleandmortar>);
 }
 
 if (!isInvalid)

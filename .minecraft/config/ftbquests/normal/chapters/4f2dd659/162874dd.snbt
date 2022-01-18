@@ -1,12 +1,12 @@
 {
-	x: -8.0d,
-	y: 7.0d,
+	x: 9.0d,
+	y: 3.5d,
 	description: "第一颗种子",
 	text: [
 		"这应该不是第一颗吧，都有一片南瓜田了"
 	],
 	dependencies: [
-		"c0f6a8d2"
+		"c31ad703"
 	],
 	tasks: [{
 		uid: "271b65e8",

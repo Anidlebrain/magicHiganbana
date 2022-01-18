@@ -98,6 +98,8 @@ item.contenttweaker.advanced_plasma_circuit_board.name=高级等离子电路板
 item.contenttweaker.elite_plasma_circuit_board.name=精英等离子电路板
 item.contenttweaker.ultimate_plasma_circuit_board.name=终极等离子电路板
 
+item.contenttweaker.unburned_pestle.name=未烧制的研杵
+
 #任务图标
 item.contenttweaker.hope.name=希望
 item.contenttweaker.recovery.name=复苏
@@ -135,6 +137,7 @@ item.contenttweaker.crystal_lead.name=铅晶
 tile.contenttweaker.chenjin_stone.name=辰烬石
 tile.contenttweaker.dark_magic_stone.name=暗魔石
 tile.contenttweaker.block_starmetal.name=星辰块
+tile.contenttweaker.unburned_mortar.name=未烧制的研杵
 
 #flower
 tile.botania:flower.yuanlinghua.name=沅陵花

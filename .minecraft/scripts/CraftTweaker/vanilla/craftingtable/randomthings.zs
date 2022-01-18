@@ -33,9 +33,9 @@ function recipesInit()
     recipes.remove(<randomthings:spectrekey>);
     RecipeBuilder.get("jeweler")
       .setShaped([
-        [<randomthings:ingredient:3>, <randomthings:ingredient:3>, <randomthings:ingredient:3>, null, null],
-        [<randomthings:ingredient:3>, <actuallyadditions:block_crystal_empowered:2>, null, null, null],
-        [<randomthings:ingredient:3>, null, <contenttweaker:space_key>, null, null],
+        [<randomthings:ingredient:3>, <randomthings:ingredient:3>, <randomthings:ingredient:3>],
+        [<randomthings:ingredient:3>, <actuallyadditions:block_crystal_empowered:2>],
+        [<randomthings:ingredient:3>, null, <contenttweaker:space_key>],
         [null, null, null, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>],
         [null, null, null, <actuallyadditions:block_crystal_empowered:2>, <randomthings:ingredient:3>]])
       .setSecondaryIngredients([<astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent>, 

@@ -1,0 +1,26 @@
+{
+	x: -9.0d,
+	y: -0.5d,
+	dependencies: [
+		"c0b83fac",
+		"80ce90e0",
+		"f130470e"
+	],
+	tasks: [{
+		uid: "c14d804e",
+		type: "checkmark",
+		title: "由于没有铁制造桶，只能使用碗给花药台打水",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:waterbowl",
+			tag: {
+				Fluid: {
+					FluidName: "water",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

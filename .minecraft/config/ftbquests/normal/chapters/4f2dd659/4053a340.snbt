@@ -1,0 +1,14 @@
+{
+	x: 16.0d,
+	y: 2.0d,
+	dependencies: [
+		"2f9e7468"
+	],
+	tasks: [{
+		uid: "aa16f38d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:strengthen_shatter"
+		}]
+	}]
+}

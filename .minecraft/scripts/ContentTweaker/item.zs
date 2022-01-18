@@ -192,3 +192,6 @@ CotUtils.itemCreator("advanced_plasma_circuit_board", 64, false);
 CotUtils.itemCreator("elite_plasma_circuit_board", 64, false);
 //终极等离子电路板
 CotUtils.itemCreator("ultimate_plasma_circuit_board", 64, false);
+
+//未烧制的研杵
+CotUtils.itemCreator("unburned_pestle", 64, false);

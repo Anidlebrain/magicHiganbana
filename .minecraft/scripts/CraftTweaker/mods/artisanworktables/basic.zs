@@ -33,6 +33,7 @@ var basicItem = [
     <tp:diamond_shears>,
     <tp:golden_shears>,
     
+    <roots:glass_eye>,
 
 
 ] as IIngredient[];
@@ -40,6 +41,7 @@ var basicItem = [
 var basicNotItem = [
     <minecraft:dirt:1>,
     <minecraft:dye:15>,
+    <minecraft:magma>,
 
     <skyresources:minifreezer>,
     <skyresources:heavyexplosivesnowball>,

@@ -48,6 +48,8 @@ var carpenterItem = [
     <roots:wildwood_pressure_plate>,
     <roots:wildwood_door>,
 
+    <randomthings:lightredirector>,
+
     
     <skyresources:waterextractor>,
 
@@ -60,6 +62,8 @@ var carpenterItem = [
     <tconstruct:tooltables:5>,
     <tconstruct:pattern>,
 
+    <conarm:armorstation>,
+
 
 ] as IIngredient[];
 
@@ -71,7 +75,7 @@ var carpenterNotItem = [
 RecipeBuilder.get("carpenter")
   .setCopy(Copy.byOutput(carpenterItem)
              .replaceInput(<minecraft:crafting_table>, <artisanworktables:worktable:5>))
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansHandsaw>, 1)
   .create();
 
 for item in carpenterItem
@@ -82,7 +86,7 @@ for item in carpenterItem
 RecipeBuilder.get("carpenter")
   .setCopy(Copy.byOutput(carpenterNotItem)
              .replaceInput(<minecraft:crafting_table>, <artisanworktables:worktable:5>))
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansHandsaw>, 1)
   .create();
 
 for kinds in 0 .. 16

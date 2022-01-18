@@ -1,0 +1,11 @@
+{
+	x: -3.0d,
+	y: -0.5d,
+	tasks: [{
+		uid: "d680504c",
+		type: "item",
+		items: [{
+			item: "skyresources:heat"
+		}]
+	}]
+}

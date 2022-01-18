@@ -32,8 +32,8 @@ function recipesInit()
     //木制加热组件
     recipes.remove(<skyresources:heat>);
     RecipeBuilder.get("carpenter")
-      .setShaped(recipesUtils.surroundItems(<tconstruct:pattern>, <botania:specialflower>.withTag({type: "endoflame"})))
-      .addTool(<ore:artisansDriver>, 1)
+      .setShaped(recipesUtils.surroundItems(<tconstruct:pattern>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_wild_fire"}}) | <botania:manaresource:23>))
+      .addTool(<ore:artisansHandsaw>, 2)
       .addOutput(<skyresources:heat>)
       .create();
 
@@ -77,7 +77,7 @@ function recipesInit()
         [<ore:logWood>, <skyresources:heat>, <ore:logWood>],
         [<ore:logWood>, <roots:petals>, <ore:logWood>],
         [<ore:logWood>, <skyresources:heat>, <ore:logWood>]])
-      .addTool(<ore:artisansDriver>, 1)
+      .addTool(<ore:artisansHandsaw>, 5)
       .addOutput(<skyresources:combustionheater>)
       .create();
 
@@ -157,7 +157,7 @@ function recipesInit()
     recipes.remove(<skyresources:alchemy>);
     RecipeBuilder.get("carpenter")
       .setShaped(recipesUtils.surroundItems(<tconstruct:pattern>, <skyresources:alchemyitemcomponent:2>))
-      .addTool(<ore:artisansDriver>, 1)
+      .addTool(<ore:artisansHandsaw>, 1)
       .addOutput(<skyresources:alchemy>)
       .create();
 
@@ -196,7 +196,7 @@ function recipesInit()
         [<ore:logWood>, <skyresources:alchemy>, <ore:logWood>],
         [<ore:logWood>, <minecraft:ice>, <ore:logWood>],
         [<ore:logWood>, <skyresources:alchemy>, <ore:logWood>]])
-      .addTool(<ore:artisansDriver>, 1)
+      .addTool(<ore:artisansHandsaw>, 3)
       .addOutput(<skyresources:condenser>)
       .create();
 
@@ -281,6 +281,7 @@ function recipesInit()
         [<ore:logWood>, <ore:gearWood>, <ore:logWood>],
         [<ore:gearWood>, null, <ore:gearWood>],
         [<ore:logWood>, <ore:gearWood>, <ore:logWood>]])
+      .addTool(<ore:artisansHandsaw>, 4)
       .addOutput(<skyresources:casing>)
       .create();
 
@@ -327,7 +328,7 @@ function recipesInit()
         [<ore:logWood>, <skyresources:heat>, <ore:logWood>],
         [<ore:logWood>, <skyresources:dirtfurnace>, <ore:logWood>],
         [<ore:logWood>, <skyresources:heat>, <ore:logWood>]])
-      .addTool(<ore:artisansDriver>, 1)
+      .addTool(<ore:artisansHandsaw>, 2)
       .addOutput(<skyresources:heatprovider>)
       .create();
 
@@ -410,9 +411,10 @@ function recipesInit()
     recipes.remove(<skyresources:fluiddropper>);
     RecipeBuilder.get("basic")
       .setShaped([
-        [<prodigytech:ash_bricks>, <prodigytech:ash_bricks>, <prodigytech:ash_bricks>],
-        [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>],
-        [<prodigytech:ash_bricks>, null, <prodigytech:ash_bricks>]])
+        [<immersiveengineering:stone_decoration>, <immersiveengineering:stone_decoration>, <immersiveengineering:stone_decoration>],
+        [<immersiveengineering:stone_decoration>, null, <immersiveengineering:stone_decoration>],
+        [<immersiveengineering:stone_decoration>, null, <immersiveengineering:stone_decoration>]])
+      .addTool(<ore:artisansBurner>, 4)
       .addOutput(<skyresources:fluiddropper>)
       .create();
 
@@ -423,6 +425,7 @@ function recipesInit()
         [<minecraft:brick_block>, null, <minecraft:brick_block>],
         [<minecraft:brick_block>, null, <minecraft:brick_block>],
         [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>]])
+      .addTool(<ore:artisansBurner>, 3)
       .addOutput(<skyresources:crucible>)
       .create();
 

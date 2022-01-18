@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -2.5d,
+	dependencies: [
+		"606f8b38"
+	],
+	tasks: [{
+		uid: "549bfe33",
+		type: "item",
+		items: [{
+			item: "skyresources:baseitemcomponent"
+		}]
+	}]
+}

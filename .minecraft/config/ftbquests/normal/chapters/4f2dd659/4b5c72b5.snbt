@@ -1,0 +1,24 @@
+{
+	x: 13.5d,
+	y: 1.0d,
+	dependencies: [
+		"c11ce2ed",
+		"53804086"
+	],
+	tasks: [{
+		uid: "bae743b0",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "roots:spell_dust",
+			tag: {
+				spell_storage: {
+					s: "roots:spell_wild_fire"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: -3.5d,
+	y: -1.0d,
+	dependencies: [
+		"994599fc"
+	],
+	tasks: [{
+		uid: "cf7e7d10",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:waterbowl",
+			tag: {
+				Fluid: {
+					FluidName: "water",
+					Amount: 1000
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

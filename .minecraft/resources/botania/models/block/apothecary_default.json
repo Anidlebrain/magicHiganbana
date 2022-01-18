@@ -1,0 +1,10 @@
+{
+	"Comment": "Designed by Wiiv with Cubik Studio - https://cubik.studio",
+	"parent": "botania:block/shapes/petal_apothecary",
+	"textures": {
+		"side": "embers:blocks/block_caminite_brick",
+		"goblet": "embers:blocks/block_caminite_brick",
+		"top_bottom": "embers:blocks/block_caminite_brick",
+		"particle": "embers:blocks/block_caminite_brick"
+	}
+}

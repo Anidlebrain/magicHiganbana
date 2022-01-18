@@ -1,12 +1,11 @@
 {
-	x: -8.0d,
-	y: 11.0d,
+	x: 2.5d,
+	y: 3.5d,
 	dependencies: [
-		"24b987a3"
+		"b0a8245d"
 	],
-	hide: true,
 	tasks: [{
-		uid: "d46b12c3",
+		uid: "309dccc9",
 		type: "item",
 		items: [{
 			item: "minecraft:ice"

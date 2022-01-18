@@ -97,32 +97,22 @@ wildFire.onBlockHarvestDrops = function(trait, tool, event)
         dropping = event.drops[0].stack;
     }
     var id as string = event.block.definition.id;
-    if (id == "forestry:wood_pile")
+
+    var flag as bool = false;
+    for item in <ore:treeSapling>.items
     {
-        event.drops = [<item:minecraft:coal:1> * 5 % 100];
-    }
-    else
-    {
-        var flag as bool = false;
-        for item in <item:ore:treeSapling>.items
+        if (id == item.definition.id)
         {
-            if (id == item.definition.id)
-            {
-                event.drops = [<item:minecraft:deadbush> % 100];
-                flag = true;
-                break;
-            }
+            event.drops = [<item:minecraft:deadbush> % 100];
+            flag = true;
+            break;
         }
-        if (!flag)
+    }
+    if (!flag)
+    {
+        if (Math.random() > 0.99)
         {
-            if (Math.random() < 0.01)
-            {
-                event.drops = [<item:forestry:ash> % 100];
-            }
-            else if (Math.random() > 0.99)
-            {
-                event.drops = [<item:prodigytech:ash> % 100];
-            }
+            event.drops = [<item:prodigytech:ash> % 100];
         }
     }
 };

@@ -122,7 +122,6 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <techreborn:ore:9>,
     ],
 
-
     #种子
     <ore:listAllseed> : [
         <appliedenergistics2:crystal_seed>,
@@ -211,6 +210,11 @@ var oreadd as IItemStack[][IOreDictEntry] = {
         <botania:livingwood:4>,
         <botania:livingwood:5>,
     ],
+
+    #面粉
+    <ore:foodFlour> : [
+        <appliedenergistics2:material:4>,
+    ]
 };
 
 
