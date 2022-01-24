@@ -9,3 +9,5 @@
 import mods.skyresources.crucible;
 
 crucible.removeRecipe(<liquid:lava>);
+
+crucible.addRecipe(<liquid:water> * 50, <skyresources:baseitemcomponent>);

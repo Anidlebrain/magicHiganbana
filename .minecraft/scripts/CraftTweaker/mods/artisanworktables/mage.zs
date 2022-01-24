@@ -41,5 +41,3 @@ for recipeName in mageName
       .setCopy(Copy.byName(recipeName))
       .create();
 }
-
-<tp:small_bandage>;

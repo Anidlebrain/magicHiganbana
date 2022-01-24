@@ -87,3 +87,5 @@ for ore in oreDict {
 }
 
 MetalPress.removeRecipe(<techreborn:plates:38>);
+MetalPress.removeRecipe(<ore:gearWood>.firstItem);
+MetalPress.addRecipe(<ore:gearWood>.firstItem, <ore:pattern>, <immersiveengineering:mold:2>, 2000, 1);

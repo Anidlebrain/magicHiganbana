@@ -23,7 +23,7 @@ function addAlloyRecipe(output as IItemStack, inputs as IIngredient[], energytic
     if (level < 2) {
         if (inputs.length == 2) {
             mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,
-                [inputs[0]], "Alloying");
+                [inputs[1]], "Alloying");
         }
         if (inputs.length == 3) {
             mods.immersiveengineering.ArcFurnace.addRecipe(output, inputs[0], null, time, energytick,

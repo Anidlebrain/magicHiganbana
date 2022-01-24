@@ -15,6 +15,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 function init()
 {
     recipesInit();
+    recipesRemove();
     itemRemove();
 }
 
@@ -44,6 +45,13 @@ function itemRemove()
 {
     //木剪
     itemHelper.removeItem(<roots:wooden_shears>);
+}
+
+function recipesRemove()
+{
+    //研钵 研杵
+    recipes.remove(<roots:pestle>);
+    recipes.remove(<roots:mortar>);
 }
 
 if (!isInvalid)

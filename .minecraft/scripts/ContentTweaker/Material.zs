@@ -1,10 +1,9 @@
 ##=================================================
 ##          [Author]:   Anidlebrain
 ##          [since]:    magic_higanbana
-##          [Info]:     金属部件增加
+##          [Info]:     材料部件增加
 ##=================================================
 #priority 4000
-#norun 
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
@@ -14,7 +13,6 @@ import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.Material;
+import scripts.AnildebrainUtils.CotUtils.materialCreator;
 
-var part_names = ["ingot"] as string[];
-var frozen_gold = MaterialSystem.getMaterialBuilder().setName("Frozen_gold").setColor(15269685).build();
-frozen_gold.registerParts(part_names);
+materialCreator("Wood", 0xDEB887, ["gear"]);

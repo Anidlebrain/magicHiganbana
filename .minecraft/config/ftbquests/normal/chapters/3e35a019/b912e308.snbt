@@ -5,6 +5,7 @@
 		"45abf1c2",
 		"606f8b38"
 	],
+	size: 1.5d,
 	tasks: [{
 		uid: "ab831418",
 		type: "item",

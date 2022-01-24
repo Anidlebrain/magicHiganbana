@@ -1,0 +1,14 @@
+{
+	x: 3.5d,
+	y: 1.0d,
+	dependencies: [
+		"34a29e2a"
+	],
+	tasks: [{
+		uid: "10153965",
+		type: "item",
+		items: [{
+			item: "minecraft:slime_ball"
+		}]
+	}]
+}

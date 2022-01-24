@@ -1,0 +1,15 @@
+{
+	x: 8.5d,
+	y: 5.5d,
+	dependencies: [
+		"b3cb3d87",
+		"84b747b5"
+	],
+	tasks: [{
+		uid: "ff68f11a",
+		type: "item",
+		items: [{
+			item: "minecraft:stained_hardened_clay"
+		}]
+	}]
+}

@@ -8,6 +8,6 @@
 
 import mods.jei.JEI.hideCategory;
 
-hideCategory("root.block_break");
+hideCategory("roots.block_break");
 
 

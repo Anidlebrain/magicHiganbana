@@ -1,14 +1,14 @@
 {
-	x: 12.0d,
+	x: 3.5d,
 	y: 4.0d,
 	dependencies: [
-		"f130470e"
+		"3ef046d6"
 	],
 	tasks: [{
-		uid: "5c591d38",
+		uid: "70b9c738",
 		type: "item",
 		items: [{
-			item: "minecraft:wheat"
+			item: "tconstruct:edible 1 2"
 		}]
 	}]
 }

@@ -1,0 +1,24 @@
+{
+	x: 5.5d,
+	y: -3.5d,
+	dependencies: [
+		"b1c93efb"
+	],
+	size: 1.2d,
+	tasks: [{
+		uid: "d787d3a0",
+		type: "checkmark",
+		title: "使用窑砖搭建2×2×2的结构，使用工程师锤敲击后形成合金窑"
+	},
+	{
+		uid: "5ca20ac7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:tool"
+		}],
+		ignore_nbt: 1b
+	}]
+}

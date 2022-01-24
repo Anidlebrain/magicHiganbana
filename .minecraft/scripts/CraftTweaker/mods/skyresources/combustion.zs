@@ -12,14 +12,6 @@ import mods.skyresources.fusion;
 //木制 200
 //石制 1000
 
-//工程师锤
-recipes.remove(<immersiveengineering:tool>);
-combustion.addRecipe(<immersiveengineering:tool>, [
-    <tconstruct:tool_rod>.withTag({Material: "wood"}) *2,
-    <minecraft:string> * 2,
-    <embers:brick_caminite> * 4
-], 200);
-
 //焦炉砖
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/cokebrick");
 combustion.addRecipe(<immersiveengineering:stone_decoration> * 3, [

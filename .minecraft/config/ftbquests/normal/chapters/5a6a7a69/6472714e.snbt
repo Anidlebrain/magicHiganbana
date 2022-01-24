@@ -1,14 +1,14 @@
 {
-	x: -4.5d,
+	x: 3.5d,
 	y: -1.5d,
 	dependencies: [
-		"2aa2fae0"
+		"34a29e2a"
 	],
 	tasks: [{
-		uid: "d680504c",
+		uid: "3a2e0e1a",
 		type: "item",
 		items: [{
-			item: "skyresources:heat"
+			item: "minecraft:blaze_powder"
 		}]
 	}]
 }

@@ -13,12 +13,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 var scribeItem = [
-    
     <minecraft:map>,
     <minecraft:book>,
     <minecraft:writable_book>,
-    
-    
     
 
 ] as IIngredient[];

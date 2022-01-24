@@ -1,0 +1,11 @@
+{
+	x: 9.0d,
+	y: -7.0d,
+	tasks: [{
+		uid: "ca04112b",
+		type: "item",
+		items: [{
+			item: "skyresources:crucible"
+		}]
+	}]
+}

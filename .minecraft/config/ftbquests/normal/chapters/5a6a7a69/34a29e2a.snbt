@@ -1,0 +1,29 @@
+{
+	icon: "skyresources:combustionheater",
+	x: 0.5d,
+	y: -1.5d,
+	dependencies: [
+		"711427aa"
+	],
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "5399690e",
+		type: "checkmark",
+		title: "组合"
+	},
+	{
+		uid: "27ddc68a",
+		type: "item",
+		items: [{
+			item: "minecraft:wooden_button"
+		}]
+	},
+	{
+		uid: "001eba4e",
+		type: "item",
+		items: [{
+			item: "skyresources:casing"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 7.0d,
+	y: -1.5d,
+	dependencies: [
+		"6472714e",
+		"22c6629b",
+		"3ef046d6"
+	],
+	tasks: [{
+		uid: "2741cb86",
+		type: "item",
+		items: [{
+			item: "minecraft:magma_cream"
+		}]
+	}]
+}

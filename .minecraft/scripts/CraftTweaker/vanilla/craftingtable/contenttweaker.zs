@@ -37,7 +37,6 @@ function recipesInit() {
       .create();
     
     //未烧制的研钵
-    recipes.remove(<roots:mortar>);
     RecipeBuilder.get("potter")
       .setShaped([
         [<ore:blockClay>, null, <ore:blockClay>],
@@ -47,7 +46,6 @@ function recipesInit() {
       .create();
     
     //未烧制的研杵
-    recipes.remove(<roots:pestle>);
     RecipeBuilder.get("potter")
       .setShaped([
         [null, null, <ore:blockClay>],
@@ -61,6 +59,17 @@ function recipesInit() {
       .setShapeless([<skyresources:baseitemcomponent>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_growth_infusion"}})])
       .addOutput(<contenttweaker:strengthen_growth_infusion>)
       .create();
+
+    //木齿轮
+    RecipeBuilder.get("potter")
+      .setShaped([
+        [null, <ore:pattern>],
+        [<ore:pattern>, null,<ore:pattern>],
+        [null, <ore:pattern>]])
+      .addTool(<ore:artisansHandsaw>, 2)
+      .addOutput(<ore:gearWood>.firstItem)
+      .create();
+      
 }
 
 if (!isInvalid)

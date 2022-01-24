@@ -31,7 +31,16 @@ function recipesInit()
             D : <ore:plankTreatedWood>}
     );
 */
-
+    //工程师锤
+    recipes.remove(<immersiveengineering:tool>);
+    RecipeBuilder.get("blacksmith")
+      .setShaped([
+        [null, <ore:ingotSteel>, <ore:string>],
+        [null, <ore:stickWood>, <ore:ingotSteel>],
+        [<ore:stickWood>]])
+      .addOutput(<immersiveengineering:tool>)
+      .create();
+    
     recipesUtils.addShapelessCycle(<immersiveengineering:material:27>, <prodigytech:circuit_plate>);
 }
 

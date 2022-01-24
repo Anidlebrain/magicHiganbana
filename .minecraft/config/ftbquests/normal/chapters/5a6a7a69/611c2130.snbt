@@ -1,11 +1,13 @@
 {
-	x: -9.0d,
-	y: -0.5d,
+	x: -10.5d,
+	y: -1.5d,
 	dependencies: [
 		"c0b83fac",
 		"80ce90e0",
 		"f130470e"
 	],
+	hide: true,
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "c14d804e",
 		type: "checkmark",

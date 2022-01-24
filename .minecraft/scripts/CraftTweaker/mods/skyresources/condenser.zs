@@ -6,7 +6,6 @@
 #modloaded higanbana
 #priority 2000
 
-#norun
 import mods.skyresources.condenser;
 import mods.skyresources.fusion;
 
@@ -15,6 +14,7 @@ import mods.skyresources.fusion;
 fusion.removeRecipe(<skyresources:magmafiedstone>);
 condenser.addRecipe(<skyresources:magmafiedstone>, 2400, <minecraft:magma>, <minecraft:ice>);
 
+/*
 //铱锭
 condenser.removeRecipe(<thermalfoundation:material:135>);
 
@@ -77,3 +77,4 @@ condenser.removeRecipe(<immersiveengineering:metal:5>);
 
 //钍锭
 condenser.removeRecipe(<techreborn:ingot:23>);
+*/
