@@ -3,9 +3,6 @@
 	icon: "roots:ritual_summon_creatures",
 	x: 10.5d,
 	y: -11.0d,
-	dependencies: [
-		"bcfc2a09"
-	],
 	tasks: [{
 		uid: "50f397a9",
 		type: "item",

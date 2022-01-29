@@ -17,6 +17,8 @@ var mageItem = [
     <tp:small_med_kit>,
     <tp:large_med_kit>,
     <tp:large_bandage>,
+
+    <randomthings:rainshield>,
     
 ] as IIngredient[];
 

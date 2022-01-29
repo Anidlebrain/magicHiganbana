@@ -28,7 +28,6 @@ function recipesInit()
         [null, <botania:livingwood>],
         [<botania:livingwood>, <ore:powderMana>, <botania:livingwood>],
         [<minecraft:stonebrick:2>, <roots:terra_moss>, <minecraft:stonebrick:2>]])
-      .addTool(<ore:artisansShears>, 1)
       .addOutput(<roots:pyre>)
       .create();
     
@@ -38,6 +37,16 @@ function recipesInit()
       .setShaped(recipesUtils.centreCrossitem(<ore:stickWood>, <ore:wildroot>, <ore:bricksStone>))
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<roots:imbuer>)
+      .create();
+    
+    //野木符文
+    recipes.remove(<roots:wildroot_rune>);
+    RecipeBuilder.get("carpenter")
+      .setShaped([
+        [<roots:runed_wildwood>, <ore:wildroot>],
+        [<ore:wildroot>, <ore:randomThingsRuneDust>]])
+      .addTool(<ore:artisansFramingHammer>, 1)
+      .addOutput(<roots:wildroot_rune>)
       .create();
 }
 

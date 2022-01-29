@@ -3,15 +3,6 @@
 ##          [since]:    magic_higanbana
 ##          [Info]:     甜蜜魔法 工作台合成
 ##================================================
-
-#modloaded higanbana
-#priority 2000
-
-##================================================
-##          [Author]:   Anidlebrain
-##          [since]:    magic_higanbana
-##          [Info]:     根源魔法 工作台合成
-##================================================
 #modloaded higanbana
 #priority 2000
 
@@ -38,8 +29,9 @@ function itemRemove()
 
 function recipeRemove()
 {
+    recipes.removeByMod("sweetmagic");
     //玻璃瓶
-    recipes.removeByRecipeName("sweetmagic:bottle");
+    //recipes.removeByRecipeName("sweetmagic:bottle");
 }
 
 if (!isInvalid)

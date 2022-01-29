@@ -1,0 +1,15 @@
+{
+	x: 12.5d,
+	y: -1.5d,
+	dependencies: [
+		"a533ee87",
+		"ec16c5eb"
+	],
+	tasks: [{
+		uid: "eda755e7",
+		type: "item",
+		items: [{
+			item: "skyresources:magmafiedstone"
+		}]
+	}]
+}

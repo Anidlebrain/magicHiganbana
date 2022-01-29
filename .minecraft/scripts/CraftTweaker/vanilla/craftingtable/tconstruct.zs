@@ -36,8 +36,6 @@ function recipesInit()
             var craftinfo as ICraftingInventory = info.inventory;
             var items as IItemStack[][] = craftinfo.items;
             if (items.length != 3)   
-
-            
             {
                 //print("tconstruct " ~ items[1].length);
                 return null;

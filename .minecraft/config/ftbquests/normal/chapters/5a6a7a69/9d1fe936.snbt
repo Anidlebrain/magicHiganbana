@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: -6.0d,
+	dependencies: [
+		"ab32ce16"
+	],
+	tasks: [{
+		uid: "b28d325c",
+		type: "item",
+		items: [{
+			item: "skyresources:alchemy"
+		}]
+	}]
+}

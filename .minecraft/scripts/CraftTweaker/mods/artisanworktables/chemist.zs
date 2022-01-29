@@ -14,9 +14,12 @@ import crafttweaker.item.IIngredient;
 var chemistItem = [
 
     <minecraft:slime_ball>,
-
+    
 ] as IIngredient[];
 
+var chemistNotItem = [
+    <minecraft:magma>,
+] as IIngredient[];
 
 RecipeBuilder.get("chemist")
   .setCopy(Copy.byOutput(chemistItem))
@@ -26,3 +29,7 @@ for item in chemistItem
 {
     recipes.remove(item);
 }
+
+RecipeBuilder.get("chemist")
+  .setCopy(Copy.byOutput(chemistNotItem))
+  .create();

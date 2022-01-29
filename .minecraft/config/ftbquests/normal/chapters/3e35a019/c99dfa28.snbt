@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: 7.0d,
+	dependencies: [
+		"7d5026d0"
+	],
+	tasks: [{
+		uid: "116877a6",
+		type: "item",
+		items: [{
+			item: "skyresources:crucible"
+		}]
+	}]
+}

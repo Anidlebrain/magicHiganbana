@@ -68,6 +68,11 @@ for kinds in 0 to 16
         rootsMortarRecipe(<tp:colored_dust>.definition.makeStack(kinds),
             [DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], DYE_ORE[kinds + 1], <minecraft:glowstone_dust>]);
     }
+
+    //符文尘
+    recipes.remove(<randomthings:runedust>.definition.makeStack(kinds));
+    rootsMortarRecipe(<randomthings:runedust>.definition.makeStack(kinds),
+            [DYE_ORE[kinds], <ore:runedWood>, <ore:runedWood>, <randomthings:ingredient:5>, <minecraft:clay_ball>]);
 }
 
 //地狱燃料
@@ -82,6 +87,10 @@ rootsMortarRecipe(<embers:blend_caminite> * 3,
 rootsMortarRecipe(<embers:blend_caminite> * 2,
     [<ore:clayBall>, <ore:clayBall>, <ore:clayBall>, <skyresources:baseitemcomponent:4>, <ore:sand>]);
 
+//荧光粉
+recipes.remove(<randomthings:ingredient:5>);
+rootsMortarRecipe(<randomthings:ingredient:5> * 4,
+    [<ore:blockGlass>, <ore:dustGlowstone>, <ore:dustGlowstone>, <randomthings:glowingmushroom>, <randomthings:glowingmushroom>]);
 
 //咒术尘 生机灌溉
 Mortar.changeSpell("spell_growth_infusion",
@@ -90,3 +99,5 @@ Mortar.changeSpell("spell_growth_infusion",
 //咒术尘 野火
 Mortar.changeSpell("spell_wild_fire",
     [DYE_ORE[1], <skyresources:baseitemcomponent>, <ore:gunpowder>, <roots:wildroot>, <ore:foodFlour>]);
+
+

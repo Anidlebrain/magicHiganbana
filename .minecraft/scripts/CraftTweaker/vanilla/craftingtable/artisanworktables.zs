@@ -43,11 +43,11 @@ function recipesInit()
     //石匠工作台
     RecipeBuilder.get("basic")
       .setShaped([
-        [<ore:slabBricks>, <ore:slabBricks>, <ore:slabBricks>],
+        [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>],
         [<minecraft:brick_block>, <artisanworktables:worktable:5>, <minecraft:brick_block>],
         [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
       .addTool(<ore:artisansDriver>, 1)
-      .addOutput(<artisanworktables:workstation:2>)
+      .addOutput(<artisanworktables:worktable:2>)
       .create();
 
     //铁匠工作台

@@ -286,7 +286,7 @@ function rootsMortarRecipe(output as IItemStack, inputs as IIngredient[]) as voi
     
     mods.artisanworktables.builder.RecipeBuilder.get("chemist")
       .setShapeless(inputs)
-      .addTool(<ore:artisansBurner>, 1)
+      .addTool(<ore:artisansMortar>, 3)
       .setName(name)
       .addOutput(output)
       .create();

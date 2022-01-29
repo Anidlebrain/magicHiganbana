@@ -18,7 +18,7 @@ function init()
 function recipesInit()
 {
     //供桌 压缩合成
-    recipes.remove(<naturesaura:offering_table>);
+    //recipes.remove(<naturesaura:offering_table>);
 }
 
 if (!isInvalid)

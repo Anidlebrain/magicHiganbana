@@ -8,7 +8,6 @@
 		"森流祈愿可以激活森林指示。"
 	],
 	dependencies: [
-		"f43a6a28",
 		"3487fa8b",
 		"a842f21f",
 		"be0da7da"

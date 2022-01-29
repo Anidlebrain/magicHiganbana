@@ -18,7 +18,6 @@ function init()
 
 }
 
-
 function recipesInit()
 {
     var ferramic_ingot = <prodigytech:ferramic_ingot>;
@@ -49,10 +48,6 @@ function recipesInit()
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<prodigytech:solid_fuel_aeroheater>)
       .create();
-    
-    //air_funnel
-    recipes.remove(<prodigytech:air_funnel>);
-    
     
     //能源气热炉
     recipes.remove(<prodigytech:energion_aeroheater>);
@@ -119,6 +114,9 @@ function recipesInit()
       .addTool(<ore:artisansShears>, 1)
       .addOutput(<prodigytech:ore_refinery>)
       .create();
+
+    //空气管道
+    recipes.remove(<prodigytech:air_funnel>);
 }
 
 function itemRemove()

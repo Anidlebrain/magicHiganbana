@@ -5,8 +5,9 @@
 		""
 	],
 	dependencies: [
-		"91a474a8"
+		"2b6aa858"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "8263d3b7",
 		type: "item",

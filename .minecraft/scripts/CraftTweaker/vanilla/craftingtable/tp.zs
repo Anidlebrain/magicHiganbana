@@ -103,7 +103,6 @@ function recipesInit()
       .addOutput(<tp:growth_upgrade>)
       .create();
     
-    
     //漂浮方块
     recipes.remove(<tp:fmf_block>);
     RecipeBuilder.get("basic")

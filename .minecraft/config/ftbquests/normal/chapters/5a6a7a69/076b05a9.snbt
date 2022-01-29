@@ -1,0 +1,12 @@
+{
+	x: 14.5d,
+	y: -1.5d,
+	dependencies: [
+		"4c89f0f0"
+	],
+	tasks: [{
+		uid: "a8ee2449",
+		type: "checkmark",
+		title: "将液态水晶放置在熔岩石旁边可以生成原石"
+	}]
+}

@@ -31,6 +31,8 @@ Apothecary.addRecipe(<botania:specialflower>.withTag({type: "puredaisy"}),
 //荧光菇
 Apothecary.addRecipe(<randomthings:glowingmushroom>,
     [<ore:mysticalshinyflower>, <ore:mysticalshinyflower>]);
+Apothecary.addRecipe(<randomthings:glowingmushroom>,
+    [<ore:mushroom>, <ore:dustGlowstone>]);
     
 //大地孢子
 Apothecary.addRecipe(<roots:terra_spores>,

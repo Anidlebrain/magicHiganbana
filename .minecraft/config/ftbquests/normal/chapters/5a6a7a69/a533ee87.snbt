@@ -1,14 +1,14 @@
 {
 	x: 9.0d,
-	y: -3.5d,
+	y: -1.5d,
 	dependencies: [
-		"e9484148"
+		"4f6b8eb3"
 	],
 	tasks: [{
-		uid: "0080a51f",
+		uid: "25cb5bd3",
 		type: "item",
 		items: [{
-			item: "contenttweaker:crystal_water"
+			item: "minecraft:magma"
 		}]
 	}]
 }

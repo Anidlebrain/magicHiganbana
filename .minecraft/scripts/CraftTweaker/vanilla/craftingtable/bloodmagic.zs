@@ -38,8 +38,6 @@ function recipesInit()
       .addTool(<ore:artisansHammer>, 1)
       .addOutput(<bloodmagic:altar>)
       .create();
-
-
 }
 
 if (!isInvalid)
