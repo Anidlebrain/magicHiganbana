@@ -57,3 +57,8 @@ function getEventMessage(key as string)
 {
     return getMessageKey("event." ~ key);
 }
+
+function getTitleMessage(key as string)
+{
+    return getMessageKey("title." ~ key);
+}

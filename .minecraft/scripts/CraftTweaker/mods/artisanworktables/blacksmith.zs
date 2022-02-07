@@ -34,7 +34,7 @@ var blacksmithItem = [
 
 RecipeBuilder.get("blacksmith")
   .setCopy(Copy.byOutput(blacksmithItem))
-  .addTool(<ore:artisansShears>, 10)
+  .addTool(<ore:artisansHammer>, 10)
   .create();
 
 for item in blacksmithItem

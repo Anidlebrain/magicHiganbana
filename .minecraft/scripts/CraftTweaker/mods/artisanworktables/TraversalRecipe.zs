@@ -105,7 +105,7 @@ function TraversalRecipe() {
                 recipes.removeByRecipeName(resourceName);
                 RecipeBuilder.get("potter")
                     .setCopy(Copy.byName(resourceName))
-                    .addTool(<ore:artisansTSquare>, 5)
+                    .addTool(<ore:artisansBurner>, 3)
                     .create();
             }
             else if(outItemId.contains("food"))

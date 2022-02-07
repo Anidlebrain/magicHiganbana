@@ -7,12 +7,14 @@
 #priority 2000
 
 import scripts.AnildebrainUtils.RecipesUtils.recipesUtils;
+import scripts.AnildebrainUtils.ItemHelper.itemHelper;
 import scripts.AnildebrainUtils.ModLoader.isInvalid;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 function init()
 {
     recipesInit();
+    itemRemove();
 }
 
 function recipesInit()
@@ -160,6 +162,11 @@ function recipesInit()
       .addTool(<ore:artisansDriver>, 1)
       .addOutput(<artisanworktables:worktable:14>)
       .create();
+}
+
+function itemRemove()
+{
+    itemHelper.removeItemAndOre(<artisanworktables:artisans_grimoire_wood>);
 }
 
 if (!isInvalid)

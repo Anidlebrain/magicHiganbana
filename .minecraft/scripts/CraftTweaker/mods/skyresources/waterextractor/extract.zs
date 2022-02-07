@@ -9,3 +9,5 @@
 import mods.skyresources.waterextractor.extract;
 
 extract.addRecipe(250, <minecraft:sand:1>, <minecraft:dirt:1>);
+extract.addRecipe(1000, <minecraft:air>, <ore:blockPackedIce>);
+extract.addRecipe(1000, <minecraft:air>, <ore:ice>);

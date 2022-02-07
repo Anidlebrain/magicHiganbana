@@ -125,6 +125,11 @@ higanbana.tconstruct.feylight.description=§o星星之火可以燎原§r\n§f
 higanbana.tconstruct.lightdrifter.name=超然游魂
 higanbana.tconstruct.lightdrifter.description=§o三山五岳，五湖四海，六合八荒，九天十地§r\n§f
 
+#title
+higanbana.title.villager.interact=你无法理解村民的语言
+
 #任务
 higanbana.ftb.5c213afa.description.1=右键水可以取水，给花药台加水用
+
+
 

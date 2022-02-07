@@ -16,7 +16,7 @@ Apothecary.addRecipe(<botania:specialflower>.withTag({type: "hydroangeas"}),
 //火红莲
 Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "endoflame"}));
 Apothecary.addRecipe(<botania:specialflower>.withTag({type: "endoflame"}),
-    [<ore:petalBrown>, <ore:petalBrown>, <ore:petalLightGray>, <ore:petalRed>, <ore:dustWheat>, <minecraft:gunpowder>]);
+    [<ore:petalBrown>, <ore:petalBrown>, <ore:petalLightGray>, <ore:petalRed>, <ore:dustFire>, <minecraft:gunpowder>]);
 
 //魔力星
 Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "manastar"}));

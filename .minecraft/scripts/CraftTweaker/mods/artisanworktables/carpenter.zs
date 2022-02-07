@@ -96,9 +96,8 @@ for kinds in 0 .. 16
     RecipeBuilder.get("carpenter")
       .setShaped([
         [wool, wool, wool],
-        [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-        [null, null, null]])
-      .addTool(<ore:artisansDriver>, 1)
+        [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
+      .addTool(<ore:artisansHandsaw>, 2)
       .addOutput(<minecraft:bed>.definition.makeStack(kinds))
       .create();
 }

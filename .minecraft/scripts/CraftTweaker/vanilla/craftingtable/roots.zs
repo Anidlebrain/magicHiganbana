@@ -23,19 +23,20 @@ function recipesInit()
 {
     //柴堆
     recipes.remove(<roots:pyre>);
-    RecipeBuilder.get("farmer")
+    RecipeBuilder.get("carpenter")
       .setShaped([
         [null, <botania:livingwood>],
         [<botania:livingwood>, <ore:powderMana>, <botania:livingwood>],
         [<minecraft:stonebrick:2>, <roots:terra_moss>, <minecraft:stonebrick:2>]])
+      .addTool(<ore:artisansFramingHammer>, 3)
       .addOutput(<roots:pyre>)
       .create();
     
     //注造器
     recipes.remove(<roots:imbuer>);
-    RecipeBuilder.get("farmer")
+    RecipeBuilder.get("carpenter")
       .setShaped(recipesUtils.centreCrossitem(<ore:stickWood>, <ore:wildroot>, <ore:bricksStone>))
-      .addTool(<ore:artisansShears>, 1)
+      .addTool(<ore:artisansFramingHammer>, 2)
       .addOutput(<roots:imbuer>)
       .create();
     

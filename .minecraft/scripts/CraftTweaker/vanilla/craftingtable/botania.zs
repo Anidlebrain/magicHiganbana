@@ -134,10 +134,9 @@ function recipesInit()
       .addTool(<ore:artisansGrimoire>, 8)
       .create();
     RecipeBuilder.get("mage")
-      .setshapeless(
-        [<botania:pool:2>, <ore:manaDiamond>])
-      .addOutput(<botania:pool>)
+      .setShapeless([<botania:pool:2>, <botania:manaresource:2>])
       .addTool(<ore:artisansGrimoire>, 8)
+      .addOutput(<botania:pool>)
       .create();
 
     //魔力发射器
@@ -221,6 +220,18 @@ function recipesInit()
 
     //魔力透镜 超频
     recipesUtils.addShapeless(<gugu-utils:lensoverclocking>, [<botania:lens>, <botanicadds:rune_energy>]);
+
+    //恶魔南瓜头
+    recipes.remove(<botania:felpumpkin>);
+    RecipeBuilder.get("farmer")
+      .setShaped([
+        [null, <ore:string>],
+        [<ore:bone>, <minecraft:pumpkin>, <minecraft:rotten_flesh>],
+        [null, <ore:gunpowder>]])
+      .addTool(<artisanworktables:artisans_razor_wood>, 1)
+      .addOutput(<botania:felpumpkin>)
+      .setExtraOutputOne(<minecraft:pumpkin_seeds>, 0.8)
+      .create();
 }
 
 function itemRemove()

@@ -1,0 +1,17 @@
+{
+	x: 10.0d,
+	y: 1.5d,
+	text: [
+		"竖直放置2个铁栅栏之后将其放上便可以生成‘人造烈焰人’,击杀后可掉落烈焰粉"
+	],
+	dependencies: [
+		"0425d283"
+	],
+	tasks: [{
+		uid: "50d3524b",
+		type: "item",
+		items: [{
+			item: "botania:felpumpkin"
+		}]
+	}]
+}

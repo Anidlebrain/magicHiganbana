@@ -55,9 +55,10 @@ function vanillaAddRecipes()
       .addOutput(<minecraft:shears>)
       .create();
     
+    //木台阶
     RecipeBuilder.get("carpenter")
       .setCopy(Copy.byOutput(<ore:slabWood>.items))
-      .addTool(<ore:artisansDriver>, 1)
+      .addTool(<ore:artisansHandsaw>, 1)
       .create();
     
 }

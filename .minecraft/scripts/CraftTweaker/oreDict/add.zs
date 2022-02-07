@@ -214,6 +214,12 @@ var oreadd as IItemStack[][IOreDictEntry] = {
     #面粉
     <ore:foodFlour> : [
         <appliedenergistics2:material:4>,
+    ],
+
+    #野火
+    <ore:dustFire> : [
+        <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_wild_fire"}}),
+        <botania:manaresource:23>,
     ]
 };
 
